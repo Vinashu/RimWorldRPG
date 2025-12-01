@@ -49,8 +49,7 @@ You serve **Terms** of 4 years. You must take at least **1 Term**, and can take 
     *   *Success*: You survive unscathed.
     *   *Failure*: You gain a **Scar** or **Addiction** (see Effects below), but you still complete the term.
 3.  **Gain Skills**: Distribute **20 Skill Points** among the Career Skills (max 10 per skill per term).
-4.  **Roll Event (1d6)**: See what happened to you.
-    *   *Duplicate Events*: If you roll the same event twice, gain **+1 Permanent Stress** instead of the duplicate effect.
+4.  **Roll Event (1d10)**: Each career has a 10-line table. Ranges bundle similar results, and some outcomes escalate when rolled multiple times (see Planetary Miner below).
 
 ### Career List
 
@@ -58,37 +57,49 @@ You serve **Terms** of 4 years. You must take at least **1 Term**, and can take 
 *   **Titles**: Marine (1) -> Sergeant (2) -> Veteran (3) -> War Hero (4).
 *   **Survival**: Vigor
 *   **Skills**: Shooting, Melee, Medical, Construction.
-*   **Events**:
-    *   1: **Disaster**: Unit wiped out. Gain **PTSD** (Trait).
-    *   2-5: **Routine Patrol**: Gain +5 to one Career Skill.
-    *   6: **Hero**: Promoted. Gain **Iron Will** (Trait).
+*   **Events (1d10)**:
+    *   **1**: **Disaster** — Unit wiped out. Gain **PTSD** (Trait).
+    *   **2-3**: **Live Fire Drills** — +5 Shooting (equivalent to +1 rank).
+    *   **4-5**: **Boarding Action** — +5 Melee.
+    *   **6-7**: **Field Medic** — +5 Medical.
+    *   **8-9**: **Combat Engineer** — +5 Construction.
+    *   **10**: **Legend of the Rim** — Gain **Iron Will** (Trait).
 
 #### **Glitterworld Surgeon**
 *   **Titles**: Intern (1) -> Resident (2) -> Specialist (3) -> Head Surgeon (4).
 *   **Survival**: Mind
 *   **Skills**: Medical, Intellectual, Social, Crafting.
-*   **Events**:
-    *   1: **Malpractice**: Patient died. You are **Exiled** (Must flee to Rimworld).
-    *   2-5: **Practice**: Gain +5 to Medical.
-    *   6: **Breakthrough**: Invented a technique. Gain **Prostophile** (Trait).
+*   **Events (1d10)**:
+    *   **1**: **Malpractice** — Patient died. You are **Exiled** (Must flee to Rimworld).
+    *   **2-3**: **Emergency Rotation** — +5 Medical.
+    *   **4-5**: **Research Sabbatical** — +5 Intellectual.
+    *   **6-7**: **Bedside Diplomacy** — +5 Social.
+    *   **8-9**: **Prototype Implants** — +5 Crafting.
+    *   **10**: **Breakthrough** — Invented a technique. Gain **Prostophile** (Trait).
 
 #### **Drifter**
 *   **Titles**: Vagabond (1) -> Wanderer (2) -> Traveler (3) -> Cosmopolitan (4).
 *   **Survival**: Dexterity
 *   **Skills**: Social, Melee, Plants, Construction.
-*   **Events**:
-    *   1: **Addiction**: Hooked on Smokeleaf or Wake-up.
-    *   2-5: **Odd Jobs**: Gain +5 to any Skill.
-    *   6: **Found Treasure**: Start with a Masterwork item.
+*   **Events (1d10)**:
+    *   **1**: **Addiction** — Hooked on Smokeleaf or Wake-up.
+    *   **2-3**: **Scavenged Tools** — +5 Construction.
+    *   **4-5**: **Farmhand for Hire** — +5 Plants.
+    *   **6-7**: **Streetwise** — +5 Social.
+    *   **8-9**: **Bar Brawls** — +5 Melee.
+    *   **10**: **Found Treasure** — Start with a Masterwork item.
 
 #### **Planetary Miner**
 *   **Titles**: Digger (1) -> Blaster (2) -> Foreman (3) -> Deep Driller (4).
 *   **Survival**: Vigor
 *   **Skills**: Mining, Construction, Melee, Plants.
-*   **Events**:
-    *   1: **Cave-in**: Crushed leg. Start with **Peg Leg**.
-    *   2-5: **Strike**: Gain +5 Mining.
-    *   6: **Motherlode**: Start with 500 Silver.
+*   **Events (1d10)**:
+    *   **1**: **Mine Collapse** — staged mishap: Peg Leg → Prosthetic Leg → Bionic Leg on repeated 1s.
+    *   **2-3**: **Deep Vein** — +5 Mining.
+    *   **4-5**: **Tunnel Reinforcement** — +5 Construction.
+    *   **6-7**: **Hydroponics Pilot** — +5 Plants.
+    *   **8-9**: **Wildlife Lookout** — +5 Shooting (learned on perimeter duty).
+    *   **10**: **Union Rep** — Gain **Tough** (Trait).
 
 #### **Assassin**
 *   **Titles**: Killer (1) -> Hitman (2) -> Slayer (3) -> Reaper (4).
@@ -102,6 +113,8 @@ You serve **Terms** of 4 years. You must take at least **1 Term**, and can take 
 ---
 
 ## Step 4: Traits & Effects Defined
+
+These lists pull the iconic RimWorld traits (Iron Will, Tough, Bloodlust, etc.) but are not exhaustive—feel free to import any missing favorites from the video game if your table wants them.
 
 ### Event Effects
 *   **Addiction**: You must consume the drug every 3 days or suffer **-2 Bane** on all rolls (Withdrawal).
@@ -121,6 +134,7 @@ You serve **Terms** of 4 years. You must take at least **1 Term**, and can take 
 *   **Tough**: Take -1 Damage from all sources.
 
 ### Negative Traits
+*   **Addicted**: Mirrors the Addiction effect below; you start play dependent on your chosen drug.
 *   **Abrasive**: -2 to Social checks. Starts social fights.
 *   **Depressive**: -12 Mood permanently.
 *   **Gourmand**: Hunger rate is 1.5x. Binge eats on Mental Break.
