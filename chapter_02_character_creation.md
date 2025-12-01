@@ -58,12 +58,12 @@ You serve **Terms** of 4 years. You must take at least **1 Term**, and can take 
 *   **Survival**: Vigor
 *   **Skills**: Shooting, Melee, Medical, Construction.
 *   **Events (1d10)**:
-    *   **1**: **Disaster** — Unit wiped out. Gain **PTSD** (Trait).
-    *   **2-3**: **Live Fire Drills** — +5 Shooting (equivalent to +1 rank).
-    *   **4-5**: **Boarding Action** — +5 Melee.
-    *   **6-7**: **Field Medic** — +5 Medical.
-    *   **8-9**: **Combat Engineer** — +5 Construction.
-    *   **10**: **Legend of the Rim** — Gain **Iron Will** (Trait).
+    *   **1**: **Disaster** — (1) Unit wiped out. Gain **PTSD** (Trait). (2) Start the game with a shotgun. (3) Lose your left eye. (4) Gain a bionic eye +5 in each of your career skills 
+    *   **2-3**: **Live Fire Drills** — +5/Passion/+10/Passion Shooting.
+    *   **4-5**: **Boarding Action** — +5/Passion/+10/Passion Melee.
+    *   **6-7**: **Field Medic** — +5/Passion/+10/Passion Medical.
+    *   **8-9**: **Combat Engineer** — +5/Passion/+10/Passion Construction.
+    *   **10**: **Legend of the Rim** — (1) Gain **Iron Will** (Trait). (2) Lose your left hand. (3) Gain a prostetic hand. (4) Gain a bionic hand +5 in each of your career skills
 
 #### **Glitterworld Surgeon**
 *   **Titles**: Intern (1) -> Resident (2) -> Specialist (3) -> Head Surgeon (4).
@@ -115,6 +115,11 @@ You serve **Terms** of 4 years. You must take at least **1 Term**, and can take 
 ## Step 4: Traits & Effects Defined
 
 These lists pull the iconic RimWorld traits (Iron Will, Tough, Bloodlust, etc.) but are not exhaustive—feel free to import any missing favorites from the video game if your table wants them.
+
+### Passion
+A Colonist can have up to passion levels in a skill. 
+* **1**: You are so passionate by your craft that you always push to a better outcome; **+1 Edge** on your skill rolls (*placeholder, must refine text*).
+* **2**: You are very good at this, which makes you learn faster; when leveling up, gan extra skill points in this skill (*placeholder, must refine text*).
 
 ### Event Effects
 *   **Addiction**: You must consume the drug every 3 days or suffer **-2 Bane** on all rolls (Withdrawal).
