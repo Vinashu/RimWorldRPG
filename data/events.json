@@ -1,0 +1,29 @@
+{
+    "minor": [
+        "Cargo Pods (Food)",
+        "Cargo Pods (Textiles)",
+        "Wanderer Joins",
+        "Eclipse",
+        "Solar Flare",
+        "Mad Animal (1)",
+        "Visitor Group"
+    ],
+    "major": [
+        "Raid (Tribal)",
+        "Raid (Pirate)",
+        "Manhunter Pack",
+        "Toxic Fallout",
+        "Cold Snap",
+        "Heat Wave",
+        "Infestation",
+        "Psychic Drone (High)"
+    ],
+    "extreme": [
+        "Raid (Mechanoid)",
+        "Raid (Siege)",
+        "Volcanic Winter",
+        "Mass Animal Insanity",
+        "Defoliator Ship",
+        "Insect Hive Emergence"
+    ]
+}

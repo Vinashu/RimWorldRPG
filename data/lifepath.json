@@ -1,0 +1,160 @@
+{
+    "attributes": [
+        "Vigor",
+        "Dexterity",
+        "Mind",
+        "Spirit"
+    ],
+    "skills": {
+        "Vigor": [
+            "Melee",
+            "Mining",
+            "Construction"
+        ],
+        "Dexterity": [
+            "Shooting",
+            "Crafting",
+            "Cooking"
+        ],
+        "Mind": [
+            "Intellectual",
+            "Medical",
+            "Plants"
+        ],
+        "Spirit": [
+            "Social",
+            "Animals",
+            "Artistic"
+        ]
+    },
+    "childhoods": [
+        {
+            "name": "Urchin",
+            "bonuses": {
+                "Melee": 1,
+                "Social": 1
+            },
+            "trait": "Scrapper"
+        },
+        {
+            "name": "Vatgrown",
+            "bonuses": {
+                "Vigor": 1,
+                "Shooting": 1
+            },
+            "trait": "Dull"
+        },
+        {
+            "name": "Noble Scion",
+            "bonuses": {
+                "Spirit": 1,
+                "Social": 1
+            },
+            "trait": "Greedy"
+        },
+        {
+            "name": "Midworld Student",
+            "bonuses": {
+                "Mind": 1,
+                "Intellectual": 1
+            },
+            "trait": "Fast Learner"
+        },
+        {
+            "name": "Feral Child",
+            "bonuses": {
+                "Animals": 1,
+                "Plants": 1
+            },
+            "trait": "Wild"
+        },
+        {
+            "name": "War Refugee",
+            "bonuses": {
+                "Shooting": 1,
+                "Medical": 1
+            },
+            "trait": "Pessimist"
+        }
+    ],
+    "careers": {
+        "Space Marine": {
+            "survival_attr": "Vigor",
+            "skills": [
+                "Shooting",
+                "Melee",
+                "Medical",
+                "Construction"
+            ],
+            "events": [
+                {
+                    "roll": 1,
+                    "name": "Disaster",
+                    "effect": "PTSD (Trait)"
+                },
+                {
+                    "roll": 6,
+                    "name": "Hero",
+                    "effect": "Iron Will (Trait)"
+                },
+                {
+                    "roll": "default",
+                    "name": "Routine Patrol",
+                    "effect": "Skill Boost"
+                }
+            ]
+        },
+        "Glitterworld Surgeon": {
+            "survival_attr": "Mind",
+            "skills": [
+                "Medical",
+                "Intellectual",
+                "Social",
+                "Crafting"
+            ],
+            "events": [
+                {
+                    "roll": 1,
+                    "name": "Malpractice",
+                    "effect": "Exiled"
+                },
+                {
+                    "roll": 6,
+                    "name": "Breakthrough",
+                    "effect": "Prostophile (Trait)"
+                },
+                {
+                    "roll": "default",
+                    "name": "Practice",
+                    "effect": "Skill Boost"
+                }
+            ]
+        },
+        "Drifter": {
+            "survival_attr": "Dexterity",
+            "skills": [
+                "Social",
+                "Melee",
+                "Plants",
+                "Construction"
+            ],
+            "events": [
+                {
+                    "roll": 1,
+                    "name": "Addiction",
+                    "effect": "Addicted"
+                },
+                {
+                    "roll": 6,
+                    "name": "Found Treasure",
+                    "effect": "Masterwork Item"
+                },
+                {
+                    "roll": "default",
+                    "name": "Odd Jobs",
+                    "effect": "Skill Boost"
+                }
+            ]
+        }
+    }
+}
