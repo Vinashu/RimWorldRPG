@@ -45,10 +45,10 @@ You serve **Terms** of 4 years. You must take at least **1 Term**, and can take 
 
 **For each Term:**
 1.  **Choose a Career**.
-2.  **Roll Survival (2d10 + Attribute)** vs DC 12.
+2.  **Roll Survival (1d10 + Attribute)** vs DC 12.
     *   *Success*: You survive unscathed.
     *   *Failure*: You gain a **Scar** or **Addiction** (see Effects below), but you still complete the term.
-3.  **Gain Skills**: Distribute **20 Skill Points** among the Career Skills (max 10 per skill per term).
+3.  **Gain Skills**: Increae the skill points (*re-write for clarity*: if it goes above the limit of 30 points, distribute the leftover points among the other carrer's skills).
 4.  **Roll Event (1d10)**: Each career has a 10-line table. Ranges bundle similar results, and some outcomes escalate when rolled multiple times (see Planetary Miner below).
 
 ### Career List
