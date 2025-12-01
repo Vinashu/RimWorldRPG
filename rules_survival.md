@@ -51,6 +51,22 @@ We do not use HP for everything. We use a **Wound System** for major hits.
 
 **Death**: If HP reaches 0, the Colonist is **Downed** (unconscious, bleeding out). They die in `Vigor` rounds unless tended.
 
+### Body Parts, Banes, and Replacements
+RimWorld-style injuries matter because they change how you play. Track lost body parts and apply the following Banes (stacking with other penalties). If multiple entries apply, use the highest Bane for that limb.
+
+*   **Missing Hand**: **+1 Bane** to Shooting, Melee (parries/grapples), Construction, Crafting, and Medical checks that require fine motor control. Cannot dual-wield.
+*   **Missing Arm**: **+2 Bane** to the same skills as a missing hand and to any roll that assumes two-handed lifting (Athletics, Mining, hauling). Cannot use two-handed weapons or shields.
+*   **Missing Foot**: **+1 Bane** to Athletics/Stealth/Acrobatics movement rolls. **-1 Movement**.
+*   **Missing Leg**: **+2 Bane** to Athletics/Stealth/Acrobatics and any roll that requires bracing (recoil control in Shooting, charging in Melee). **-2 Movement**; cannot sprint.
+*   **Missing Kidney**: **+1 Bane** on Vigor checks to resist poison, disease, or toxic buildup. Reduce natural healing rates by 25%.
+*   **Missing Lung**: **+1 Bane** on running, swimming, or stealth rolls that rely on breath control. Gain **+1 Stress** after any Scene that includes a sprint or extended exertion.
+*   **Scars (Painful)**: Each noticeable scar imposes **-1 Mood** (stacks). After **3+ scars**, add **+1 Bane** to Social checks (appearance/pain tells).
+
+**Replacements**
+*   **Peg Leg/Hook Hand**: Cancels the “missing” state but keeps the **+1 Bane** listed above and halves the Movement penalty (rounded up).
+*   **Prosthetic**: Removes Banes from the missing part but not Stress triggers; ignore Movement penalties.
+*   **Bionic**: Removes Banes and Stress triggers; gain **Edge** once per Scene on one roll that uses the replaced limb.
+
 ### Cover
 *   **Partial Cover**: Attacker suffers **Bane**.
 *   **Full Cover**: Attacker suffers **Double Bane**.
@@ -81,9 +97,16 @@ We track 5 abstract resource categories:
 ### Daily Actions
 Players assign Colonists to tasks:
 *   **Farming** (Plants): High Food, Low Textile.
+*   **Animal husbandry** (Animals): Low Food, High Textile or points twards taiming.
 *   **Hunting** (Shooting/Animals): Medium Food, Medium Textile.
 *   **Mining** (Mining): High Ore, Low Components.
+*   **Cooking** (Cooking): Convert Food into Meals (think about medicine production as well)
 *   **Crafting** (Crafting): Convert Ore/Textile into Weapons/Apparel.
+*   **Building** (Construction): Convert Ore/Textile into buildings projects.
+*   **Researching** (Intellectual): Gain research points to unlock new technologies.
+*   **Social**: (Social): Improve faction relation (must have a representative in the colony or Comms Link)
+*   **Healing**: (Medicine): Treat medical conditions.
+*   **Artistic**: (Artistic): Need to think how to use it
 
 ---
 
