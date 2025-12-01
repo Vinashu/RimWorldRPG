@@ -105,10 +105,12 @@ You serve **Terms** of 4 years. You must take at least **1 Term**, and can take 
 *   **Titles**: Killer (1) -> Hitman (2) -> Slayer (3) -> Reaper (4).
 *   **Survival**: Dexterity
 *   **Skills**: Shooting, Melee, Crafting, Social.
-*   **Events**:
-    *   1: **Hunted**: A faction is actively hunting you (Storyteller Note).
-    *   2-5: **Contract**: Gain +5 Shooting.
-    *   6: **Legend**: Gain **Bloodlust** (Trait).
+*   **Events (1d10)**:
+    *   **1-2**: **Hunted** — (1) A faction marks you for death (**Hunted**). (2) Bounty doubles: start with **-100 Silver** debt. (3) You maim the hunter: **+5** Melee and a Melee Passion. (4) You turn the tables: clear **Hunted** and gain **+10 Relations** with an enemy faction.
+    *   **3-4**: **Contract** — (1) **+5** Shooting. (2) Gain a **Shooting Passion**. (3) **+10** Shooting. (4) **+10** Shooting and a Shooting Passion.
+    *   **5-6**: **Close Work** — (1) **+5** Melee. (2) Gain a **Melee Passion**. (3) **+10** Melee. (4) **+10** Melee and a Melee Passion.
+    *   **7-8**: **Black Market Tools** — (1) **+5** Crafting. (2) Gain a **Crafting Passion**. (3) **+10** Crafting. (4) **+10** Crafting and a Crafting Passion.
+    *   **9-10**: **Legend** — (1) Gain **Bloodlust** (Trait). (2) Start with a **legendary blade**. (3) Your name spreads: **+1 Action** on the first combat round. (4) Your myth is sealed: **+5** to each Assassin skill.
 
 ---
 
