@@ -93,18 +93,45 @@ function generateCharacter() {
         char.addSkill(shuffledSkills[0]);
         char.addSkill(shuffledSkills[1]);
 
-        // Event
-        const eventRoll = Math.floor(Math.random() * 6) + 1;
-        const event = career.events.find(e => e.roll === eventRoll) || career.events.find(e => e.roll === "default");
+        // Event (d10)
+        const eventRoll = Math.floor(Math.random() * 10) + 1;
+        const matchedEvent = matchEvent(career.events, eventRoll);
+        const resolvedEvent = resolveEventStage(matchedEvent, careerName);
 
-        char.history.push(`  > Event: ${event.name} -> ${event.effect}`);
-        if (event.effect.includes("(Trait)")) {
-            const traitName = event.effect.split(" (")[0];
-            if (!char.traits.includes(traitName)) char.traits.push(traitName);
+        char.history.push(`  > Event (Roll ${eventRoll}): ${resolvedEvent.name || matchedEvent.name} -> ${resolvedEvent.effect || matchedEvent.effect}`);
+
+        if (resolvedEvent.trait && !char.traits.includes(resolvedEvent.trait)) {
+            char.traits.push(resolvedEvent.trait);
+        }
+
+        if (resolvedEvent.skill) {
+            char.addSkill(resolvedEvent.skill, resolvedEvent.skillGain || 1);
         }
     }
 
     return char;
+}
+
+function matchEvent(events, roll) {
+    return events.find(e => {
+        if (typeof e.roll === "number" && e.roll === roll) return true;
+        if (Array.isArray(e.rolls) && e.rolls.includes(roll)) return true;
+        if (Array.isArray(e.range) && roll >= e.range[0] && roll <= e.range[1]) return true;
+        return false;
+    }) || events.find(e => e.default);
+}
+
+const eventCounters = {};
+
+function resolveEventStage(event, careerName) {
+    if (!event.stages || event.stages.length === 0) return event;
+
+    const key = `${careerName}:${event.id || event.name}`;
+    const count = eventCounters[key] || 0;
+    const stageIndex = Math.min(count, event.stages.length - 1);
+    eventCounters[key] = count + 1;
+
+    return event.stages[stageIndex];
 }
 
 // --- Run ---

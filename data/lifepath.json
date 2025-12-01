@@ -88,19 +88,41 @@
             ],
             "events": [
                 {
-                    "roll": 1,
+                    "id": "marine_disaster",
+                    "range": [1, 1],
                     "name": "Disaster",
-                    "effect": "PTSD (Trait)"
+                    "effect": "Unit wiped out. PTSD (Trait)",
+                    "trait": "PTSD"
                 },
                 {
-                    "roll": 6,
-                    "name": "Hero",
-                    "effect": "Iron Will (Trait)"
+                    "range": [2, 3],
+                    "name": "Live Fire Drills",
+                    "effect": "+1 Shooting",
+                    "skill": "Shooting"
                 },
                 {
-                    "roll": "default",
-                    "name": "Routine Patrol",
-                    "effect": "Skill Boost"
+                    "range": [4, 5],
+                    "name": "Boarding Action",
+                    "effect": "+1 Melee",
+                    "skill": "Melee"
+                },
+                {
+                    "range": [6, 7],
+                    "name": "Field Medic",
+                    "effect": "+1 Medical",
+                    "skill": "Medical"
+                },
+                {
+                    "range": [8, 9],
+                    "name": "Combat Engineer",
+                    "effect": "+1 Construction",
+                    "skill": "Construction"
+                },
+                {
+                    "range": [10, 10],
+                    "name": "Legend of the Rim",
+                    "effect": "Iron Will (Trait)",
+                    "trait": "Iron Will"
                 }
             ]
         },
@@ -114,19 +136,40 @@
             ],
             "events": [
                 {
-                    "roll": 1,
+                    "id": "surgeon_malpractice",
+                    "range": [1, 1],
                     "name": "Malpractice",
-                    "effect": "Exiled"
+                    "effect": "Patient died. Exiled."
                 },
                 {
-                    "roll": 6,
+                    "range": [2, 3],
+                    "name": "Emergency Rotation",
+                    "effect": "+1 Medical",
+                    "skill": "Medical"
+                },
+                {
+                    "range": [4, 5],
+                    "name": "Research Sabbatical",
+                    "effect": "+1 Intellectual",
+                    "skill": "Intellectual"
+                },
+                {
+                    "range": [6, 7],
+                    "name": "Bedside Diplomacy",
+                    "effect": "+1 Social",
+                    "skill": "Social"
+                },
+                {
+                    "range": [8, 9],
+                    "name": "Prototype Implants",
+                    "effect": "+1 Crafting",
+                    "skill": "Crafting"
+                },
+                {
+                    "range": [10, 10],
                     "name": "Breakthrough",
-                    "effect": "Prostophile (Trait)"
-                },
-                {
-                    "roll": "default",
-                    "name": "Practice",
-                    "effect": "Skill Boost"
+                    "effect": "Prostophile (Trait)",
+                    "trait": "Prostophile"
                 }
             ]
         },
@@ -140,19 +183,100 @@
             ],
             "events": [
                 {
-                    "roll": 1,
+                    "id": "drifter_addiction",
+                    "range": [1, 1],
                     "name": "Addiction",
-                    "effect": "Addicted"
+                    "effect": "Hooked on Smokeleaf or Wake-up",
+                    "trait": "Addicted"
                 },
                 {
-                    "roll": 6,
+                    "range": [2, 3],
+                    "name": "Scavenged Tools",
+                    "effect": "+1 Construction",
+                    "skill": "Construction"
+                },
+                {
+                    "range": [4, 5],
+                    "name": "Farmhand for Hire",
+                    "effect": "+1 Plants",
+                    "skill": "Plants"
+                },
+                {
+                    "range": [6, 7],
+                    "name": "Streetwise",
+                    "effect": "+1 Social",
+                    "skill": "Social"
+                },
+                {
+                    "range": [8, 9],
+                    "name": "Bar Brawls",
+                    "effect": "+1 Melee",
+                    "skill": "Melee"
+                },
+                {
+                    "range": [10, 10],
                     "name": "Found Treasure",
                     "effect": "Masterwork Item"
+                }
+            ]
+        },
+        "Planetary Miner": {
+            "survival_attr": "Vigor",
+            "skills": [
+                "Mining",
+                "Construction",
+                "Plants",
+                "Shooting"
+            ],
+            "events": [
+                {
+                    "id": "miner_cavein",
+                    "range": [1, 1],
+                    "name": "Mine Collapse",
+                    "stages": [
+                        {
+                            "name": "Cave-in",
+                            "effect": "Crushed Leg. Fitted with a Peg Leg."
+                        },
+                        {
+                            "name": "Corporate Compensation",
+                            "effect": "Company covers a Prosthetic Leg replacement."
+                        },
+                        {
+                            "name": "Full Rebuild",
+                            "effect": "You are rebuilt with a Bionic Leg."
+                        }
+                    ]
                 },
                 {
-                    "roll": "default",
-                    "name": "Odd Jobs",
-                    "effect": "Skill Boost"
+                    "range": [2, 3],
+                    "name": "Deep Vein",
+                    "effect": "+1 Mining",
+                    "skill": "Mining"
+                },
+                {
+                    "range": [4, 5],
+                    "name": "Tunnel Reinforcement",
+                    "effect": "+1 Construction",
+                    "skill": "Construction"
+                },
+                {
+                    "range": [6, 7],
+                    "name": "Hydroponics Pilot",
+                    "effect": "+1 Plants",
+                    "skill": "Plants"
+                },
+                {
+                    "range": [8, 9],
+                    "name": "Wildlife Lookout",
+                    "effect": "+1 Shooting",
+                    "skill": "Shooting"
+                },
+                {
+                    "range": [10, 10],
+                    "name": "Union Rep",
+                    "effect": "Tough (Trait)",
+                    "trait": "Tough"
                 }
             ]
         }
