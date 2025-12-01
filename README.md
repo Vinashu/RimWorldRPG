@@ -74,8 +74,14 @@ This repository includes JavaScript utilities to help run your game:
 
 ---
 
-## 📄 License
+## 📄 License & Legal
 
-This project is open source and available under the [MIT License](LICENSE).
+### Code
+The software tools and scripts in this repository (`lifepath_generator.js`, `storyteller_sim.js`) are available under the [MIT License](LICENSE).
 
-*RimWorld is a trademark of Ludeon Studios. This is a fan project and is not affiliated with Ludeon Studios.*
+### Game Content & IP
+This project is a fan-made Tabletop RPG adaptation of **RimWorld**.
+
+> Portions of the materials used to create this content/mod are trademarks and/or copyrighted works of Ludeon Studios Inc. All rights reserved by Ludeon. This content/mod is not official and is not endorsed by Ludeon.
+
+This project is **non-commercial** and free to use. It is not affiliated with Ludeon Studios.
