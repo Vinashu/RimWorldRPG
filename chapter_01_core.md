@@ -54,7 +54,10 @@ Circumstances can help or hinder you.
 *   **Impaired (3d10)**: You have a major disadvantage (blindness, toxicity, suppression). Roll **3d10** and keep the **2 Lowest**.
 
 *Note: Edge/Bane are additive. Augmented/Impaired replace the standard roll.*
+
 *Note: Augmented/Impaired are not additive. You can only have one at a time, and they cancel any number of Edge/Bane.*
+
+*Note: The result of the Story Die is **always** applied, even its value is discarded in an Augmented or Impaired roll.*
 
 ### Pushing Your Luck
 Life on the Rim is desperate. You can push yourself beyond your limits.

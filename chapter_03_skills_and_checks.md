@@ -48,6 +48,8 @@ Circumstances can help or hinder you.
 
 *Note: You can not have both Edge and Augmented on the same roll.*
 
+*Note: The result of the Story Die is **always** applied, even its value is discarded in an Augmented or Impaired roll.*
+
 ---
 
 ## Pushing Your Luck
