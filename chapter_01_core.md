@@ -45,11 +45,21 @@ The total Result determines what happens. We don't use a binary Pass/Fail. **You
 
 ### Modifiers
 Circumstances can help or hinder you.
-*   **Edge (+2)**: You have the high ground, a masterwork tool, or help.
-*   **Bane (-2)**: It's dark, you're using a rock as a hammer, or you're in pain.
+*   **Edge (+2)**: You have a minor advantage, like high ground or a good tool.
+*   **Bane (-2)**: You have a minor disadvantage, like darkness or pain.
 *   **Double Edge**: If you have 2+ sources of Edge, shift your Result **UP one Tier** (e.g., Tier 2 becomes Tier 3).
 *   **Double Bane**: If you have 2+ sources of Bane, shift your Result **DOWN one Tier**.
-*   **Cancel**: If a Player has one **Edge** and one **Bane**, they will cancel each other out. If you have more sources of Edge than Bane, you can cancel all sources of Bane and keep with one source of Edge. The same in the other way around. 
+*   **Cancel**: If a Player has one **Edge** and one **Bane**, they will cancel each other out. If you have more sources of Edge than Bane, you can cancel all sources of Bane and keep with one source of Edge. The same in the other way around.
+*   **Augmented (3d10)**: You have a major advantage (bionics, drugs, perfect position). Roll **3d10** and keep the **2 Highest**.
+*   **Impaired (3d10)**: You have a major disadvantage (blindness, toxicity, suppression). Roll **3d10** and keep the **2 Lowest**.
+
+*Note: Edge/Bane are additive. Augmented/Impaired replace the standard roll.*
+*Note: Augmented/Impaired are not additive. You can only have one at a time, and they cancel any number of Edge/Bane.*
+
+### Pushing Your Luck
+Life on the Rim is desperate. You can push yourself beyond your limits.
+*   **The Push**: You can voluntarily add **+1d6** to your roll.
+*   **The Risk**: If the **d6** rolls a **1**, you trigger a **Panic Check** immediately after the action (regardless of success or failure). 
 
 ---
 

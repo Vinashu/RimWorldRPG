@@ -48,8 +48,10 @@ You serve **Terms** of 4 years. You must take at least **1 Term**, and can take 
 2.  **Roll Survival (1d10 + Attribute)** vs DC 12.
     *   *Success*: You survive unscathed.
     *   *Failure*: You gain a **Scar** or **Addiction** (see Effects below), but you still complete the term.
-3.  **Gain Skills**: Increae the skill points (*re-write for clarity*: if it goes above the limit of 30 points, distribute the leftover points among the other carrer's skills).
+    *   **Critical Failure (Natural 1)**: You barely survive. Gain a **Random Negative Trait** (Roll on Table B).
+3.  **Gain Skills**: Increase the skill points. If increasing a skill would push it above the **30 Point** cap, you must allocate the excess points to any other skill listed in your current Career.
 4.  **Roll Event (1d10)**: Each career has a 10-line table. When you hit an entry, resolve the **first outcome** listed. If you roll that same entry again in a later term, take the **second outcome**, then the third, then the fourth—no duplicate re-rolls needed.
+    *   **Critical Success (Natural 10)**: You have a life-changing moment. Gain a **Random Positive Trait** (Roll on Table A) in addition to the Event result.
 
 ### Career List
 
@@ -114,51 +116,94 @@ You serve **Terms** of 4 years. You must take at least **1 Term**, and can take 
 
 ---
 
-## Step 4: Traits & Effects Defined
+## Step 4: Personality
+After completing your terms, you must determine your final personality quirks.
+**Roll 1d100** on **Table A (Positive)** and **Roll 1d100** on **Table B (Negative)**. You gain both traits.
+*   *Note*: If you roll a trait you already have (from Childhood or Events), reroll.
 
-These lists pull the iconic RimWorld traits (Iron Will, Tough, Bloodlust, etc.) but are not exhaustive—feel free to import any missing favorites from the video game if your table wants them.
+### Table A: Positive Traits (d100)
+| d100 | Trait | Effect |
+| :--- | :--- | :--- |
+| 01-04 | **Beautiful** | **+2 Edge** on all Social interactions. NPC initial attitude is always one step higher. |
+| 05-08 | **Brawler** | **+2 Accuracy** on Melee attacks. **-2 Accuracy** on Shooting. |
+| 09-12 | **Cannibal** | Eating human meat restores **1d6 Stress** and grants **+5 Mood** for 24h. No penalty for butchering people. |
+| 13-16 | **Fast Learner** | Gain **+1 XP** at the end of every session. |
+| 17-20 | **Fast Walker** | Base Movement is **6 Squares** (instead of 5). |
+| 21-24 | **Great Memory** | You do not lose Skill Points from aging or trauma events. Once per session, reroll a **Mind** check. |
+| 25-28 | **Hard Worker** | Reduce the time required for any **Long Task** (Crafting, Building) by **10%**. |
+| 29-32 | **Industrious** | Reduce the time required for any **Long Task** by **20%**. |
+| 33-36 | **Iron-Willed** | Your **Mental Break Threshold** is increased by **2** (Harder to break). |
+| 37-40 | **Jogger** | Base Movement is **7 Squares**. |
+| 41-44 | **Kind** | Once per day, make a **Social** check to remove **1 Stress** from an ally. You never start Social Fights. |
+| 45-48 | **Masochist** | Gain **+1 Mood** whenever you take Damage. Gain **Edge** on checks to resist Pain or Torture. |
+| 49-52 | **Nerves of Steel** | Immune to **Minor Mental Breaks**. You only suffer Major or Extreme breaks. |
+| 53-56 | **Nimble** | **+2 Defense** against Melee attacks. |
+| 57-60 | **Optimist** | Permanent **+4 Mood** bonus. |
+| 61-64 | **Pretty** | **+1 Edge** on Social interactions. |
+| 65-68 | **Prostophile** | **+2 Mood** per artificial part installed. **-4 Mood** if you have none. |
+| 69-72 | **Psychopath** | Immune to Stress from **Witnessing Death** or **Butchering**. Cannot gain "Bonded" benefits. |
+| 73-76 | **Quick Sleeper** | A Full Rest takes **4 hours** instead of 8. |
+| 77-80 | **Sanguine** | Permanent **+8 Mood** bonus. |
+| 81-84 | **Steadfast** | Your **Mental Break Threshold** is increased by **1**. |
+| 85-88 | **Super-Immune** | Roll **Stress Die** twice and take the lower result when checking for Disease progression. |
+| 89-92 | **Too Smart** | Gain **+2 XP** per session, but your **Mental Break Threshold** is decreased by **1** (Easier to break). |
+| 93-96 | **Tough** | Reduce all incoming HP damage by **1** (Minimum 0). |
+| 97-00 | **Player's Choice** | Pick any Positive Trait from the list. |
 
-### Passion
-A Colonist can have up to passion levels in a skill. 
-* **1**: You are so passionate by your craft that you always push to a better outcome; **+1 Edge** on your skill rolls (*placeholder, must refine text*).
-* **2**: You are very good at this, which makes you learn faster; when leveling up, gan extra skill points in this skill (*placeholder, must refine text*).
-
-### Event Effects
-*   **Addiction**: You must consume the drug every 3 days or suffer **-2 Bane** on all rolls (Withdrawal).
-*   **Exiled**: You arrive on the Rim with **0 Silver** and **-10 Relations** with your home faction.
-*   **Hunted**: A hostile raid will spawn specifically to kill you within the first Quadrum.
-*   **Peg Leg**: Your Movement Speed is reduced by **-1 Square**.
-*   **Scar**: You have a permanent painful scar. **-5 Mood** permanently.
-
-### Positive Traits
-*   **Cannibal**: Can eat human meat without mood penalty. Gets +10 Mood!
-*   **Iron-Willed**: Mental Break Threshold is 10% lower.
-*   **Jogger**: +1 Movement Speed.
-*   **Kind**: Never insults others. +1 to Social checks to calm people.
-*   **Nimble**: +2 Defense against Melee.
-*   **Prostophile (Body Modder)**: +5 Mood per artificial part. -5 Mood if you have none.
-*   **Super-Immune**: Advantage on Disease resistance rolls.
-*   **Tough**: Take -1 Damage from all sources.
-
-### Negative Traits
-*   **Addicted**: Mirrors the Addiction effect below; you start play dependent on your chosen drug.
-*   **Abrasive**: -2 to Social checks. Starts social fights.
-*   **Depressive**: -12 Mood permanently.
-*   **Gourmand**: Hunger rate is 1.5x. Binge eats on Mental Break.
-*   **Jealous**: Mood penalty if anyone has a better bedroom.
-*   **PTSD**: Randomly suffer a **Panic Check** when hearing loud noises (Combat).
-*   **Pyromaniac**: Will start fires on Mental Break. Cannot do Firefighting.
-*   **Wimp**: Downed instantly if takes any damage.
-
-### Neutral/Mixed Traits
-*   **Ascetic**: Prefers awful bedrooms. No mood penalty for raw food.
-*   **Bloodlust**: Gets mood bonus after killing. 4x chance of social fights.
-*   **Night Owl**: Mood bonus at night, penalty during day.
-*   **Psychic Sensitive**: +2 effect from Psychic Drones (Good or Bad).
+### Table B: Negative Traits (d100)
+| d100 | Trait | Effect |
+| :--- | :--- | :--- |
+| 01-03 | **Abrasive** | **-2 Bane** on Social checks. GM can trigger a **Social Fight** on a failed Social roll. |
+| 04-06 | **Addicted** | Start with a dependency. If not satisfied daily, suffer **-2 Bane** on all rolls. |
+| 07-09 | **Annoying Voice** | **-1 Bane** on Social checks. |
+| 10-12 | **Body Purist** | **-5 Mood** per artificial part on self. **-1 Bane** on Social checks vs people with bionics. |
+| 13-15 | **Chemical Fascination** | Consume drug every **3 days** or gain **1 Stress/day**. On Mental Break, you *will* binge. |
+| 16-18 | **Chemical Interest** | Consume drug every **5 days** or gain **1 Stress/day**. |
+| 19-21 | **Creepy Breathing** | **-1 Bane** on Social checks. |
+| 22-24 | **Depressive** | Permanent **-8 Mood** penalty. |
+| 25-27 | **Gourmand** | Consume **2 Rations** per day. If you eat a "Poor" meal, gain **1 Stress**. |
+| 28-30 | **Jealous** | **-4 Mood** if any other colonist has a more impressive bedroom than you. |
+| 31-33 | **Lazy** | Work speed on Long Tasks is **slower by 20%**. |
+| 34-36 | **Misandrist** | **-2 Bane** on Social checks vs Men. |
+| 37-39 | **Misogynist** | **-2 Bane** on Social checks vs Women. |
+| 40-42 | **Nervous** | **Mental Break Threshold** is decreased by **1**. |
+| 43-45 | **Neurotic** | Work speed **faster by 10%**, but **Mental Break Threshold** decreased by **1**. |
+| 46-48 | **Pessimist** | Permanent **-4 Mood** penalty. |
+| 49-51 | **PTSD** | When you hear a loud noise (gunshot, explosion), roll a **Panic Check** immediately. |
+| 52-54 | **Pyromaniac** | On any Mental Break, you attempt to start fires. Cannot perform **Firefighting**. |
+| 55-57 | **Sickly** | Reroll successful Disease resistance checks (take the worst). |
+| 58-60 | **Slothful** | Work speed on Long Tasks is **slower by 35%**. |
+| 61-63 | **Slow Learner** | XP cost to upgrade skills is **doubled**. |
+| 64-66 | **Slowpoke** | Base Movement is **4 Squares**. |
+| 67-69 | **Staggeringly Ugly** | **-2 Bane** on Social checks. Everyone starts with "Dislike" attitude. |
+| 70-72 | **Teetotaler** | Cannot consume drugs. If forced (e.g., surgery), gain **1d6 Stress**. |
+| 73-75 | **Ugly** | **-1 Bane** on Social checks. |
+| 76-78 | **Very Neurotic** | Work speed **faster by 20%**, but **Mental Break Threshold** decreased by **2**. |
+| 79-81 | **Volatile** | **Mental Break Threshold** decreased by **2**. |
+| 82-84 | **Wimp** | If you take **any Damage**, make a **Vigor** save (DC 10) or be **Downed** (Stunned) 1 round. |
+| 85-00 | **Player's Choice** | Pick any Negative Trait from the list. |
 
 ---
 
-## Step 5: Arrival Scenario
+## Step 5: Other Traits (Neutral/Mixed)
+These traits are usually acquired via specific Events or Childhoods, but you may choose to swap one of your Random Traits for one of these with Story Tellers approval.
+
+*   **Ascetic**: No Mood penalty for "Awful" bedroom/food. Gain **+3 Mood** if bedroom is Awful.
+*   **Asexual**: No attraction to others.
+*   **Bisexual**: Attracted to men and women.
+*   **Bloodlust**: Recover **1 Stress** when you kill an enemy. **2x chance** of starting Social Fights.
+*   **Careful Shooter**: You can spend **2 Actions** to make a single Shooting attack with **+3 Accuracy**.
+*   **Gay**: Attracted to same sex.
+*   **Night Owl**: **+3 Mood** if awake at night (22:00-06:00). **-3 Mood** if awake during day (10:00-18:00).
+*   **Nudist**: **+3 Mood** when naked. **-3 Mood** when wearing clothes.
+*   **Psychic Sensitive**: Psychic events (Drones/Soothes) have **Double Effect** on you.
+*   **Psychically Deaf**: Immune to Psychic events.
+*   **Psychically Dull**: Psychic events have **Half Effect** on you.
+*   **Undergrounder**: No Mood penalty for being indoors for long periods. **-3 Mood** if outdoors for >1 day.
+
+---
+
+## Step 6: Arrival Scenario
 How did you get here? (Group Decision)
 
 1.  **Crashlanded**: Standard. 3 Colonists. Good tech, some food.
