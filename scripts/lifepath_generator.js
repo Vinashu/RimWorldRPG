@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 // --- Load Data ---
-const dataPath = path.join(__dirname, 'data', 'lifepath.json');
+const dataPath = path.join(__dirname, '../data', 'lifepath.json');
 const rawData = fs.readFileSync(dataPath);
 const DATA = JSON.parse(rawData);
 
@@ -41,7 +41,7 @@ class Character {
     toString() {
         let s = `=== Colonist (Age ${this.age}) ===\n`;
         s += "Attributes: " + Object.entries(this.attributes).map(([k, v]) => `${k}: ${v >= 0 ? '+' : ''}${v}`).join(", ") + "\n";
-        s += "Skills: " + Object.entries(this.skills).map(([k, v]) => `${k}: ${v} (+${Math.floor(v/10)})`).join(", ") + "\n";
+        s += "Skills: " + Object.entries(this.skills).map(([k, v]) => `${k}: ${v} (+${Math.floor(v / 10)})`).join(", ") + "\n";
         s += "Traits: " + this.traits.join(", ") + "\n";
         s += "History:\n";
         this.history.forEach(h => s += `  - ${h}\n`);
@@ -84,7 +84,7 @@ function generateCharacter() {
         char.age += 4;
         const careerName = careerNames[Math.floor(Math.random() * careerNames.length)];
         const career = DATA.careers[careerName];
-        char.history.push(`Term ${i+1}: ${careerName}`);
+        char.history.push(`Term ${i + 1}: ${careerName}`);
 
         // Survival (DC 12)
         const survRoll = char.rollCheck(career.survival_attr);
@@ -119,14 +119,14 @@ function generateCharacter() {
         if (resolvedEvent.skill) {
             char.addSkill(resolvedEvent.skill, resolvedEvent.skillGain || 5);
         } else if (resolvedEvent.allSkills && resolvedEvent.skillGain) {
-             career.skills.forEach(s => char.addSkill(s, resolvedEvent.skillGain));
+            career.skills.forEach(s => char.addSkill(s, resolvedEvent.skillGain));
         }
     }
 
     // 4. Personality (Traits)
     const posRoll = Math.floor(Math.random() * DATA.positive_traits.length);
     const negRoll = Math.floor(Math.random() * DATA.negative_traits.length);
-    
+
     const posTrait = DATA.positive_traits[posRoll];
     const negTrait = DATA.negative_traits[negRoll];
 

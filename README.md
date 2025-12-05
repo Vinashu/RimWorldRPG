@@ -42,14 +42,14 @@ The rules are divided into modular chapters:
 
 | Chapter | Description |
 | :--- | :--- |
-| **[Chapter 1: Core Mechanics](chapter_01_core.md)** | The Story Die, Tiers of Success, and Time. |
-| **[Chapter 2: Character Creation](chapter_02_character_creation.md)** | The Lifepath system, Attributes, and Traits. |
-| **[Chapter 3: Skills & Resolution](rules_core.md)** | Detailed skill uses and social interactions. |
-| **[Chapter 4: Combat & Survival](rules_survival.md)** | Combat rules, Needs, Mood, and Mental Breaks. |
-| **[Chapter 5: Equipment & Crafting](chapter_01_core.md)** | Weapons, Armor, and Economy. |
-| **[Chapter 6: Colony Management](chapter_01_core.md)** | Base building and work priorities. |
-| **[Chapter 7: The Rim](chapter_01_core.md)** | Biomes, Factions, and the Bestiary. |
-| **[Chapter 8: The Storyteller](chapter_01_core.md)** | GM guide for running events and raids. |
+| **[Chapter 1: Core Mechanics](chapters/chapter_01_core.md)** | The Story Die, Tiers of Success, and Time. |
+| **[Chapter 2: Character Creation](chapters/chapter_02_character_creation.md)** | The Lifepath system, Attributes, and Traits. |
+| **[Chapter 3: Skills & Resolution](chapters/chapter_03_skills_and_checks.md)** | Detailed skill uses and social interactions. |
+| **[Chapter 4: Combat & Survival](chapters/chapter_04_combat_and_survival.md)** | Combat rules, Needs, Mood, and Mental Breaks. |
+| **[Chapter 5: Equipment & Crafting](chapters/chapter_05_equipment.md)** | Weapons, Armor, and Economy. |
+| **[Chapter 6: Colony Management](chapters/chapter_06_colony.md)** | Base building and work priorities. |
+| **[Chapter 7: The Rim](chapters/chapter_07_world.md)** | Biomes, Factions, and the Bestiary. |
+| **[Chapter 8: The Storyteller](chapters/chapter_08_storyteller.md)** | GM guide for running events and raids. |
 
 > *Note: Some chapters are currently being drafted and linked files may be placeholders.*
 
@@ -59,17 +59,24 @@ The rules are divided into modular chapters:
 
 This repository includes JavaScript utilities to help run your game:
 
-*   `lifepath_generator.js`: A script to randomly generate colonists with valid attribute combinations.
-*   `storyteller_sim.js`: A simulation tool for the Storyteller system to generate random events and raids.
+*   `scripts/build_rulebook.js`: Generates the single HTML rulebook file.
+*   `scripts/lifepath_generator.js`: A script to randomly generate colonists with valid attribute combinations.
+*   `scripts/storyteller_sim.js`: A simulation tool for the Storyteller system to generate random events and raids.
 
 ## 📦 Getting Started
 
 1.  **Clone the repo**:
     ```bash
     git clone https://github.com/Vinashu/RimWorldRPG.git
+    cd RimWorldRPG
     ```
-2.  **Read Chapter 1**: Start with `chapter_01_core.md` to learn the basic mechanics.
-3.  **Create a Colonist**: Follow `chapter_02_character_creation.md` to roll up your first survivor.
+2.  **Generate Rulebook**:
+    ```bash
+    node scripts/build_rulebook.js
+    ```
+    Open `output/RimWorldRPG_Rulebook.html` in your browser.
+3.  **Read Chapter 1**: Start with `chapters/chapter_01_core.md` or the HTML rulebook.
+4.  **Create a Colonist**: Run `node scripts/lifepath_generator.js` or follow Chapter 2.
 4.  **Survive**: Gather your friends, pick a Storyteller, and try not to become a cowboy hat.
 
 ---

@@ -3,17 +3,18 @@ const path = require('path');
 
 // List of chapters in order
 const chapters = [
-    'chapter_01_core.md',
-    'chapter_02_character_creation.md',
-    'chapter_03_skills_and_checks.md',
-    'chapter_04_combat_and_survival.md',
-    'chapter_05_equipment.md',
-    'chapter_06_colony.md',
-    'chapter_07_world.md'
+    '../chapters/chapter_01_core.md',
+    '../chapters/chapter_02_character_creation.md',
+    '../chapters/chapter_03_skills_and_checks.md',
+    '../chapters/chapter_04_combat_and_survival.md',
+    '../chapters/chapter_05_equipment.md',
+    '../chapters/chapter_06_colony.md',
+    '../chapters/chapter_07_world.md',
+    '../chapters/chapter_08_storyteller.md'
 ];
 
-const outputFileName = 'RimWorldRPG_Rulebook.html';
-const cssFileName = 'rulebook_styles.css';
+const outputFileName = '../output/RimWorldRPG_Rulebook.html';
+const cssFileName = '../styles/rulebook_styles.css';
 
 function buildRulebook() {
     console.log('Building Rulebook (Client-Side Rendering)...');

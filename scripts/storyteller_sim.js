@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 // --- Load Data ---
-const dataPath = path.join(__dirname, 'data', 'events.json');
+const dataPath = path.join(__dirname, '../data', 'events.json');
 const rawData = fs.readFileSync(dataPath);
 const EVENTS = JSON.parse(rawData);
 

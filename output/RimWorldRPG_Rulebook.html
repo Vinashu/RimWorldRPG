@@ -672,49 +672,93 @@ Life on the Rim is desperate. You can push yourself beyond your limits.
 *   **Progress**: Research is a **Long Task** that requires cumulative successes to unlock.
 
 
-# Chapter 4: Combat & Damage
+# Chapter 4: Survival & Combat
 
-When diplomacy fails, the Rim demands violence. Combat is dangerous, bloody, and often fatal.
+Life on the Rim is a constant struggle against hunger, madness, and violent death. This chapter covers the rules for keeping your colonists alive—both physically and mentally.
 
 ---
 
-## The Combat Sequence
-Combat is chaotic but structured. We use a **Dynamic Turn System**.
+## Part 1: Survival & Needs
 
-### 1. Initiative Roll
-At the start of combat, the Players make a **Group Initiative Roll**.
-*   Roll **1d10**.
-*   **6-10**: **Players go first**.
-*   **1-5**: **Enemies go first**.
+Your colonists are not just stats on a page; they are people with needs. Ignoring these needs leads to **Stress**, and eventually, **Mental Breaks**.
+
+### The 5 Core Needs
+1.  **Food**: Colonists must eat every day.
+    *   *Requirement*: 2 Meals per day.
+    *   *Penalty*: Gain **+1 Stress** per missed meal. After 3 days, start taking **1d10 Damage** per day (Starvation).
+2.  **Rest**: Colonists must sleep.
+    *   *Requirement*: 8 hours of sleep.
+    *   *Penalty*: Gain **+1 Stress** per night of poor/missed sleep. Become **Fatigued** (-2 to all pools).
+3.  **Recreation**: "All work and no play makes a dull boy."
+    *   *Requirement*: 2-3 hours of dedicated leisure time (Socializing, Horseshoes, TV).
+    *   *Penalty*: Gain **+1 Stress** if Recreation is ignored for 2+ days.
+4.  **Beauty**: Living in a dump is depressing.
+    *   *Requirement*: Clean rooms, art, paved floors.
+    *   *Penalty*: Gain **+1 Stress** after spending a designated Scene in an "Ugly" environment (blood, vomit, dirt).
+5.  **Comfort**: Sleeping on the floor hurts.
+    *   *Requirement*: Chairs, beds, temperature control.
+    *   *Penalty*: Gain **+1 Stress** after sleeping on the ground or in extreme heat/cold.
+
+### Stress & Mental Breaks
+Stress is the silent killer. As unmet needs pile up, the mind begins to fracture.
+
+#### Gaining Stress
+*   **Unmet Needs**: See above.
+*   **Pushing a Roll**: +1 Stress (voluntary effort).
+*   **Witnessing Death**: +1 Stress.
+*   **Pain**: +1 Stress per day if suffering from Untended Wounds or Painful Scars.
+
+#### The Stress Die
+For every point of accumulated Stress, add **1d6** to your dice pool for ALL rolls.
+*   **The Benefit**: The d6 result adds to your total (helping you hit Tier 2/3). Stress focuses the mind... briefly.
+*   **The Risk**: If you roll a **1** on *any* Stress Die, you trigger a **Panic Check**.
+
+#### Panic Check (Mental Break)
+When a Panic Check is triggered, roll \`1d6 + Current Stress\`. Consult the table below.
+
+| Result | Break Type | Effect |
+| :--- | :--- | :--- |
+| **1-6** | **Anxious** | **Trembling**: -2 to all Dexterity/Shooting rolls for 1 hour. |
+| **7-9** | **Minor Break** | **Hide within Room**: Character refuses to act for 1d4 hours. |
+| **10-12** | **Major Break** | **Sad Wander**: Character walks towards danger or away from the colony, ignoring commands. |
+| **13+** | **Extreme Break** | **Berserk**: Character attacks nearest creature (friend or foe) for 1d6 rounds. |
+
+**Relieving Stress**:
+Stress resets to 0 after:
+*   A full night's sleep in a decent (Excellent+) bed.
+*   A "Catharsis" event (completing a Mental Break).
+*   Specific Recreation activities (e.g., specific drugs, social parties).
+
+---
+
+## Part 2: Combat
+
+When diplomacy fails, the Rim demands violence. Combat is dangerous, bloody, and often fatal.
+
+### The Combat Sequence
+Combat uses a **Dynamic Turn System**.
+1.  **Initiative**: Players roll **1d10** (Group Check).
+    *   **6-10**: Players act first.
+    *   **1-5**: Enemies act first.
+2.  **Turns**: Alternate between sides (Player -> Enemy -> Player -> Enemy).
+3.  **Round**: Ends when all combatants have acted.
 
 > **Example: Initiative**
 > **John**: "The raiders burst through the door! Roll for Initiative."
 > **Mary**: "Okay, rolling a d10." *(Rolls a 7)*. "I got a 7!"
 > **John**: "That's between 6 and 10. The Players go first. Viper acts before the raiders."
 
-### 2. The Flow of Battle
-Combat turns **alternate** between sides.
-1.  **Side A** (Winner of Initiative) picks **one character** to act.
-2.  That character takes their full **Turn**.
-3.  **Side B** picks **one character** to act.
-4.  That character takes their full **Turn**.
-5.  Repeat until all characters on both sides have acted. This completes the **Round**.
+### The Action Economy (4 AP)
+On your turn, spend **4 Action Points (AP)**.
 
-*Note: If one side has more combatants, they take all remaining turns at the end of the round.*
-
----
-
-## The Action Economy (4 AP)
-On your turn, you have **4 Action Points (AP)** to spend. You can spend them in any combination.
-
-### Actions
-*   **Attack (2 AP)**: Make a Shooting or Melee attack.
-*   **Move (1 AP)**: Move up to your Speed (Default 6 squares).
-*   **Minor Action (1 AP)**:
-    *   **Aim**: Gain **Augmented** on your next attack this turn.
-    *   **Take Cover**: Gain **Edge** on Defense (if applicable) or impose **Bane** on attackers.
-    *   **Aid**: Give **Edge** to an ally's next roll.
-    *   **Use Item**: Drink a potion, reload, or switch weapons.
+| Action | Cost | Description |
+| :--- | :--- | :--- |
+| **Move** | 1 AP | Move up to Speed (Default 6 squares/hexes). |
+| **Attack** | 2 AP | Make a Shooting or Melee attack. |
+| **Aim** | 1 AP | Gain **Augmented** (+1d10, drop lowest) on next attack. |
+| **Take Cover** | 1 AP | Impose **Bane** on incoming attacks. |
+| **Aid** | 1 AP | Give **Edge** (+2 next roll) to an ally. |
+| **Use Item** | 1 AP | Drink potion, reload, switch weapon. |
 
 ### Common Combos
 *   **The Skirmisher**: Move (1) + Attack (2) + Take Cover (1).
@@ -727,25 +771,18 @@ On your turn, you have **4 Action Points (AP)** to spend. You can spend them in 
 > **Mary**: "I'll spend **1 AP** to Move behind the sandbags. Then I'll spend **1 AP** to Aim at the leader."
 > **Mary**: "I have 2 AP left, so I'll spend **2 AP** to Attack with my rifle."
 
----
+### Attack Resolution
+Attacks always hit; the quality determines the damage.
+**Roll**: \`2d10 + Attribute + Skill\`
 
-## Attack Resolution: "Always Hit"
-In this system, **attacks always land**. The question is not *if* you hit, but *how well* you hit.
-
-**The Roll**:
-> **2d10 + Attribute + Skill Modifier**
-
-*   **Shooting**: Uses **Dexterity**.
-*   **Melee**: Uses **Vigor**.
-
-**The Tiers**:
-Compare your total result to the Tiers below.
+*   **Shooting**: Uses Dexterity.
+*   **Melee**: Uses Vigor.
 
 | Result | Tier | Outcome |
 | :--- | :--- | :--- |
-| **11 or lower** | **Tier 1: Weak Hit** | You graze the target. Deal **Half Damage**. |
-| **12 - 16** | **Tier 2: Solid Hit** | You strike true. Deal **Full Damage**. |
-| **17 or higher** | **Tier 3: Critical Hit** | A devastating blow. Deal **Double Damage** AND roll for a **Major Injury**. |
+| **11 or lower** | **Tier 1: Weak Hit** | Deal **Half Damage**. |
+| **12 - 16** | **Tier 2: Solid Hit** | Deal **Full Damage**. |
+| **17 or higher** | **Tier 3: Critical Hit** | Deal **Double Damage** & Roll **Major Injury**. |
 
 > **Example: Attack Roll**
 > **John**: "You're Aiming, so you have **Augmented** on this shot. Roll 3d10 and keep the highest two."
@@ -753,49 +790,76 @@ Compare your total result to the Tiers below.
 > **Mary**: *(Rolls 4, 8, 9)* "I keep 8 and 9. That's 17 + 1 = 18."
 > **John**: "18 is a **Tier 3: Critical Hit**! You hit him right in the head."
 
----
+### Damage & Armor
+> **Damage = (Weapon Dmg x Tier Multiplier) - Armor Rating**
 
-## Damage & Armor
-
-### Calculating Damage
-1.  **Determine Tier**: (Half, Full, or Double).
-2.  **Apply Armor**: Subtract the target's **Armor Rating** from the damage.
-3.  **Apply to HP**: Subtract the remaining damage from Health.
-
-> **Damage = (Weapon Damage x Tier Multiplier) - Armor**
-
-*Example: A Rifle (Damage 6) hits a Raider (Armor 2).*
-*   *Tier 1*: (3) - 2 = **1 Damage**.
-*   *Tier 2*: (6) - 2 = **4 Damage**.
-*   *Tier 3*: (12) - 2 = **10 Damage** + Injury Roll.
+*   **HP**: Max HP = \`10 + (Vigor x 2)\`.
+*   **Downed**: At 0 HP, character is unconscious and bleeds out in \`Vigor\` hours unless tended.
 
 > **Example: Dealing Damage**
 > **John**: "Your Rifle does 6 Damage. Since it's a Tier 3 hit, you deal **Double Damage** (12)."
 > **John**: "The Raider is wearing a Flak Vest (Armor 3). So, 12 - 3 = **9 Damage** to his HP."
 
-### Health (HP)
-> **Max HP = 10 + (Vigor x 2)**
-
-### Major Injuries (Tier 3 Effect)
-If you land a **Tier 3 Critical Hit**, roll **1d6** for an additional effect:
+### Major Injuries & Body Parts
+If a **Tier 3 Critical Hit** occurs (or specific traps/events), roll **1d6** for the Injury.
 
 | d6 | Injury | Effect |
 | :--- | :--- | :--- |
-| **1-3** | **Bleeding** | Target takes **1 Damage** at the start of every turn until Tended. |
-| **4** | **Broken Bone** | Target suffers **Impaired** on all physical actions. Speed halved. |
-| **5** | **Concussion** | Target suffers **Impaired** on all mental actions. Cannot use Skills. |
-| **6** | **Severed / Lethal** | Target loses a limb OR is immediately **Downed**. |
+| **1-3** | **Bleeding** | Take **1 Damage/turn** until tended. |
+| **4** | **Broken Bone** | **Impaired** on physical actions. Speed halved. |
+| **5** | **Concussion** | **Impaired** on mental actions. Skills disabled. |
+| **6** | **Severed Part** | Loses a limb. Roll d4: (1) Hand, (2) Arm, (3) Foot, (4) Leg. |
 
 > **Example: Critical Effect**
 > **John**: "Since it was a Critical Hit, roll 1d6 for a Major Injury."
 > **Mary**: *(Rolls a 6)* "A 6! What does that do?"
 > **John**: "**Severed / Lethal**. You blew his head off. He's down immediately."
 
----
+#### Body Part Banes (Permanent)
+Losing parts imposes permanent penalties until replaced (Prosthetics/Bionics).
 
-## Death & Downed
+*   **Missing Hand**: **+1 Bane** to Shooting, Melee, Crafting, Medicine. Cannot dual-wield.
+*   **Missing Arm**: **+2 Bane** to above. Cannot use two-handed items (Rifles, Greatswords).
+*   **Missing Foot**: **+1 Bane** to Movement rolls. **-1 Speed**.
+*   **Missing Leg**: **+2 Bane** to Movement rolls. **-2 Speed**. Cannot Sprint.
+*   **Missing Eye**: **+1 Bane** to Shooting and Perception.
+*   **Missing Ear**: **+1 Bane** to Social (Hard of hearing) and Awareness.
+
+### Death & Downed
 *   **0 HP**: You are **Downed**. You are unconscious and helpless.
 *   **Death**: If you take damage while Downed, or if you are not tended within **1 hour**, you die.
+
+---
+
+## Part 3: Expeditions (Caravans)
+
+Leaving the safety of your map tile is necessary for trade and raiding.
+
+### Travel Speed
+Movement is measured in **Hexes per Day**.
+*   **Base Speed**: 1 Hex/Day.
+*   **Modifiers**:
+    *   **+1**: All colonists have mounts (Horses, Muffalos).
+    *   **+1**: Traveling on Roads.
+    *   **-1**: Difficult Terrain (Mountains, Swamp) or Winter.
+
+### Foraging & Rations
+Each day of travel requires food.
+1.  **Rations**: Consume 2 Meals per person.
+2.  **Foraging**: If no rations, make a **Plants** check (Difficulty 12).
+    *   *Success*: Find fully sufficient wild food.
+    *   *Failure*: Everyone gains **+1 Stress** and Starvation begins.
+
+### Ambushes
+The Rim is not empty. For every 3 hexes traveled, the GM (Storyteller) rolls for an event.
+*   **Stealth Check**: Players can roll **Intellectual** (Scanning) or **Animals** (Scouting) to detect threats early.
+    *   *Success*: You spot the ambush. You determine the engagement distance or evade.
+    *   *Failure*: You are ambushed. Enemies start with Initiative and Cover.
+
+### Carrying Capacity
+*   Colonists carry personal gear.
+*   **Pack Animals** (Muffalo, Alpaca) are required for heavy trade goods (Statues, vast amounts of Steel).
+*   *Overburdened*: If carrying too much, Base Speed becomes **0.5 Hexes/Day**.
 
 
 # Chapter 5: Equipment & Economy
@@ -1138,62 +1202,364 @@ Relationships are measured by **Goodwill**, ranging from **-100 to +100**.
 | **Neutral** | -9 to +74 | Will trade. Will not attack unprovoked. |
 | **Hostile** | -100 to -10 | Will attack on sight. Cannot trade. |
 
-### Changing Goodwill
-*   **Gifts**: Sending items or silver via Drop Pods (+1 Goodwill per 150 Silver value).
-*   **Quests**: Completing missions for the faction (+10 to +50 Goodwill).
-*   **Rescuing**: Tending to a fallen faction member and releasing them healthy (+15 Goodwill).
-*   **Attacking**: Harming a member or stealing (-Goodwill based on damage).
+### Major Factions
+1.  **Civil Outlander Union** (Industrial): Survivors trying to rebuild. Friendly. Sources of Components/Medicine.
+2.  **Rough Pig Union** (Industrial): Tough, xenophobic pig-people. Interactions are tense.
+3.  **Savage Tribe** (Neolithic): Aggressive warriors. Low tech, high numbers. Source of Pemmican/Jade.
+4.  **The Shattered Empire** (Spacer): Honor-bound remnants of a stellar empire. High-tech trade (Title required).
+5.  **Pirate Gangs** (Industrial): **Always Hostile**. Raiders who live to plunder.
 
----
-
-## Major Factions
-
-### 1. Civil Outlander Union
-*   **Tech Level**: Industrial.
-*   **Vibe**: Survivors trying to rebuild civilization. Generally friendly.
-*   **Trade**: Good source of Components, Medicine, and Firearms.
-
-### 2. Rough Pig Union
-*   **Tech Level**: Industrial.
-*   **Vibe**: Tough, xenophobic pig-people. Hard to befriend.
-*   **Trade**: Weapons and Food.
-
-### 3. Savage Tribe
-*   **Tech Level**: Neolithic.
-*   **Vibe**: Aggressive warriors who reject technology. Large numbers.
-*   **Trade**: Pemmican, Herbal Medicine, Jade, Slaves.
-
-### 4. The Shattered Empire
-*   **Tech Level**: Spacer (Ultra-tech).
-*   **Vibe**: Remnants of a star-spanning empire. Honor-bound and haughty.
-*   **Trade**: High-tech weapons, Psylink Neuroformers (requires Title).
-
-### 5. Pirate Gangs
-*   **Tech Level**: Industrial.
-*   **Vibe**: Raiders who live to plunder.
-*   **Trade**: **Always Hostile**. Cannot be befriended.
-
----
-
-## Social Interactions
+### Social Interactions
 Your **Social** skill determines how you interact with the world.
 
-### Trading
-As detailed in Chapter 5, your Social skill improves trade prices.
-*   **Bonus**: ±2% per Social Level.
-*   **Ally Bonus**: Stacks with the +10% Ally discount.
+*   **Trading**: ±2% price improvement per Social Level.
+*   **Recruitment**: Break down a prisoner's Will, then test Social to recruit.
+*   **Peace Talks**: Attend talks to boost Goodwill (+50) or ruin it further (-20).
 
-### Recruitment
-When you capture a prisoner, you can attempt to recruit them.
-1.  **Reduce Resistance**: Make Social checks to lower the prisoner's "Will".
-2.  **Recruit**: Once Will is 0, make a final Social check to recruit them into your colony.
-    *   *Difficulty*: Based on the prisoner's faction and traits.
+---
 
-### Peace Talks
-Occasionally, you may be invited to Peace Talks with a Hostile faction.
-*   **Check**: **Social (Diplomacy)**.
-*   **Success**: Large Goodwill boost (+50), potentially ending a war.
-*   **Failure**: Insulting the delegates, worsening relations (-20) or starting a fight.
+## Biomes
+
+The environment is often your deadliest enemy.
+
+### Temperate Forest
+*   **Description**: lush forests, moderate temperatures, rich soil.
+*   **Mechanics**:
+    *   **Baseline**: No special penalties.
+    *   **Disease**: Standard frequency.
+
+### Arid Shrubland & Desert
+*   **Description**: Hot, dry, endless sand and scrub.
+*   **Mechanics**:
+    *   **Heat**: Colonists without "Hot" suited apparel (Dusters, Cowboy Hats) gain **+1 Stress/Scene** during the day.
+    *   **Scarce Food**: **Bane** on Foraging checks.
+    *   **Movement**: Normal, but sand dunes may count as Difficult Terrain.
+
+### Boreal Forest & Tundra
+*   **Description**: Frozen pines, snow, and bitter cold.
+*   **Mechanics**:
+    *   **Cold**: Colonists without "Cold" suited apparel (Parkas, Tuques) take **1d4 Damage** every hour from Hypothermia.
+    *   **Snow**: Deep snow counts as **Difficult Terrain** (-1 Speed, or -1 Hex/Day).
+    *   **Short Growing Season**: Crops die in winter.
+
+### Tropical Rainforest
+*   **Description**: Choking vegetation, humid heat, and insects.
+*   **Mechanics**:
+    *   **Disease**: **Bane** on all Vigor checks to resist disease (Malaria, Sleeping Sickness).
+    *   **Dense**: Movement is slow (Difficult Terrain default).
+    *   **Cover**: Trees provided **Partial Cover** almost everywhere.
+
+---
+
+## Bestiary
+
+### Stat Block Legend
+*   **Attributes**: Vigor / Dexterity / Mind.
+*   **Skills**: Notable skills (Shooting +1, Melee +2, etc.).
+*   **HP**: Health Points.
+*   **Armor**: Sharp / Blunt resistance (generic Armor Rating).
+*   **Attack**: Weapon (Dmg / AP).
+
+### Animals
+Wild beasts of the Rim.
+
+| Creature | Vig/Dex/Mnd | HP | Armor | Attack | Notes |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Muffalo** | 4 / 0 / 0 | 25 | 1 | Headbutt (4) | Pack animal. Yields Bluefur/Meat. |
+| **Warg** | 3 / 2 / 1 | 18 | 1 | Bite (6) | **Fast**. Cannot graze. |
+| **Boomalope** | 2 / 0 / 0 | 14 | 0 | Bump (2) | **Explodes** on death (3d10 Fire Dmg in 2u radius). |
+| **Thrumbo** | 8 / 2 / 2 | 60 | 6 | Horn (10/AP2)| **Legendary**. Extremely dangerous. |
+
+### Insects
+The hive mind beneath the mountains.
+
+| Creature | Vig/Dex/Mnd | HP | Armor | Attack | Notes |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Megascarab** | 1 / 2 / 0 | 8 | 1 | Mandibles (3) | Swarms. Hard to hit. |
+| **Spelopede** | 3 / 1 / 0 | 16 | 2 | Dig (5) | Medium threat. |
+| **Megaspider** | 5 / 1 / 1 | 30 | 4 | Claw (8/AP1) | **Tank**. Frontline warrior. |
+
+### Mechanoids
+Killing machines left by ancient wars.
+
+| Mechanoid | Vig/Dex/Mnd | HP | Armor | Attack | Notes |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Lancer** | 3 / 4 / 3 | 20 | 3 | Charge Lance (12/AP4)| **Sniper**. Long range. Glass cannon. |
+| **Scyther** | 4 / 4 / 0 | 25 | 4 | Blades (8/AP2) | **Melee**. Sprints (Speed 8). |
+| **Centipede** | 6 / 1 / 1 | 60 | 8 | Heavy Blaster (6 Area)| **Boss**. Slow. Suppression fire. |
+
+### Human Threats
+Raiders come in many forms.
+
+**1. Tribal Warrior** (Neolithic)
+*   **Stats**: 2 / 1 / 0. **HP**: 14. **Armor**: 0 (Tribalwear).
+*   **Weapon**: Ikwa (4) or Short Bow (3).
+*   **Tactic**: Zerg rush. They rely on numbers.
+
+**2. Pirate Gunner** (Industrial)
+*   **Stats**: 2 / 2 / 1. **HP**: 14. **Armor**: 3 (Flak Vest).
+*   **Weapon**: Autopistol (4) or Bolt-Action Rifle (6).
+*   **Tactic**: Uses cover, flanks.
+
+**3. Elite Mercenary** (Spacer)
+*   **Stats**: 4 / 3 / 2. **HP**: 20. **Armor**: 6 (Marine Armor).
+*   **Weapon**: Charge Rifle (8/AP2).
+*   **Tactic**: coordinated, high threat.
+
+
+# Chapter 8: The Storyteller (GM Section)
+
+Welcome, Storyteller. You are the architect of chaos, the hand of fate, and the voice of the Rim itself. This chapter provides you with the tools to run engaging, challenging, and memorable RimWorld TTRPG sessions.
+
+---
+
+## Part 1: Running the Game
+
+### Your Role as Storyteller
+You are not the players' enemy—you are their **narrator** and **challenge designer**. Your job is to:
+*   **Create Drama**: Introduce threats, opportunities, and moral dilemmas.
+*   **Be Fair**: Don't fudge dice to kill characters, but don't pull punches either.
+*   **Embrace Chaos**: RimWorld is about emergent stories. Let the dice and player choices drive the narrative.
+
+### Pacing and Tone
+RimWorld alternates between **quiet colony-building** and **explosive crises**.
+
+**The Colony Phase** (Downtime):
+*   Players assign colonists to tasks (farming, crafting, research).
+*   Use this time for character development, social interactions, and planning.
+*   Duration: 3-7 in-game days per session.
+
+**The Crisis Phase** (Events):
+*   Introduce threats: raids, disasters, or opportunities.
+*   Keep combat fast and brutal.
+*   Duration: 1-2 hours of real-time play.
+
+**Balance**: Aim for a 60/40 split (60% colony-building, 40% crisis). Adjust based on player preference.
+
+---
+
+## Part 2: Storyteller Personas
+
+Choose a Storyteller persona to guide your event pacing. You can switch personas between sessions or campaigns.
+
+### Cassandra Classic
+*   **Style**: Steady escalation. Predictable but relentless.
+*   **Pacing**: Events occur every 4-6 days. Major threats scale with colony wealth.
+*   **Best For**: New players who want a fair, balanced challenge.
+
+**Event Frequency**:
+*   **Days 1-10**: Minor events only.
+*   **Days 11-30**: Mix of Minor and Major events.
+*   **Days 31+**: All event types, weighted by wealth.
+
+### Randy Random
+*   **Style**: Pure chaos. Anything can happen at any time.
+*   **Pacing**: Roll for an event every 2-3 days. Ignore wealth scaling.
+*   **Best For**: Experienced players who want unpredictability.
+
+**Event Frequency**:
+*   Roll **1d6** every 2-3 days:
+    *   **1-2**: Minor event.
+    *   **3-4**: Major event.
+    *   **5-6**: Extreme event (even on Day 1!).
+
+### Phoebe Chillax
+*   **Style**: Relaxed. Long breaks between threats.
+*   **Pacing**: Events occur every 8-12 days. Gentle difficulty curve.
+*   **Best For**: Players who want to focus on base-building and roleplay.
+
+**Event Frequency**:
+*   **Days 1-20**: Minor events only, infrequent.
+*   **Days 21+**: Occasional Major events. Extreme events are rare.
+
+---
+
+## Part 3: Scenarios
+
+Scenarios define the starting conditions for your campaign. Each has unique challenges and flavor.
+
+### 1. Crashlanded (Standard)
+*   **Colonists**: 3 random survivors.
+*   **Starting Gear**: Basic weapons (Revolver, Bolt-Action Rifle), some food, minimal materials.
+*   **Challenge**: Balanced. Players must quickly establish food, shelter, and defense.
+*   **First Goal**: Build beds, plant crops, construct walls.
+
+**Setup**:
+*   Each player creates 1 colonist using the Lifepath (Chapter 2).
+*   GM assigns a random 3rd colonist (NPC or shared control).
+*   Starting Wealth: **1,500 Silver**.
+
+### 2. Naked Brutality (Hard)
+*   **Colonists**: 1 lone survivor.
+*   **Starting Gear**: Nothing. Literally naked.
+*   **Challenge**: Extreme. Every decision matters.
+*   **First Goal**: Survive the first night. Find food and shelter.
+
+**Setup**:
+*   Single player creates 1 colonist.
+*   Starting Wealth: **0 Silver**.
+*   GM should be merciful with early events (Minor only for first 10 days).
+
+### 3. Rich Explorer (Solo)
+*   **Colonists**: 1 well-equipped explorer.
+*   **Starting Gear**: Advanced weapons (Charge Rifle), Marine Armor, survival supplies.
+*   **Challenge**: Moderate. Solo play, but well-resourced.
+*   **First Goal**: Establish a base, recruit allies.
+
+**Setup**:
+*   Single player creates 1 colonist with high skills.
+*   Starting Wealth: **5,000 Silver**.
+*   GM should introduce recruitment opportunities early.
+
+### 4. Tribal Start (Low-Tech)
+*   **Colonists**: 5 tribal members.
+*   **Starting Gear**: Neolithic weapons (Bows, Ikwas), tribal clothing.
+*   **Challenge**: Moderate. Large group, but limited tech.
+*   **First Goal**: Research basics (Smithing, Electricity).
+
+**Setup**:
+*   Players create 3-5 colonists with Tribal backgrounds.
+*   Starting Wealth: **800 Silver**.
+*   Research starts at **Neolithic** level.
+
+---
+
+## Part 4: Event Generation
+
+Events are the heartbeat of RimWorld. Use these tables to generate challenges and opportunities.
+
+### Event Frequency
+Roll for an event based on your chosen Storyteller persona (see Part 2).
+
+### Event Tables
+
+#### Minor Events (Low Impact)
+Roll **1d10** or choose:
+
+| d10 | Event | Description |
+| :--- | :--- | :--- |
+| **1** | **Cargo Pods (Food)** | Free meals fall from the sky. +20 Meals. |
+| **2** | **Cargo Pods (Materials)** | Free resources. +50 Steel or +30 Components. |
+| **3** | **Wanderer Joins** | A stranger asks to join. Roll a random colonist. |
+| **4** | **Eclipse** | Total darkness for 1 day. Solar power fails. Mood penalty. |
+| **5** | **Solar Flare** | Electronics disabled for 2 hours. Turrets offline. |
+| **6** | **Mad Animal** | 1 animal goes berserk. Attacks nearest colonist. |
+| **7** | **Visitor Group** | Friendly faction visits. Opportunity to trade or socialize. |
+| **8** | **Trade Caravan** | Traders arrive. Buy/sell goods. |
+| **9** | **Quest Offer** | Faction requests aid (see Part 5: Quests). |
+| **10** | **Inspiration** | 1 colonist gains **Edge** on all rolls for 1 day. |
+
+#### Major Events (High Impact)
+Roll **1d10** or choose:
+
+| d10 | Event | Description |
+| :--- | :--- | :--- |
+| **1** | **Raid (Tribal)** | 5-10 tribal warriors attack. Low tech, high numbers. |
+| **2** | **Raid (Pirate)** | 3-6 pirates with guns. Uses cover and tactics. |
+| **3** | **Manhunter Pack** | 8-15 animals (Wargs, Boars) attack on sight. |
+| **4** | **Toxic Fallout** | Poison rain for 3-7 days. Colonists outside take 1 Dmg/hour. |
+| **5** | **Cold Snap** | Temperature drops. Risk of Hypothermia (see Chapter 7). |
+| **6** | **Heat Wave** | Temperature spikes. Risk of Heat Stroke (+1 Stress/Scene). |
+| **7** | **Infestation** | Insect hive spawns in your base. 3-6 Megascarabs. |
+| **8** | **Psychic Drone** | All colonists gain +2 Stress/day for 5 days. |
+| **9** | **Peace Talks** | Hostile faction offers negotiations. Social challenge. |
+| **10** | **Prisoner Escape** | If you have prisoners, they attempt a breakout. |
+
+#### Extreme Events (Catastrophic)
+Roll **1d6** or choose:
+
+| d6 | Event | Description |
+| :--- | :--- | :--- |
+| **1** | **Raid (Mechanoid)** | 2-4 Mechanoids (Lancers, Scythers). Deadly. |
+| **2** | **Raid (Siege)** | Pirates set up mortars. Bombard your base from range. |
+| **3** | **Volcanic Winter** | Ash blocks sun for 20 days. Crops die. Freezing temps. |
+| **4** | **Mass Animal Insanity** | All animals on map go berserk. Chaos. |
+| **5** | **Defoliator Ship** | Crashed ship kills all plants in 1 hex radius/day. Must destroy it. |
+| **6** | **Insect Hive Emergence** | Massive hive spawns. 10+ insects including Megaspiders. |
+
+### Story Die Integration
+When an event occurs, roll the **Story Die** (1d10) alongside player actions:
+*   **1 (Complication)**: Event is worse than expected (more enemies, longer duration).
+*   **10 (Inspiration)**: Event has a silver lining (bonus loot, early warning).
+
+---
+
+## Part 5: Quests
+
+Quests add variety and reward player initiative.
+
+### Quest Types
+
+**1. Rescue Mission**
+*   **Setup**: Faction member is captured/injured nearby.
+*   **Challenge**: Travel to location, fight captors, escort survivor back.
+*   **Reward**: +15 Goodwill, potential recruit.
+
+**2. Trade Request**
+*   **Setup**: Faction needs specific items (Medicine, Components, Food).
+*   **Challenge**: Deliver goods via caravan.
+*   **Reward**: +10 Goodwill, Silver payment (150% of item value).
+
+**3. Raid Assistance**
+*   **Setup**: Ally faction is under attack. Requests military aid.
+*   **Challenge**: Travel to their base, defend against raiders.
+*   **Reward**: +25 Goodwill, bonus trade goods.
+
+**4. Artifact Recovery**
+*   **Setup**: Ancient structure contains valuable tech.
+*   **Challenge**: Navigate traps, fight guardians (Mechanoids).
+*   **Reward**: Advanced weapons, Components, or Psylink Neuroformer.
+
+### Quest Frequency
+Offer 1 quest every 10-15 days. Players can decline, but repeated refusals may lower Goodwill.
+
+---
+
+## Part 6: Wealth Management
+
+Colony wealth determines threat level. As players accumulate resources, enemies grow stronger.
+
+### Calculating Wealth
+**Wealth** = (Buildings + Items + Colonists) in Silver value.
+*   **Buildings**: 100 Silver per structure.
+*   **Items**: Market Value (see Chapter 5).
+*   **Colonists**: 1,500 Silver each.
+
+### Threat Scaling
+Use wealth to scale enemy strength:
+
+| Wealth | Threat Level | Enemy Count | Enemy Quality |
+| :--- | :--- | :--- | :--- |
+| **0-2,000** | **Low** | 3-5 enemies | Tribal, weak gear. |
+| **2,001-5,000** | **Medium** | 5-8 enemies | Pirates, basic guns. |
+| **5,001-10,000** | **High** | 8-12 enemies | Mixed gear, some armor. |
+| **10,001-20,000** | **Very High** | 12-18 enemies | Advanced weapons, Mechanoids. |
+| **20,001+** | **Extreme** | 20+ enemies | Siege weapons, Centipedes, Elite Mercs. |
+
+### Balancing Tips
+*   **Don't Punish Success**: Wealth scaling should challenge, not punish. If players are struggling, reduce event frequency.
+*   **Reward Preparation**: If players invest in defenses (turrets, walls), let those defenses work.
+*   **Vary Threats**: Don't just send bigger raids. Use environmental disasters, infestations, and social challenges.
+
+---
+
+## Part 7: Final Advice
+
+### Embrace Failure
+RimWorld stories are best when things go wrong. A colonist's death, a failed defense, a mental break—these create drama. Don't save players from consequences, but give them tools to recover.
+
+### Let Players Drive
+If players want to focus on trading instead of combat, let them. If they want to raid pirates, support it. The best sessions emerge from player agency.
+
+### Use the Story Die
+The Story Die (1d10) is your secret weapon. It turns predictable events into memorable moments. A "1" on a raid roll might mean the raiders brought a Doomsday Rocket Launcher. A "10" might mean they're drunk and disorganized.
+
+### Have Fun
+You're not writing a novel—you're facilitating chaos. Laugh at disasters, celebrate victories, and remember: **every scar tells a story**.
+
+---
+
+*"The Rim is a harsh teacher. But those who survive? They become legends."*
 
 
 `;
