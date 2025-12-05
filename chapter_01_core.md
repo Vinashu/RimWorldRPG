@@ -39,9 +39,9 @@ The total Result determines what happens. We don't use a binary Pass/Fail. **You
 
 | Result | Tier | Outcome |
 | :--- | :--- | :--- |
-| **11 or lower** | **Tier 1: Struggle** | **Success with a Major Cost**. You hit the raider but deal half damage. You bandage the wound but use 2x Medicine. You make the deal but pay 20% more. |
-| **12 - 16** | **Tier 2: Success** | **Standard Success**. You achieve your goal exactly as intended. |
-| **17 or higher** | **Tier 3: Triumph** | **Critical Success**. You achieve your goal with style. You deal double damage, heal instantly, or get a discount. |
+| **11 or lower** | **Tier 1 (Struggle)** | **Success with a Major Cost**. You hit the raider but deal half damage. You bandage the wound but use 2x Medicine. You make the deal but pay 20% more. |
+| **12 - 16** | **Tier 2 (Success)** | **Standard Success**. You achieve your goal exactly as intended. |
+| **17 or higher** | **Tier 3 (Triumph)** | **Critical Success**. You achieve your goal with style. You deal double damage, heal instantly, or get a discount. |
 
 ### Modifiers
 Circumstances can help or hinder you.
@@ -50,14 +50,12 @@ Circumstances can help or hinder you.
 *   **Double Edge**: If you have 2+ sources of Edge, shift your Result **UP one Tier** (e.g., Tier 2 becomes Tier 3).
 *   **Double Bane**: If you have 2+ sources of Bane, shift your Result **DOWN one Tier**.
 *   **Cancel**: If a Player has one **Edge** and one **Bane**, they will cancel each other out. If you have more sources of Edge than Bane, you can cancel all sources of Bane and keep with one source of Edge. The same in the other way around.
-*   **Augmented (3d10)**: You have a major advantage (bionics, drugs, perfect position). Roll **3d10** and keep the **2 Highest**.
-*   **Impaired (3d10)**: You have a major disadvantage (blindness, toxicity, suppression). Roll **3d10** and keep the **2 Lowest**.
+*   **Augmented (3d10)**: You have a major advantage (bionics, drugs, perfect position). Roll **3d10** and keep the **2 Highest**. Replaces standard roll (Edge/Bane do not apply).
+*   **Impaired (3d10)**: You have a major disadvantage (blindness, toxicity, suppression). Roll **3d10** and keep the **2 Lowest**. Replaces standard roll (Edge/Bane do not apply).
 
 *Note: Edge/Bane are additive. Augmented/Impaired replace the standard roll.*
 
-*Note: Augmented/Impaired are not additive. You can only have one at a time, and they cancel any number of Edge/Bane.*
-
-*Note: The result of the Story Die is **always** applied, even its value is discarded in an Augmented or Impaired roll.*
+*Note: The result of the Story Die is **always** applied, even if its value is discarded in an Augmented or Impaired roll.*
 
 ### Pushing Your Luck
 Life on the Rim is desperate. You can push yourself beyond your limits.
@@ -80,7 +78,7 @@ If the Story Die shows a **1**, something unexpected but positive happens.
 If the Story Die shows a **10**, something dangerous happens.
 *   **Effect**: You suffer a **Bane** on your next roll, or it will affect your stress level or mood.
 *   *Narrative*: You shot the mechanoid perfectly (Tier 3), but your barrel overheated. Your next shot will be harder.
-*   *Marratove*: You work harder to finish a section of the wall (Tier 3), but you are too tired and feel stressed.
+*   *Narrative*: You work harder to finish a section of the wall (Tier 3), but you are too tired and feel stressed.
 
 ### Inspiration Points
 You can spend an Inspiration Point to:
@@ -98,11 +96,11 @@ Time on the Rim is tracked in specific units to manage survival.
 
 ### The Day
 A standard day has 24 hours, divided into **Action Slots** for Base Building:
-1.  **Morning** (4 hours)
-2.  **Afternoon** (4 hours)
-3.  **Evening** (4 hours)
-4.  **Sleep** (8 hours)
-*The remaining 4 hours are for meals and transitions.*
+1.  **Morning** (5 hours)
+2.  **Afternoon** (5 hours)
+3.  **Evening** (5 hours)
+4.  **Night** (8 hours - Sleep/Rest)
+*The remaining hour is for meals and transitions.*
 
 ### The Quadrum
 A year is divided into 4 seasons called **Quadrums**, each lasting **15 Days**.
