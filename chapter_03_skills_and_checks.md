@@ -9,6 +9,11 @@ To resolve any challenge, roll **2d10** and add your relevant **Attribute** and 
 
 > **Result = 2d10 + Attribute + Skill Modifier**
 
+> **Example: Basic Check**
+> **John**: "Viper is trying to negotiate a lower price for the medicine. This is a Standard Social check (DC 14)."
+> **Mary**: "Okay, Viper has **Spirit +1** and **Social 25 (+2)**. So I add +3 to my roll."
+> **Mary**: *(Rolls 2d10)* "I got a 6 and a 7. Total is 13 + 3 = 16. Success!"
+
 ### Difficulty Class (DC)
 The Game Master (Storyteller) sets the DC based on the complexity of the task.
 
@@ -35,9 +40,19 @@ Circumstances can help or hinder you.
 *   **Edge (+2)**: Minor advantage (High ground, good tools).
 *   **Bane (-2)**: Minor disadvantage (Darkness, poor tools).
 
+> **Example: Edge & Bane**
+> **John**: "You're shooting at the raider, but it's dark (**Bane**). However, you have a high-quality scope (**Edge**)."
+> **Mary**: "So the Edge and Bane cancel out?"
+> **John**: "Exactly. Just roll straight. 2d10 + Dexterity + Shooting."
+
 ### Double Modifiers
 *   **Double Edge**: If you have 2+ sources of Edge, shift your Result **UP one Tier** (e.g., Tier 2 becomes Tier 3).
 *   **Double Bane**: If you have 2+ sources of Bane, shift your Result **DOWN one Tier**.
+
+> **Example: Double Edge**
+> **John**: "You have the high ground (**Edge**) AND the raider is out in the open (**Edge**). That's **Double Edge**."
+> **Mary**: "So if I succeed, the result is upgraded?"
+> **John**: "Yes. A Success becomes a Critical Success. A Failure becomes a Success."
 
 ### Cancel Modifiers
 *   **Cancel**: If a Player has one **Edge** and one **Bane**, they will cancel each other out. If you have more sources of Edge than Bane, you can cancel all sources of Bane and keep with one source of Edge. The same in the other way around.
@@ -45,6 +60,11 @@ Circumstances can help or hinder you.
 ### Major Modifiers (3d10)
 *   **Augmented**: Major advantage (Bionics, drugs, perfect position). Roll **3d10** and keep the **2 Highest**.
 *   **Impaired**: Major disadvantage (Blindness, toxicity, suppression). Roll **3d10** and keep the **2 Lowest**.
+
+> **Example: Augmented**
+> **John**: "Viper has a bionic eye targeting system. That counts as **Augmented** for this shot."
+> **Mary**: "Okay, I roll **3d10** and keep the highest two."
+> **Mary**: *(Rolls 3, 8, 9)* "I keep the 8 and 9. Total 17 + Modifiers."
 
 *Note: You can not have both Edge and Augmented on the same roll.*
 
@@ -56,6 +76,12 @@ Circumstances can help or hinder you.
 Life on the Rim is desperate. You can push yourself beyond your limits.
 *   **The Push**: You can voluntarily add **+1d6** to your roll.
 *   **The Risk**: If the **d6** rolls a **1**, you trigger a **Panic Check** immediately after the action (regardless of success or failure).
+
+> **Example: The Push**
+> **Mary**: "I rolled an 11... I needed a 12 to fix the generator! Can I push it?"
+> **John**: "You can. Add **1d6** to the total, but if you roll a **1** on that die, you panic."
+> **Mary**: "I have to try. Come on..." *(Rolls d6)* "I got a 4! Total is 15. I fixed it!"
+> **John**: "You wipe the sweat from your brow. The generator hums to life."
 
 ---
 
