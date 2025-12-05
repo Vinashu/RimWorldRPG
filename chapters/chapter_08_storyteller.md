@@ -170,8 +170,8 @@ Roll **1d6** or choose:
 
 ### Story Die Integration
 When an event occurs, roll the **Story Die** (1d10) alongside player actions:
-*   **1 (Complication)**: Event is worse than expected (more enemies, longer duration).
-*   **10 (Inspiration)**: Event has a silver lining (bonus loot, early warning).
+*   **1 (Twist of Fate)**: Event has a silver lining (bonus loot, early warning).
+*   **10 (Complication)**: Event is worse than expected (more enemies, longer duration).
 
 ---
 
@@ -243,7 +243,7 @@ RimWorld stories are best when things go wrong. A colonist's death, a failed def
 If players want to focus on trading instead of combat, let them. If they want to raid pirates, support it. The best sessions emerge from player agency.
 
 ### Use the Story Die
-The Story Die (1d10) is your secret weapon. It turns predictable events into memorable moments. A "1" on a raid roll might mean the raiders brought a Doomsday Rocket Launcher. A "10" might mean they're drunk and disorganized.
+The Story Die (1d10) is your secret weapon. It turns predictable events into memorable moments. A "1" on a raid roll might mean they're drunk and disorganized (Twist of Fate). A "10" might mean the raiders brought a Doomsday Rocket Launcher (Complication).
 
 ### Have Fun
 You're not writing a novel—you're facilitating chaos. Laugh at disasters, celebrate victories, and remember: **every scar tells a story**.
