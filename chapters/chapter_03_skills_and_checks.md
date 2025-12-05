@@ -9,6 +9,11 @@ To resolve any challenge, roll **2d10** and add your relevant **Attribute** and 
 
 > **Result = 2d10 + Attribute + Skill Modifier**
 
+*Reminders from Chapter 1:*
+*   You always roll **two d10s**: one **Base Die** and one **Red Story Die**.
+*   The **Total** determines your Tier.
+*   The **Face** on the Story Die may trigger special effects (Twists or Complications).
+
 We do not use a "Pass/Fail" Difficulty Class. Instead, your Result determines the **Tier of Success**:
 
 | Result | Tier | Outcome |
