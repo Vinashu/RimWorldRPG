@@ -9,20 +9,24 @@ To resolve any challenge, roll **2d10** and add your relevant **Attribute** and 
 
 > **Result = 2d10 + Attribute + Skill Modifier**
 
-> **Example: Basic Check**
-> **John**: "Viper is trying to negotiate a lower price for the medicine. This is a Standard Social check (DC 14)."
-> **Mary**: "Okay, Viper has **Spirit +1** and **Social 25 (+2)**. So I add +3 to my roll."
-> **Mary**: *(Rolls 2d10)* "I got a 6 and a 7. Total is 13 + 3 = 16. Success!"
+We do not use a "Pass/Fail" Difficulty Class. Instead, your Result determines the **Tier of Success**:
 
-### Difficulty Class (DC)
-The Game Master (Storyteller) sets the DC based on the complexity of the task.
-
-| Difficulty | DC | Example |
+| Result | Tier | Outcome |
 | :--- | :--- | :--- |
-| **Routine** | 10 | Climbing a ladder, cooking a simple meal. |
-| **Standard** | 14 | Shooting a raider, performing surgery, negotiating a trade. |
-| **Hard** | 18 | Hacking a mechanoid, surgery in the dark, hitting a target behind cover. |
-| **Extreme** | 22 | Surviving a plague without medicine, convincing a pirate king to surrender. |
+| **11 or lower** | **Tier 1 (Struggle)** | **Success with a Major Cost**. You achieve your goal, but things get messy. You are spotted, you take damage, or it costs extra resources. |
+| **12 - 16** | **Tier 2 (Success)** | **Standard Success**. You achieve your goal cleanly and effectively. |
+| **17 or higher** | **Tier 3 (Triumph)** | **Critical Success**. You win. Double damage, half time, or extra benefits. |
+
+> **Example: Negotiating**
+> **John**: "Viper is trying to negotiate a lower price for the medicine."
+> **Mary**: "Okay, Viper has **Spirit +1** and **Social 25 (+2)**. So I add +3 to my roll."
+> **Mary**: *(Rolls 2d10)* "I got a 6 and a 7. Total is 13 + 3 = 16."
+> **John**: "That's a **Tier 2 Success**. The trader agrees to your price without complaint."
+
+### Where is the Difficulty?
+There are no "DCs" to beat. Difficulty is handled through **Modifiers** and **Narrative Consequences**.
+*   **Easy Task**: The Storyteller might rule it succeeds automatically, or grant an **Edge (+2)**.
+*   **Hard Task**: The Storyteller will apply a **Bane (-2)**, or warn that a Tier 1 result will have severe consequences.
 
 ### Skill Modifiers
 Your **Skill Points** (0-30) determine your modifier for the roll.
@@ -52,7 +56,7 @@ Circumstances can help or hinder you.
 > **Example: Double Edge**
 > **John**: "You have the high ground (**Edge**) AND the raider is out in the open (**Edge**). That's **Double Edge**."
 > **Mary**: "So if I succeed, the result is upgraded?"
-> **John**: "Yes. A Success becomes a Critical Success. A Failure becomes a Success."
+> **John**: "Yes. A Tier 2 Success becomes a Tier 3 Critical. Even a Tier 1 Struggle becomes a clean Tier 2 Success."
 
 ### Cancel Modifiers
 *   **Cancel**: If a Player has one **Edge** and one **Bane**, they will cancel each other out. If you have more sources of Edge than Bane, you can cancel all sources of Bane and keep with one source of Edge. The same in the other way around.
@@ -78,9 +82,9 @@ Life on the Rim is desperate. You can push yourself beyond your limits.
 *   **The Risk**: If the **d6** rolls a **1**, you trigger a **Panic Check** immediately after the action (regardless of success or failure).
 
 > **Example: The Push**
-> **Mary**: "I rolled an 11... I needed a 12 to fix the generator! Can I push it?"
-> **John**: "You can. Add **1d6** to the total, but if you roll a **1** on that die, you panic."
-> **Mary**: "I have to try. Come on..." *(Rolls d6)* "I got a 4! Total is 15. I fixed it!"
+> **Mary**: "I rolled an 11 (Tier 1)... I really need a clean success to fix the generator! Can I push it?"
+> **John**: "You can. Add **1d6** to the total to try and hit 12+, but if you roll a **1** on that die, you panic."
+> **Mary**: "I have to try. Come on..." *(Rolls d6)* "I got a 4! Total is 15. Tier 2 Success!"
 > **John**: "You wipe the sweat from your brow. The generator hums to life."
 
 ---
