@@ -49,3 +49,7 @@
 *   **Event Generation**: Tables for Minor, Major, and Extreme events.
 *   **Quests**: Generating missions and rewards.
 *   **Wealth Management**: How to scale difficulty.
+
+## Chapter 9: Quickstart
+*   **Quickstart**: A one-shot campaign for 2.5–4 hours.
+

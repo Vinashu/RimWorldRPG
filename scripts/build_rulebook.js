@@ -10,7 +10,8 @@ const chapters = [
     '../chapters/chapter_05_equipment.md',
     '../chapters/chapter_06_colony.md',
     '../chapters/chapter_07_world.md',
-    '../chapters/chapter_08_storyteller.md'
+    '../chapters/chapter_08_storyteller.md',
+    '../chapters/chapter_09_quickstart.md'
 ];
 
 const outputFileName = '../output/RimWorldRPG_Rulebook.html';

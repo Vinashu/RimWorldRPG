@@ -67,6 +67,8 @@ Use short stat blocks so this stays fast.
 
 ### 1) **Marla Kade — Tough Builder**
 
+![Marla Kade](../images/MarlaKade.png)
+
 **Attributes:** Body +2, Mind +1, Reflex 0, Social -1
 **Skills:** Construction +30, Shooting +20, Medicine +10
 **Trait:** **Tough** (reduce incoming damage)
@@ -74,6 +76,8 @@ Use short stat blocks so this stays fast.
 **Gear:** Knife, simple toolkit, 1x medkit
 
 ### 2) **Ivo Thorne — Calm Medic**
+
+![Ivo Thorne](../images/IvoThorne.png)
 
 **Attributes:** Mind +2, Social +1, Body 0, Reflex -1
 **Skills:** Medicine +30, Cooking +20, Social +10
@@ -83,6 +87,8 @@ Use short stat blocks so this stays fast.
 
 ### 3) **Sana Voss — Trigger-Happy Hunter**
 
+![Sana Voss](../images/SanaVoss.png)
+
 **Attributes:** Reflex +2, Body +1, Mind 0, Social -1
 **Skills:** Shooting +30, Animals +20, Melee +10
 **Trait:** **Bloodlust** (benefits under combat stress)
@@ -91,6 +97,8 @@ Use short stat blocks so this stays fast.
 
 ### 4) **Oren Pell — Smooth Talker** *(optional 4th)*
 
+![Oren Pell](../images/OrenPell.png)
+
 **Attributes:** Social +2, Mind +1, Reflex 0, Body -1
 **Skills:** Social +30, Crafting +20, Cooking +10
 **Trait:** **Kind** (helps morale)
@@ -98,6 +106,8 @@ Use short stat blocks so this stays fast.
 **Gear:** Trade goods, sidearm
 
 ### 5) **Tess Rook — Scrappy Researcher** *(optional 5th)*
+
+![Tess Rook](../images/TessRook.png)
 
 **Attributes:** Mind +2, Reflex +1, Social 0, Body -1
 **Skills:** Intellectual +30, Crafting +20, Shooting +10
