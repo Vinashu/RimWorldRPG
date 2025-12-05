@@ -6,7 +6,7 @@ const chapters = [
     'chapter_01_core.md',
     'chapter_02_character_creation.md',
     'chapter_03_skills_and_checks.md',
-    'chapter_04_combat.md',
+    'chapter_04_combat_and_survival.md',
     'chapter_05_equipment.md',
     'chapter_06_colony.md',
     'chapter_07_world.md'
