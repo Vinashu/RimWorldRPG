@@ -81,6 +81,19 @@ This repository includes JavaScript utilities to help run your game:
 
 ---
 
+## 🤖 AI Assistance Disclosure
+
+This project was developed with the assistance of **Google Antigravity** and various AI agents (primarily **Gemini**). These tools were used to:
+
+*   Refine and organize the rulebook content
+*   Check grammar and spelling
+*   Ensure consistency across chapters
+*   Verify alignment with the source material ([RimWorld Wiki](https://rimworldwiki.com/))
+
+The core game design, creative decisions, and overall vision remain the work of the human author.
+
+---
+
 ## 📄 License & Legal
 
 ### Code
