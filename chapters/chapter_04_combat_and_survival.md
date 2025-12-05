@@ -174,13 +174,13 @@ Each day of travel requires food.
 1.  **Rations**: Consume 2 Meals per person.
 2.  **Foraging**: If no rations, make a **Plants** check (Difficulty 12).
     *   *Success*: Find fully sufficient wild food.
-    *   *Failure*: Everyone gains **+1 Stress** and Starvation begins.
+    *   *Tier 1 (Struggle)*: Everyone gains **+1 Stress** and Starvation begins.
 
 ### Ambushes
 The Rim is not empty. For every 3 hexes traveled, the GM (Storyteller) rolls for an event.
 *   **Stealth Check**: Players can roll **Intellectual** (Scanning) or **Animals** (Scouting) to detect threats early.
     *   *Success*: You spot the ambush. You determine the engagement distance or evade.
-    *   *Failure*: You are ambushed. Enemies start with Initiative and Cover.
+    *   *Tier 1 (Struggle)*: You are ambushed. Enemies start with Initiative and Cover.
 
 ### Carrying Capacity
 *   Colonists carry personal gear.

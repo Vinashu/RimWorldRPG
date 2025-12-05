@@ -56,7 +56,7 @@ Circumstances can help or hinder you.
 > **Example: Double Edge**
 > **John**: "You have the high ground (**Edge**) AND the raider is out in the open (**Edge**). That's **Double Edge**."
 > **Mary**: "So if I succeed, the result is upgraded?"
-> **John**: "Yes. A Tier 2 Success becomes a Tier 3 Critical. Even a Tier 1 Struggle becomes a clean Tier 2 Success."
+> **John**: "Yes. A **Tier 2 (Success)** becomes a **Tier 3 (Triumph)**. A **Tier 1 (Struggle)** becomes a **Tier 2 (Success)**."
 
 ### Cancel Modifiers
 *   **Cancel**: If a Player has one **Edge** and one **Bane**, they will cancel each other out. If you have more sources of Edge than Bane, you can cancel all sources of Bane and keep with one source of Edge. The same in the other way around.
