@@ -92,8 +92,17 @@ function buildRulebook() {
     `;
 
     // Write output
-    fs.writeFileSync(path.join(__dirname, outputFileName), finalHtml);
+    const outputPath = path.join(__dirname, outputFileName);
+    fs.writeFileSync(outputPath, finalHtml);
     console.log(`Success! Rulebook generated at ${outputFileName}`);
+
+    // Copy to docs/index.html for GitHub Pages
+    const docsDir = path.join(__dirname, '../docs');
+    if (!fs.existsSync(docsDir)) {
+        fs.mkdirSync(docsDir, { recursive: true });
+    }
+    fs.copyFileSync(outputPath, path.join(docsDir, 'index.html'));
+    console.log('Copied to docs/index.html for GitHub Pages.');
 }
 
 buildRulebook();
