@@ -23,12 +23,12 @@ When trading, prices are adjusted by the trader's **Social** skill:
 ### Common Item Values
 | Item | Market Value | Materials | Crafting Points (CP) | Tech |
 | :--- | :--- | :--- | :--- | :--- |
-| **Meal (Simple)** | 15 | 10 Food | 10 | Neolithic |
-| **Meal (Fine)** | 25 | 20 Food | 20 | Medieval |
-| **Medicine (Herbal)** | 10 | - | - | Neolithic |
-| **Medicine (Industrial)** | 50 | 3 Cloth, 1 Neutroamine | 40 | Industrial |
-| **Component** | 30 | 12 Steel | 60 | Industrial |
-| **Advanced Component** | 200 | 1 Component, 20 Steel, 10 Plasteel, 3 Gold | 200 | Spacer |
+| **Meal (Simple)** | 15 | 10 Food | 10 | Neolithic 1 |
+| **Meal (Fine)** | 25 | 20 Food | 20 | Medieval 2 |
+| **Medicine (Herbal)** | 10 | - | - | Neolithic 2 |
+| **Medicine (Industrial)** | 50 | 3 Cloth, 1 Neutroamine | 40 | Industrial 2 |
+| **Component** | 30 | 12 Steel | 60 | Industrial 1 |
+| **Advanced Component** | 200 | 1 Component, 20 Steel, 10 Plasteel, 3 Gold | 200 | Spacer 1 |
 
 ---
 
@@ -44,34 +44,34 @@ Uses **Vigor** for attacks.
 | Weapon | Damage | AP | Market Value | Materials | CP | Tech | Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Fists** | 2 | 2 | - | - | - | - | Blunt. |
-| **Knife** | 3 | 2 | 30 | 15 Steel/Wood | 30 | Neolithic | Sharp. Thrown (Range 5). |
-| **Club** | 4 | 2 | 20 | 20 Wood/Stone | 20 | Neolithic | Blunt. +1 Dmg vs Armor. |
-| **Spear** | 5 | 2 | 50 | 30 Wood/Steel | 40 | Neolithic | Sharp. Reach (2 sq). |
-| **Mace** | 5 | 2 | 80 | 50 Steel | 60 | Medieval | Blunt. +1 Dmg vs Armor. |
-| **Longsword** | 6 | 2 | 120 | 80 Steel | 80 | Medieval | Sharp. High lethality. |
-| **Monosword** | 8 | 2 | 1500 | - | - | Spacer | Sharp. Ignores 2 Armor. Quest/Trade only. |
-| **Zeushammer** | 8 | 2 | 1800 | - | - | Spacer | Blunt. EMP (Stuns mechs). Quest/Trade only. |
+| **Knife** | 3 | 2 | 30 | 15 Steel/Wood | 30 | Neolithic 1 | Sharp. Thrown (Range 5). |
+| **Club** | 4 | 2 | 20 | 20 Wood/Stone | 20 | Neolithic 1 | Blunt. +1 Dmg vs Armor. |
+| **Spear** | 5 | 2 | 50 | 30 Wood/Steel | 40 | Neolithic 2 | Sharp. Reach (2 sq). |
+| **Mace** | 5 | 2 | 80 | 50 Steel | 60 | Medieval 1 | Blunt. +1 Dmg vs Armor. |
+| **Longsword** | 6 | 2 | 120 | 80 Steel | 80 | Medieval 3 | Sharp. High lethality. |
+| **Monosword** | 8 | 2 | 1500 | - | - | Spacer 4 | Sharp. Ignores 2 Armor. Quest/Trade only. |
+| **Zeushammer** | 8 | 2 | 1800 | - | - | Spacer 4 | Blunt. EMP (Stuns mechs). Quest/Trade only. |
 
 ### Ranged Weapons
 Uses **Dexterity** for attacks.
 
 | Weapon | Damage | Range | AP | Value | Materials | CP | Tech | Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Short Bow** | 3 | 15 | 2 | 20 | 20 Wood | 20 | Neolithic | Silent. |
-| **Great Bow** | 5 | 25 | 3 | 60 | 40 Wood | 40 | Neolithic | High damage. |
-| **Revolver** | 4 | 15 | 2 | 100 | 30 Steel, 2 Comp | 60 | Industrial | Reliable. |
-| **Pump Shotgun** | 6 | 5 | 2 | 150 | 50 Steel, 2 Comp | 80 | Industrial | Close range power. |
-| **Bolt-Action** | 6 | 30 | 2 | 180 | 60 Steel, 3 Comp | 100 | Industrial | Long range. |
-| **Assault Rifle** | 5 | 20 | 2 | 350 | 70 Steel, 5 Comp | 180 | Industrial | Burst (Split Dmg). |
-| **Sniper Rifle** | 8 | 40 | 3 | 500 | 80 Steel, 8 Comp | 240 | Industrial | Extreme range. |
-| **Minigun** | 4 | 20 | 3 | 1200 | 150 Steel, 15 Comp | 400 | Industrial | Area 3x3. Hits all. |
-| **Charge Rifle** | 8 | 20 | 2 | 1000 | 50 Plasteel, 10 Comp | 300 | Spacer | AP (Ignores 1 Armor). |
+| **Short Bow** | 3 | 15 | 2 | 20 | 20 Wood | 20 | Neolithic 1 | Silent. |
+| **Great Bow** | 5 | 25 | 3 | 60 | 40 Wood | 40 | Neolithic 3 | High damage. |
+| **Revolver** | 4 | 15 | 2 | 100 | 30 Steel, 2 Comp | 60 | Industrial 1 | Reliable. |
+| **Pump Shotgun** | 6 | 5 | 2 | 150 | 50 Steel, 2 Comp | 80 | Industrial 2 | Close range power. |
+| **Bolt-Action** | 6 | 30 | 2 | 180 | 60 Steel, 3 Comp | 100 | Industrial 2 | Long range. |
+| **Assault Rifle** | 5 | 20 | 2 | 350 | 70 Steel, 5 Comp | 180 | Industrial 4 | Burst (Split Dmg). |
+| **Sniper Rifle** | 8 | 40 | 3 | 500 | 80 Steel, 8 Comp | 240 | Industrial 5 | Extreme range. |
+| **Minigun** | 4 | 20 | 3 | 1200 | 150 Steel, 15 Comp | 400 | Industrial 6 | Area 3x3. Hits all. |
+| **Charge Rifle** | 8 | 20 | 2 | 1000 | 50 Plasteel, 10 Comp | 300 | Spacer 2 | AP (Ignores 1 Armor). |
 
 ### Grenades
 Thrown weapons. Always hit the target square, but can scatter on a miss.
-*   **Frag Grenade**: 6 Damage. 3x3 Area. 3 AP. **Val: 150**. Mat: 20 Steel, 80 Chemfuel. CP: 80.
-*   **EMP Grenade**: Stuns Mechs/Turrets (1 Rd). 3x3 Area. 3 AP. **Val: 200**. Mat: 20 Steel, 4 Comp. CP: 100.
-*   **Molotov**: Sets 3x3 Area on fire. 3 AP. **Val: 80**. Mat: 20 Cloth, 50 Chemfuel. CP: 40.
+*   **Frag Grenade**: 6 Damage. 3x3 Area. 3 AP. **Val: 150**. Mat: 20 Steel, 80 Chemfuel. CP: 80. **Tech: Industrial 3**.
+*   **EMP Grenade**: Stuns Mechs/Turrets (1 Rd). 3x3 Area. 3 AP. **Val: 200**. Mat: 20 Steel, 4 Comp. CP: 100. **Tech: Industrial 4**.
+*   **Molotov**: Sets 3x3 Area on fire. 3 AP. **Val: 80**. Mat: 20 Cloth, 50 Chemfuel. CP: 40. **Tech: Industrial 1**.
 
 ---
 
@@ -81,13 +81,13 @@ Armor reduces incoming damage.
 
 | Armor | Rating | Speed | Value | Materials | CP | Tech | Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | 
-| **Tribalwear** | 0 | - | 20 | 30 Leather/Cloth | 20 | Neolithic | Basic. |
-| **Parka** | 1 | - | 60 | 60 Leather/Cloth | 40 | Neolithic | Cold Insul. |
-| **Duster** | 1 | - | 60 | 60 Leather/Cloth | 40 | Medieval | Heat Insul. |
-| **Flak Vest** | 2 | - | 150 | 40 Cloth, 30 Steel | 80 | Industrial | Chest only. |
-| **Flak Jacket** | 2 | - | 150 | 50 Cloth, 20 Steel | 80 | Industrial | Full body. |
-| **Marine Armor** | 4 | -1 | 1200 | 100 Plasteel, 5 Comp | 400 | Spacer | Power Armor. |
-| **Cataphract** | 5 | -2 | 2500 | 150 Plasteel, 8 Comp | 600 | Spacer | Heavy. Slow. |
+| **Tribalwear** | 0 | - | 20 | 30 Leather/Cloth | 20 | Neolithic 1 | Basic. |
+| **Parka** | 1 | - | 60 | 60 Leather/Cloth | 40 | Neolithic 2 | Cold Insul. |
+| **Duster** | 1 | - | 60 | 60 Leather/Cloth | 40 | Medieval 1 | Heat Insul. |
+| **Flak Vest** | 2 | - | 150 | 40 Cloth, 30 Steel | 80 | Industrial 3 | Chest only. |
+| **Flak Jacket** | 2 | - | 150 | 50 Cloth, 20 Steel | 80 | Industrial 3 | Full body. |
+| **Marine Armor** | 4 | -1 | 1200 | 100 Plasteel, 5 Comp | 400 | Spacer 3 | Power Armor. |
+| **Cataphract** | 5 | -2 | 2500 | 150 Plasteel, 8 Comp | 600 | Spacer 5 | Heavy. Slow. |
 
 ---
 
