@@ -20,6 +20,13 @@ When trading, prices are adjusted by the trader's **Social** skill:
     *   *Example*: Social 10 gives +20% better prices (Buy at 120%, Sell at 80%).
     *   *Max Bonus*: ±40% (at Social 20).
 
+> **Example: Trading**
+> **John**: "The orbital trader offers to buy your sculptures. The base value is 500 Silver."
+> **Mary**: "Viper does the talking. She has **Social 40 (+4)**."
+> **John**: "Okay, the base sell price is 60% (300 Silver). With Social 40 (Level 4), you get +8%."
+> **Mary**: "So 68%? That's 340 Silver."
+> **John**: "Deal."
+
 ### Common Item Values
 | Item | Market Value | Materials | Crafting Points (CP) | Tech |
 | :--- | :--- | :--- | :--- | :--- |
@@ -29,6 +36,20 @@ When trading, prices are adjusted by the trader's **Social** skill:
 | **Medicine (Industrial)** | 50 | 3 Cloth, 1 Neutroamine | 40 | Industrial 2 |
 | **Component** | 30 | 12 Steel | 60 | Industrial 1 |
 | **Advanced Component** | 200 | 1 Component, 20 Steel, 10 Plasteel, 3 Gold | 200 | Spacer 1 |
+
+### Item Quality
+When an item is finished (CP requirement met), make a final **Crafting Check** to determine its quality.
+
+*   **Tier 1 (11-)**: **Normal**. Standard stats.
+*   **Tier 2 (12-16)**: **Good**. **+1 Accuracy/Damage** (Weapons) or **+1 Armor** (Apparel).
+*   **Tier 3 (17+)**: **Masterwork**. **+2 Stats**. Value x1.5.
+*   **Critical (Natural 10)**: **Legendary**. **+3 Stats**. Value x2. Gain Art/Name.
+
+> **Example: Crafting**
+> **Mary**: "Viper finishes the Flak Vest. It took 80 CP. Now for the Quality roll."
+> **John**: "Roll **Dexterity + Crafting**."
+> **Mary**: *(Rolls 15)*. "Tier 2! It's a **Good** Flak Vest."
+> **John**: "Nice. It has **Armor 3** instead of 2."
 
 ---
 
