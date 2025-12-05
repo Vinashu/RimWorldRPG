@@ -17,7 +17,11 @@ We track 5 abstract resource categories:
 5.  **Medicine**: Herbal meds, glitterworld meds.
 
 ### Daily Actions
-Players assign Colonists to tasks during the Colony Phase. Roll to determine the outcome.
+The day is divided into **4 Periods**: **Morning, Afternoon, Evening, and Night**.
+
+**1. Planning Phase**: At the start of the day, each player decides what their character will do for each of the 4 periods. You can assign a specific task (Farming, Building, etc.) or choose to **Rest/Sleep**.
+
+**2. Resolution Phase**: Once all plans are set, players make the necessary Skill Checks for each active period.
 
 | Action | Roll | Tier 1 (11-) | Tier 2 (12-16) | Tier 3 (17+) |
 | :--- | :--- | :--- | :--- | :--- |
@@ -33,12 +37,32 @@ Players assign Colonists to tasks during the Colony Phase. Roll to determine the
 | **Healing** | **Mind + Medical** | Tend **1 Wound** | Tend **2 Wounds** | Tend **All Wounds** |
 | **Artistic** | **Spirit + Artistic** | **1 CP** towards Art | **3 CP** towards Art | **5 CP** towards Art |
 
+> **Example: Daily Planning**
+> **John**: "It's a new day. The colony is low on food and we need those sandbags finished. What is Viper's plan?"
+> **Mary**: "Okay, here is my schedule:
+> *   **Morning**: Hunting. We need meat.
+> *   **Afternoon**: Building. I want to finish the sandbags.
+> *   **Evening**: Researching. I'll put in some hours on Gunsmithing.
+> *   **Night**: Sleeping."
+>
+> **John**: "Sounds like a busy day. Let's resolve the rolls."
+> **Mary**: "First, **Hunting** (Dex + Shooting)... *(Rolls 14)*. Tier 2! **2 Food, 1 Textile**."
+> **Mary**: "Next, **Building** (Vigor + Construction)... *(Rolls 18)*. Tier 3! **5 CP**. The sandbags are done!"
+> **Mary**: "Finally, **Research** (Mind + Intellectual)... *(Rolls 9)*. Tier 1. Just **20 RP**."
+> **John**: "A productive day. Viper collapses into bed, exhausted but satisfied."
+
 ---
 
 ## Construction & Infrastructure
 
 Building structures requires **Materials** and **Construction Points (CP)**.
 *   **Construction Speed**: A character generates CP equal to their **Construction Skill × 10** per hour.
+
+> **Example: Building**
+> **Mary**: "We need defenses. Viper spends the afternoon building sandbags."
+> **John**: "Sandbags cost **10 CP**. Roll **Vigor + Construction**."
+> **Mary**: *(Rolls 18)*. "Tier 3! I generate **5 CP**."
+> **John**: "You're halfway there. You'll need another slot to finish them."
 
 ### Structures
 | Building | Materials | CP | Tech Req | Notes |
@@ -90,6 +114,12 @@ Knowledge is power. To craft advanced items or build complex structures, you mus
     *   **Tier 2 (12-16)**: **50 RP**. Steady progress.
     *   **Tier 3 (17+)**: **100 RP**. A breakthrough!
 
+> **Example: Researching**
+> **Mary**: "Viper spends the evening at the research bench. We need **Gunsmithing** (Industrial 2)."
+> **John**: "Okay, roll **Mind + Intellectual**. You're using a simple bench for Industrial tech, so no bonus."
+> **Mary**: *(Rolls 11)*. "Tier 1... only **20 RP**."
+> **John**: "It's slow going. You're scratching your head over the blueprints."
+
 ### Tech Categories
 *   **Neolithic (Levels 1-4)**: Basic survival. Cost: Level × 100 RP.
 *   **Medieval (Levels 1-5)**: Metalworking, smithing. Cost: Level × 300 RP.
@@ -130,6 +160,11 @@ Colonists accumulate **Stress** from pushing rolls, witnessing death, starvation
 
 *   **Relief**: Stress resets to 0 after a full night's sleep in a decent bed or by succeeding on a "Relaxing Socially" check.
 
+> **Example: Mental Break**
+> **John**: "Viper is starving (+1 Stress) and witnessed a death yesterday (+1 Stress). Her current Stress is 5. Roll a Panic Check."
+> **Mary**: "Rolling 1d6 + 5..." *(Rolls 4)*. "Total 9. That's a **Minor Break**."
+> **John**: "Viper snaps. She goes on a **Binge**, eating the raw meat you just hunted."
+
 ---
 
 ## Expeditions (Caravans)
@@ -142,6 +177,11 @@ Traveling the world map to trade or attack.
 *   **Foraging**: Make a **Plants** check daily.
     *   **Success**: Find enough food.
     *   **Failure**: Consume rations. If empty, gain Stress.
+
+> **Example: Foraging**
+> **John**: "You're traveling to the nearby settlement. Make your daily **Plants** check to forage."
+> **Mary**: *(Rolls 9)*. "Failure. I can't find anything edible."
+> **John**: "You have to eat your rations. If you run out, you'll start gaining Stress."
 
 ### Ambush
 *   **Visibility**: Large caravans are easier to spot.
