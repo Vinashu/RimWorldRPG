@@ -11,6 +11,14 @@
 
 **RimWorld RPG** is a tabletop roleplaying game adaptation of the hit sci-fi colony sim. It translates the complex simulation of survival, psychology, and combat into a narrative-driven TTRPG experience.
 
+### 🎨 Design Inspirations
+
+This system draws inspiration from several excellent TTRPGs:
+
+*   **[Draw Steel](https://mcdmproductions.com/)** — The "heroic roll" mechanic where rolls always produce meaningful results (Tiers of Success).
+*   **[Traveller](https://www.mongoosepublishing.com/collections/traveller-rpgs)** — The Lifepath character generation system that creates deep backstories.
+*   **[Alien RPG](https://freeleaguepublishing.com/games/alien/)** — The "push your luck" Stress Die mechanic that adds tension and risk.
+
 ## 🚀 Key Features
 
 ### 🎲 The Story Die System
