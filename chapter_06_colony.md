@@ -5,44 +5,54 @@ Building a thriving colony requires more than just survival; it requires industr
 ---
 
 ## Research & Technology
-Knowledge is power. To craft advanced items or build complex structures, you must first unlock the technology.
+Knowledge is power. To craft advanced items or build complex structures, you must first unlock the technology level required.
 
 ### The Research Process
-1.  **Assign a Researcher**: A character must work at a **Research Bench**.
-2.  **Generate Research Points (RP)**:
-    > **Daily RP = (Intellectual Skill × 10) + (Tech Level Bonus)**
-    *   *Simple Research Bench*: +0 RP.
-    *   *Hi-Tech Research Bench*: +20 RP.
-    *   *Multi-Analyzer*: +50 RP (requires Hi-Tech Bench).
-3.  **Complete Projects**: Once a project's RP cost is paid, the technology is unlocked for the entire colony.
+Research is an active task that requires focus and intellect.
 
-### Technology Tree
-Projects are grouped by Tech Level. You must generally complete lower-tier projects before advancing (GM discretion).
+1.  **Assign a Researcher**: A character spends an **Action Slot (4 hours)** working at a **Research Bench**.
+2.  **Make a Research Check**:
+    > **Roll = 2d10 + Mind + Intellectual**
+3.  **Determine Outcome**: Compare your result to the Tiers of Success to see how many **Research Points (RP)** you generate.
 
-#### Neolithic (Tribal Start)
-*   **Tree Sowing** (200 RP): Plant trees.
-*   **Complex Furniture** (300 RP): Beds, Tables, Chairs.
-*   **Passive Cooler** (400 RP): Low-tech temperature control.
-*   **Pemmican** (500 RP): Long-lasting travel food.
+| Result | Tier | RP Generated |
+| :--- | :--- | :--- |
+| **11 or lower** | **Tier 1: Struggle** | **20 RP**. Progress is slow and frustrating. |
+| **12 - 16** | **Tier 2: Success** | **50 RP**. Steady progress. |
+| **17 or higher** | **Tier 3: Triumph** | **100 RP**. A breakthrough! |
 
-#### Medieval
-*   **Smithing** (700 RP): Metal weapons (Mace, Longsword).
-*   **Plate Armor** (800 RP): Heavy metal armor.
-*   **Complex Clothing** (600 RP): Dusters, Parkas.
+### Modifiers
+*   **Bench Tech Level**:
+    *   Using a **Hi-Tech Bench** for *Neolithic/Medieval* tech grants an **Edge (+2)**.
+    *   Using a **Multi-Analyzer** for *Industrial* tech grants an **Edge (+2)**.
+*   **Drugs**: *Wake-up* or *Go-juice* grants **Augmented (3d10)** on research checks.
+*   **Mood**:
+    *   **Happy (>80%)**: Clear mind. Gain an **Edge (+2)**.
+    *   **Stressed (<40%)**: Distracted. Suffer a **Bane (-2)**.
+4.  **Unlock Levels**: Spend RP to unlock the next level in a category. You must unlock levels sequentially.
 
-#### Industrial (Crashlanded Start)
-*   **Electricity** (1200 RP): Generators, Batteries, Electric Lights.
-*   **Air Conditioning** (1000 RP): Coolers and Heaters.
-*   **Machining** (1500 RP): Guns (Revolver, Shotgun), Grenades.
-*   **Gunsmithing** (2000 RP): Advanced Guns (Assault Rifle, Sniper).
-*   **Microelectronics** (3000 RP): Hi-Tech Bench, Comms Console.
-*   **Medicine Production** (2500 RP): Craft Industrial Medicine.
+### Tech Categories & Levels
+Instead of specific projects, technology is divided into four categories, each with a number of levels. Higher levels allow you to craft more advanced items and build better structures.
 
-#### Spacer
-*   **Multi-Analyzer** (4000 RP): Boosts research speed.
-*   **Fabrication** (5000 RP): Craft Components and Power Armor.
-*   **Advanced Fabrication** (8000 RP): Craft Advanced Components, Charge Rifles.
-*   **Bionics** (6000 RP): Craft Bionic Limbs.
+#### Neolithic (Levels 1-4)
+*   **Focus**: Basic survival, primitive tools, simple furniture, passive temperature control.
+*   **Requirements**: None (Campfire or spot on the ground is sufficient for Level 1).
+*   **Cost**: Level × 100 RP. (Level 1: 100, Level 2: 200, etc.)
+
+#### Medieval (Levels 1-5)
+*   **Focus**: Metalworking, smithing, plate armor, complex clothing.
+*   **Requirements**: **Simple Research Bench**.
+*   **Cost**: Level × 300 RP.
+
+#### Industrial (Levels 1-6)
+*   **Focus**: Electricity, machining, firearms, advanced medicine, microelectronics.
+*   **Requirements**: **Hi-Tech Research Bench**.
+*   **Cost**: Level × 600 RP.
+
+#### Spacer (Levels 1-7)
+*   **Focus**: Advanced fabrication, bionics, power armor, spaceflight.
+*   **Requirements**: **Multi-Analyzer** connected to Hi-Tech Bench.
+*   **Cost**: Level × 1000 RP.
 
 ---
 
