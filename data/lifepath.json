@@ -31,8 +31,8 @@
         {
             "name": "Urchin",
             "bonuses": {
-                "Melee": 1,
-                "Social": 1
+                "Melee": 10,
+                "Social": 10
             },
             "trait": "Scrapper"
         },
@@ -40,7 +40,7 @@
             "name": "Vatgrown",
             "bonuses": {
                 "Vigor": 1,
-                "Shooting": 1
+                "Shooting": 10
             },
             "trait": "Dull"
         },
@@ -48,7 +48,7 @@
             "name": "Noble Scion",
             "bonuses": {
                 "Spirit": 1,
-                "Social": 1
+                "Social": 10
             },
             "trait": "Greedy"
         },
@@ -56,25 +56,56 @@
             "name": "Midworld Student",
             "bonuses": {
                 "Mind": 1,
-                "Intellectual": 1
+                "Intellectual": 10
             },
             "trait": "Fast Learner"
         },
         {
             "name": "Feral Child",
             "bonuses": {
-                "Animals": 1,
-                "Plants": 1
+                "Animals": 10,
+                "Plants": 10
             },
             "trait": "Wild"
         },
         {
             "name": "War Refugee",
             "bonuses": {
-                "Shooting": 1,
-                "Medical": 1
+                "Shooting": 10,
+                "Medical": 10
             },
             "trait": "Pessimist"
+        },
+        {
+            "name": "Caveworld Tender",
+            "bonuses": {
+                "Mining": 10,
+                "Plants": 10
+            },
+            "trait": "Undergrounder"
+        },
+        {
+            "name": "Industrial Orphan",
+            "bonuses": {
+                "Crafting": 10,
+                "Construction": 10
+            },
+            "trait": "Industrious"
+        },
+        {
+            "name": "Sheriff",
+            "bonuses": {
+                "Shooting": 10,
+                "Melee": 10
+            },
+            "trait": "Trigger-Happy"
+        },
+        {
+            "name": "Pop Idol",
+            "bonuses": {
+                "Social": 20
+            },
+            "trait": "Beautiful"
         }
     ],
     "careers": {
@@ -91,38 +122,62 @@
                     "id": "marine_disaster",
                     "range": [1, 1],
                     "name": "Disaster",
-                    "effect": "Unit wiped out. PTSD (Trait)",
-                    "trait": "PTSD"
+                    "stages": [
+                        { "effect": "Unit wiped out. PTSD (Trait)", "trait": "PTSD" },
+                        { "effect": "Salvage a shotgun from the wreckage.", "item": "Pump Shotgun" },
+                        { "effect": "Lose your left eye.", "trait": "Missing Eye" },
+                        { "effect": "Receive a bionic eye and +5 to each Space Marine skill.", "trait": "Bionic Eye", "skillGain": 5, "allSkills": true }
+                    ]
                 },
                 {
                     "range": [2, 3],
                     "name": "Live Fire Drills",
-                    "effect": "+1 Shooting",
-                    "skill": "Shooting"
+                    "stages": [
+                        { "effect": "+5 Shooting", "skill": "Shooting", "skillGain": 5 },
+                        { "effect": "Gain a Shooting Passion", "passion": "Shooting" },
+                        { "effect": "+10 Shooting", "skill": "Shooting", "skillGain": 10 },
+                        { "effect": "+10 Shooting and a Shooting Passion", "skill": "Shooting", "skillGain": 10, "passion": "Shooting" }
+                    ]
                 },
                 {
                     "range": [4, 5],
                     "name": "Boarding Action",
-                    "effect": "+1 Melee",
-                    "skill": "Melee"
+                    "stages": [
+                        { "effect": "+5 Melee", "skill": "Melee", "skillGain": 5 },
+                        { "effect": "Gain a Melee Passion", "passion": "Melee" },
+                        { "effect": "+10 Melee", "skill": "Melee", "skillGain": 10 },
+                        { "effect": "+10 Melee and a Melee Passion", "skill": "Melee", "skillGain": 10, "passion": "Melee" }
+                    ]
                 },
                 {
                     "range": [6, 7],
                     "name": "Field Medic",
-                    "effect": "+1 Medical",
-                    "skill": "Medical"
+                    "stages": [
+                        { "effect": "+5 Medical", "skill": "Medical", "skillGain": 5 },
+                        { "effect": "Gain a Medical Passion", "passion": "Medical" },
+                        { "effect": "+10 Medical", "skill": "Medical", "skillGain": 10 },
+                        { "effect": "+10 Medical and a Medical Passion", "skill": "Medical", "skillGain": 10, "passion": "Medical" }
+                    ]
                 },
                 {
                     "range": [8, 9],
                     "name": "Combat Engineer",
-                    "effect": "+1 Construction",
-                    "skill": "Construction"
+                    "stages": [
+                        { "effect": "+5 Construction", "skill": "Construction", "skillGain": 5 },
+                        { "effect": "Gain a Construction Passion", "passion": "Construction" },
+                        { "effect": "+10 Construction", "skill": "Construction", "skillGain": 10 },
+                        { "effect": "+10 Construction and a Construction Passion", "skill": "Construction", "skillGain": 10, "passion": "Construction" }
+                    ]
                 },
                 {
                     "range": [10, 10],
                     "name": "Legend of the Rim",
-                    "effect": "Iron Will (Trait)",
-                    "trait": "Iron Will"
+                    "stages": [
+                        { "effect": "Iron Will (Trait)", "trait": "Iron Will" },
+                        { "effect": "Lose your left hand.", "trait": "Missing Hand" },
+                        { "effect": "Gain a prosthetic hand.", "trait": "Prosthetic Hand" },
+                        { "effect": "Gain a bionic hand and +5 to each Space Marine skill.", "trait": "Bionic Hand", "skillGain": 5, "allSkills": true }
+                    ]
                 }
             ]
         },
@@ -139,37 +194,62 @@
                     "id": "surgeon_malpractice",
                     "range": [1, 1],
                     "name": "Malpractice",
-                    "effect": "Patient died. Exiled."
+                    "stages": [
+                        { "effect": "Patient died. Exiled.", "trait": "Exiled" },
+                        { "effect": "Reputation in tatters: start with 0 Silver and -10 Relations.", "wealth": 0 },
+                        { "effect": "Surgical guilt leaves a Scar and -5 Mood.", "trait": "Scarred" },
+                        { "effect": "You reinvent yourself: +5 Medical and a Masterwork medkit.", "skill": "Medical", "skillGain": 5, "item": "Masterwork Medkit" }
+                    ]
                 },
                 {
                     "range": [2, 3],
                     "name": "Emergency Rotation",
-                    "effect": "+1 Medical",
-                    "skill": "Medical"
+                    "stages": [
+                        { "effect": "+5 Medical", "skill": "Medical", "skillGain": 5 },
+                        { "effect": "Gain a Medical Passion", "passion": "Medical" },
+                        { "effect": "+10 Medical", "skill": "Medical", "skillGain": 10 },
+                        { "effect": "+10 Medical and a Medical Passion", "skill": "Medical", "skillGain": 10, "passion": "Medical" }
+                    ]
                 },
                 {
                     "range": [4, 5],
                     "name": "Research Sabbatical",
-                    "effect": "+1 Intellectual",
-                    "skill": "Intellectual"
+                    "stages": [
+                        { "effect": "+5 Intellectual", "skill": "Intellectual", "skillGain": 5 },
+                        { "effect": "Gain an Intellectual Passion", "passion": "Intellectual" },
+                        { "effect": "+10 Intellectual", "skill": "Intellectual", "skillGain": 10 },
+                        { "effect": "+10 Intellectual and an Intellectual Passion", "skill": "Intellectual", "skillGain": 10, "passion": "Intellectual" }
+                    ]
                 },
                 {
                     "range": [6, 7],
                     "name": "Bedside Diplomacy",
-                    "effect": "+1 Social",
-                    "skill": "Social"
+                    "stages": [
+                        { "effect": "+5 Social", "skill": "Social", "skillGain": 5 },
+                        { "effect": "Gain a Social Passion", "passion": "Social" },
+                        { "effect": "+10 Social", "skill": "Social", "skillGain": 10 },
+                        { "effect": "+10 Social and a Social Passion", "skill": "Social", "skillGain": 10, "passion": "Social" }
+                    ]
                 },
                 {
                     "range": [8, 9],
                     "name": "Prototype Implants",
-                    "effect": "+1 Crafting",
-                    "skill": "Crafting"
+                    "stages": [
+                        { "effect": "+5 Crafting", "skill": "Crafting", "skillGain": 5 },
+                        { "effect": "Gain a Crafting Passion", "passion": "Crafting" },
+                        { "effect": "+10 Crafting", "skill": "Crafting", "skillGain": 10 },
+                        { "effect": "+10 Crafting and a Crafting Passion", "skill": "Crafting", "skillGain": 10, "passion": "Crafting" }
+                    ]
                 },
                 {
                     "range": [10, 10],
                     "name": "Breakthrough",
-                    "effect": "Prostophile (Trait)",
-                    "trait": "Prostophile"
+                    "stages": [
+                        { "effect": "Prostophile (Trait)", "trait": "Prostophile" },
+                        { "effect": "Fit yourself with a prosthetic hand.", "trait": "Prosthetic Hand" },
+                        { "effect": "Upgrade to a bionic hand; +5 to each Surgeon skill.", "trait": "Bionic Hand", "skillGain": 5, "allSkills": true },
+                        { "effect": "Publish the technique: +5 to each Surgeon skill and start with Improved medicine.", "skillGain": 5, "allSkills": true, "item": "Industrial Medicine" }
+                    ]
                 }
             ]
         },
@@ -186,37 +266,62 @@
                     "id": "drifter_addiction",
                     "range": [1, 1],
                     "name": "Addiction",
-                    "effect": "Hooked on Smokeleaf or Wake-up",
-                    "trait": "Addicted"
+                    "stages": [
+                        { "effect": "Hooked on Smokeleaf or Wake-up", "trait": "Addicted" },
+                        { "effect": "Spiraling costs: start with -50 Silver debt.", "wealth": -50 },
+                        { "effect": "Hard detox scars you (Scar, -5 Mood).", "trait": "Scarred" },
+                        { "effect": "You beat it: clear Addiction and gain Iron-Willed.", "trait": "Iron-Willed", "removeTrait": "Addicted" }
+                    ]
                 },
                 {
                     "range": [2, 3],
                     "name": "Scavenged Tools",
-                    "effect": "+1 Construction",
-                    "skill": "Construction"
+                    "stages": [
+                        { "effect": "+5 Construction", "skill": "Construction", "skillGain": 5 },
+                        { "effect": "Gain a Construction Passion", "passion": "Construction" },
+                        { "effect": "+10 Construction", "skill": "Construction", "skillGain": 10 },
+                        { "effect": "+10 Construction and a Construction Passion", "skill": "Construction", "skillGain": 10, "passion": "Construction" }
+                    ]
                 },
                 {
                     "range": [4, 5],
                     "name": "Farmhand for Hire",
-                    "effect": "+1 Plants",
-                    "skill": "Plants"
+                    "stages": [
+                        { "effect": "+5 Plants", "skill": "Plants", "skillGain": 5 },
+                        { "effect": "Gain a Plants Passion", "passion": "Plants" },
+                        { "effect": "+10 Plants", "skill": "Plants", "skillGain": 10 },
+                        { "effect": "+10 Plants and a Plants Passion", "skill": "Plants", "skillGain": 10, "passion": "Plants" }
+                    ]
                 },
                 {
                     "range": [6, 7],
                     "name": "Streetwise",
-                    "effect": "+1 Social",
-                    "skill": "Social"
+                    "stages": [
+                        { "effect": "+5 Social", "skill": "Social", "skillGain": 5 },
+                        { "effect": "Gain a Social Passion", "passion": "Social" },
+                        { "effect": "+10 Social", "skill": "Social", "skillGain": 10 },
+                        { "effect": "+10 Social and a Social Passion", "skill": "Social", "skillGain": 10, "passion": "Social" }
+                    ]
                 },
                 {
                     "range": [8, 9],
                     "name": "Bar Brawls",
-                    "effect": "+1 Melee",
-                    "skill": "Melee"
+                    "stages": [
+                        { "effect": "+5 Melee", "skill": "Melee", "skillGain": 5 },
+                        { "effect": "Gain a Melee Passion", "passion": "Melee" },
+                        { "effect": "+10 Melee", "skill": "Melee", "skillGain": 10 },
+                        { "effect": "+10 Melee and a Melee Passion", "skill": "Melee", "skillGain": 10, "passion": "Melee" }
+                    ]
                 },
                 {
                     "range": [10, 10],
                     "name": "Found Treasure",
-                    "effect": "Masterwork Item"
+                    "stages": [
+                        { "effect": "Start with a Masterwork item.", "item": "Masterwork Item" },
+                        { "effect": "Add +50 Silver.", "wealth": 50 },
+                        { "effect": "The stash includes a rare tech relic.", "item": "Tech Relic" },
+                        { "effect": "Gain Beautiful (Trait) after a lavish makeover.", "trait": "Beautiful" }
+                    ]
                 }
             ]
         },
@@ -234,51 +339,139 @@
                     "range": [1, 1],
                     "name": "Mine Collapse",
                     "stages": [
-                        {
-                            "name": "Cave-in",
-                            "effect": "Crushed Leg. Fitted with a Peg Leg."
-                        },
-                        {
-                            "name": "Corporate Compensation",
-                            "effect": "Company covers a Prosthetic Leg replacement."
-                        },
-                        {
-                            "name": "Full Rebuild",
-                            "effect": "You are rebuilt with a Bionic Leg."
-                        }
+                        { "effect": "Crushed Leg. Fitted with a Peg Leg.", "trait": "Peg Leg" },
+                        { "effect": "Company covers a Prosthetic Leg replacement.", "trait": "Prosthetic Leg" },
+                        { "effect": "Repeat payout upgrades to a bionic leg.", "trait": "Bionic Leg" },
+                        { "effect": "You become a safety icon: +5 to each Miner skill.", "skillGain": 5, "allSkills": true }
                     ]
                 },
                 {
                     "range": [2, 3],
                     "name": "Deep Vein",
-                    "effect": "+1 Mining",
-                    "skill": "Mining"
+                    "stages": [
+                        { "effect": "+5 Mining", "skill": "Mining", "skillGain": 5 },
+                        { "effect": "Gain a Mining Passion", "passion": "Mining" },
+                        { "effect": "+10 Mining", "skill": "Mining", "skillGain": 10 },
+                        { "effect": "+10 Mining and a Mining Passion", "skill": "Mining", "skillGain": 10, "passion": "Mining" }
+                    ]
                 },
                 {
                     "range": [4, 5],
                     "name": "Tunnel Reinforcement",
-                    "effect": "+1 Construction",
-                    "skill": "Construction"
+                    "stages": [
+                        { "effect": "+5 Construction", "skill": "Construction", "skillGain": 5 },
+                        { "effect": "Gain a Construction Passion", "passion": "Construction" },
+                        { "effect": "+10 Construction", "skill": "Construction", "skillGain": 10 },
+                        { "effect": "+10 Construction and a Construction Passion", "skill": "Construction", "skillGain": 10, "passion": "Construction" }
+                    ]
                 },
                 {
                     "range": [6, 7],
                     "name": "Hydroponics Pilot",
-                    "effect": "+1 Plants",
-                    "skill": "Plants"
+                    "stages": [
+                        { "effect": "+5 Plants", "skill": "Plants", "skillGain": 5 },
+                        { "effect": "Gain a Plants Passion", "passion": "Plants" },
+                        { "effect": "+10 Plants", "skill": "Plants", "skillGain": 10 },
+                        { "effect": "+10 Plants and a Plants Passion", "skill": "Plants", "skillGain": 10, "passion": "Plants" }
+                    ]
                 },
                 {
                     "range": [8, 9],
                     "name": "Wildlife Lookout",
-                    "effect": "+1 Shooting",
-                    "skill": "Shooting"
+                    "stages": [
+                        { "effect": "+5 Shooting", "skill": "Shooting", "skillGain": 5 },
+                        { "effect": "Gain a Shooting Passion", "passion": "Shooting" },
+                        { "effect": "+10 Shooting", "skill": "Shooting", "skillGain": 10 },
+                        { "effect": "+10 Shooting and a Shooting Passion", "skill": "Shooting", "skillGain": 10, "passion": "Shooting" }
+                    ]
                 },
                 {
                     "range": [10, 10],
                     "name": "Union Rep",
-                    "effect": "Tough (Trait)",
-                    "trait": "Tough"
+                    "stages": [
+                        { "effect": "Tough (Trait)", "trait": "Tough" },
+                        { "effect": "Your advocacy earns +1 Relations with worker factions.", "relation": 1 },
+                        { "effect": "Receive a Masterwork hardhat.", "item": "Masterwork Hardhat" },
+                        { "effect": "Become legendary: +5 to each Miner skill.", "skillGain": 5, "allSkills": true }
+                    ]
+                }
+            ]
+        },
+        "Assassin": {
+            "survival_attr": "Dexterity",
+            "skills": [
+                "Shooting",
+                "Melee",
+                "Crafting",
+                "Social"
+            ],
+            "events": [
+                {
+                    "id": "assassin_hunted",
+                    "range": [1, 2],
+                    "name": "Hunted",
+                    "stages": [
+                        { "effect": "A faction marks you for death (Hunted).", "trait": "Hunted" },
+                        { "effect": "Bounty doubles: start with -100 Silver debt.", "wealth": -100 },
+                        { "effect": "You maim the hunter: +5 Melee and a Melee Passion.", "skill": "Melee", "skillGain": 5, "passion": "Melee" },
+                        { "effect": "You turn the tables: clear Hunted and gain +10 Relations.", "removeTrait": "Hunted", "relation": 10 }
+                    ]
+                },
+                {
+                    "range": [3, 4],
+                    "name": "Contract",
+                    "stages": [
+                        { "effect": "+5 Shooting", "skill": "Shooting", "skillGain": 5 },
+                        { "effect": "Gain a Shooting Passion", "passion": "Shooting" },
+                        { "effect": "+10 Shooting", "skill": "Shooting", "skillGain": 10 },
+                        { "effect": "+10 Shooting and a Shooting Passion", "skill": "Shooting", "skillGain": 10, "passion": "Shooting" }
+                    ]
+                },
+                {
+                    "range": [5, 6],
+                    "name": "Close Work",
+                    "stages": [
+                        { "effect": "+5 Melee", "skill": "Melee", "skillGain": 5 },
+                        { "effect": "Gain a Melee Passion", "passion": "Melee" },
+                        { "effect": "+10 Melee", "skill": "Melee", "skillGain": 10 },
+                        { "effect": "+10 Melee and a Melee Passion", "skill": "Melee", "skillGain": 10, "passion": "Melee" }
+                    ]
+                },
+                {
+                    "range": [7, 8],
+                    "name": "Black Market Tools",
+                    "stages": [
+                        { "effect": "+5 Crafting", "skill": "Crafting", "skillGain": 5 },
+                        { "effect": "Gain a Crafting Passion", "passion": "Crafting" },
+                        { "effect": "+10 Crafting", "skill": "Crafting", "skillGain": 10 },
+                        { "effect": "+10 Crafting and a Crafting Passion", "skill": "Crafting", "skillGain": 10, "passion": "Crafting" }
+                    ]
+                },
+                {
+                    "range": [9, 10],
+                    "name": "Legend",
+                    "stages": [
+                        { "effect": "Gain Bloodlust (Trait).", "trait": "Bloodlust" },
+                        { "effect": "Start with a legendary blade.", "item": "Legendary Blade" },
+                        { "effect": "Your name spreads: +1 Action on the first combat round.", "trait": "Legendary Speed" },
+                        { "effect": "Your myth is sealed: +5 to each Assassin skill.", "skillGain": 5, "allSkills": true }
+                    ]
                 }
             ]
         }
-    }
+    },
+    "positive_traits": [
+        "Beautiful", "Brawler", "Cannibal", "Fast Learner", "Fast Walker", 
+        "Great Memory", "Hard Worker", "Industrious", "Iron-Willed", "Jogger", 
+        "Kind", "Masochist", "Nerves of Steel", "Nimble", "Optimist", "Pretty", 
+        "Prostophile", "Psychopath", "Quick Sleeper", "Sanguine", "Steadfast", 
+        "Super-Immune", "Too Smart", "Tough"
+    ],
+    "negative_traits": [
+        "Abrasive", "Addicted", "Annoying Voice", "Body Purist", "Chemical Fascination", 
+        "Chemical Interest", "Creepy Breathing", "Depressive", "Gourmand", "Jealous", 
+        "Lazy", "Misandrist", "Misogynist", "Nervous", "Neurotic", "Pessimist", 
+        "PTSD", "Pyromaniac", "Sickly", "Slothful", "Slow Learner", "Slowpoke", 
+        "Staggeringly Ugly", "Teetotaler", "Ugly", "Very Neurotic", "Volatile", "Wimp"
+    ]
 }

@@ -52,12 +52,31 @@ class Storyteller {
 
         console.log(`  [ALERT] ${eventType.toUpperCase()} Event: ${eventName}`);
 
+        // Story Die Roll
+        const baseDie = Math.floor(Math.random() * 10) + 1;
+        const storyDie = Math.floor(Math.random() * 10) + 1;
+        console.log(`  > Story Die Roll: [${baseDie}, ${storyDie}]`);
+
+        if (storyDie === 1) {
+            console.log("  > TWIST OF FATE! Something unexpected but positive happens.");
+            this.wealth += 20; // Bonus wealth or luck
+        } else if (storyDie === 10) {
+            console.log("  > COMPLICATION! Something dangerous happens.");
+            this.wealth -= 20; // Minor setback
+        }
+
         if (eventType === "major" || eventType === "extreme") {
             this.lastMajorEventDay = this.daysPassed;
             const damage = Math.floor(Math.random() * 100);
-            if (damage > 50) {
-                console.log("  > The colony took some damage during the event.");
-                this.wealth -= damage * 2;
+
+            // Story Die affects outcome
+            let finalDamage = damage;
+            if (storyDie === 1) finalDamage = Math.floor(damage / 2);
+            if (storyDie === 10) finalDamage = Math.floor(damage * 1.5);
+
+            if (finalDamage > 50) {
+                console.log(`  > The colony took damage (${finalDamage}).`);
+                this.wealth -= finalDamage * 2;
             } else {
                 console.log("  > The colony defended successfully.");
                 this.wealth += 50;

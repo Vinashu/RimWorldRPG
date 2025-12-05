@@ -14,27 +14,34 @@ class Character {
         this.skills = {};
         this.traits = [];
         this.history = [];
-        this.age = 18;
+        this.age = 14; // Start age for first term
     }
 
-    addSkill(skill, amount = 1) {
+    addSkill(skill, amount = 10) {
         if (!this.skills[skill]) {
             this.skills[skill] = 0;
         }
         this.skills[skill] += amount;
-        if (this.skills[skill] > 3) this.skills[skill] = 3;
+        if (this.skills[skill] > 30) this.skills[skill] = 30;
     }
 
-    rollCheck(attribute) {
+    getSkillModifier(skill) {
+        const points = this.skills[skill] || 0;
+        return Math.floor(points / 10);
+    }
+
+    rollCheck(attribute, skill = null) {
         const d10_1 = Math.floor(Math.random() * 10) + 1;
         const d10_2 = Math.floor(Math.random() * 10) + 1;
-        return d10_1 + d10_2 + (this.attributes[attribute] || 0);
+        const attrVal = this.attributes[attribute] || 0;
+        const skillMod = skill ? this.getSkillModifier(skill) : 0;
+        return d10_1 + d10_2 + attrVal + skillMod;
     }
 
     toString() {
         let s = `=== Colonist (Age ${this.age}) ===\n`;
         s += "Attributes: " + Object.entries(this.attributes).map(([k, v]) => `${k}: ${v >= 0 ? '+' : ''}${v}`).join(", ") + "\n";
-        s += "Skills: " + Object.entries(this.skills).map(([k, v]) => `${k}: ${v}`).join(", ") + "\n";
+        s += "Skills: " + Object.entries(this.skills).map(([k, v]) => `${k}: ${v} (+${Math.floor(v/10)})`).join(", ") + "\n";
         s += "Traits: " + this.traits.join(", ") + "\n";
         s += "History:\n";
         this.history.forEach(h => s += `  - ${h}\n`);
@@ -77,9 +84,9 @@ function generateCharacter() {
         char.age += 4;
         const careerName = careerNames[Math.floor(Math.random() * careerNames.length)];
         const career = DATA.careers[careerName];
-        char.history.push(`Term: ${careerName}`);
+        char.history.push(`Term ${i+1}: ${careerName}`);
 
-        // Survival
+        // Survival (DC 12)
         const survRoll = char.rollCheck(career.survival_attr);
         if (survRoll >= 12) {
             char.history.push(`  > Survived (Roll ${survRoll})`);
@@ -88,26 +95,43 @@ function generateCharacter() {
             char.traits.push("Scarred");
         }
 
-        // Skills (Pick 2 random)
+        // Skills (Pick 2 random, +10 points each)
         const shuffledSkills = [...career.skills].sort(() => 0.5 - Math.random());
-        char.addSkill(shuffledSkills[0]);
-        char.addSkill(shuffledSkills[1]);
+        char.addSkill(shuffledSkills[0], 10);
+        char.addSkill(shuffledSkills[1], 10);
 
         // Event (d10)
         const eventRoll = Math.floor(Math.random() * 10) + 1;
         const matchedEvent = matchEvent(career.events, eventRoll);
         const resolvedEvent = resolveEventStage(matchedEvent, careerName);
 
-        char.history.push(`  > Event (Roll ${eventRoll}): ${resolvedEvent.name || matchedEvent.name} -> ${resolvedEvent.effect || matchedEvent.effect}`);
+        let eventDesc = `  > Event (Roll ${eventRoll}): ${matchedEvent.name}`;
+        if (resolvedEvent.effect) eventDesc += ` -> ${resolvedEvent.effect}`;
+        char.history.push(eventDesc);
 
         if (resolvedEvent.trait && !char.traits.includes(resolvedEvent.trait)) {
             char.traits.push(resolvedEvent.trait);
         }
+        if (resolvedEvent.removeTrait) {
+            char.traits = char.traits.filter(t => t !== resolvedEvent.removeTrait);
+        }
 
         if (resolvedEvent.skill) {
-            char.addSkill(resolvedEvent.skill, resolvedEvent.skillGain || 1);
+            char.addSkill(resolvedEvent.skill, resolvedEvent.skillGain || 5);
+        } else if (resolvedEvent.allSkills && resolvedEvent.skillGain) {
+             career.skills.forEach(s => char.addSkill(s, resolvedEvent.skillGain));
         }
     }
+
+    // 4. Personality (Traits)
+    const posRoll = Math.floor(Math.random() * DATA.positive_traits.length);
+    const negRoll = Math.floor(Math.random() * DATA.negative_traits.length);
+    
+    const posTrait = DATA.positive_traits[posRoll];
+    const negTrait = DATA.negative_traits[negRoll];
+
+    if (!char.traits.includes(posTrait)) char.traits.push(posTrait);
+    if (!char.traits.includes(negTrait)) char.traits.push(negTrait);
 
     return char;
 }

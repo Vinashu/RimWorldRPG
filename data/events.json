@@ -6,7 +6,9 @@
         "Eclipse",
         "Solar Flare",
         "Mad Animal (1)",
-        "Visitor Group"
+        "Visitor Group",
+        "Trade Caravan",
+        "Quest Offer"
     ],
     "major": [
         "Raid (Tribal)",
@@ -16,7 +18,8 @@
         "Cold Snap",
         "Heat Wave",
         "Infestation",
-        "Psychic Drone (High)"
+        "Psychic Drone (High)",
+        "Peace Talks"
     ],
     "extreme": [
         "Raid (Mechanoid)",

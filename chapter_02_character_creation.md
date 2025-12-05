@@ -4,6 +4,9 @@ In RimWorld, no one is a blank slate. Every colonist has a history—a childhood
 
 We use a **Lifepath System** to generate your Colonist. You will roll for your background, survive terms of service, and emerge as a scarred but capable survivor.
 
+> **Example: The Table**
+> John and Mary are ready to start playing. John will act as the Storyteller (ST), and Mary will be a Player (Colonist).
+
 ---
 
 ## Step 1: Attributes
@@ -14,6 +17,10 @@ Every Colonist starts with the following array. Assign these numbers to your 4 A
 *   **Dexterity**: Precision and speed.
 *   **Mind**: Intellect and analysis.
 *   **Spirit**: Empathy and willpower.
+
+> **Example: Choosing Attributes**
+> **John**: "Mary, you need to assign values to your four attributes using this array: +2, +1, 0, -1. Think about what your character is good at."
+> **Mary**: "I want to create a female colonist. She will be very smart, so I'll put the **+2 in Mind**. She's wise and determined, so **+1 in Spirit**. She likes physical activities but isn't a soldier, so **0 in Dexterity** and **-1 in Vigor**."
 
 ---
 
@@ -36,6 +43,11 @@ Your early years define your potential. Choose or Roll (1d10) for your Childhood
 | 9 | **Sheriff** | +10 Shooting, +10 Melee | **Trigger-Happy**: -1 Accuracy, but +1 Action per turn. |
 | 10 | **Pop Idol** | +20 Social | **Beautiful**: +2 to all Social interactions. |
 
+> **Example: Childhood**
+> **John**: "Okay, now we need to know where she came from. You can choose or roll for a Childhood."
+> **Mary**: "I'll let the dice decide." *(Rolls a 6)*. "Oh, nice! I'm a **War Refugee**. That fits. She had to be smart to survive the war."
+> **John**: "Perfect. That gives you **+10 Shooting** and **+10 Medical**, and the **Pessimist** trait."
+
 ---
 
 ## Step 3: Adulthood (The Terms)
@@ -52,6 +64,13 @@ You serve **Terms** of 4 years. You must take at least **1 Term**, and can take 
 3.  **Gain Skills**: Increase the skill points. If increasing a skill would push it above the **30 Point** cap, you must allocate the excess points to any other skill listed in your current Career.
 4.  **Roll Event (1d10)**: Each career has a 10-line table. When you hit an entry, resolve the **first outcome** listed. If you roll that same entry again in a later term, take the **second outcome**, then the third, then the fourth—no duplicate re-rolls needed.
     *   **Critical Success (Natural 10)**: You have a life-changing moment. Gain a **Random Positive Trait** (Roll on Table A) in addition to the Event result.
+
+> **Example: First Term**
+> **Mary**: "For her first term, she tried to find peace. I'll choose the **Drifter** career."
+> **John**: "Roll for Survival. You need a 12 using Dexterity."
+> **Mary**: *(Rolls 2d10 + 0)* "I got a 14! She survived."
+> **John**: "Great. Now pick two skills and roll for an event."
+> **Mary**: "I'll take **Social** and **Plants**. For the event..." *(Rolls a 10)* "Found Treasure! I start with a Masterwork item."
 
 ### Career List
 
@@ -120,6 +139,12 @@ You serve **Terms** of 4 years. You must take at least **1 Term**, and can take 
 After completing your terms, you must determine your final personality quirks.
 **Roll 1d100** on **Table A (Positive)** and **Roll 1d100** on **Table B (Negative)**. You gain both traits.
 *   *Note*: If you roll a trait you already have (from Childhood or Events), reroll.
+
+> **Example: Final Touches**
+> **John**: "Last step. Let's see what quirks she developed. Roll d100 for a positive and negative trait."
+> **Mary**: "Positive... 15. **Fast Learner**. That goes great with her high Mind! Negative... 26. **Gourmand**. She loves food a bit too much."
+> **John**: "So we have a smart, pessimistic war refugee who wanders the rim looking for good meals. What's her name?"
+> **Mary**: "Viper."
 
 ### Table A: Positive Traits (d100)
 | d100 | Trait | Effect |
@@ -201,6 +226,11 @@ These traits are usually acquired via specific Events or Childhoods, but you may
 *   **Psychically Dull**: Psychic events have **Half Effect** on you.
 *   **Undergrounder**: No Mood penalty for being indoors for long periods. **-3 Mood** if outdoors for >1 day.
 
+> **Example: Swapping Traits**
+> **Mary**: "Can I swap **Gourmand**? I don't think it fits the 'War Refugee' vibe to be obsessed with food."
+> **John**: "Sure, you can swap one random trait for a Neutral one. Maybe **Night Owl** since she had to move at night to survive?"
+> **Mary**: "Yes! That's perfect. She prefers the darkness."
+
 ---
 
 ## Step 6: Arrival Scenario
@@ -210,4 +240,9 @@ How did you get here? (Group Decision)
 2.  **Rich Explorer**: 1 Colonist. High-tech gun, turrets, gold. Lonely.
 3.  **Lost Tribe**: 5 Colonists. Low tech, pemmican, herbal meds.
 4.  **Naked Brutality**: 1 Colonist. No items. No clothes. Good luck.
+
+> **Example: Arrival**
+> **John**: "Okay, Viper is ready. Now, how does the group arrive on the Rim?"
+> **Mary**: "Since we are doing a standard game, let's go with **Crashlanded**."
+> **John**: "Crashlanded it is. You wake up to the screaming of sirens and tearing metal as your ship breaks apart in orbit..."
 
