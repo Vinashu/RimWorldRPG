@@ -13,6 +13,11 @@ At the start of combat, the Players make a **Group Initiative Roll**.
 *   **6-10**: **Players go first**.
 *   **1-5**: **Enemies go first**.
 
+> **Example: Initiative**
+> **John**: "The raiders burst through the door! Roll for Initiative."
+> **Mary**: "Okay, rolling a d10." *(Rolls a 7)*. "I got a 7!"
+> **John**: "That's between 6 and 10. The Players go first. Viper acts before the raiders."
+
 ### 2. The Flow of Battle
 Combat turns **alternate** between sides.
 1.  **Side A** (Winner of Initiative) picks **one character** to act.
@@ -43,6 +48,11 @@ On your turn, you have **4 Action Points (AP)** to spend. You can spend them in 
 *   **The Sprinter**: Move (1) + Move (1) + Move (1) + Move (1).
 *   **The Sniper**: Aim (1) + Attack (2) + Move (1).
 
+> **Example: Spending AP**
+> **Mary**: "Viper has 4 AP. She's currently exposed, so I want to get to safety."
+> **Mary**: "I'll spend **1 AP** to Move behind the sandbags. Then I'll spend **1 AP** to Aim at the leader."
+> **Mary**: "I have 2 AP left, so I'll spend **2 AP** to Attack with my rifle."
+
 ---
 
 ## Attack Resolution: "Always Hit"
@@ -63,6 +73,12 @@ Compare your total result to the Tiers below.
 | **12 - 16** | **Tier 2: Solid Hit** | You strike true. Deal **Full Damage**. |
 | **17 or higher** | **Tier 3: Critical Hit** | A devastating blow. Deal **Double Damage** AND roll for a **Major Injury**. |
 
+> **Example: Attack Roll**
+> **John**: "You're Aiming, so you have **Augmented** on this shot. Roll 3d10 and keep the highest two."
+> **Mary**: "My Dexterity is 0 and Shooting is +1 (10 points). So I add +1 to the roll."
+> **Mary**: *(Rolls 4, 8, 9)* "I keep 8 and 9. That's 17 + 1 = 18."
+> **John**: "18 is a **Tier 3: Critical Hit**! You hit him right in the head."
+
 ---
 
 ## Damage & Armor
@@ -79,6 +95,10 @@ Compare your total result to the Tiers below.
 *   *Tier 2*: (6) - 2 = **4 Damage**.
 *   *Tier 3*: (12) - 2 = **10 Damage** + Injury Roll.
 
+> **Example: Dealing Damage**
+> **John**: "Your Rifle does 6 Damage. Since it's a Tier 3 hit, you deal **Double Damage** (12)."
+> **John**: "The Raider is wearing a Flak Vest (Armor 3). So, 12 - 3 = **9 Damage** to his HP."
+
 ### Health (HP)
 > **Max HP = 10 + (Vigor x 2)**
 
@@ -91,6 +111,11 @@ If you land a **Tier 3 Critical Hit**, roll **1d6** for an additional effect:
 | **4** | **Broken Bone** | Target suffers **Impaired** on all physical actions. Speed halved. |
 | **5** | **Concussion** | Target suffers **Impaired** on all mental actions. Cannot use Skills. |
 | **6** | **Severed / Lethal** | Target loses a limb OR is immediately **Downed**. |
+
+> **Example: Critical Effect**
+> **John**: "Since it was a Critical Hit, roll 1d6 for a Major Injury."
+> **Mary**: *(Rolls a 6)* "A 6! What does that do?"
+> **John**: "**Severed / Lethal**. You blew his head off. He's down immediately."
 
 ---
 
