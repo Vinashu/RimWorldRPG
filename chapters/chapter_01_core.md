@@ -109,7 +109,27 @@ A year is divided into 4 seasons called **Quadrums**, each lasting **15 Days**.
 3.  **Septober** (Early Autumn)
 4.  **Decembary** (Late Winter)
 
-### Movement Scale
-*   **Combat**: 1 Square = 1 Meter. Base Speed is **6 Squares**.
-*   **World Map**: 1 Hex = ~1 Day of travel for a caravan.
+### Combat Movement (Range Bands)
+Combat uses abstract **Range Bands** to track positioning, focusing on narrative flow rather than grid counting.
+
+#### The 4 Bands
+1.  **Melee**: Hand-to-hand combat. You are engaged with the enemy.
+2.  **Close**: Short range. Shotguns, pistols, and grenades shine here.
+3.  **Medium**: Standard combat range. Assault rifles and LMGs are optimal.
+4.  **Far**: Long range. Sniper rifles and artillery.
+
+#### Tactical Actions
+*   **Move**: Shift **one band** closer or further (e.g., Medium → Close).
+*   **Rush**: Sprint to shift **two bands**, but it costs two action ponts.
+*   **Engage**: Moving into **Melee** locks you in combat. You cannot move away without **Disengaging** (1 action points) or risking a free attack.
+*   **Take Cover**: You can assume a position behind cover within your band.
+    *   **Light Cover** (Sandbags): Grants **Edge** to defense.
+    *   **Heavy Cover** (Walls): Grants **Double Edge** to defense.
+
+#### Weapon Range
+Weapons have an **Optimal Band**. Using them outside this band (e.g., Sniping from Close range) applies a **Bane**.
+
+### Caravan Movement (World Map)
+*   **Scale**: 1 Hex = Approx. 1 Day of travel.
+*   **Terrain**: Roads increase speed; Mountains and Swamps reduce it.
 
