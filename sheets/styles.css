@@ -1,0 +1,289 @@
+:root {
+  --bg-color: #1a1a1a;
+  --panel-color: #2b2b2b;
+  --text-color: #e0e0e0;
+  --accent-color: #4da6ff; /* RimWorld Blue */
+  --accent-dim: #2d5a88;
+  --border-color: #444;
+  --success: #66bb6a;
+  --warning: #ffa726;
+  --danger: #ef5350;
+  --font-main: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-main);
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+}
+
+/* Common Components */
+.panel {
+  background-color: var(--panel-color);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+input, textarea, select {
+  background: #333;
+  border: 1px solid #555;
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: inherit;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  font-size: 0.85em;
+  color: #aaa;
+  margin-bottom: 4px;
+}
+
+/* Bars & Progress */
+.bar-container {
+  background: #333;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  position: relative;
+  border: 1px solid #555;
+}
+
+.bar-fill {
+  background: var(--accent-color);
+  height: 100%;
+  width: 50%; /* Default demo */
+  transition: width 0.3s ease;
+}
+
+.bar-label {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  font-size: 0.8em;
+  line-height: 20px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black;
+}
+
+/* Character Sheet Specifics */
+.header-section {
+  grid-column: span 12;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.avatar-placeholder {
+  width: 100px;
+  height: 100px;
+  background: #444;
+  border-radius: 50%;
+  border: 2px solid var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  color: #666;
+}
+
+.attributes-section {
+  grid-column: span 4;
+}
+
+.skills-section {
+  grid-column: span 8;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.vitals-section {
+  grid-column: span 12;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.vital-box {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  background: #333;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+}
+
+.vital-value {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.gear-section {
+  grid-column: span 6;
+}
+
+.bio-section {
+  grid-column: span 6;
+}
+
+/* Base Sheet Specifics */
+.base-stat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: #333;
+  margin-bottom: 5px;
+  border-left: 4px solid var(--accent-color);
+}
+
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.resource-box {
+  background: #222;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #444;
+}
+
+.facility-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 10px;
+}
+
+.facility {
+  background: #333;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #555;
+  font-size: 0.9em;
+}
+
+.active-project {
+  background: #252525;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-left: 3px solid var(--warning);
+}
+
+.project-controls button {
+  background: #444;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.project-controls button:hover {
+  background: #555;
+}
+
+.defense-pool {
+  grid-column: span 12;
+  background: linear-gradient(45deg, #2b2b2b, #3a2b2b);
+  border-color: var(--danger);
+  text-align: center;
+}
+
+.defense-value {
+  font-size: 3em;
+  color: var(--danger);
+  font-weight: bold;
+}
+
+/* Responsive Mobile */
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .skills-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Print Styles */
+@media print {
+  body {
+    background: white;
+    color: black;
+    -webkit-print-color-adjust: exact;
+  }
+  .container {
+    display: block;
+    max-width: 100%;
+  }
+  .panel {
+    background: white;
+    border: 1px solid #000;
+    box-shadow: none;
+    margin-bottom: 10px;
+    page-break-inside: avoid;
+  }
+  .bar-container {
+    background: #ddd;
+    border: 1px solid #000;
+  }
+  .bar-fill {
+    background: #888;
+  }
+  h1, h2, h3 {
+    color: black;
+    border-bottom: 1px solid #000; 
+  }
+  input, textarea {
+    background: white;
+    color: black;
+    border: 1px solid #ccc;
+  }
+  .defense-pool {
+     background: white;
+     border: 2px solid black;
+  }
+  .defense-value {
+    color: black;
+  }
+  /* Arrange columns for print explicitly if grid fails */
+  .attributes-section, .gear-section {
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .skills-section, .bio-section {
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}

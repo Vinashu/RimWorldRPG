@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RimWorld RPG - Base Sheet</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function updateBar(barId, current, max) {
+            const bar = document.getElementById(barId);
+            const fill = bar.querySelector('.bar-fill');
+            const percent = Math.min(100, Math.max(0, (current / max) * 100));
+            fill.style.width = percent + '%';
+        }
+        function addCP(projectId, amount) {
+            const label = document.getElementById(projectId + '-label');
+            const text = label.innerText;
+            // Simple regex to parse "Current/Max" - logic for demonstration
+            const parts = text.split('/');
+            let current = parseInt(parts[0]);
+            const max = parseInt(parts[1]);
+            current += amount;
+            if (current > max) current = max;
+
+            label.innerText = current + "/" + max + " CP";
+            updateBar(projectId + '-bar', current, max);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Overview -->
+        <div class="panel header-section">
+            <div style="flex-grow: 1;">
+                <label>Colony Name</label>
+                <input type="text" placeholder="Hope's End" value="Hope's End"
+                    style="font-size: 1.5em; font-weight: bold;">
+            </div>
+            <div style="width: 200px;">
+                <label>Biome</label>
+                <input type="text" value="Arid Shrubland">
+            </div>
+            <div style="width: 150px;">
+                <label>Tech Level</label>
+                <input type="text" value="Industrial">
+            </div>
+        </div>
+
+        <!-- Base Stats -->
+        <div class="panel" style="grid-column: span 12;">
+            <h2>Colony Stats</h2>
+            <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                <div class="vital-box" style="border-color: var(--danger);">
+                    <label>SECURITY</label>
+                    <div class="vital-value">8</div>
+                </div>
+                <div class="vital-box" style="border-color: var(--success);">
+                    <label>EFFICIENCY</label>
+                    <div class="vital-value">+1</div>
+                </div>
+                <div class="vital-box" style="border-color: var(--accent-color);">
+                    <label>COMFORT</label>
+                    <div class="vital-value">+2</div>
+                </div>
+                <div class="vital-box" style="border-color: var(--warning);">
+                    <label>WEALTH</label>
+                    <div class="vital-value">High</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Defense Pool -->
+        <div class="panel defense-pool">
+            <label style="color: #ffaaaa; font-size: 1.2em;">DEFENSE POOL</label>
+            <div class="defense-value">12 / 12</div>
+            <span style="color: #aaa;">Spend points to negate hits or reduce damage.</span>
+        </div>
+
+        <!-- Resources -->
+        <div class="panel" style="grid-column: span 12;">
+            <h2>Resources</h2>
+            <div class="resource-grid">
+                <div class="resource-box">
+                    <label>Food</label>
+                    <input type="number" value="50">
+                    <span style="font-size: 0.8em; color: #888;">Days: 5</span>
+                </div>
+                <div class="resource-box">
+                    <label>Textiles</label>
+                    <input type="number" value="20">
+                </div>
+                <div class="resource-box">
+                    <label>Ore</label>
+                    <input type="number" value="100">
+                </div>
+                <div class="resource-box">
+                    <label>Components</label>
+                    <input type="number" value="5">
+                </div>
+                <div class="resource-box">
+                    <label>Medicine</label>
+                    <input type="number" value="10">
+                </div>
+            </div>
+        </div>
+
+        <!-- Facilities -->
+        <div class="panel" style="grid-column: span 8;">
+            <h2>Facilities Grid</h2>
+            <div class="facility-grid">
+                <div class="facility">Barracks (Wood)</div>
+                <div class="facility">Kitchen (Steel)</div>
+                <div class="facility">Freezer</div>
+                <div class="facility">Workshop</div>
+                <div class="facility">Hospital</div>
+                <div class="facility" style="border-style: dashed; color: #666;">Empty Plot</div>
+                <div class="facility" style="border-style: dashed; color: #666;">Empty Plot</div>
+                <div class="facility" style="border-style: dashed; color: #666;">Empty Plot</div>
+            </div>
+            <h3>Defensive Line</h3>
+            <div class="facility-grid">
+                <div class="facility" style="border-color: var(--danger);">Mini-Turret</div>
+                <div class="facility" style="border-color: var(--danger);">Sandbags</div>
+                <div class="facility" style="border-color: var(--danger);">Sandbags</div>
+                <div class="facility" style="border-color: var(--danger);">Spike Trap</div>
+            </div>
+        </div>
+
+        <!-- Active Projects -->
+        <div class="panel" style="grid-column: span 4;">
+            <h2>Construction Queue</h2>
+
+            <div class="active-project">
+                <div style="display: flex; justify-content: space-between;">
+                    <strong>Killbox Walls</strong>
+                    <span id="proj1-label">60/100 CP</span>
+                </div>
+                <div class="bar-container" id="proj1-bar">
+                    <div class="bar-fill" style="width: 60%; background: var(--warning);"></div>
+                </div>
+                <div class="project-controls">
+                    <button onclick="addCP('proj1', 1)">+1 CP</button>
+                    <button onclick="addCP('proj1', 5)">+5 CP</button>
+                    <button onclick="addCP('proj1', 10)">+10 CP</button>
+                </div>
+            </div>
+
+            <div class="active-project">
+                <div style="display: flex; justify-content: space-between;">
+                    <strong>Solar Panel</strong>
+                    <span id="proj2-label">0/200 CP</span>
+                </div>
+                <div class="bar-container" id="proj2-bar">
+                    <div class="bar-fill" style="width: 0%; background: var(--warning);"></div>
+                </div>
+                <div class="project-controls">
+                    <button onclick="addCP('proj2', 5)">+5 CP</button>
+                    <button onclick="addCP('proj2', 20)">+20 CP</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

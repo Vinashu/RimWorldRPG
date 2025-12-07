@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RimWorld RPG - Character Sheet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="panel header-section">
+            <div class="avatar-placeholder">?</div>
+            <div style="flex-grow: 1;">
+                <div style="display: flex; gap: 10px;">
+                    <div style="flex: 2;">
+                        <label>Name</label>
+                        <input type="text" placeholder="Viper">
+                    </div>
+                    <div style="flex: 1;">
+                        <label>Career</label>
+                        <input type="text" placeholder="Space Marine">
+                    </div>
+                    <div style="flex: 1;">
+                        <label>Level</label>
+                        <input type="number" value="1">
+                    </div>
+                </div>
+                <div style="display: flex; gap: 10px; margin-top: 5px;">
+                    <div style="flex: 1;">
+                        <label>Title</label>
+                        <input type="text" placeholder="Sergeant">
+                    </div>
+                    <div style="flex: 2;">
+                        <label>Concept/Traits</label>
+                        <input type="text" placeholder="Tough, Trigger-Happy">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vitals -->
+        <div class="panel vitals-section">
+            <div class="vital-box">
+                <label>Hit Points</label>
+                <div class="vital-value">25 / 25</div>
+                <div class="bar-container">
+                    <div class="bar-fill" style="width: 100%; background: var(--success);"></div>
+                </div>
+            </div>
+            <div class="vital-box">
+                <label>Stress</label>
+                <div class="vital-value">2 / 10</div>
+                <div class="bar-container">
+                    <div class="bar-fill" style="width: 20%; background: var(--warning);"></div>
+                </div>
+            </div>
+            <div class="vital-box">
+                <label>Defense</label>
+                <div class="vital-value">12</div>
+            </div>
+            <div class="vital-box">
+                <label>Speed</label>
+                <div class="vital-value">6</div>
+            </div>
+        </div>
+
+        <!-- Attributes -->
+        <div class="panel attributes-section">
+            <h2>Attributes</h2>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                <label style="font-size: 1.2em; color: var(--accent-color);">VIGOR</label>
+                <input type="number" value="3" style="width: 50px; text-align: center; font-size: 1.2em;">
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                <label style="font-size: 1.2em; color: var(--accent-color);">DEXTERITY</label>
+                <input type="number" value="2" style="width: 50px; text-align: center; font-size: 1.2em;">
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                <label style="font-size: 1.2em; color: var(--accent-color);">MIND</label>
+                <input type="number" value="0" style="width: 50px; text-align: center; font-size: 1.2em;">
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                <label style="font-size: 1.2em; color: var(--accent-color);">SPIRIT</label>
+                <input type="number" value="1" style="width: 50px; text-align: center; font-size: 1.2em;">
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="panel skills-section">
+            <!-- <h2>Skills</h2> -->
+            <div>
+                <h3>Vigor Skills</h3>
+                <div style="display: flex; justify-content: space-between;">
+                    <label style=" margin-right: auto;">Melee</label>
+                    <input type="number" value="10" style="width: 40px; margin-right: 5px;">
+                    <input type="number" value="1" style="width: 40px;">
+                </div>
+                <div style="display: flex; justify-content: space-between;">
+                    <label style=" margin-right: auto;">Construction</label>
+                    <input type="number" value="2" style="width: 40px; margin-right: 5px;">
+                    <input type="number" value="0" style="width: 40px;">
+                </div>
+                <div style="display: flex; justify-content: space-between;">
+                    <label style=" margin-right: auto;">Mining</label>
+                    <input type="number" value="21" style="width: 40px; margin-right: 5px;">
+                    <input type="number" value="2" style="width: 40px;">
+                </div>
+            </div>
+            <div>
+                <h3>Dex. Skills</h3>
+                <div style="display: flex; justify-content: space-between;">
+                    <label style=" margin-right: auto;">Shooting</label>
+                    <input type="number" value="8" style="width: 40px; margin-right: 5px;">
+                    <input type="number" value="0" style="width: 40px;">
+                </div>
+                <div style="display: flex; justify-content: space-between;">
+                    <label style=" margin-right: auto;">Crafting</label>
+                    <input type="number" value="3" style="width: 40px; margin-right: 5px;">
+                    <input type="number" value="0" style="width: 40px;">
+                </div>
+                <div style="display: flex; justify-content: space-between;">
+                    <label style=" margin-right: auto;">Cooking</label>
+                    <input type="number" value="0" style="width: 40px; margin-right: 5px;">
+                    <input type="number" value="0" style="width: 40px;">
+                </div>
+            </div>
+            <div>
+                <h3>Mind Skills</h3>
+                <div style="display: flex; justify-content: space-between;">
+                    <label style=" margin-right: auto;">Medical</label>
+                    <input type="number" value="4" style="width: 40px; margin-right: 5px;">
+                    <input type="number" value="0" style="width: 40px;">
+                </div>
+                <div style="display: flex; justify-content: space-between;">
+                    <label style=" margin-right: auto;">Intellectual</label>
+                    <input type="number" value="0" style="width: 40px; margin-right: 5px;">
+                    <input type="number" value="0" style="width: 40px;">
+                </div>
+                <div style="display: flex; justify-content: space-between;">
+                    <label style=" margin-right: auto;">Plants</label>
+                    <input type="number" value="2" style="width: 40px; margin-right: 5px;">
+                    <input type="number" value="0" style="width: 40px;">
+                </div>
+            </div>
+            <div>
+                <h3>Spirit Skills</h3>
+                <div style="display: flex; justify-content: space-between;">
+                    <label style=" margin-right: auto;">Social</label>
+                    <input type="number" value="3" style="width: 40px; margin-right: 5px;">
+                    <input type="number" value="0" style="width: 40px;">
+                </div>
+                <div style="display: flex; justify-content: space-between;">
+                    <label style=" margin-right: auto;">Animals</label>
+                    <input type="number" value="0" style="width: 40px; margin-right: 5px;">
+                    <input type="number" value="0" style="width: 40px;">
+                </div>
+                <div style="display: flex; justify-content: space-between;">
+                    <label style=" margin-right: auto;">Artistic</label>
+                    <input type="number" value="0" style="width: 40px; margin-right: 5px;">
+                    <input type="number" value="0" style="width: 40px;">
+                </div>
+            </div>
+        </div>
+
+        <!-- Gear -->
+        <div class="panel gear-section">
+            <h2>Combat Loadout</h2>
+            <div style="margin-bottom: 10px; border-bottom: 1px solid #444; padding-bottom: 10px;">
+                <label>Primary Weapon</label>
+                <input type="text" placeholder="Assault Rifle" value="Assault Rifle">
+                <div style="display: flex; gap: 10px;">
+                    <input type="text" placeholder="5 Dmg" value="5 Dmg">
+                    <input type="text" placeholder="Med Range" value="Range: Medium">
+                    <input type="text" placeholder="2 AP" value="2 AP">
+                </div>
+            </div>
+            <div style="margin-bottom: 10px;">
+                <label>Apparel (Armor)</label>
+                <input type="text" placeholder="Flak Vest (Armor 2)" value="Flak Vest (Armor 2)">
+                <input type="text" placeholder="Helmet (Armor 1)" value="None">
+            </div>
+            <h3>Inventory</h3>
+            <textarea rows="4">20x Meals (Simple)
+3x Medicine (Herbal)
+1x Knife (steel)</textarea>
+        </div>
+
+        <!-- Bio / Health -->
+        <div class="panel bio-section">
+            <h2>Health & Bionics</h2>
+            <textarea rows="4" placeholder="List injuries or bionics here...">Missing Left Eye (Bane to Shooting)
+Scar on Chest (Painful)</textarea>
+
+            <h2>Backstory</h2>
+            <label>Childhood</label>
+            <input type="text" value="Urchin">
+            <label>Adulthood</label>
+            <input type="text" value="Soldier">
+            <label>Major Event</label>
+            <input type="text" value="War Hero (Lost Eye)">
+        </div>
+
+    </div>
+</body>
+
+</html>
