@@ -45,14 +45,15 @@ Choose a Storyteller persona to guide your event pacing. You can switch personas
 
 ### Randy Random
 *   **Style**: Pure chaos. Anything can happen at any time.
-*   **Pacing**: Roll for an event every 2-3 days. Ignore wealth scaling.
+*   **Pacing**: Roll for an event every 2-3 days. Ignore wealth scaling sometimes.
 *   **Best For**: Experienced players who want unpredictability.
 
 **Event Frequency**:
-*   Roll **1d6** every 2-3 days:
-    *   **1-2**: Minor event.
-    *   **3-4**: Major event.
-    *   **5-6**: Extreme event (even on Day 1!).
+*   Roll **1d20** every 2-3 days:
+    *   **1-5**: Minor event.
+    *   **6-18**: Nothing happens.
+    *   **19**: Major event.
+    *   **20**: Extreme event (even on Day 1!).
 
 ### Phoebe Chillax
 *   **Style**: Relaxed. Long breaks between threats.
@@ -145,28 +146,28 @@ Roll **1d10** or choose:
 
 | d10 | Event | Description |
 | :--- | :--- | :--- |
-| **1** | **Raid (Tribal)** | 5-10 tribal warriors attack. Low tech, high numbers. |
-| **2** | **Raid (Pirate)** | 3-6 pirates with guns. Uses cover and tactics. |
-| **3** | **Manhunter Pack** | 8-15 animals (Wargs, Boars) attack on sight. |
-| **4** | **Toxic Fallout** | Poison rain for 3-7 days. Colonists outside take 1 Dmg/hour. |
-| **5** | **Cold Snap** | Temperature drops. Risk of Hypothermia (see Chapter 7). |
-| **6** | **Heat Wave** | Temperature spikes. Risk of Heat Stroke (+1 Stress/Scene). |
-| **7** | **Infestation** | Insect hive spawns in your base. 3-6 Megascarabs. |
-| **8** | **Psychic Drone** | All colonists gain +2 Stress/day for 5 days. |
-| **9** | **Peace Talks** | Hostile faction offers negotiations. Social challenge. |
-| **10** | **Prisoner Escape** | If you have prisoners, they attempt a breakout. |
+| **1** | **Raid (Tribal)** | Tribal warriors. Cost: **5 pts** each. |
+| **2** | **Raid (Pirate)** | Pirates with guns. Cost: **10 pts** each. |
+| **3** | **Manhunter Pack** | Animals attack. **Warg (10 pts)** or **Boar (5 pts)**. |
+| **4** | **Toxic Fallout** | Poison rain for 3-7 days. Outside: **1 Bio Dmg/hour**. |
+| **5** | **Cold Snap** | Temperature drops. **-20°C**. Hypothermia risk. |
+| **6** | **Heat Wave** | Temperature spikes. **+20°C**. Heatstroke risk. |
+| **7** | **Infestation** | Insect hive spawns in "Overhead Mountain" tiles. |
+| **8** | **Psychic Drone** | All colonists gain **+2 Stress** daily (Gender specific). |
+| **9** | **Peace Talks** | Hostile faction offers talks. **Social Challenge**. |
+| **10** | **Prisoner Escape** | Prisoners roll **Vigor** to break bars. |
 
 #### Extreme Events (Catastrophic)
 Roll **1d6** or choose:
 
 | d6 | Event | Description |
 | :--- | :--- | :--- |
-| **1** | **Raid (Mechanoid)** | 2-4 Mechanoids (Lancers, Scythers). Deadly. |
-| **2** | **Raid (Siege)** | Pirates set up mortars. Bombard your base from range. |
-| **3** | **Volcanic Winter** | Ash blocks sun for 20 days. Crops die. Freezing temps. |
-| **4** | **Mass Animal Insanity** | All animals on map go berserk. Chaos. |
-| **5** | **Defoliator Ship** | Crashed ship kills all plants in 1 hex radius/day. Must destroy it. |
-| **6** | **Insect Hive Emergence** | Massive hive spawns. 10+ insects including Megaspiders. |
+| **1** | **Raid (Mechanoid)** | Kill-bots. **Lancer (15 pts)**, **Scyther (20 pts)**. |
+| **2** | **Raid (Siege)** | Pirates build mortars. **Bombardment** until attacked. |
+| **3** | **Volcanic Winter** | Ash blocks sun (-50% Light). **Farming Impossible**. |
+| **4** | **Mass Animal Insanity** | All animals on map turn Manhunter. |
+| **5** | **Defoliator Ship** | Kills plants in expanding radius. Spawns Mechanoids if attacked. |
+| **6** | **Insect Hive Emergence** | Massive infestation. **Megasipders (25 pts)** spawn. |
 
 ### Story Die Integration
 When an event occurs, roll the **Story Die** (1d10) alongside player actions:
@@ -212,20 +213,32 @@ Colony wealth determines threat level. As players accumulate resources, enemies 
 
 ### Calculating Wealth
 **Wealth** = (Buildings + Items + Colonists) in Silver value.
-*   **Buildings**: 100 Silver per structure.
+*   **Buildings**: Cost in Materials (Wood=$1, Steel=$2, Plasteel=$10).
 *   **Items**: Market Value (see Chapter 5).
 *   **Colonists**: 1,500 Silver each.
 
-### Threat Scaling
-Use wealth to scale enemy strength:
+> **Note**: Defensive structures (Walls, Turrets) count towards Wealth, increasing raid difficulty. Security is a double-edged sword.
 
-| Wealth | Threat Level | Enemy Count | Enemy Quality |
+### Threat Points System
+Instead of fixed numbers, use **Raid Points** to buy enemies.
+1.  **Calculate Points**: `Total Wealth / 1000 = Raid Points`.
+2.  **Spend Points**: Buy units from the enemy faction list.
+
+| Wealth | Raid Points | Example Raid (Tribal) | Example Raid (Mech) |
 | :--- | :--- | :--- | :--- |
-| **0-2,000** | **Low** | 3-5 enemies | Tribal, weak gear. |
-| **2,001-5,000** | **Medium** | 5-8 enemies | Pirates, basic guns. |
-| **5,001-10,000** | **High** | 8-12 enemies | Mixed gear, some armor. |
-| **10,001-20,000** | **Very High** | 12-18 enemies | Advanced weapons, Mechanoids. |
-| **20,001+** | **Extreme** | 20+ enemies | Siege weapons, Centipedes, Elite Mercs. |
+| **15k (Start)** | **15 pts** | 3 Warriors (5pts ea) | 1 Lancer (15pts) |
+| **30k (Early)** | **30 pts** | 6 Warriors | 1 Scyther, 1 Lancer |
+| **50k (Mid)** | **50 pts** | 10 Warriors | 2 Scythers, 1 Lancer |
+| **100k (Late)** | **100 pts** | 20 Warriors (Zerg) | 1 Centipede (60), 2 Scythers |
+
+**Enemy Costs (Approx)**:
+*   **Tribal Warrior**: 5 pts
+*   **Pirate Gunner**: 10 pts
+*   **Elite Mercenary**: 25 pts
+*   **Warg / Wolf**: 10 pts
+*   **Lancer**: 15 pts
+*   **Scyther**: 20 pts
+*   **Centipede**: 60 pts
 
 ### Balancing Tips
 *   **Don't Punish Success**: Wealth scaling should challenge, not punish. If players are struggling, reduce event frequency.
