@@ -69,7 +69,7 @@ Use short stat blocks so this stays fast.
 
 ![Marla Kade](../images/MarlaKade.png)
 
-**Attributes:** Body +2, Mind +1, Reflex 0, Social -1
+**Attributes:** Vigor +2, Mind +1, Dexterity 0, Spirit -1
 **Skills:** Construction +30, Shooting +20, Medicine +10
 **Trait:** **Tough** (reduce incoming damage)
 **Incapable:** Intellectual
@@ -79,7 +79,7 @@ Use short stat blocks so this stays fast.
 
 ![Ivo Thorne](../images/IvoThorne.png)
 
-**Attributes:** Mind +2, Social +1, Body 0, Reflex -1
+**Attributes:** Mind +2, Spirit +1, Vigor 0, Dexterity -1
 **Skills:** Medicine +30, Cooking +20, Social +10
 **Trait:** **Iron-Willed** (+Mental Break threshold)
 **Incapable:** Violence (or “Reluctant Shooter”)
@@ -89,7 +89,7 @@ Use short stat blocks so this stays fast.
 
 ![Sana Voss](../images/SanaVoss.png)
 
-**Attributes:** Reflex +2, Body +1, Mind 0, Social -1
+**Attributes:** Reflex +2, Vigor +1, Dexterity 0, Spirit -1
 **Skills:** Shooting +30, Animals +20, Melee +10
 **Trait:** **Bloodlust** (benefits under combat stress)
 **Incapable:** Artistic
@@ -99,7 +99,7 @@ Use short stat blocks so this stays fast.
 
 ![Oren Pell](../images/OrenPell.png)
 
-**Attributes:** Social +2, Mind +1, Reflex 0, Body -1
+**Attributes:** Spirit +2, Mind +1, Dexterity 0, Vigor -1
 **Skills:** Social +30, Crafting +20, Cooking +10
 **Trait:** **Kind** (helps morale)
 **Incapable:** Hauling
@@ -109,7 +109,7 @@ Use short stat blocks so this stays fast.
 
 ![Tess Rook](../images/TessRook.png)
 
-**Attributes:** Mind +2, Reflex +1, Social 0, Body -1
+**Attributes:** Mind +2, Dexterity +1, Spirit 0, Vigor -1
 **Skills:** Intellectual +30, Crafting +20, Shooting +10
 **Trait:** **Nervous** (more susceptible to stress)
 **Incapable:** Cooking
@@ -133,7 +133,7 @@ The Storyteller frames short scenes and advances needs/mood.
 * **Cook** (Cooking)
 * **Treat Wounds** (Medicine)
 * **Research Basics** (Intellectual)
-* **Scout** (Reflex/Survival)
+* **Scout** (Dexterity + Plants/Animals)
 * **Social Support** (Social) — reduce Stress or restore Mood
 
 ### Needs & Mood (light version for quickstart)
