@@ -1,0 +1,349 @@
+{
+    "melee": [
+        {
+            "id": "fists",
+            "name": "Fists",
+            "damage": 2,
+            "ap": 2,
+            "marketValue": 0,
+            "materials": {},
+            "cp": 0,
+            "tech": null,
+            "damageType": "blunt",
+            "notes": "Unarmed combat"
+        },
+        {
+            "id": "knife",
+            "name": "Knife",
+            "damage": 3,
+            "ap": 2,
+            "marketValue": 30,
+            "materials": {
+                "steel": 15
+            },
+            "cp": 30,
+            "tech": {
+                "category": "neolithic",
+                "level": 1
+            },
+            "damageType": "sharp",
+            "notes": "Thrown (Range 5)"
+        },
+        {
+            "id": "club",
+            "name": "Club",
+            "damage": 4,
+            "ap": 2,
+            "marketValue": 20,
+            "materials": {
+                "wood": 20
+            },
+            "cp": 20,
+            "tech": {
+                "category": "neolithic",
+                "level": 1
+            },
+            "damageType": "blunt",
+            "notes": "+1 Dmg vs Armor"
+        },
+        {
+            "id": "spear",
+            "name": "Spear",
+            "damage": 5,
+            "ap": 2,
+            "marketValue": 50,
+            "materials": {
+                "wood": 30
+            },
+            "cp": 40,
+            "tech": {
+                "category": "neolithic",
+                "level": 2
+            },
+            "damageType": "sharp",
+            "notes": "Reach (2 sq)"
+        },
+        {
+            "id": "mace",
+            "name": "Mace",
+            "damage": 5,
+            "ap": 2,
+            "marketValue": 80,
+            "materials": {
+                "steel": 50
+            },
+            "cp": 60,
+            "tech": {
+                "category": "medieval",
+                "level": 1
+            },
+            "damageType": "blunt",
+            "notes": "+1 Dmg vs Armor"
+        },
+        {
+            "id": "longsword",
+            "name": "Longsword",
+            "damage": 6,
+            "ap": 2,
+            "marketValue": 120,
+            "materials": {
+                "steel": 80
+            },
+            "cp": 80,
+            "tech": {
+                "category": "medieval",
+                "level": 3
+            },
+            "damageType": "sharp",
+            "notes": "High lethality"
+        },
+        {
+            "id": "monosword",
+            "name": "Monosword",
+            "damage": 8,
+            "ap": 2,
+            "marketValue": 1500,
+            "materials": {},
+            "cp": 0,
+            "tech": {
+                "category": "spacer",
+                "level": 4
+            },
+            "damageType": "sharp",
+            "notes": "Ignores 2 Armor. Quest/Trade only"
+        },
+        {
+            "id": "zeushammer",
+            "name": "Zeushammer",
+            "damage": 8,
+            "ap": 2,
+            "marketValue": 1800,
+            "materials": {},
+            "cp": 0,
+            "tech": {
+                "category": "spacer",
+                "level": 4
+            },
+            "damageType": "blunt",
+            "notes": "EMP (Stuns mechs). Quest/Trade only"
+        }
+    ],
+    "ranged": [
+        {
+            "id": "short_bow",
+            "name": "Short Bow",
+            "damage": 3,
+            "band": "close",
+            "ap": 2,
+            "marketValue": 20,
+            "materials": {
+                "wood": 20
+            },
+            "cp": 20,
+            "tech": {
+                "category": "neolithic",
+                "level": 1
+            },
+            "notes": "Silent"
+        },
+        {
+            "id": "great_bow",
+            "name": "Great Bow",
+            "damage": 5,
+            "band": "medium",
+            "ap": 3,
+            "marketValue": 60,
+            "materials": {
+                "wood": 40
+            },
+            "cp": 40,
+            "tech": {
+                "category": "neolithic",
+                "level": 3
+            },
+            "notes": "High damage"
+        },
+        {
+            "id": "revolver",
+            "name": "Revolver",
+            "damage": 4,
+            "band": "close",
+            "ap": 2,
+            "marketValue": 100,
+            "materials": {
+                "steel": 30,
+                "components": 2
+            },
+            "cp": 60,
+            "tech": {
+                "category": "industrial",
+                "level": 1
+            },
+            "notes": "Reliable"
+        },
+        {
+            "id": "pump_shotgun",
+            "name": "Pump Shotgun",
+            "damage": 6,
+            "band": "close",
+            "ap": 2,
+            "marketValue": 150,
+            "materials": {
+                "steel": 50,
+                "components": 2
+            },
+            "cp": 80,
+            "tech": {
+                "category": "industrial",
+                "level": 2
+            },
+            "notes": "High damage at Close range"
+        },
+        {
+            "id": "bolt_action",
+            "name": "Bolt-Action Rifle",
+            "damage": 6,
+            "band": "far",
+            "ap": 2,
+            "marketValue": 180,
+            "materials": {
+                "steel": 60,
+                "components": 3
+            },
+            "cp": 100,
+            "tech": {
+                "category": "industrial",
+                "level": 2
+            },
+            "notes": "Long range"
+        },
+        {
+            "id": "assault_rifle",
+            "name": "Assault Rifle",
+            "damage": 5,
+            "band": "medium",
+            "ap": 2,
+            "marketValue": 350,
+            "materials": {
+                "steel": 70,
+                "components": 5
+            },
+            "cp": 180,
+            "tech": {
+                "category": "industrial",
+                "level": 4
+            },
+            "notes": "Burst (Split Dmg)"
+        },
+        {
+            "id": "sniper_rifle",
+            "name": "Sniper Rifle",
+            "damage": 8,
+            "band": "far",
+            "ap": 3,
+            "marketValue": 500,
+            "materials": {
+                "steel": 80,
+                "components": 8
+            },
+            "cp": 240,
+            "tech": {
+                "category": "industrial",
+                "level": 5
+            },
+            "notes": "Extreme range"
+        },
+        {
+            "id": "minigun",
+            "name": "Minigun",
+            "damage": 4,
+            "band": "medium",
+            "ap": 3,
+            "marketValue": 1200,
+            "materials": {
+                "steel": 150,
+                "components": 15
+            },
+            "cp": 400,
+            "tech": {
+                "category": "industrial",
+                "level": 6
+            },
+            "notes": "Area 3x3. Hits all"
+        },
+        {
+            "id": "charge_rifle",
+            "name": "Charge Rifle",
+            "damage": 8,
+            "band": "medium",
+            "ap": 2,
+            "marketValue": 1000,
+            "materials": {
+                "plasteel": 50,
+                "components": 10
+            },
+            "cp": 300,
+            "tech": {
+                "category": "spacer",
+                "level": 2
+            },
+            "notes": "AP (Ignores 1 Armor)"
+        }
+    ],
+    "grenades": [
+        {
+            "id": "frag_grenade",
+            "name": "Frag Grenade",
+            "damage": 6,
+            "area": "3x3",
+            "ap": 3,
+            "marketValue": 150,
+            "materials": {
+                "steel": 20,
+                "chemfuel": 80
+            },
+            "cp": 80,
+            "tech": {
+                "category": "industrial",
+                "level": 3
+            },
+            "notes": "Thrown weapon. Can scatter on miss"
+        },
+        {
+            "id": "emp_grenade",
+            "name": "EMP Grenade",
+            "damage": 0,
+            "area": "3x3",
+            "ap": 3,
+            "marketValue": 200,
+            "materials": {
+                "steel": 20,
+                "components": 4
+            },
+            "cp": 100,
+            "tech": {
+                "category": "industrial",
+                "level": 4
+            },
+            "notes": "Stuns Mechs/Turrets (1 Round). Can scatter on miss"
+        },
+        {
+            "id": "molotov",
+            "name": "Molotov Cocktail",
+            "damage": 0,
+            "area": "3x3",
+            "ap": 3,
+            "marketValue": 80,
+            "materials": {
+                "cloth": 20,
+                "chemfuel": 50
+            },
+            "cp": 40,
+            "tech": {
+                "category": "industrial",
+                "level": 1
+            },
+            "notes": "Sets area on fire. Can scatter on miss"
+        }
+    ]
+}

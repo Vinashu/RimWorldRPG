@@ -1,0 +1,312 @@
+{
+    "meals": [
+        {
+            "id": "meal_simple",
+            "name": "Meal (Simple)",
+            "marketValue": 15,
+            "materials": {
+                "food": 10
+            },
+            "cp": 10,
+            "tech": {
+                "category": "neolithic",
+                "level": 1
+            },
+            "notes": "Basic cooked meal"
+        },
+        {
+            "id": "meal_fine",
+            "name": "Meal (Fine)",
+            "marketValue": 25,
+            "materials": {
+                "food": 20
+            },
+            "cp": 20,
+            "tech": {
+                "category": "medieval",
+                "level": 2
+            },
+            "notes": "Higher quality meal"
+        }
+    ],
+    "medicine": [
+        {
+            "id": "herbal_medicine",
+            "name": "Herbal Medicine",
+            "tier": 1,
+            "healing": "1d4",
+            "marketValue": 10,
+            "materials": {},
+            "cp": 0,
+            "tech": {
+                "category": "neolithic",
+                "level": 2
+            },
+            "notes": "Basic healing"
+        },
+        {
+            "id": "industrial_medicine",
+            "name": "Industrial Medicine",
+            "tier": 2,
+            "healing": "1d8",
+            "marketValue": 50,
+            "materials": {
+                "cloth": 3,
+                "neutroamine": 1
+            },
+            "cp": 40,
+            "tech": {
+                "category": "industrial",
+                "level": 2
+            },
+            "notes": "Advanced healing"
+        },
+        {
+            "id": "glitterworld_medicine",
+            "name": "Glitterworld Medicine",
+            "tier": 3,
+            "healing": "1d12",
+            "marketValue": 200,
+            "materials": {},
+            "cp": 0,
+            "tech": {
+                "category": "spacer",
+                "level": 5
+            },
+            "notes": "Superior healing. Cures one Disease immediately. Trade/Quest only"
+        }
+    ],
+    "drugs": [
+        {
+            "id": "smokeleaf",
+            "name": "Smokeleaf",
+            "marketValue": 15,
+            "effect": "+4 Mood, -2 Bane on all checks",
+            "notes": "Reduces Pain",
+            "addictionRisk": "low"
+        },
+        {
+            "id": "wake_up",
+            "name": "Wake-up",
+            "marketValue": 25,
+            "effect": "Regain 4 AP immediately",
+            "notes": "Risk of Heart Attack",
+            "addictionRisk": "medium"
+        },
+        {
+            "id": "go_juice",
+            "name": "Go-Juice",
+            "marketValue": 50,
+            "effect": "+1 Speed, Ignore all Pain penalties, +2 Edge on Melee",
+            "notes": "Combat stimulant",
+            "addictionRisk": "high"
+        },
+        {
+            "id": "yayo",
+            "name": "Yayo",
+            "marketValue": 40,
+            "effect": "+8 Mood, +1 Edge on all checks",
+            "notes": "Highly Addictive",
+            "addictionRisk": "very high"
+        },
+        {
+            "id": "luciferium",
+            "name": "Luciferium",
+            "marketValue": 500,
+            "effect": "+2 to All Stats, Heals old Scars",
+            "notes": "FATAL WITHDRAWAL: Must take every 6 days or die",
+            "addictionRisk": "permanent"
+        }
+    ],
+    "bionics": [
+        {
+            "id": "prosthetic_arm",
+            "name": "Prosthetic Arm",
+            "type": "prosthetic",
+            "marketValue": 200,
+            "materials": {
+                "steel": 30,
+                "components": 2
+            },
+            "cp": 80,
+            "tech": {
+                "category": "spacer",
+                "level": 1
+            },
+            "effect": "Efficiency 100%. Removes 'Missing Part' penalties",
+            "notes": "Basic replacement limb"
+        },
+        {
+            "id": "prosthetic_leg",
+            "name": "Prosthetic Leg",
+            "type": "prosthetic",
+            "marketValue": 200,
+            "materials": {
+                "steel": 30,
+                "components": 2
+            },
+            "cp": 80,
+            "tech": {
+                "category": "spacer",
+                "level": 1
+            },
+            "effect": "Efficiency 100%. Removes 'Missing Part' penalties",
+            "notes": "Basic replacement limb"
+        },
+        {
+            "id": "bionic_eye",
+            "name": "Bionic Eye",
+            "type": "bionic",
+            "marketValue": 1000,
+            "materials": {
+                "plasteel": 15,
+                "components": 5
+            },
+            "cp": 300,
+            "tech": {
+                "category": "spacer",
+                "level": 3
+            },
+            "effect": "+2 Edge on Perception/Shooting",
+            "notes": "Fixes blindness"
+        },
+        {
+            "id": "bionic_arm",
+            "name": "Bionic Arm",
+            "type": "bionic",
+            "marketValue": 1000,
+            "materials": {
+                "plasteel": 20,
+                "components": 5
+            },
+            "cp": 300,
+            "tech": {
+                "category": "spacer",
+                "level": 3
+            },
+            "effect": "+2 Edge on Manipulation (Crafting/Medical/Melee)",
+            "notes": "Superior replacement"
+        },
+        {
+            "id": "bionic_leg",
+            "name": "Bionic Leg",
+            "type": "bionic",
+            "marketValue": 1000,
+            "materials": {
+                "plasteel": 20,
+                "components": 5
+            },
+            "cp": 300,
+            "tech": {
+                "category": "spacer",
+                "level": 3
+            },
+            "effect": "+1 Speed (Grants 1 Free Move Action per encounter)",
+            "notes": "Enhanced mobility"
+        },
+        {
+            "id": "painstopper",
+            "name": "Painstopper",
+            "type": "bionic",
+            "marketValue": 800,
+            "materials": {
+                "plasteel": 10,
+                "components": 3
+            },
+            "cp": 250,
+            "tech": {
+                "category": "spacer",
+                "level": 2
+            },
+            "effect": "Ignore all Pain/Shock. Cannot be Downed by pain",
+            "notes": "Fight until dead"
+        },
+        {
+            "id": "peg_leg",
+            "name": "Peg Leg",
+            "type": "primitive",
+            "marketValue": 20,
+            "materials": {
+                "wood": 10
+            },
+            "cp": 20,
+            "tech": {
+                "category": "neolithic",
+                "level": 1
+            },
+            "effect": "Cancels 'missing' state but keeps +1 Bane. Halves Speed penalty",
+            "notes": "Crude replacement"
+        }
+    ],
+    "utility": [
+        {
+            "id": "psychic_shock_lance",
+            "name": "Psychic Shock Lance",
+            "marketValue": 500,
+            "range": "medium",
+            "effect": "Target makes Spirit Save (15). Fail = Downed instantly",
+            "notes": "Risks brain damage (1 on d10). One-use",
+            "tech": {
+                "category": "spacer",
+                "level": 4
+            }
+        },
+        {
+            "id": "orbital_targeter",
+            "name": "Orbital Targeter",
+            "marketValue": 1500,
+            "range": "far",
+            "effect": "10d10 Damage in 3x3 area",
+            "notes": "Calls beam of destruction. One-use",
+            "tech": {
+                "category": "spacer",
+                "level": 5
+            }
+        },
+        {
+            "id": "jump_pack",
+            "name": "Jump Pack",
+            "marketValue": 400,
+            "ap": 1,
+            "effect": "Jump to Any Band",
+            "notes": "Refuel with Chemfuel",
+            "tech": {
+                "category": "spacer",
+                "level": 2
+            }
+        }
+    ],
+    "components": [
+        {
+            "id": "component",
+            "name": "Component",
+            "marketValue": 30,
+            "materials": {
+                "steel": 12
+            },
+            "cp": 60,
+            "tech": {
+                "category": "industrial",
+                "level": 1
+            },
+            "notes": "Basic machinery parts"
+        },
+        {
+            "id": "advanced_component",
+            "name": "Advanced Component",
+            "marketValue": 200,
+            "materials": {
+                "components": 1,
+                "steel": 20,
+                "plasteel": 10,
+                "gold": 3
+            },
+            "cp": 200,
+            "tech": {
+                "category": "spacer",
+                "level": 1
+            },
+            "notes": "High-tech electronics"
+        }
+    ]
+}

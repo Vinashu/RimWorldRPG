@@ -45,25 +45,30 @@
         <div class="panel vitals-section">
             <div class="vital-box">
                 <label>Hit Points</label>
-                <div class="vital-value">25 / 25</div>
+                <div class="vital-value"><span id="current-hp">19</span> / <span id="max-hp">19</span></div>
                 <div class="bar-container">
-                    <div class="bar-fill" style="width: 100%; background: var(--success);"></div>
+                    <div class="bar-fill" id="hp-bar" style="width: 100%; background: var(--success);"></div>
                 </div>
+                <span style="font-size: 0.7em; color: #888;">15 + (Vigor × 2)</span>
             </div>
             <div class="vital-box">
                 <label>Stress</label>
-                <div class="vital-value">2 / 10</div>
+                <div class="vital-value"><span id="current-stress">0</span></div>
                 <div class="bar-container">
-                    <div class="bar-fill" style="width: 20%; background: var(--warning);"></div>
+                    <div class="bar-fill" id="stress-bar" style="width: 0%; background: var(--warning);"></div>
                 </div>
+                <span style="font-size: 0.7em; color: #888;">Panic at high stress</span>
             </div>
             <div class="vital-box">
-                <label>Defense</label>
-                <div class="vital-value">12</div>
+                <label>Inspiration</label>
+                <div class="vital-value"><input type="number" id="inspiration" value="0" min="0"
+                        style="width: 50px; text-align: center;"></div>
+                <span style="font-size: 0.7em; color: #888;">Spend for rerolls/edges</span>
             </div>
             <div class="vital-box">
-                <label>Speed</label>
-                <div class="vital-value">6</div>
+                <label>Action Points</label>
+                <div class="vital-value">4</div>
+                <span style="font-size: 0.7em; color: #888;">Per combat turn</span>
             </div>
         </div>
 
@@ -72,98 +77,161 @@
             <h2>Attributes</h2>
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
                 <label style="font-size: 1.2em; color: var(--accent-color);">VIGOR</label>
-                <input type="number" value="3" style="width: 50px; text-align: center; font-size: 1.2em;">
+                <input type="number" id="attr-vigor" value="2" min="-1" max="3"
+                    style="width: 50px; text-align: center; font-size: 1.2em;" onchange="updateHP()">
             </div>
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
                 <label style="font-size: 1.2em; color: var(--accent-color);">DEXTERITY</label>
-                <input type="number" value="2" style="width: 50px; text-align: center; font-size: 1.2em;">
+                <input type="number" id="attr-dex" value="1" min="-1" max="3"
+                    style="width: 50px; text-align: center; font-size: 1.2em;">
             </div>
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
                 <label style="font-size: 1.2em; color: var(--accent-color);">MIND</label>
-                <input type="number" value="0" style="width: 50px; text-align: center; font-size: 1.2em;">
+                <input type="number" id="attr-mind" value="0" min="-1" max="3"
+                    style="width: 50px; text-align: center; font-size: 1.2em;">
             </div>
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
                 <label style="font-size: 1.2em; color: var(--accent-color);">SPIRIT</label>
-                <input type="number" value="1" style="width: 50px; text-align: center; font-size: 1.2em;">
+                <input type="number" id="attr-spirit" value="-1" min="-1" max="3"
+                    style="width: 50px; text-align: center; font-size: 1.2em;">
+            </div>
+            <div
+                style="margin-top: 10px; padding: 10px; background: rgba(100,100,100,0.2); border-radius: 5px; font-size: 0.85em; color: #aaa;">
+                Standard array: +2, +1, 0, -1
             </div>
         </div>
 
         <!-- Skills -->
         <div class="panel skills-section">
-            <!-- <h2>Skills</h2> -->
+            <!-- <div
+                style="margin-top: 10px; padding: 10px; background: rgba(100,100,100,0.2); border-radius: 5px; font-size: 0.85em; color: #aaa;">
+                <h2>Skills <span style="font-size: 0.7em; color: #888;">(Points / Modifier)</span></h2>
+                Modifier = Floor(Points / 10). Max 30 points per skill.
+            </div> -->
             <div>
                 <h3>Vigor Skills</h3>
-                <div style="display: flex; justify-content: space-between;">
-                    <label style=" margin-right: auto;">Melee</label>
-                    <input type="number" value="10" style="width: 40px; margin-right: 5px;">
-                    <input type="number" value="1" style="width: 40px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
+                    <label style="margin-right: auto;">Melee</label>
+                    <input type="number" class="skill-points" value="20" min="0" max="30"
+                        style="width: 50px; margin-right: 5px;" onchange="updateSkillMod(this)">
+                    <span class="skill-mod"
+                        style="width: 40px; text-align: center; font-weight: bold; color: var(--accent-color);">+2</span>
                 </div>
-                <div style="display: flex; justify-content: space-between;">
-                    <label style=" margin-right: auto;">Construction</label>
-                    <input type="number" value="2" style="width: 40px; margin-right: 5px;">
-                    <input type="number" value="0" style="width: 40px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
+                    <label style="margin-right: auto;">Construction</label>
+                    <input type="number" class="skill-points" value="0" min="0" max="30"
+                        style="width: 50px; margin-right: 5px;" onchange="updateSkillMod(this)">
+                    <span class="skill-mod"
+                        style="width: 40px; text-align: center; font-weight: bold; color: var(--accent-color);">+0</span>
                 </div>
-                <div style="display: flex; justify-content: space-between;">
-                    <label style=" margin-right: auto;">Mining</label>
-                    <input type="number" value="21" style="width: 40px; margin-right: 5px;">
-                    <input type="number" value="2" style="width: 40px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
+                    <label style="margin-right: auto;">Mining</label>
+                    <input type="number" class="skill-points" value="0" min="0" max="30"
+                        style="width: 50px; margin-right: 5px;" onchange="updateSkillMod(this)">
+                    <span class="skill-mod"
+                        style="width: 40px; text-align: center; font-weight: bold; color: var(--accent-color);">+0</span>
                 </div>
             </div>
             <div>
-                <h3>Dex. Skills</h3>
-                <div style="display: flex; justify-content: space-between;">
-                    <label style=" margin-right: auto;">Shooting</label>
-                    <input type="number" value="8" style="width: 40px; margin-right: 5px;">
-                    <input type="number" value="0" style="width: 40px;">
+                <h3>Dexterity Skills</h3>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
+                    <label style="margin-right: auto;">Shooting</label>
+                    <input type="number" class="skill-points" value="30" min="0" max="30"
+                        style="width: 50px; margin-right: 5px;" onchange="updateSkillMod(this)">
+                    <span class="skill-mod"
+                        style="width: 40px; text-align: center; font-weight: bold; color: var(--accent-color);">+3</span>
                 </div>
-                <div style="display: flex; justify-content: space-between;">
-                    <label style=" margin-right: auto;">Crafting</label>
-                    <input type="number" value="3" style="width: 40px; margin-right: 5px;">
-                    <input type="number" value="0" style="width: 40px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
+                    <label style="margin-right: auto;">Crafting</label>
+                    <input type="number" class="skill-points" value="0" min="0" max="30"
+                        style="width: 50px; margin-right: 5px;" onchange="updateSkillMod(this)">
+                    <span class="skill-mod"
+                        style="width: 40px; text-align: center; font-weight: bold; color: var(--accent-color);">+0</span>
                 </div>
-                <div style="display: flex; justify-content: space-between;">
-                    <label style=" margin-right: auto;">Cooking</label>
-                    <input type="number" value="0" style="width: 40px; margin-right: 5px;">
-                    <input type="number" value="0" style="width: 40px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
+                    <label style="margin-right: auto;">Cooking</label>
+                    <input type="number" class="skill-points" value="10" min="0" max="30"
+                        style="width: 50px; margin-right: 5px;" onchange="updateSkillMod(this)">
+                    <span class="skill-mod"
+                        style="width: 40px; text-align: center; font-weight: bold; color: var(--accent-color);">+1</span>
                 </div>
             </div>
             <div>
                 <h3>Mind Skills</h3>
-                <div style="display: flex; justify-content: space-between;">
-                    <label style=" margin-right: auto;">Medical</label>
-                    <input type="number" value="4" style="width: 40px; margin-right: 5px;">
-                    <input type="number" value="0" style="width: 40px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
+                    <label style="margin-right: auto;">Medical</label>
+                    <input type="number" class="skill-points" value="10" min="0" max="30"
+                        style="width: 50px; margin-right: 5px;" onchange="updateSkillMod(this)">
+                    <span class="skill-mod"
+                        style="width: 40px; text-align: center; font-weight: bold; color: var(--accent-color);">+1</span>
                 </div>
-                <div style="display: flex; justify-content: space-between;">
-                    <label style=" margin-right: auto;">Intellectual</label>
-                    <input type="number" value="0" style="width: 40px; margin-right: 5px;">
-                    <input type="number" value="0" style="width: 40px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
+                    <label style="margin-right: auto;">Intellectual</label>
+                    <input type="number" class="skill-points" value="0" min="0" max="30"
+                        style="width: 50px; margin-right: 5px;" onchange="updateSkillMod(this)">
+                    <span class="skill-mod"
+                        style="width: 40px; text-align: center; font-weight: bold; color: var(--accent-color);">+0</span>
                 </div>
-                <div style="display: flex; justify-content: space-between;">
-                    <label style=" margin-right: auto;">Plants</label>
-                    <input type="number" value="2" style="width: 40px; margin-right: 5px;">
-                    <input type="number" value="0" style="width: 40px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
+                    <label style="margin-right: auto;">Plants</label>
+                    <input type="number" class="skill-points" value="0" min="0" max="30"
+                        style="width: 50px; margin-right: 5px;" onchange="updateSkillMod(this)">
+                    <span class="skill-mod"
+                        style="width: 40px; text-align: center; font-weight: bold; color: var(--accent-color);">+0</span>
                 </div>
             </div>
             <div>
                 <h3>Spirit Skills</h3>
-                <div style="display: flex; justify-content: space-between;">
-                    <label style=" margin-right: auto;">Social</label>
-                    <input type="number" value="3" style="width: 40px; margin-right: 5px;">
-                    <input type="number" value="0" style="width: 40px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
+                    <label style="margin-right: auto;">Social</label>
+                    <input type="number" class="skill-points" value="0" min="0" max="30"
+                        style="width: 50px; margin-right: 5px;" onchange="updateSkillMod(this)">
+                    <span class="skill-mod"
+                        style="width: 40px; text-align: center; font-weight: bold; color: var(--accent-color);">+0</span>
                 </div>
-                <div style="display: flex; justify-content: space-between;">
-                    <label style=" margin-right: auto;">Animals</label>
-                    <input type="number" value="0" style="width: 40px; margin-right: 5px;">
-                    <input type="number" value="0" style="width: 40px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
+                    <label style="margin-right: auto;">Animals</label>
+                    <input type="number" class="skill-points" value="20" min="0" max="30"
+                        style="width: 50px; margin-right: 5px;" onchange="updateSkillMod(this)">
+                    <span class="skill-mod"
+                        style="width: 40px; text-align: center; font-weight: bold; color: var(--accent-color);">+2</span>
                 </div>
-                <div style="display: flex; justify-content: space-between;">
-                    <label style=" margin-right: auto;">Artistic</label>
-                    <input type="number" value="0" style="width: 40px; margin-right: 5px;">
-                    <input type="number" value="0" style="width: 40px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
+                    <label style="margin-right: auto;">Artistic</label>
+                    <input type="number" class="skill-points" value="0" min="0" max="30"
+                        style="width: 50px; margin-right: 5px;" onchange="updateSkillMod(this)">
+                    <span class="skill-mod"
+                        style="width: 40px; text-align: center; font-weight: bold; color: var(--accent-color);">+0</span>
                 </div>
             </div>
         </div>
+
+        <script>
+            function updateHP() {
+                const vigor = parseInt(document.getElementById('attr-vigor').value || 0);
+                const maxHP = 15 + (vigor * 2);
+                document.getElementById('max-hp').innerText = maxHP;
+                // Assume current HP is full on Vigor change
+                document.getElementById('current-hp').innerText = maxHP;
+                document.getElementById('hp-bar').style.width = '100%';
+            }
+
+            function updateSkillMod(input) {
+                const points = parseInt(input.value || 0);
+                const modifier = Math.floor(points / 10);
+                const modSpan = input.nextElementSibling;
+                modSpan.innerText = '+' + modifier;
+            }
+
+            // Initialize on load
+            window.onload = function () {
+                updateHP();
+                // Update all skill modifiers
+                document.querySelectorAll('.skill-points').forEach(input => {
+                    updateSkillMod(input);
+                });
+            };
+        </script>
 
         <!-- Gear -->
         <div class="panel gear-section">

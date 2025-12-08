@@ -1,0 +1,112 @@
+{
+    "factions": [
+        {
+            "id": "civil_outlander_union",
+            "name": "Civil Outlander Union",
+            "tech": {
+                "category": "industrial",
+                "level": 2
+            },
+            "defaultGoodwill": 50,
+            "description": "Survivors trying to rebuild. Friendly.",
+            "tradeGoods": [
+                "Components",
+                "Medicine"
+            ],
+            "baseRelationship": "neutral"
+        },
+        {
+            "id": "rough_pig_union",
+            "name": "Rough Pig Union",
+            "tech": {
+                "category": "industrial",
+                "level": 2
+            },
+            "defaultGoodwill": 0,
+            "description": "Tough, xenophobic pig-people. Interactions are tense.",
+            "tradeGoods": [
+                "Food",
+                "Textiles"
+            ],
+            "baseRelationship": "neutral"
+        },
+        {
+            "id": "savage_tribe",
+            "name": "Savage Tribe",
+            "tech": {
+                "category": "neolithic",
+                "level": 2
+            },
+            "defaultGoodwill": -25,
+            "description": "Aggressive warriors. Low tech, high numbers.",
+            "tradeGoods": [
+                "Pemmican",
+                "Jade"
+            ],
+            "baseRelationship": "hostile"
+        },
+        {
+            "id": "shattered_empire",
+            "name": "The Shattered Empire",
+            "tech": {
+                "category": "spacer",
+                "level": 3
+            },
+            "defaultGoodwill": 25,
+            "description": "Honor-bound remnants of a stellar empire. High-tech trade.",
+            "tradeGoods": [
+                "Advanced Components",
+                "Bionics",
+                "Charge Weapons"
+            ],
+            "requirements": "Title required for trade",
+            "baseRelationship": "neutral"
+        },
+        {
+            "id": "pirate_gangs",
+            "name": "Pirate Gangs",
+            "tech": {
+                "category": "industrial",
+                "level": 3
+            },
+            "defaultGoodwill": -100,
+            "description": "Always Hostile. Raiders who live to plunder.",
+            "tradeGoods": [],
+            "baseRelationship": "hostile",
+            "notes": "Cannot improve relations. Always attack."
+        }
+    ],
+    "goodwillLevels": [
+        {
+            "status": "ally",
+            "range": {
+                "min": 75,
+                "max": 100
+            },
+            "effects": "Will send military aid. Better trade prices (-10% Buy / +10% Sell)"
+        },
+        {
+            "status": "neutral",
+            "range": {
+                "min": -9,
+                "max": 74
+            },
+            "effects": "Will trade. Will not attack unprovoked"
+        },
+        {
+            "status": "hostile",
+            "range": {
+                "min": -100,
+                "max": -10
+            },
+            "effects": "Will attack on sight. Cannot trade"
+        }
+    ],
+    "tradePriceModifiers": {
+        "baseBuyPrice": 1.4,
+        "baseSellPrice": 0.6,
+        "socialBonusPerLevel": 0.02,
+        "maxSocialBonus": 0.4,
+        "notes": "Social Bonus applies at ±2% per Social level, max ±40% at Social 20"
+    }
+}

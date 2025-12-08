@@ -1,0 +1,252 @@
+{
+    "facilities": [
+        {
+            "id": "barracks",
+            "name": "Barracks",
+            "cp": 20,
+            "materials": {
+                "wood": 50
+            },
+            "tech": null,
+            "effect": "Sleeping spots. +0 Comfort",
+            "wealthPoints": 2,
+            "comfort": 0
+        },
+        {
+            "id": "bedroom_private",
+            "name": "Bedroom (Private)",
+            "cp": 40,
+            "materials": {
+                "wood": 80
+            },
+            "tech": {
+                "category": "neolithic",
+                "level": 2
+            },
+            "effect": "Private room. +1 Comfort",
+            "wealthPoints": 3,
+            "comfort": 1
+        },
+        {
+            "id": "kitchen",
+            "name": "Kitchen",
+            "cp": 50,
+            "materials": {
+                "steel": 50,
+                "wood": 20
+            },
+            "tech": {
+                "category": "industrial",
+                "level": 1
+            },
+            "effect": "Reduces Food Poisoning. Clean cooking",
+            "wealthPoints": 4,
+            "efficiency": 0
+        },
+        {
+            "id": "workshop",
+            "name": "Workshop",
+            "cp": 80,
+            "materials": {
+                "steel": 100
+            },
+            "tech": {
+                "category": "medieval",
+                "level": 1
+            },
+            "effect": "+1 Efficiency (Crafting/Building)",
+            "wealthPoints": 6,
+            "efficiency": 1
+        },
+        {
+            "id": "hospital",
+            "name": "Hospital",
+            "cp": 100,
+            "materials": {
+                "steel": 50,
+                "medicine": 5
+            },
+            "tech": {
+                "category": "industrial",
+                "level": 2
+            },
+            "effect": "+2 on Medical Checks",
+            "wealthPoints": 8,
+            "medicalBonus": 2
+        },
+        {
+            "id": "rec_room",
+            "name": "Rec Room",
+            "cp": 60,
+            "materials": {
+                "wood": 50,
+                "cloth": 10
+            },
+            "tech": {
+                "category": "neolithic",
+                "level": 2
+            },
+            "effect": "+1 Comfort. Unlocks specific Recreation",
+            "wealthPoints": 5,
+            "comfort": 1
+        },
+        {
+            "id": "research_lab",
+            "name": "Research Lab",
+            "cp": 100,
+            "materials": {
+                "steel": 75,
+                "wood": 25
+            },
+            "tech": null,
+            "effect": "Required for Research. +1 Efficiency (Research)",
+            "wealthPoints": 8,
+            "efficiency": 1,
+            "researchBonus": 1
+        }
+    ],
+    "power": [
+        {
+            "id": "wood_generator",
+            "name": "Wood Generator",
+            "cp": 150,
+            "materials": {
+                "steel": 100,
+                "components": 2
+            },
+            "tech": {
+                "category": "industrial",
+                "level": 1
+            },
+            "effect": "Powers 2 Facilities. Consumes Wood",
+            "wealthPoints": 10,
+            "powerOutput": 2
+        },
+        {
+            "id": "solar_panel",
+            "name": "Solar Panel",
+            "cp": 200,
+            "materials": {
+                "steel": 100,
+                "components": 3
+            },
+            "tech": {
+                "category": "industrial",
+                "level": 3
+            },
+            "effect": "Powers 1 Facility (Day only)",
+            "wealthPoints": 12,
+            "powerOutput": 1,
+            "notes": "Daytime only"
+        },
+        {
+            "id": "battery",
+            "name": "Battery",
+            "cp": 100,
+            "materials": {
+                "steel": 50,
+                "components": 2
+            },
+            "tech": {
+                "category": "industrial",
+                "level": 2
+            },
+            "effect": "Stores power for Night/Eclipses",
+            "wealthPoints": 8,
+            "storage": true
+        }
+    ],
+    "defenses": [
+        {
+            "id": "wall_wood",
+            "name": "Wall (Wood)",
+            "cp": 5,
+            "materials": {
+                "wood": 5
+            },
+            "tech": null,
+            "hp": 20,
+            "defensePoints": 1,
+            "wealthPoints": 0.5,
+            "notes": "Flammable"
+        },
+        {
+            "id": "wall_stone",
+            "name": "Wall (Stone)",
+            "cp": 10,
+            "materials": {
+                "blocks": 5
+            },
+            "tech": null,
+            "hp": 100,
+            "defensePoints": 2,
+            "wealthPoints": 1,
+            "notes": "Fireproof. High HP"
+        },
+        {
+            "id": "sandbags",
+            "name": "Sandbags",
+            "cp": 5,
+            "materials": {
+                "cloth": 5
+            },
+            "tech": null,
+            "hp": 0,
+            "defensePoints": 1,
+            "wealthPoints": 0.5,
+            "notes": "Partial Cover"
+        },
+        {
+            "id": "mini_turret",
+            "name": "Mini Turret",
+            "cp": 50,
+            "materials": {
+                "steel": 100,
+                "components": 3
+            },
+            "tech": {
+                "category": "industrial",
+                "level": 2
+            },
+            "hp": 40,
+            "defensePoints": 5,
+            "wealthPoints": 5,
+            "damage": 4,
+            "notes": "Auto-attacks"
+        },
+        {
+            "id": "mortar",
+            "name": "Mortar",
+            "cp": 80,
+            "materials": {
+                "steel": 150,
+                "components": 5
+            },
+            "tech": {
+                "category": "industrial",
+                "level": 3
+            },
+            "hp": 50,
+            "defensePoints": 0,
+            "wealthPoints": 6,
+            "notes": "Attacks Siege Camps"
+        }
+    ],
+    "wealthCalculation": {
+        "description": "Wealth Score = Tech Points + Building Points + Defense Points + Colonist Points",
+        "techPoints": {
+            "neolithic": 1,
+            "medieval": 2,
+            "industrial": 4,
+            "spacer": 8
+        },
+        "colonistPoints": {
+            "playerCharacter": 10,
+            "recruit": 5
+        },
+        "powerBonus": {
+            "description": "+2 points per powered facility",
+            "pointsPerFacility": 2
+        }
+    }
+}

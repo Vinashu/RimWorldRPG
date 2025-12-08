@@ -1,0 +1,420 @@
+{
+    "attributes": [
+        "Vigor",
+        "Dexterity",
+        "Mind",
+        "Spirit"
+    ],
+    "skills": {
+        "Vigor": [
+            "Melee",
+            "Mining",
+            "Construction"
+        ],
+        "Dexterity": [
+            "Shooting",
+            "Crafting",
+            "Cooking"
+        ],
+        "Mind": [
+            "Intellectual",
+            "Medical",
+            "Plants"
+        ],
+        "Spirit": [
+            "Social",
+            "Animals",
+            "Artistic"
+        ]
+    },
+    "techCategories": {
+        "neolithic": {
+            "name": "Neolithic",
+            "maxLevel": 4,
+            "pointsPerLevel": 1,
+            "rpCostMultiplier": 100
+        },
+        "medieval": {
+            "name": "Medieval",
+            "maxLevel": 5,
+            "pointsPerLevel": 2,
+            "rpCostMultiplier": 300
+        },
+        "industrial": {
+            "name": "Industrial",
+            "maxLevel": 6,
+            "pointsPerLevel": 4,
+            "rpCostMultiplier": 600
+        },
+        "spacer": {
+            "name": "Spacer",
+            "maxLevel": 7,
+            "pointsPerLevel": 8,
+            "rpCostMultiplier": 1000
+        }
+    },
+    "wealthTiers": [
+        {
+            "min": 0,
+            "max": 9,
+            "name": "Struggling",
+            "maxRecruits": 0
+        },
+        {
+            "min": 10,
+            "max": 24,
+            "name": "Stable",
+            "maxRecruits": 1
+        },
+        {
+            "min": 25,
+            "max": 49,
+            "name": "Established",
+            "maxRecruits": 2
+        },
+        {
+            "min": 50,
+            "max": 99,
+            "name": "Prosperous",
+            "maxRecruits": 3
+        },
+        {
+            "min": 100,
+            "max": 999999,
+            "name": "Powerhouse",
+            "maxRecruits": 4
+        }
+    ],
+    "bodyParts": [
+        {
+            "id": "hand",
+            "name": "Hand",
+            "bane": 1,
+            "affectedSkills": [
+                "Shooting",
+                "Crafting",
+                "Medical"
+            ],
+            "notes": "Cannot dual-wield"
+        },
+        {
+            "id": "arm",
+            "name": "Arm",
+            "bane": 2,
+            "affectedSkills": [
+                "Shooting",
+                "Crafting",
+                "Medical",
+                "Melee"
+            ],
+            "notes": "Cannot use two-handed weapons"
+        },
+        {
+            "id": "foot",
+            "name": "Foot",
+            "bane": 1,
+            "speedPenalty": 1,
+            "affectedSkills": [
+                "Movement"
+            ],
+            "notes": "-1 Speed"
+        },
+        {
+            "id": "leg",
+            "name": "Leg",
+            "bane": 2,
+            "speedPenalty": 2,
+            "affectedSkills": [
+                "Movement"
+            ],
+            "notes": "Cannot sprint"
+        },
+        {
+            "id": "kidney",
+            "name": "Kidney",
+            "bane": 1,
+            "affectedSkills": [
+                "Vigor"
+            ],
+            "notes": "Resist poison/disease. Healing rate -25%"
+        },
+        {
+            "id": "lung",
+            "name": "Lung",
+            "bane": 1,
+            "stressOnExertion": 1,
+            "notes": "Bane on stamina rolls"
+        },
+        {
+            "id": "eye",
+            "name": "Eye",
+            "bane": 1,
+            "affectedSkills": [
+                "Shooting",
+                "Perception"
+            ],
+            "notes": "Perception and accuracy penalties"
+        }
+    ],
+    "biomes": [
+        {
+            "id": "temperate_forest",
+            "name": "Temperate Forest",
+            "farmingModifier": 0,
+            "defenseModifier": 0,
+            "securityModifier": 0,
+            "notes": "No modifiers",
+            "description": "Lush forests, moderate temperatures, rich soil"
+        },
+        {
+            "id": "arid_shrubland",
+            "name": "Arid Shrubland",
+            "farmingModifier": -2,
+            "defenseModifier": 1,
+            "securityModifier": 0,
+            "notes": "Clear sightlines. Heat stress without proper clothing.",
+            "description": "Hot, dry, endless sand and scrub"
+        },
+        {
+            "id": "desert",
+            "name": "Desert",
+            "farmingModifier": -2,
+            "defenseModifier": 1,
+            "securityModifier": 0,
+            "notes": "Clear sightlines. Extreme heat.",
+            "description": "Barren wasteland with scorching temperatures"
+        },
+        {
+            "id": "boreal_forest",
+            "name": "Boreal Forest",
+            "farmingModifier": -1,
+            "defenseModifier": 0,
+            "securityModifier": 1,
+            "notes": "Cold damages attackers. Winter farming penalty.",
+            "description": "Frozen pines, snow, and bitter cold"
+        },
+        {
+            "id": "tundra",
+            "name": "Tundra",
+            "farmingModifier": -1,
+            "defenseModifier": 0,
+            "securityModifier": 1,
+            "notes": "Extreme cold. Deep snow is difficult terrain.",
+            "description": "Endless frozen wasteland"
+        },
+        {
+            "id": "tropical_rainforest",
+            "name": "Tropical Rainforest",
+            "farmingModifier": 1,
+            "defenseModifier": -1,
+            "securityModifier": 0,
+            "notes": "Dense cover for enemies. High disease rate.",
+            "description": "Choking vegetation, humid heat, and insects"
+        },
+        {
+            "id": "mountain",
+            "name": "Mountain",
+            "farmingModifier": -2,
+            "defenseModifier": 0,
+            "securityModifier": 2,
+            "miningModifier": 1,
+            "notes": "Natural choke points. Excellent mining.",
+            "description": "Rocky peaks and natural fortifications"
+        }
+    ],
+    "dailyActions": [
+        {
+            "id": "farming",
+            "name": "Farming",
+            "roll": "Mind + Plants",
+            "tier1": {
+                "food": 1
+            },
+            "tier2": {
+                "food": 2,
+                "textile": 1
+            },
+            "tier3": {
+                "food": 4,
+                "textile": 2
+            }
+        },
+        {
+            "id": "hunting",
+            "name": "Hunting",
+            "roll": "Dexterity + Shooting",
+            "tier1": {
+                "food": 1
+            },
+            "tier2": {
+                "food": 2,
+                "textile": 1
+            },
+            "tier3": {
+                "food": 4,
+                "textile": 2
+            }
+        },
+        {
+            "id": "mining",
+            "name": "Mining",
+            "roll": "Vigor + Mining",
+            "tier1": {
+                "ore": 1
+            },
+            "tier2": {
+                "ore": 2
+            },
+            "tier3": {
+                "ore": 3,
+                "components": 1
+            }
+        },
+        {
+            "id": "cooking",
+            "name": "Cooking",
+            "roll": "Dexterity + Cooking",
+            "tier1": {
+                "input": {
+                    "food": 2
+                },
+                "output": {
+                    "meals": 2
+                }
+            },
+            "tier2": {
+                "input": {
+                    "food": 2
+                },
+                "output": {
+                    "meals": 3
+                }
+            },
+            "tier3": {
+                "input": {
+                    "food": 2
+                },
+                "output": {
+                    "meals": 4
+                }
+            }
+        },
+        {
+            "id": "crafting",
+            "name": "Crafting",
+            "roll": "Dexterity + Crafting",
+            "tier1": {
+                "cp": 1
+            },
+            "tier2": {
+                "cp": 3
+            },
+            "tier3": {
+                "cp": 5
+            }
+        },
+        {
+            "id": "building",
+            "name": "Building",
+            "roll": "Vigor + Construction",
+            "tier1": {
+                "cp": 2
+            },
+            "tier2": {
+                "cp": 5
+            },
+            "tier3": {
+                "cp": 10
+            }
+        },
+        {
+            "id": "researching",
+            "name": "Researching",
+            "roll": "Mind + Intellectual",
+            "tier1": {
+                "rp": 20
+            },
+            "tier2": {
+                "rp": 50
+            },
+            "tier3": {
+                "rp": 100
+            }
+        },
+        {
+            "id": "social",
+            "name": "Social",
+            "roll": "Spirit + Social",
+            "tier1": {
+                "effect": "Maintain Relations"
+            },
+            "tier2": {
+                "relation": 1
+            },
+            "tier3": {
+                "relation": 2,
+                "tradeBonus": true
+            }
+        },
+        {
+            "id": "healing",
+            "name": "Healing",
+            "roll": "Mind + Medical",
+            "tier1": {
+                "wounds": 1
+            },
+            "tier2": {
+                "wounds": 2
+            },
+            "tier3": {
+                "wounds": "all"
+            }
+        },
+        {
+            "id": "artistic",
+            "name": "Artistic",
+            "roll": "Spirit + Artistic",
+            "tier1": {
+                "cp": 1
+            },
+            "tier2": {
+                "cp": 3
+            },
+            "tier3": {
+                "cp": 5
+            }
+        }
+    ],
+    "qualityTiers": [
+        {
+            "tier": 1,
+            "range": "11-",
+            "name": "Normal",
+            "bonus": 0,
+            "valueMultiplier": 1.0
+        },
+        {
+            "tier": 2,
+            "range": "12-16",
+            "name": "Good",
+            "bonus": 1,
+            "valueMultiplier": 1.0,
+            "notes": "+1 Accuracy/Damage (Weapons) or +1 Armor (Apparel)"
+        },
+        {
+            "tier": 3,
+            "range": "17+",
+            "name": "Masterwork",
+            "bonus": 2,
+            "valueMultiplier": 1.5
+        },
+        {
+            "tier": 4,
+            "range": "Natural 10",
+            "name": "Legendary",
+            "bonus": 3,
+            "valueMultiplier": 2.0,
+            "notes": "Gain Art/Name"
+        }
+    ]
+}

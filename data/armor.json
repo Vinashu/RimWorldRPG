@@ -1,0 +1,183 @@
+{
+    "apparel": [
+        {
+            "id": "tribalwear",
+            "name": "Tribalwear",
+            "rating": 0,
+            "speedPenalty": 0,
+            "marketValue": 20,
+            "materials": {
+                "leather": 30
+            },
+            "cp": 20,
+            "tech": {
+                "category": "neolithic",
+                "level": 1
+            },
+            "coverage": "body",
+            "notes": "Basic clothing"
+        },
+        {
+            "id": "cowboy_hat",
+            "name": "Cowboy Hat",
+            "rating": 0,
+            "speedPenalty": 0,
+            "marketValue": 50,
+            "materials": {
+                "leather": 20
+            },
+            "cp": 30,
+            "tech": {
+                "category": "neolithic",
+                "level": 2
+            },
+            "coverage": "head",
+            "bonus": {
+                "social": 1
+            },
+            "notes": "+1 Social. Heat insulation"
+        },
+        {
+            "id": "tuque",
+            "name": "Tuque",
+            "rating": 0,
+            "speedPenalty": 0,
+            "marketValue": 30,
+            "materials": {
+                "cloth": 20
+            },
+            "cp": 20,
+            "tech": {
+                "category": "neolithic",
+                "level": 1
+            },
+            "coverage": "head",
+            "notes": "Cold insulation"
+        },
+        {
+            "id": "parka",
+            "name": "Parka",
+            "rating": 1,
+            "speedPenalty": 0,
+            "marketValue": 60,
+            "materials": {
+                "leather": 60
+            },
+            "cp": 40,
+            "tech": {
+                "category": "neolithic",
+                "level": 2
+            },
+            "coverage": "body",
+            "notes": "Extreme cold insulation"
+        },
+        {
+            "id": "duster",
+            "name": "Duster",
+            "rating": 1,
+            "speedPenalty": 0,
+            "marketValue": 60,
+            "materials": {
+                "cloth": 60
+            },
+            "cp": 40,
+            "tech": {
+                "category": "medieval",
+                "level": 1
+            },
+            "coverage": "body",
+            "notes": "Heat insulation"
+        },
+        {
+            "id": "flak_vest",
+            "name": "Flak Vest",
+            "rating": 2,
+            "speedPenalty": 0,
+            "marketValue": 150,
+            "materials": {
+                "cloth": 40,
+                "steel": 30
+            },
+            "cp": 80,
+            "tech": {
+                "category": "industrial",
+                "level": 3
+            },
+            "coverage": "chest",
+            "notes": "Chest only"
+        },
+        {
+            "id": "flak_jacket",
+            "name": "Flak Jacket",
+            "rating": 2,
+            "speedPenalty": 0,
+            "marketValue": 150,
+            "materials": {
+                "cloth": 50,
+                "steel": 20
+            },
+            "cp": 80,
+            "tech": {
+                "category": "industrial",
+                "level": 3
+            },
+            "coverage": "body",
+            "notes": "Full body protection"
+        },
+        {
+            "id": "shield_belt",
+            "name": "Shield Belt",
+            "rating": 0,
+            "speedPenalty": 0,
+            "marketValue": 400,
+            "materials": {
+                "steel": 50,
+                "components": 2
+            },
+            "cp": 150,
+            "tech": {
+                "category": "spacer",
+                "level": 1
+            },
+            "coverage": "belt",
+            "shield": 15,
+            "notes": "15 HP Shield. Recharges. No Shooting while active"
+        },
+        {
+            "id": "marine_armor",
+            "name": "Marine Armor",
+            "rating": 4,
+            "speedPenalty": -1,
+            "marketValue": 1200,
+            "materials": {
+                "plasteel": 100,
+                "components": 5
+            },
+            "cp": 400,
+            "tech": {
+                "category": "spacer",
+                "level": 3
+            },
+            "coverage": "body",
+            "notes": "Power Armor"
+        },
+        {
+            "id": "cataphract_armor",
+            "name": "Cataphract Armor",
+            "rating": 5,
+            "speedPenalty": -2,
+            "marketValue": 2500,
+            "materials": {
+                "plasteel": 150,
+                "components": 8
+            },
+            "cp": 600,
+            "tech": {
+                "category": "spacer",
+                "level": 5
+            },
+            "coverage": "body",
+            "notes": "Heavy. Slow. Maximum protection"
+        }
+    ]
+}

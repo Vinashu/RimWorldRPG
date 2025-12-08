@@ -1,0 +1,308 @@
+{
+    "animals": [
+        {
+            "id": "muffalo",
+            "name": "Muffalo",
+            "attributes": {
+                "vigor": 4,
+                "dexterity": 0,
+                "mind": 0,
+                "spirit": 1
+            },
+            "hp": 23,
+            "armor": 2,
+            "attack": {
+                "name": "Headbutt",
+                "damage": 4,
+                "band": "melee",
+                "ap": 2
+            },
+            "skills": {},
+            "notes": "Pack Animal. Docile unless provoked"
+        },
+        {
+            "id": "warg",
+            "name": "Warg",
+            "attributes": {
+                "vigor": 3,
+                "dexterity": 2,
+                "mind": 1,
+                "spirit": 0
+            },
+            "hp": 21,
+            "armor": 1,
+            "attack": {
+                "name": "Bite",
+                "damage": 6,
+                "band": "melee",
+                "ap": 2
+            },
+            "skills": {
+                "melee": 2
+            },
+            "notes": "Fast. Carnivore. Aggressive"
+        },
+        {
+            "id": "boomalope",
+            "name": "Boomalope",
+            "attributes": {
+                "vigor": 2,
+                "dexterity": 0,
+                "mind": 0,
+                "spirit": 0
+            },
+            "hp": 19,
+            "armor": 0,
+            "attack": {
+                "name": "Bump",
+                "damage": 2,
+                "band": "melee",
+                "ap": 2
+            },
+            "skills": {},
+            "notes": "EXPLODES on death (3d10 Fire damage in area)"
+        },
+        {
+            "id": "thrumbo",
+            "name": "Thrumbo",
+            "attributes": {
+                "vigor": 8,
+                "dexterity": 2,
+                "mind": 2,
+                "spirit": 4
+            },
+            "hp": 31,
+            "armor": 6,
+            "attack": {
+                "name": "Horn",
+                "damage": 10,
+                "band": "melee",
+                "ap": 2
+            },
+            "skills": {
+                "melee": 5
+            },
+            "notes": "LEGENDARY. Extremely rare and powerful"
+        }
+    ],
+    "insects": [
+        {
+            "id": "megascarab",
+            "name": "Megascarab",
+            "attributes": {
+                "vigor": 1,
+                "dexterity": 2,
+                "mind": 0,
+                "spirit": 0
+            },
+            "hp": 17,
+            "armor": 1,
+            "attack": {
+                "name": "Mandibles",
+                "damage": 3,
+                "band": "melee",
+                "ap": 2
+            },
+            "skills": {
+                "melee": 1
+            },
+            "notes": "Swarms. Weak individually"
+        },
+        {
+            "id": "spelopede",
+            "name": "Spelopede",
+            "attributes": {
+                "vigor": 3,
+                "dexterity": 1,
+                "mind": 0,
+                "spirit": 0
+            },
+            "hp": 21,
+            "armor": 2,
+            "attack": {
+                "name": "Dig",
+                "damage": 5,
+                "band": "melee",
+                "ap": 2
+            },
+            "skills": {
+                "melee": 2
+            },
+            "notes": "Medium threat. Tunnels through rock"
+        },
+        {
+            "id": "megaspider",
+            "name": "Megaspider",
+            "attributes": {
+                "vigor": 5,
+                "dexterity": 1,
+                "mind": 1,
+                "spirit": 0
+            },
+            "hp": 25,
+            "armor": 4,
+            "attack": {
+                "name": "Claw",
+                "damage": 8,
+                "band": "melee",
+                "ap": 1
+            },
+            "skills": {
+                "melee": 4
+            },
+            "notes": "TANK. Deadly. High armor and HP"
+        }
+    ],
+    "mechanoids": [
+        {
+            "id": "lancer",
+            "name": "Lancer",
+            "attributes": {
+                "vigor": 3,
+                "dexterity": 4,
+                "mind": 3,
+                "spirit": 0
+            },
+            "hp": 21,
+            "armor": 2,
+            "attack": {
+                "name": "C-Lance",
+                "damage": 12,
+                "band": "far",
+                "ap": 3
+            },
+            "skills": {
+                "shooting": 4
+            },
+            "notes": "SNIPER. Glass cannon. Long range"
+        },
+        {
+            "id": "scyther",
+            "name": "Scyther",
+            "attributes": {
+                "vigor": 4,
+                "dexterity": 4,
+                "mind": 0,
+                "spirit": 0
+            },
+            "hp": 23,
+            "armor": 3,
+            "attack": {
+                "name": "Blades",
+                "damage": 8,
+                "band": "melee",
+                "ap": 2
+            },
+            "skills": {
+                "melee": 4
+            },
+            "notes": "FAST. Rush tactic. Deadly in melee"
+        },
+        {
+            "id": "centipede",
+            "name": "Centipede",
+            "attributes": {
+                "vigor": 6,
+                "dexterity": 1,
+                "mind": 1,
+                "spirit": 0
+            },
+            "hp": 27,
+            "armor": 6,
+            "attack": {
+                "name": "H-Blaster",
+                "damage": 6,
+                "band": "medium",
+                "ap": 3
+            },
+            "skills": {
+                "shooting": 2
+            },
+            "notes": "BOSS. Area Fire. Heavy armor"
+        }
+    ],
+    "humans": [
+        {
+            "id": "tribal_warrior",
+            "name": "Tribal Warrior",
+            "tech": {
+                "category": "neolithic",
+                "level": 2
+            },
+            "attributes": {
+                "vigor": 2,
+                "dexterity": 1,
+                "mind": 0,
+                "spirit": 1
+            },
+            "hp": 19,
+            "armor": 0,
+            "skills": {
+                "melee": 1,
+                "shooting": 1
+            },
+            "weapons": [
+                "ikwa",
+                "short_bow"
+            ],
+            "tactic": "Zerg rush",
+            "notes": "Large numbers, low tech"
+        },
+        {
+            "id": "pirate_gunner",
+            "name": "Pirate Gunner",
+            "tech": {
+                "category": "industrial",
+                "level": 2
+            },
+            "attributes": {
+                "vigor": 2,
+                "dexterity": 2,
+                "mind": 1,
+                "spirit": 1
+            },
+            "hp": 19,
+            "armor": 3,
+            "skills": {
+                "shooting": 2
+            },
+            "weapons": [
+                "revolver",
+                "bolt_action"
+            ],
+            "apparel": [
+                "flak_vest"
+            ],
+            "tactic": "Uses cover, flanks",
+            "notes": "Standard raider"
+        },
+        {
+            "id": "elite_mercenary",
+            "name": "Elite Mercenary",
+            "tech": {
+                "category": "spacer",
+                "level": 2
+            },
+            "attributes": {
+                "vigor": 4,
+                "dexterity": 3,
+                "mind": 2,
+                "spirit": 2
+            },
+            "hp": 23,
+            "armor": 6,
+            "skills": {
+                "shooting": 4,
+                "melee": 3
+            },
+            "weapons": [
+                "charge_rifle"
+            ],
+            "apparel": [
+                "marine_armor"
+            ],
+            "tactic": "Coordinated fire. Will use Stimpacks",
+            "notes": "High-tech, well-trained"
+        }
+    ]
+}
