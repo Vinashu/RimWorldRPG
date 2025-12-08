@@ -82,50 +82,37 @@
                         </div>
                     </fieldset>
 
-                    <!-- Building Points -->
+                    <!-- Building Points (AUTO-CALCULATED) -->
                     <fieldset style="border: 1px solid #444; padding: 10px; border-radius: 5px;">
                         <legend style="margin-top: 0; color: var(--success); font-weight: bold;">Building Points
+                            <span style="font-size: 0.8em; color: var(--accent-color); font-weight: normal;">
+                                (Auto-Calculated)</span>
                         </legend>
-                        <label for="build-barracks">Barracks (2pts):</label>
-                        <input type="number" id="build-barracks" name="build-barracks" value="0" min="0"
-                            aria-label="Number of Barracks">
-                        <label for="build-kitchen">Kitchen (4pts):</label>
-                        <input type="number" id="build-kitchen" name="build-kitchen" value="1" min="0"
-                            aria-label="Number of Kitchens">
-                        <label for="build-workshop">Workshop (6pts):</label>
-                        <input type="number" id="build-workshop" name="build-workshop" value="0" min="0"
-                            aria-label="Number of Workshops">
-                        <label for="build-hospital">Hospital (8pts):</label>
-                        <input type="number" id="build-hospital" name="build-hospital" value="0" min="0"
-                            aria-label="Number of Hospitals">
-                        <label for="build-lab">Research Lab (8pts):</label>
-                        <input type="number" id="build-lab" name="build-lab" value="0" min="0"
-                            aria-label="Number of Research Labs">
-                        <div style="margin-top: 10px; font-weight: bold;" aria-live="polite">
-                            Subtotal: <span id="build-total">4</span> pts
+                        <div
+                            style="padding: 10px; background: rgba(0,150,0,0.1); border-radius: 4px; text-align: center;">
+                            <div style="font-size: 1.3em; font-weight: bold; color: var(--success);">
+                                <span id="building-count">0</span> facilities = <span id="build-total">0</span> pts
+                            </div>
+                            <div style="font-size: 0.85em; color: #aaa; margin-top: 5px;">
+                                Add facilities using the Facility Builder below
+                            </div>
                         </div>
                     </fieldset>
 
-                    <!-- Defense Points -->
+                    <!-- Defense Points (AUTO-CALCULATED) -->
                     <fieldset style="border: 1px solid #444; padding: 10px; border-radius: 5px;">
-                        <legend style="margin-top: 0; color: var(--danger); font-weight: bold;">Defense Points</legend>
-                        <label for="def-wood-wall">Wood Walls (0.5pts):</label>
-                        <input type="number" id="def-wood-wall" name="def-wood-wall" value="0" min="0" step="1"
-                            aria-label="Number of Wood Wall Sections">
-                        <label for="def-stone-wall">Stone Walls (1pt):</label>
-                        <input type="number" id="def-stone-wall" name="def-stone-wall" value="10" min="0"
-                            aria-label="Number of Stone Wall Sections">
-                        <label for="def-sandbags">Sandbags (0.5pts):</label>
-                        <input type="number" id="def-sandbags" name="def-sandbags" value="0" min="0" step="1"
-                            aria-label="Number of Sandbag Sections">
-                        <label for="def-turret">Mini Turrets (5pts):</label>
-                        <input type="number" id="def-turret" name="def-turret" value="1" min="0"
-                            aria-label="Number of Mini Turrets">
-                        <label for="def-mortar">Mortars (6pts):</label>
-                        <input type="number" id="def-mortar" name="def-mortar" value="0" min="0"
-                            aria-label="Number of Mortars">
-                        <div style="margin-top: 10px; font-weight: bold;" aria-live="polite">
-                            Subtotal: <span id="def-total">15</span> pts
+                        <legend style="margin-top: 0; color: var(--warning); font-weight: bold;">Defense Points
+                            <span style="font-size: 0.8em; color: var(--accent-color); font-weight: normal;">
+                                (Auto-Calculated)</span>
+                        </legend>
+                        <div
+                            style="padding: 10px; background: rgba(200,150,0,0.1); border-radius: 4px; text-align: center;">
+                            <div style="font-size: 1.3em; font-weight: bold; color: var(--warning);">
+                                <span id="defense-count">0</span> defenses = <span id="def-total">0</span> pts
+                            </div>
+                            <div style="font-size: 0.85em; color: #aaa; margin-top: 5px;">
+                                Add defenses using the Defense Builder below
+                            </div>
                         </div>
                     </fieldset>
 
@@ -212,11 +199,54 @@
             </div>
         </section>
 
-        <!-- Defense Pool -->
+        <!-- Defense Pool (AUTO-CALCULATED) -->
         <section class="panel defense-pool" aria-labelledby="defense-pool-heading">
-            <h2 id="defense-pool-heading" style="color: #ffaaaa; font-size: 1.2em; margin: 0;">DEFENSE POOL</h2>
-            <div class="defense-value" aria-label="Defense Pool Current and Maximum">12 / 12</div>
-            <p style="color: #aaa; margin: 5px 0 0 0;">Spend points to negate hits or reduce damage.</p>
+            <h2 id="defense-pool-heading" style="color: #ffaaaa; font-size: 1.2em; margin: 0;">DEFENSE POOL
+                <span style="font-size: 0.7em; color: var(--accent-color); font-weight: normal;"> (Auto)</span>
+            </h2>
+            <div class="defense-value" aria-label="Defense Pool Current and Maximum">
+                <span id="defense-rating-current">0</span> / <span id="defense-rating-max">0</span>
+            </div>
+
+            <!-- Spend/Reset Buttons -->
+            <div style="display: flex; gap: 5px; margin-top: 8px;">
+                <button onclick="spendDefensePoint(1)"
+                    style="flex: 1; padding: 4px 8px; background: var(--error); border: none; border-radius: 3px; cursor: pointer; font-size: 0.85em;">
+                    Spend 1
+                </button>
+                <button onclick="resetDefensePool()"
+                    style="flex: 1; padding: 4px 8px; background: var(--success); border: none; border-radius: 3px; cursor: pointer; font-size: 0.85em;">
+                    Reset
+                </button>
+            </div>
+
+            <p style="color: #aaa; margin: 8px 0 0 0; font-size: 0.85em;">
+                Spend points to negate hits or reduce damage.
+            </p>
+
+            <!-- Visual Adequacy Indicator -->
+            <div style="margin-top: 10px;">
+                <div style="background: rgba(50,50,50,0.5); height: 20px; border-radius: 10px; overflow: hidden;">
+                    <div id="defense-adequacy-bar"
+                        style="height: 100%; background: var(--error); width: 0%; transition: width 0.3s, background 0.3s;">
+                    </div>
+                </div>
+                <div id="defense-status"
+                    style="font-size: 0.8em; margin-top: 4px; text-align: center; color: var(--error);">
+                    No defenses
+                </div>
+            </div>
+
+            <!-- Defense Recommendation -->
+            <div id="defense-recommendation"
+                style="margin-top: 10px; padding: 8px; background: rgba(100,100,150,0.2); border-radius: 4px; font-size: 0.8em; text-align: center;">
+                Build defenses to protect your colony
+            </div>
+
+            <!-- Defense Breakdown -->
+            <div style="margin-top: 8px; font-size: 0.75em; color: #888; border-top: 1px solid #444; padding-top: 5px;">
+                <span id="defense-breakdown">No defenses built</span>
+            </div>
         </section>
 
         <!-- Resources -->

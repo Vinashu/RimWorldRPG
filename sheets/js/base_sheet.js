@@ -22,6 +22,7 @@ const BaseSheetManager = (function () {
     let projectState = {};
     let colonyFacilities = [];
     let colonyDefenses = [];
+    let currentDefensePool = 0;  // Track spent defense points
 
     // Load game data
     async function loadGameData() {
@@ -79,21 +80,17 @@ const BaseSheetManager = (function () {
             const techSpacer = safeParseInt(document.getElementById('tech-spacer')?.value) * 8;
             const techTotal = techNeo + techMed + techInd + techSpacer;
 
-            // Building Points
-            const buildBarracks = safeParseInt(document.getElementById('build-barracks')?.value) * 2;
-            const buildKitchen = safeParseInt(document.getElementById('build-kitchen')?.value) * 4;
-            const buildWorkshop = safeParseInt(document.getElementById('build-workshop')?.value) * 6;
-            const buildHospital = safeParseInt(document.getElementById('build-hospital')?.value) * 8;
-            const buildLab = safeParseInt(document.getElementById('build-lab')?.value) * 8;
-            const buildTotal = buildBarracks + buildKitchen + buildWorkshop + buildHospital + buildLab;
+            // Building Points (AUTO-CALCULATED from colonyFacilities array)
+            const buildTotal = colonyFacilities.reduce((sum, facility) => {
+                const quantity = facility.quantity || 1;
+                return sum + ((facility.wealthPoints || 0) * quantity);
+            }, 0);
 
-            // Defense Points
-            const defWoodWall = safeParseInt(document.getElementById('def-wood-wall')?.value) * 0.5;
-            const defStoneWall = safeParseInt(document.getElementById('def-stone-wall')?.value) * 1;
-            const defSandbags = safeParseInt(document.getElementById('def-sandbags')?.value) * 0.5;
-            const defTurret = safeParseInt(document.getElementById('def-turret')?.value) * 5;
-            const defMortar = safeParseInt(document.getElementById('def-mortar')?.value) * 6;
-            const defTotal = defWoodWall + defStoneWall + defSandbags + defTurret + defMortar;
+            // Defense Points (AUTO-CALCULATED from colonyDefenses array)
+            const defTotal = colonyDefenses.reduce((sum, defense) => {
+                const quantity = defense.quantity || 1;
+                return sum + ((defense.wealthPoints || 0) * quantity);
+            }, 0);
 
             // Colonist Points
             const colPCs = safeParseInt(document.getElementById('col-pcs')?.value) * 10;
@@ -108,6 +105,10 @@ const BaseSheetManager = (function () {
             updateElement('build-total', buildTotal);
             updateElement('def-total', defTotal);
             updateElement('col-total', colTotal);
+
+            // Update counts
+            updateElement('building-count', colonyFacilities.length);
+            updateElement('defense-count', colonyDefenses.length);
 
             // Update total displays
             updateElement('wealth-score-display', totalWealth);
@@ -291,6 +292,155 @@ const BaseSheetManager = (function () {
     const debouncedAutosave = debounce(saveData, AUTOSAVE_DEBOUNCE_MS);
 
     // ========================================
+    // Defense Rating Calculator
+    // ========================================
+
+    function calculateDefenseRating() {
+        // Calculate total defense points from all defenses (accounting for quantities)
+        const totalDefense = colonyDefenses.reduce((sum, defense) => {
+            const quantity = defense.quantity || 1;
+            return sum + ((defense.defensePoints || 0) * quantity);
+        }, 0);
+
+        // Initialize current pool if not set or if max changed
+        if (currentDefensePool === 0 || currentDefensePool > totalDefense) {
+            currentDefensePool = totalDefense;
+        }
+
+        // Update current and max displays
+        updateElement('defense-rating-current', currentDefensePool);
+        updateElement('defense-rating-max', totalDefense);
+
+        // Create breakdown text
+        let breakdown = '';
+        if (colonyDefenses.length === 0) {
+            breakdown = 'No defenses built';
+        } else {
+            // Build breakdown text with quantities
+            const parts = colonyDefenses.map(defense => {
+                const quantity = defense.quantity || 1;
+                const total = (defense.defensePoints || 0) * quantity;
+                if (quantity > 1) {
+                    return `${quantity}× ${defense.name} (+${total})`;
+                } else {
+                    return `${defense.name} (+${total})`;
+                }
+            });
+            breakdown = parts.join(' • ');
+        }
+
+        updateElement('defense-breakdown', breakdown);
+
+        // Update visual indicators and recommendations
+        updateDefenseVisuals(totalDefense);
+        updateDefenseRecommendation(totalDefense);
+    }
+
+    // Update visual adequacy indicators
+    function updateDefenseVisuals(currentDefense) {
+        const recommended = getRecommendedDefense();
+        const percent = recommended > 0 ? Math.min(100, (currentDefense / recommended) * 100) : 0;
+
+        const bar = document.getElementById('defense-adequacy-bar');
+        const status = document.getElementById('defense-status');
+
+        if (!bar || !status) return;
+
+        // Update progress bar width
+        bar.style.width = percent + '%';
+
+        // Update colors and status text based on adequacy
+        if (currentDefense === 0) {
+            bar.style.background = 'var(--error)';
+            status.style.color = 'var(--error)';
+            status.textContent = '❌ No Defenses';
+        } else if (percent >= 100) {
+            bar.style.background = 'var(--success)';
+            status.style.color = 'var(--success)';
+            status.textContent = '✅ Well-Defended';
+        } else if (percent >= 80) {
+            bar.style.background = 'var(--warning)';
+            status.style.color = 'var(--warning)';
+            status.textContent = '✓ Adequately Defended';
+        } else if (percent >= 50) {
+            bar.style.background = '#ff8800';
+            status.style.color = '#ff8800';
+            status.textContent = '⚠️ Under-Defended';
+        } else {
+            bar.style.background = 'var(--error)';
+            status.style.color = 'var(--error)';
+            status.textContent = '❌ Critically Under-Defended';
+        }
+    }
+
+    // Update defense recommendation
+    function updateDefenseRecommendation(currentDefense) {
+        const recommended = getRecommendedDefense();
+        const elem = document.getElementById('defense-recommendation');
+
+        if (!elem) return;
+
+        if (currentDefense === 0) {
+            elem.textContent = '💡 Build defenses to protect your colony';
+            elem.style.background = 'rgba(150,50,50,0.3)';
+        } else if (currentDefense >= recommended) {
+            elem.textContent = '✅ Your defenses are adequate for your wealth tier';
+            elem.style.background = 'rgba(50,150,50,0.3)';
+        } else {
+            const needed = recommended - currentDefense;
+            const tierName = getCurrentWealthTierName();
+            elem.textContent = `💡 Add ${needed} more defense point${needed > 1 ? 's' : ''} for ${tierName} tier`;
+            elem.style.background = 'rgba(150,100,50,0.3)';
+        }
+    }
+
+    // Get recommended defense for current wealth
+    function getRecommendedDefense() {
+        const wealthElement = document.getElementById('wealth-score-display');
+        if (!wealthElement) return 5;
+
+        const totalWealth = safeParseInt(wealthElement.textContent);
+
+        // Defense requirements by wealth tier
+        if (totalWealth >= 100) return 50;  // Powerhouse
+        if (totalWealth >= 50) return 30;   // Prosperous
+        if (totalWealth >= 25) return 20;   // Established
+        if (totalWealth >= 10) return 10;   // Stable
+        return 5;                            // Struggling
+    }
+
+    // Get current wealth tier name
+    function getCurrentWealthTierName() {
+        const tierElement = document.getElementById('colony-tier');
+        return tierElement ? tierElement.textContent : 'Unknown';
+    }
+
+    // Spend defense points (during combat)
+    function spendDefensePoint(amount = 1) {
+        if (currentDefensePool >= amount) {
+            currentDefensePool -= amount;
+            updateElement('defense-rating-current', currentDefensePool);
+            debouncedAutosave();
+            showNotification(`Spent ${amount} defense point(s)`);
+        } else {
+            showNotification('Not enough defense points!');
+        }
+    }
+
+    // Reset defense pool to maximum
+    function resetDefensePool() {
+        const maxDefense = colonyDefenses.reduce((sum, defense) => {
+            const quantity = defense.quantity || 1;
+            return sum + ((defense.defensePoints || 0) * quantity);
+        }, 0);
+        currentDefensePool = maxDefense;
+        updateElement('defense-rating-current', currentDefensePool);
+        updateElement('defense-rating-max', maxDefense);
+        debouncedAutosave();
+        showNotification('Defense pool restored');
+    }
+
+    // ========================================
     // Facility and Defense Management
     // ========================================
 
@@ -332,7 +482,8 @@ const BaseSheetManager = (function () {
                 const option = document.createElement('option');
                 option.value = defense.id;
                 const techReq = defense.tech ? ` [${RimWorldData.formatTech(defense.tech)}]` : '';
-                option.textContent = `${defense.name} (${defense.wealthPoints}pts, ${defense.cp}CP)${techReq}`;
+                // Show defense points, wealth points, and CP
+                option.textContent = `${defense.name} (+${defense.defensePoints} DEF, ${defense.wealthPoints}pts, ${defense.cp}CP)${techReq}`;
                 select.appendChild(option);
             });
         }
@@ -356,13 +507,18 @@ const BaseSheetManager = (function () {
         // Render facility card
         renderFacilityList();
         select.value = ''; // Reset dropdown
-        debouncedAutosave();
+
+        // Recalculate wealth
+        calculateWealth();
     }
 
     // Remove facility from colony
     function removeFacility(uniqueId) {
         colonyFacilities = colonyFacilities.filter(f => f.uniqueId !== uniqueId);
         renderFacilityList();
+
+        // Recalculate wealth
+        calculateWealth();
         debouncedAutosave();
     }
 
@@ -413,24 +569,63 @@ const BaseSheetManager = (function () {
         const defense = RimWorldData.getItemById(buildingsData, 'defenses', select.value);
         if (!defense) return;
 
-        // Add to colony list
-        const defenseWithId = {
-            ...defense,
-            uniqueId: Date.now() + Math.random()
-        };
-        colonyDefenses.push(defenseWithId);
+        // Check if we already have this defense type
+        const existing = colonyDefenses.find(d => d.id === defense.id);
+
+        if (existing) {
+            // Increment quantity of existing defense
+            existing.quantity = (existing.quantity || 1) + 1;
+        } else {
+            // Add new defense with quantity = 1
+            const defenseWithId = {
+                ...defense,
+                uniqueId: Date.now() + Math.random(),
+                quantity: 1
+            };
+            colonyDefenses.push(defenseWithId);
+        }
 
         // Render defense card
         renderDefenseList();
         select.value = ''; // Reset dropdown
+
+        // Recalculate wealth and defense rating
+        calculateWealth();
+        calculateDefenseRating();
+    }
+
+    // Remove defense from colony (or decrease quantity)
+    function removeDefense(uniqueId, removeAll = false) {
+        const defense = colonyDefenses.find(d => d.uniqueId === uniqueId);
+
+        if (!defense) return;
+
+        if (removeAll || !defense.quantity || defense.quantity <= 1) {
+            // Remove completely
+            colonyDefenses = colonyDefenses.filter(d => d.uniqueId !== uniqueId);
+        } else {
+            // Decrease quantity
+            defense.quantity--;
+        }
+
+        renderDefenseList();
+
+        // Recalculate wealth and defense rating
+        calculateWealth();
+        calculateDefenseRating();
         debouncedAutosave();
     }
 
-    // Remove defense from colony
-    function removeDefense(uniqueId) {
-        colonyDefenses = colonyDefenses.filter(d => d.uniqueId !== uniqueId);
-        renderDefenseList();
-        debouncedAutosave();
+    // Increase defense quantity
+    function increaseDefenseQuantity(uniqueId) {
+        const defense = colonyDefenses.find(d => d.uniqueId === uniqueId);
+        if (defense) {
+            defense.quantity = (defense.quantity || 1) + 1;
+            renderDefenseList();
+            calculateWealth();
+            calculateDefenseRating();
+            debouncedAutosave();
+        }
     }
 
     // Render defense list
@@ -449,26 +644,42 @@ const BaseSheetManager = (function () {
             const card = document.createElement('div');
             card.style.cssText = 'padding: 12px; background: rgba(100,100,100,0.2); border-radius: 5px; border-left: 3px solid var(--warning);';
 
+            const quantity = defense.quantity || 1;
             const hpDisplay = defense.hp > 0 ? `HP: ${defense.hp} | ` : '';
             const damageDisplay = defense.damage ? `Damage: ${defense.damage} | ` : '';
+            const totalDefense = (defense.defensePoints || 0) * quantity;
+            const totalWealth = (defense.wealthPoints || 0) * quantity;
 
             card.innerHTML = `
                 <div style="display: flex; justify-content: space-between; align-items: start;">
                     <div style="flex: 1;">
                         <strong>${defense.name}</strong>
+                        ${quantity > 1 ? `<span style="color: var(--accent-color); font-weight: bold;"> × ${quantity}</span>` : ''}
                         <div style="font-size: 0.85em; color: #aaa; margin-top: 4px;">
                             ${defense.notes || 'Defensive structure'}
                         </div>
                         <div style="font-size: 0.8em; margin-top: 6px;">
                             ${hpDisplay}${damageDisplay}
-                            <span style="color: var(--warning);">Wealth: ${defense.wealthPoints}pts</span> |
-                            <span>Defense: +${defense.defensePoints}</span>
+                            <span style="color: var(--success);">Defense: +${totalDefense}</span> |
+                            <span style="color: var(--warning);">Wealth: ${totalWealth}pts</span>
                         </div>
                     </div>
-                    <button onclick="removeDefense(${defense.uniqueId})" 
-                            style="padding: 4px 8px; background: var(--error); border: none; border-radius: 3px; cursor: pointer; font-size: 0.85em;">
-                        Remove
-                    </button>
+                    <div style="display: flex; flex-direction: column; gap: 4px;">
+                        <div style="display: flex; gap: 4px;">
+                            <button onclick="increaseDefenseQuantity(${defense.uniqueId})" 
+                                    style="padding: 2px 6px; background: var(--success); border: none; border-radius: 2px; cursor: pointer; font-size: 0.8em;">
+                                +
+                            </button>
+                            <button onclick="removeDefense(${defense.uniqueId})" 
+                                    style="padding: 2px 6px; background: var(--warning); border: none; border-radius: 2px; cursor: pointer; font-size: 0.8em;">
+                                −
+                            </button>
+                        </div>
+                        <button onclick="removeDefense(${defense.uniqueId}, true)" 
+                                style="padding: 4px 8px; background: var(--error); border: none; border-radius: 3px; cursor: pointer; font-size: 0.85em;">
+                            Remove All
+                        </button>
+                    </div>
                 </div>
             `;
             container.appendChild(card);
@@ -569,6 +780,9 @@ const BaseSheetManager = (function () {
         renderFacilityList();
         renderDefenseList();
 
+        // Calculate initial defense rating
+        calculateDefenseRating();
+
         console.log('Base Sheet Manager initialized!', dataLoaded ? '(Data loaded)' : '(Default values)');
     }
 
@@ -583,7 +797,10 @@ const BaseSheetManager = (function () {
         addFacility,
         removeFacility,
         addDefense,
-        removeDefense
+        removeDefense,
+        increaseDefenseQuantity,
+        spendDefensePoint,
+        resetDefensePool
     };
 })();
 
@@ -601,3 +818,6 @@ window.addFacility = BaseSheetManager.addFacility;
 window.removeFacility = BaseSheetManager.removeFacility;
 window.addDefense = BaseSheetManager.addDefense;
 window.removeDefense = BaseSheetManager.removeDefense;
+window.increaseDefenseQuantity = BaseSheetManager.increaseDefenseQuantity;
+window.spendDefensePoint = BaseSheetManager.spendDefensePoint;
+window.resetDefensePool = BaseSheetManager.resetDefensePool;
