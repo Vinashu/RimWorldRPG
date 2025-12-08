@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RimWorld RPG - Base Sheet</title>
     <meta name="description" content="Interactive character sheet for RimWorld RPG - Base/Colony Management">
-    <link rel="stylesheet" href="styles.css">
+    <title>RimWorld RPG - Base/Colony Sheet</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/data-loader.js"></script>
+    <script src="js/base_sheet.js"></script>
 </head>
 
 <body>
@@ -159,340 +161,56 @@
             </form>
         </section>
 
-        <script>
-            // ================================
-            // Base Sheet Manager
-            // ================================
-            const BaseSheetManager = (function () {
-                'use strict';
+        <!-- Facility Builder -->
+        <section class="panel" id="facility-builder" style="margin-top: 20px;">
+            <h2>Facility Builder</h2>
+            <p style="color: #aaa; font-size: 0.9em;">Select facilities to add to your colony</p>
 
-                // Constants
-                const AUTOSAVE_KEY = 'rimworld_base_sheet_data';
-                const AUTOSAVE_DEBOUNCE_MS = 1000;
+            <div style="margin-bottom: 15px;">
+                <label for="facility-select">Add Facility:</label>
+                <select id="facility-select" style="margin-bottom: 10px;">
+                    <option value="">-- Select Facility --</option>
+                </select>
+                <button onclick="addFacility()"
+                    style="padding: 8px 16px; background: var(--success); border: none; border-radius: 4px; cursor: pointer;">Add
+                    to Colony</button>
+            </div>
 
-                // Wealth tier thresholds
-                const WEALTH_TIERS = [
-                    { min: 100, name: 'Powerhouse', maxRecruits: 4 },
-                    { min: 50, name: 'Prosperous', maxRecruits: 3 },
-                    { min: 25, name: 'Established', maxRecruits: 2 },
-                    { min: 10, name: 'Stable', maxRecruits: 1 },
-                    { min: 0, name: 'Struggling', maxRecruits: 0 }
-                ];
+            <div id="facility-list" style="display: grid; gap: 10px;">
+                <!-- Facilities will be added here dynamically -->
+            </div>
+        </section>
 
-                // State
-                let autosaveTimeout = null;
-                let projectState = {};
+        <!-- Defense Builder -->
+        <section class="panel" id="defense-builder" style="margin-top: 20px;">
+            <h2>Defense Builder</h2>
+            <p style="color: #aaa; font-size: 0.9em;">Build defensive structures for your colony</p>
 
-                // Utility: Debounced function
-                function debounce(func, wait) {
-                    return function executedFunction(...args) {
-                        const later = () => {
-                            clearTimeout(autosaveTimeout);
-                            func(...args);
-                        };
-                        clearTimeout(autosaveTimeout);
-                        autosaveTimeout = setTimeout(later, wait);
-                    };
-                }
+            <div style="margin-bottom: 15px;">
+                <label for="defense-select">Add Defense:</label>
+                <select id="defense-select" style="margin-bottom: 10px;">
+                    <option value="">-- Select Defense --</option>
+                </select>
+                <button onclick="addDefense()"
+                    style="padding: 8px 16px; background: var(--warning); border: none; border-radius: 4px; cursor: pointer;">Add
+                    Defense</button>
+            </div>
 
-                // Utility: Safe integer parse
-                function safeParseInt(value, defaultValue = 0) {
-                    const parsed = parseInt(value, 10);
-                    return isNaN(parsed) ? defaultValue : parsed;
-                }
+            <div id="defense-list" style="display: grid; gap: 10px;">
+                <!-- Defenses will be added here dynamically -->
+            </div>
+        </section>
 
-                // Utility: Safe float parse
-                function safeParseFloat(value, defaultValue = 0) {
-                    const parsed = parseFloat(value);
-                    return isNaN(parsed) ? defaultValue : parsed;
-                }
+        <!-- Tech Tree Display -->
+        <section class="panel" id="tech-tree" style="margin-top: 20px;">
+            <h2>Technology Tree</h2>
+            <p style="color: #aaa; font-size: 0.9em;">Current research progress and available technologies</p>
 
-                // Calculate wealth score
-                function calculateWealth() {
-                    try {
-                        // Tech Points
-                        const techNeo = safeParseInt(document.getElementById('tech-neo')?.value) * 1;
-                        const techMed = safeParseInt(document.getElementById('tech-med')?.value) * 2;
-                        const techInd = safeParseInt(document.getElementById('tech-ind')?.value) * 4;
-                        const techSpacer = safeParseInt(document.getElementById('tech-spacer')?.value) * 8;
-                        const techTotal = techNeo + techMed + techInd + techSpacer;
-
-                        // Building Points
-                        const buildBarracks = safeParseInt(document.getElementById('build-barracks')?.value) * 2;
-                        const buildKitchen = safeParseInt(document.getElementById('build-kitchen')?.value) * 4;
-                        const buildWorkshop = safeParseInt(document.getElementById('build-workshop')?.value) * 6;
-                        const buildHospital = safeParseInt(document.getElementById('build-hospital')?.value) * 8;
-                        const buildLab = safeParseInt(document.getElementById('build-lab')?.value) * 8;
-                        const buildTotal = buildBarracks + buildKitchen + buildWorkshop + buildHospital + buildLab;
-
-                        // Defense Points
-                        const defWoodWall = safeParseInt(document.getElementById('def-wood-wall')?.value) * 0.5;
-                        const defStoneWall = safeParseInt(document.getElementById('def-stone-wall')?.value) * 1;
-                        const defSandbags = safeParseInt(document.getElementById('def-sandbags')?.value) * 0.5;
-                        const defTurret = safeParseInt(document.getElementById('def-turret')?.value) * 5;
-                        const defMortar = safeParseInt(document.getElementById('def-mortar')?.value) * 6;
-                        const defTotal = defWoodWall + defStoneWall + defSandbags + defTurret + defMortar;
-
-                        // Colonist Points
-                        const colPCs = safeParseInt(document.getElementById('col-pcs')?.value) * 10;
-                        const colRecruits = safeParseInt(document.getElementById('col-recruits')?.value) * 5;
-                        const colTotal = colPCs + colRecruits;
-
-                        // Total Wealth Score
-                        const totalWealth = techTotal + buildTotal + defTotal + colTotal;
-
-                        // Update subtotals
-                        updateElement('tech-total', techTotal);
-                        updateElement('build-total', buildTotal);
-                        updateElement('def-total', defTotal);
-                        updateElement('col-total', colTotal);
-
-                        // Update total displays
-                        updateElement('wealth-score-display', totalWealth);
-                        updateElement('total-wealth-score', totalWealth);
-                        updateElement('raid-points', totalWealth);
-
-                        // Determine colony tier
-                        const tierInfo = WEALTH_TIERS.find(tier => totalWealth >= tier.min) || WEALTH_TIERS[WEALTH_TIERS.length - 1];
-
-                        updateElement('colony-tier', tierInfo.name);
-                        updateElement('max-recruits', tierInfo.maxRecruits);
-                        updateElement('wealth-tier-quick', tierInfo.name);
-
-                        // Trigger autosave
-                        debouncedAutosave();
-                    } catch (error) {
-                        console.error('Error calculating wealth:', error);
-                    }
-                }
-
-                // Update element text content safely
-                function updateElement(id, value) {
-                    const element = document.getElementById(id);
-                    if (element) {
-                        element.textContent = value;
-                    }
-                }
-
-                // Update progress bar
-                function updateBar(barId, current, max) {
-                    const bar = document.getElementById(barId);
-                    if (!bar) return;
-
-                    const fill = bar.querySelector('.bar-fill');
-                    if (!fill) return;
-
-                    const percent = Math.min(100, Math.max(0, (current / max) * 100));
-                    fill.style.width = percent + '%';
-
-                    // Add visual feedback based on completion
-                    if (percent >= 100) {
-                        fill.style.background = 'var(--success)';
-                    } else if (percent >= 75) {
-                        fill.style.background = 'var(--warning)';
-                    } else {
-                        fill.style.background = 'var(--accent-color)';
-                    }
-                }
-
-                // Add construction points to a project
-                function addCP(projectId, amount) {
-                    try {
-                        const label = document.getElementById(projectId + '-label');
-                        if (!label) return;
-
-                        const text = label.textContent.trim();
-                        // Parse "60/100 CP" format
-                        const match = text.match(/(\d+)\s*\/\s*(\d+)\s*CP/);
-
-                        if (!match) {
-                            console.warn(`Could not parse CP format for: ${text}`);
-                            return;
-                        }
-
-                        let current = safeParseInt(match[1]);
-                        const max = safeParseInt(match[2]);
-
-                        current = Math.min(current + amount, max);
-
-                        label.textContent = `${current}/${max} CP`;
-                        updateBar(projectId + '-bar', current, max);
-
-                        // Save project state
-                        projectState[projectId] = { current, max };
-                        debouncedAutosave();
-
-                        // Show feedback if project is complete
-                        if (current >= max) {
-                            showNotification(`${projectId} construction complete!`);
-                        }
-                    } catch (error) {
-                        console.error('Error adding CP:', error);
-                    }
-                }
-
-                // Show notification (simple implementation)
-                function showNotification(message) {
-                    console.log('Notification:', message);
-                    // Could be enhanced with a toast notification UI
-                }
-
-                // Save data to localStorage
-                function saveData() {
-                    try {
-                        const formData = new FormData(document.getElementById('wealth-calculator-form'));
-                        const data = {
-                            timestamp: new Date().toISOString(),
-                            colonyName: document.getElementById('colony-name')?.value || '',
-                            biome: document.getElementById('biome')?.value || '',
-                            techLevel: document.getElementById('tech-level-display')?.value || '',
-                            wealthInputs: Object.fromEntries(formData),
-                            projects: projectState,
-                            resources: getResourceData()
-                        };
-                        localStorage.setItem(AUTOSAVE_KEY, JSON.stringify(data));
-                        console.log('Data autosaved at', new Date().toLocaleTimeString());
-                    } catch (error) {
-                        console.error('Error saving data:', error);
-                    }
-                }
-
-                // Load data from localStorage
-                function loadData() {
-                    try {
-                        const savedData = localStorage.getItem(AUTOSAVE_KEY);
-                        if (!savedData) return false;
-
-                        const data = JSON.parse(savedData);
-
-                        // Restore basic info
-                        if (data.colonyName) document.getElementById('colony-name').value = data.colonyName;
-                        if (data.biome) document.getElementById('biome').value = data.biome;
-                        if (data.techLevel) document.getElementById('tech-level-display').value = data.techLevel;
-
-                        // Restore wealth inputs
-                        if (data.wealthInputs) {
-                            Object.entries(data.wealthInputs).forEach(([key, value]) => {
-                                const input = document.getElementById(key);
-                                if (input) input.value = value;
-                            });
-                        }
-
-                        // Restore projects
-                        if (data.projects) {
-                            projectState = data.projects;
-                            Object.entries(data.projects).forEach(([projectId, state]) => {
-                                const label = document.getElementById(projectId + '-label');
-                                if (label) {
-                                    label.textContent = `${state.current}/${state.max} CP`;
-                                    updateBar(projectId + '-bar', state.current, state.max);
-                                }
-                            });
-                        }
-
-                        // Restore resources
-                        if (data.resources) {
-                            setResourceData(data.resources);
-                        }
-
-                        console.log('Data loaded from', new Date(data.timestamp).toLocaleString());
-                        return true;
-                    } catch (error) {
-                        console.error('Error loading data:', error);
-                        return false;
-                    }
-                }
-
-                // Get resource input values
-                function getResourceData() {
-                    const resources = {};
-                    document.querySelectorAll('.resource-box input[type="number"]').forEach(input => {
-                        if (input.id) {
-                            resources[input.id] = input.value;
-                        }
-                    });
-                    return resources;
-                }
-
-                // Set resource input values
-                function setResourceData(resources) {
-                    Object.entries(resources).forEach(([id, value]) => {
-                        const input = document.getElementById(id);
-                        if (input) input.value = value;
-                    });
-                }
-
-                // Debounced autosave
-                const debouncedAutosave = debounce(saveData, AUTOSAVE_DEBOUNCE_MS);
-
-                // Initialize the sheet
-                function init() {
-                    console.log('Initializing Base Sheet Manager...');
-
-                    // Try to load saved data
-                    const dataLoaded = loadData();
-
-                    // Calculate initial wealth (will use loaded or default values)
-                    calculateWealth();
-
-                    // Attach input listeners for autosave and recalculation
-                    const wealthForm = document.getElementById('wealth-calculator-form');
-                    if (wealthForm) {
-                        wealthForm.addEventListener('input', (e) => {
-                            if (e.target.tagName === 'INPUT') {
-                                calculateWealth();
-                            }
-                        });
-                    }
-
-                    // Attach listeners to other inputs for autosave
-                    ['colony-name', 'biome', 'tech-level-display'].forEach(id => {
-                        const input = document.getElementById(id);
-                        if (input) {
-                            input.addEventListener('input', debouncedAutosave);
-                        }
-                    });
-
-                    // Attach listeners to resource inputs
-                    document.querySelectorAll('.resource-box input[type="number"]').forEach(input => {
-                        input.addEventListener('input', debouncedAutosave);
-                    });
-
-                    // Keyboard shortcuts
-                    document.addEventListener('keydown', (e) => {
-                        // Ctrl/Cmd + S to manually save
-                        if ((e.ctrlKey || e.metaKey) && e.key === 's') {
-                            e.preventDefault();
-                            saveData();
-                            showNotification('Data saved manually');
-                        }
-                    });
-
-                    console.log('Base Sheet Manager initialized!', dataLoaded ? '(Data loaded)' : '(Default values)');
-                }
-
-                // Public API
-                return {
-                    init,
-                    calculateWealth,
-                    updateBar,
-                    addCP,
-                    saveData,
-                    loadData
-                };
-            })();
-
-            // Initialize when DOM is ready
-            if (document.readyState === 'loading') {
-                document.addEventListener('DOMContentLoaded', BaseSheetManager.init);
-            } else {
-                BaseSheetManager.init();
-            }
-
-            // Expose helper functions to global scope for inline onclick handlers
-            window.addCP = BaseSheetManager.addCP;
-            window.calculateWealth = BaseSheetManager.calculateWealth;
-        </script>
+            <div id="tech-categories"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
+                <!-- Tech categories will be populated from JSON -->
+            </div>
+        </section>
 
         <!-- Defense Pool -->
         <section class="panel defense-pool" aria-labelledby="defense-pool-heading">
