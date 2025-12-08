@@ -79,7 +79,7 @@ Scenarios define the starting conditions for your campaign. Each has unique chal
 **Setup**:
 *   Each player creates 1 colonist using the Lifepath (Chapter 2).
 *   GM assigns a random 3rd colonist (NPC or shared control).
-*   Starting Wealth: **1,500 Silver**.
+*   Starting Wealth Score: **~35** (3 PCs + basic tech + barracks).
 
 ### 2. Naked Brutality (Hard)
 *   **Colonists**: 1 lone survivor.
@@ -89,7 +89,7 @@ Scenarios define the starting conditions for your campaign. Each has unique chal
 
 **Setup**:
 *   Single player creates 1 colonist.
-*   Starting Wealth: **0 Silver**.
+*   Starting Wealth Score: **10** (1 PC only).
 *   GM should be merciful with early events (Minor only for first 10 days).
 
 ### 3. Rich Explorer (Solo)
@@ -100,7 +100,7 @@ Scenarios define the starting conditions for your campaign. Each has unique chal
 
 **Setup**:
 *   Single player creates 1 colonist with high skills.
-*   Starting Wealth: **5,000 Silver**.
+*   Starting Wealth Score: **~25** (1 PC + advanced tech/gear).
 *   GM should introduce recruitment opportunities early.
 
 ### 4. Tribal Start (Low-Tech)
@@ -111,7 +111,7 @@ Scenarios define the starting conditions for your campaign. Each has unique chal
 
 **Setup**:
 *   Players create 3-5 colonists with Tribal backgrounds.
-*   Starting Wealth: **800 Silver**.
+*   Starting Wealth Score: **~55** (5 PCs + Neolithic tech).
 *   Research starts at **Neolithic** level.
 
 ---
@@ -207,29 +207,28 @@ Offer 1 quest every 10-15 days. Players can decline, but repeated refusals may l
 
 ---
 
-## Part 6: Wealth Management
+## Part 6: Wealth Score Management
 
-Colony wealth determines threat level. As players accumulate resources, enemies grow stronger.
+Colony Wealth Score determines threat level. As players build and research, enemies grow stronger.
 
-### Calculating Wealth
-**Wealth** = (Buildings + Items + Colonists) in Silver value.
-*   **Buildings**: Cost in Materials (Wood=$1, Steel=$2, Plasteel=$10).
-*   **Items**: Market Value (see Chapter 5).
-*   **Colonists**: 1,500 Silver each.
+### Calculating Wealth Score
+**Wealth Score** = Tech Points + Building Points + Defense Points + Colonist Points
 
-> **Note**: Defensive structures (Walls, Turrets) count towards Wealth, increasing raid difficulty. Security is a double-edged sword.
+See **Chapter 6: Colony Management** for detailed point values.
+
+> **Note**: Defensive structures count towards Wealth Score, increasing raid difficulty. Security is a double-edged sword.
 
 ### Threat Points System
 Instead of fixed numbers, use **Raid Points** to buy enemies.
-1.  **Calculate Points**: `Total Wealth / 1000 = Raid Points`.
+1.  **Calculate Score**: Wealth Score = Raid Points (1:1 ratio).
 2.  **Spend Points**: Buy units from the enemy faction list.
 
-| Wealth | Raid Points | Example Raid (Tribal) | Example Raid (Mech) |
+| Wealth Score | Raid Points | Example Raid (Tribal) | Example Raid (Mech) |
 | :--- | :--- | :--- | :--- |
-| **15k (Start)** | **15 pts** | 3 Warriors (5pts ea) | 1 Lancer (15pts) |
-| **30k (Early)** | **30 pts** | 6 Warriors | 1 Scyther, 1 Lancer |
-| **50k (Mid)** | **50 pts** | 10 Warriors | 2 Scythers, 1 Lancer |
-| **100k (Late)** | **100 pts** | 20 Warriors (Zerg) | 1 Centipede (60), 2 Scythers |
+| **15 (Start)** | **15 pts** | 3 Warriors (5pts ea) | 1 Lancer (15pts) |
+| **30 (Early)** | **30 pts** | 6 Warriors | 1 Scyther, 1 Lancer |
+| **50 (Mid)** | **50 pts** | 10 Warriors | 2 Scythers, 1 Lancer |
+| **100 (Late)** | **100 pts** | 20 Warriors (Zerg) | 1 Centipede (60), 2 Scythers |
 
 **Enemy Costs (Approx)**:
 *   **Tribal Warrior**: 5 pts

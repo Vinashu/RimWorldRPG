@@ -13,7 +13,7 @@ The Colony is a character in itself.
 *   **Security**: Your ability to repel raids. (Sum of Defenses).
 *   **Efficiency**: Bonus to work speed. (Workshops + Power).
 *   **Comfort**: Bonus to Stress recovery. (Bedrooms + Recreation).
-*   **Wealth**: The total value of your items/buildings. **Higher Wealth = Harder Raids.**
+*   **Wealth Score**: Total points from Tech + Buildings + Defenses + Colonists. **Higher Score = Harder Raids.**
 
 ### Resources
 We track 5 abstract resource categories:
@@ -233,56 +233,88 @@ Traveling the world map to trade or attack.
 
 ## Colony Wealth & Recruits
 
-As your colony grows richer, word spreads that you have food, walls, and maybe even spare beds. People drift in: refugees, specialists, mercenaries, weirdos. Some stay—if you can afford them.
-
-This section explains how **Wealth** affects how many extra colonists you can support as **Recruits**.
+As your colony grows, you can support additional colonists called **Recruits**. Your **Wealth Score** determines how many you can maintain.
 
 ---
 
-### Wealth and Capacity
+### Calculating Wealth Score
 
-Your colony already tracks **Wealth** as a Base Stat:
+Your Wealth Score is the sum of points from four categories:
 
-* **Wealth**: The total value of your buildings, items, and colonists.
-  Higher Wealth means **harder raids** (see Chapter 8: Storyteller).
+> **Wealth Score = Tech Points + Building Points + Defense Points + Colonist Points**
 
-Wealth also controls how many **Recruits** your colony can realistically maintain:
+#### Technology Points
+Sum the highest unlocked level in each tech category:
 
-* More Wealth = more beds, food, medicine, and gear → more people can stay.
-* Losing Wealth (ruined buildings, stolen items, dead colonists) can make your colony feel less viable, and some Recruits may decide to leave.
+| Tech Level | Points Per Level |
+| :--- | :--- |
+| **Neolithic** (1-4) | 1 pt each |
+| **Medieval** (1-5) | 2 pts each |
+| **Industrial** (1-6) | 4 pts each |
+| **Spacer** (1-7) | 8 pts each |
 
-Recruits are semi-PC colonists controlled with help from the Storyteller: spare workers, guards, specialists, researchers, and hangers-on.
+*Example*: Medieval 3, Industrial 2 = (3×2) + (2×4) = 6 + 8 = **14 Tech Points**
 
-> **Recruits vs Player Characters**
->
-> In fiction, Recruits are still colonists. The only difference is mechanical:
->
-> * **Recruits** use simplified rules and mainly cover skill gaps, off-screen work, and drama.
-> * **Player characters** are controlled directly by players and **do not** count against the Recruit limit.
+#### Building Points
+Sum points from all constructed facilities:
+
+| Facility | Points |
+| :--- | :--- |
+| **Barracks** | 2 |
+| **Private Bedroom** | 3 |
+| **Kitchen** | 4 |
+| **Workshop** | 6 |
+| **Hospital** | 8 |
+| **Rec Room** | 5 |
+| **Research Lab** | 8 |
+| **Wood Generator** | 10 |
+| **Solar Panel** | 12 |
+| **Battery** | 8 |
+
+*Power Bonus*: +2 points per powered facility.
+
+#### Defense Points
+Sum points from all defensive structures:
+
+| Structure | Points |
+| :--- | :--- |
+| **Wall Section (Wood)** | 0.5 (2 walls = 1 pt) |
+| **Wall Section (Stone)** | 1 |
+| **Sandbags** | 0.5 |
+| **Mini Turret** | 5 |
+| **Mortar** | 6 |
+
+#### Colonist Points
+
+| Type | Points |
+| :--- | :--- |
+| **Player Character** | 10 |
+| **Recruit** | 5 |
 
 ---
 
-### Wealth Bands & Recruit Limit
+### Colony Tiers & Recruit Limit
 
-Use your total **Colony Wealth in Silver** (see Chapter 8: Wealth Management) to determine how many Recruits you can have at once.
+Your Wealth Score determines your colony tier and maximum Recruits:
 
-| Total Wealth (Silver) | Colony Tier | Max Recruits |
-| :-------------------- | :---------- | :----------- |
-| **0–9,999**           | Struggling  | 0            |
-| **10,000–24,999**     | Stable      | 1            |
-| **25,000–49,999**     | Established | 2            |
-| **50,000–99,999**     | Prosperous  | 3            |
-| **100,000+**          | Powerhouse  | 4            |
+| Wealth Score | Colony Tier | Max Recruits |
+| :--- | :--- | :--- |
+| **0-9** | Struggling | 0 |
+| **10-24** | Stable | 1 |
+| **25-49** | Established | 2 |
+| **50-99** | Prosperous | 3 |
+| **100+** | Powerhouse | 4 |
 
-* You can always **dismiss** a Recruit (or let them leave) to free a slot.
-* If your Wealth drops below your current band, the Storyteller decides which Recruits leave, turn hostile, or drift away over time.
-* You can adjust these thresholds if you change how Wealth works or how harsh you want the game to be.
+*   **Exceeding Limit**: If your Wealth Score drops below your current tier, the Storyteller decides which Recruits leave or turn hostile.
+*   **Player Characters**: Do not count against the Recruit limit.
 
-> **Example: Hitting a New Band**
+> **Example: Wealth Score Calculation**
 >
-> The colony improves its walls, adds turrets, and finishes a research lab. The Storyteller recalculates Wealth and finds it just crossed **25,000 Silver**.
+> **John**: "Let's calculate your colony's Wealth Score. You have 3 PCs (30 pts), Industrial 2 tech (8 pts), a Kitchen (4 pts), 10 stone walls (10 pts), and 1 turret (5 pts). Total: **57 points**."
 >
-> The colony moves into the **Established** tier and can now support **2 Recruits** instead of 1. On the next “quiet” event roll, the Storyteller adds a possible **“New Arrival”** result to reflect word spreading about this growing base.
+> **Mary**: "That's **Prosperous** tier! We can have 3 Recruits now."
+>
+> **John**: "Correct. And your Raid Points are also 57. Expect stronger attackers."
 
 ---
 
@@ -303,16 +335,13 @@ When the PCs leave on a quest or caravan, most Recruits stay behind to keep the 
 
 ### Recruit Roles
 
-When a new colonist joins as a Recruit, assign them a **role** based on how they mostly help:
+Assign each Recruit a role based on their primary function:
 
-* **Specialist (Crafter / Worker)**
-  Builds, crafts, farms, cooks, mines—keeps the colony alive.
-* **Retainer (Guard / Hunter)**
-  Focuses on combat: defending the colony, escorting caravans, hunting dangerous wildlife.
-* **Sage (Researcher / Advisor)**
-  Handles research, medicine, and specialized knowledge.
+*   **Specialist (Crafter/Worker)**: Builds, crafts, farms, cooks, mines.
+*   **Retainer (Guard/Hunter)**: Combat, defense, hunting.
+*   **Sage (Researcher/Advisor)**: Research, medicine, knowledge.
 
-Roles don’t limit what they can do in the fiction. They just package their **starting Stats, Skills, and special bonuses**.
+Roles determine starting Stats and Skills but don't limit actions.
 
 ---
 
@@ -339,9 +368,9 @@ Use a simple array for Recruits: **+2, +1, 0, -1**.
 
 #### 3. Assign Skills
 
-* Give them one **primary Skill** at **+30** (their main job).
-* Give them one **secondary Skill** at **+20**.
-* Optionally give one or two minor Skills at **+10** if needed.
+*   Give them one **primary Skill** at **30 (+3)** (their main job).
+*   Give them one **secondary Skill** at **20 (+2)**.
+*   Optionally give one or two minor Skills at **10 (+1)** if needed.
 
 #### 4. Traits and Hooks
 
@@ -376,34 +405,31 @@ These packages plug directly into existing Colony rules (Daily Actions, CP, RP, 
 
 **Role**: Builds, crafts, farms, cooks, mines—keeps the place running.
 
-* Primary Skill **+30** in one of: **Construction, Crafting, Plants, Cooking, or Mining**.
-* Secondary Skill **+20** in something that supports their job (Intellectual, Social, Animals, etc.).
-* While working at the **colony base**, a Specialist:
-
-  * Can handle routine tasks in their specialty at **Tier 2** without a roll, as long as conditions are normal.
-  * Once per day, can grant **Edge** on a related check made by a player character (e.g. building complex structures, crafting rare gear, managing a large harvest).
+*   Primary Skill **30 (+3)** in one of: **Construction, Crafting, Plants, Cooking, or Mining**.
+*   Secondary Skill **20 (+2)** in something that supports their job (Intellectual, Social, Animals, etc.).
+*   While working at the **colony base**, a Specialist:
+    *   Can handle routine tasks in their specialty at **Tier 2** without a roll, as long as conditions are normal.
+    *   Once per day, can grant **Edge** on a related check made by a player character (e.g. building complex structures, crafting rare gear, managing a large harvest).
 
 #### Retainer (Guard / Hunter)
 
 **Role**: Defends the colony, hunts threats, and fights so others can work.
 
-* Primary Skill **+30** in **Shooting** or **Melee**.
-* Secondary Skill **+20** in the other combat Skill, **Animals**, or a modest **Medical** rating.
-* In combat:
-
-  * Once per round, if a Retainer is in position to help, they can **Assist** a PC’s Attack, granting **Edge** (or cancelling Bane).
-  * When defending the colony base, the Storyteller can treat one minor skirmish per day as “handled off-screen” by Retainers, unless the event is meant to be a major scene.
+*   Primary Skill **30 (+3)** in **Shooting** or **Melee**.
+*   Secondary Skill **20 (+2)** in the other combat Skill, **Animals**, or a modest **Medical** rating.
+*   In combat:
+    *   Once per round, if a Retainer is in position to help, they can **Assist** a PC's Attack, granting **Edge** (or cancelling Bane).
+    *   When defending the colony base, the Storyteller can treat one minor skirmish per day as "handled off-screen" by Retainers, unless the event is meant to be a major scene.
 
 #### Sage (Researcher / Advisor)
 
-**Role**: Advances tech, patches people up, and knows things others don’t.
+**Role**: Advances tech, patches people up, and knows things others don't.
 
-* Primary Skill **+30** in **Intellectual**.
-* Secondary Skill **+20** in either **Medical**, **Social**, or another fitting Skill.
-* While working at the colony base:
-
-  * Adds **+1 RP per day** to any single Research project they are assigned to.
-  * Once per session, can grant **Double Edge** on a check that clearly uses their expertise (planning a defense, diagnosing an illness, understanding strange tech, etc.).
+*   Primary Skill **30 (+3)** in **Intellectual**.
+*   Secondary Skill **20 (+2)** in either **Medical**, **Social**, or another fitting Skill.
+*   While working at the colony base:
+    *   Adds **+1 RP per day** to any single Research project they are assigned to.
+    *   Once per session, can grant **Double Edge** on a check that clearly uses their expertise (planning a defense, diagnosing an illness, understanding strange tech, etc.).
 
 ---
 
@@ -448,7 +474,7 @@ Apply the **Story Die** as usual:
 >
 > **Mary**: *(Rolls a 16 total)*. "Tier 2!"
 >
-> **John**: "She joins at **Loyalty 3**. She has **Medical +30** and **Intellectual +20**—a perfect Sage for your research wing. Your Wealth goes up slightly from the extra colonist and the gear she brought."
+> **John**: "She joins at **Loyalty 3**. She has **Medical 30 (+3)** and **Intellectual 20 (+2)**—a perfect Sage for your research wing. Your Wealth Score increases by 5 points from the new recruit."
 
 ---
 
@@ -484,15 +510,12 @@ When a Recruit reaches **Loyalty 5**, the group can choose to:
 
 ### Wealth, Events, and New Recruits
 
-Tie this into event generation (see Chapter 8):
+When your colony crosses into a new tier and you have an open Recruit slot, the Storyteller can add **"New Arrival"** events:
+*   Refugees fleeing raids.
+*   Wandering specialists seeking safe homes.
+*   Mercenaries or nobles searching for work.
 
-* When the colony’s **Wealth crosses a new band** and you have an open Recruit slot, you can add a **“New Arrival”** option to your event rolls:
+High Wealth Score also attracts **dangerous** arrivals:
+*   Criminals, spies, or raiders pretending to be harmless.
 
-  * A refugee fleeing a raid.
-  * A wandering medic or engineer looking for a safe home.
-  * A disgraced noble or mercenary searching for work.
-* High Wealth can also attract **dangerous** arrivals:
-
-  * Desperate criminals, spies, or raiders pretending to be harmless.
-
-Wealth tells the world that your colony is worth visiting—and worth attacking. Recruits are one of the rewards for surviving long enough to matter.
+Wealth Score tells the world your colony is worth visiting—and worth attacking.
