@@ -1,5 +1,7 @@
 # RIMWORLD RPG — QUICKSTART ONE-SHOT
 
+> **Note**: This quickstart uses simplified mechanics for easy one-shot play. See Chapters 1-8 for complete rules.
+
 ## “The First Night on Greyhook Ridge”
 
 **Session length:** 2.5–4 hours
@@ -70,7 +72,8 @@ Use short stat blocks so this stays fast.
 ![Marla Kade](../images/MarlaKade.png)
 
 **Attributes:** Vigor +2, Mind +1, Dexterity 0, Spirit -1
-**Skills:** Construction +30, Shooting +20, Medicine +10
+**HP:** 19
+**Skills:** Construction 30 (+3), Shooting 20 (+2), Medicine 10 (+1)
 **Trait:** **Tough** (reduce incoming damage)
 **Incapable:** Intellectual
 **Gear:** Knife, simple toolkit, 1x medkit
@@ -80,7 +83,8 @@ Use short stat blocks so this stays fast.
 ![Ivo Thorne](../images/IvoThorne.png)
 
 **Attributes:** Mind +2, Spirit +1, Vigor 0, Dexterity -1
-**Skills:** Medicine +30, Cooking +20, Social +10
+**HP:** 15
+**Skills:** Medicine 30 (+3), Cooking 20 (+2), Social 10 (+1)
 **Trait:** **Iron-Willed** (+Mental Break threshold)
 **Incapable:** Violence (or “Reluctant Shooter”)
 **Gear:** 2x medkits, basic rations
@@ -89,8 +93,9 @@ Use short stat blocks so this stays fast.
 
 ![Sana Voss](../images/SanaVoss.png)
 
-**Attributes:** Reflex +2, Vigor +1, Dexterity 0, Spirit -1
-**Skills:** Shooting +30, Animals +20, Melee +10
+**Attributes:** Dexterity +2, Vigor +1, Mind 0, Spirit -1
+**HP:** 17
+**Skills:** Shooting 30 (+3), Animals 20 (+2), Melee 10 (+1)
 **Trait:** **Bloodlust** (benefits under combat stress)
 **Incapable:** Artistic
 **Gear:** Bolt-action rifle, 10 ammo, hunting knife
@@ -100,7 +105,8 @@ Use short stat blocks so this stays fast.
 ![Oren Pell](../images/OrenPell.png)
 
 **Attributes:** Spirit +2, Mind +1, Dexterity 0, Vigor -1
-**Skills:** Social +30, Crafting +20, Cooking +10
+**HP:** 13
+**Skills:** Social 30 (+3), Crafting 20 (+2), Cooking 10 (+1)
 **Trait:** **Kind** (helps morale)
 **Incapable:** Hauling
 **Gear:** Trade goods, sidearm
@@ -110,12 +116,15 @@ Use short stat blocks so this stays fast.
 ![Tess Rook](../images/TessRook.png)
 
 **Attributes:** Mind +2, Dexterity +1, Spirit 0, Vigor -1
-**Skills:** Intellectual +30, Crafting +20, Shooting +10
+**HP:** 13
+**Skills:** Intellectual 30 (+3), Crafting 20 (+2), Shooting 10 (+1)
 **Trait:** **Nervous** (more susceptible to stress)
 **Incapable:** Cooking
 **Gear:** datapad, improvised tools
 
-> **Quick skill rule for pregens:** +30 = excellent, +20 = good, +10 = basic.
+> **Quick skill rule for pregens:** 30 points = +3 modifier (excellent), 20 points = +2 modifier (good), 10 points = +1 modifier (basic). Add the **modifier** to your rolls, not the points.
+> 
+> **Incapable**: The colonist cannot perform this type of task (automatic failure). They refuse or are unable.
 
 ---
 
@@ -144,6 +153,8 @@ At the end of each period, apply:
 * If two or more Needs are neglected, mark **+1 Stress**.
 
 **Trigger a Mental Break** if a colonist reaches **3 Stress** and rolls a **Complication (Story Die 10)**.
+
+> **Quickstart variant**: The full rulebook uses a Panic Check system (1d6 + Stress). This simplified trigger makes one-shots easier to run.
 
 **Quick Mental Break table (d6):**
 1–2 **Wander / Shut Down**
@@ -183,6 +194,34 @@ Use a **group check** (Construction or Survival).
 * **Struggle:** shelter is weak → **night defense is harder**
 * **Success:** decent shelter
 * **Triumph:** shelter + basic barricade
+
+---
+
+## Quickstart Mechanics Reference
+
+### Action Points (AP)
+Each colonist has **4 AP per turn**:
+* **Move** (1 AP): Shift one range band
+* **Attack** (2 AP): Make a ranged or melee attack
+* **Take Cover** (1 AP): Gain defensive Edge
+* **Use Item** (1 AP): Reload, switch weapon, heal
+
+### Range Bands
+Combat uses 4 abstract distance bands:
+* **Melee**: Hand-to-hand, locked in combat
+* **Close**: Shotguns, pistols effective
+* **Medium**: Rifles optimal range
+* **Far**: Sniper range, hard to hit
+
+### Combat Damage
+* **Tier 1 (Struggle)**: Half damage
+* **Tier 2 (Success)**: Full damage
+* **Tier 3 (Triumph)**: Double damage + roll Major Injury (1d10)
+
+Armor reduces damage. Example: Rifle (6 dmg) Tier 3 hit = 12 dmg - 3 armor = 9 HP lost.
+
+### HP Calculation
+Max HP = 15 + (Vigor × 2). At 0 HP, you're downed and bleeding out.
 
 ---
 
