@@ -1,5 +1,8 @@
 # Chapter 4: Survival & Combat
 
+[Art: chapter_art/ch04_survival_combat_01.png
+Purpose: Chapter opener establishing survival + combat tone and stakes]
+
 Life on the Rim is a constant struggle against hunger, madness, and violent death. This chapter covers the rules for keeping your colonists alive—both physically and mentally.
 
 ---
@@ -21,6 +24,9 @@ Use the requirements below. If a requirement is not met, apply the listed penalt
 | **Recreation** | 4 hours of leisure time | **+1 Stress** if ignored for 2+ days. |
 | **Beauty** | Clean rooms, art, paved floors | **+1 Stress** if spending 4+ hours in an "Ugly" space. |
 | **Comfort** | Chairs, beds, temperature control | **+1 Stress** after sleeping on the ground or in extreme heat/cold. |
+
+[Art: spot/ch04_core_needs_01.png
+Purpose: Visual anchor for daily survival needs]
 
 **Edge cases**
 * Two or more Colonists working on the same activity in the same period count as **Socializing** for Recreation.
@@ -71,6 +77,9 @@ When a rule tells you to roll a **Stress Die**.
 **Example: Stress Die**
 Oren rolls a Stress Die and gets a **1**. He adds the **1** to his total, then immediately makes a **Panic Check** after the action.
 
+[Art: spot/ch04_stress_die_01.png
+Purpose: Show the Stress Die triggering a Panic Check]
+
 ---
 
 ### Panic Check (Mental Break)
@@ -88,6 +97,9 @@ When a rule triggers a Panic Check (Stress Die result of 1, a Push, certain trai
 | **7–9** | **Minor Break** | **Binge**: Consume 3x Meals or Drugs immediately. |
 | **10–12** | **Major Break** | **Tantrum**: Attack a random colony structure/item (it loses 10 CP). |
 | **13+** | **Extreme Break** | **Insulting Spree**: Verbally abuse allies. Each ally gains **+1 Stress**. |
+
+[Art: diagrams/ch04_panic_check_flow_01.png
+Purpose: Flowchart of Panic Check triggers and result bands]
 
 **Edge cases**
 * Mental Break Threshold rules are in [Chapter 2: Character Creation](chapter_02_character_creation.md).
@@ -172,11 +184,17 @@ Each Colonist has **4 AP** per turn to spend on actions.
 | **Aid** | 1 | Grant **Edge** to an ally’s next roll. |
 | **Use Item** | 1 | Reload, switch weapon, or use a consumable. |
 
+[Art: diagrams/ch04_combat_loop_ap_01.png
+Purpose: Combat loop with AP inset]
+
 **Edge cases**
 * Range Bands are defined in [Chapter 1: Core Mechanics](chapter_01_core.md).
 
 **Example: Spending AP**
 Marla spends **1 AP** to Move to Close range, **1 AP** to Take Cover, and **2 AP** to Attack.
+
+[Art: spot/ch04_spending_ap_01.png
+Purpose: Visualize Move + Take Cover + Attack in one turn]
 
 ---
 
@@ -236,6 +254,9 @@ When an attack results in a **Tier 3 Critical Hit**.
 | **Stunned** | Lose your next Action Turn (0 AP). |
 | **Slowed** | Movement costs **+1 AP**. |
 | **Paralyzed** | Cannot Move or Act. Defense is 0 (Auto-Crit). |
+
+[Art: diagrams/ch04_critical_effects_01.png
+Purpose: Show cover reduction and condition outcomes on a critical hit]
 
 **Edge cases**
 * Some weapons apply additional conditions (see Chapter 5).
@@ -370,6 +391,9 @@ For every **3 Hexes** traveled.
 
 **Example: Ambush**
 After 3 Hexes, Sana rolls **Animals** and totals **13** (Tier 2). The group spots raiders early and chooses **Medium** range.
+
+[Art: spot/ch04_ambushes_01.png
+Purpose: Illustrate scouting/ambush risk during caravan travel]
 
 ---
 

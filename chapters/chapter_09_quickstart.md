@@ -1,5 +1,8 @@
 # Chapter 9: Quickstart One-Shot
 
+[Art: chapter_art/ch09_quickstart_01.png
+Purpose: Chapter opener establishing crash-survival tone]
+
 > **Note**: This quickstart uses simplified mechanics for one-session play. See Chapters 1–8 for full rules.
 
 ---
@@ -8,6 +11,9 @@
 
 **Premise**
 Your shuttle breaks apart over a frozen-forest Rimworld. You crash near **Greyhook Ridge** with almost nothing. The first day decides everything: get shelter, food, and a basic defense before nightfall.
+
+[Art: spot/ch09_premise_crash_01.png
+Purpose: Visual anchor for the crash-site survival premise]
 
 **One-Sentence Goal**
 Survive the first night and secure a defensible foothold.
@@ -47,6 +53,9 @@ Whenever a Colonist attempts an action with an uncertain outcome.
 | **12–16** | **Success** | You succeed cleanly. |
 | **17+** | **Triumph** | You succeed with extra benefits. |
 
+[Art: diagrams/ch09_dice_tiers_01.png
+Purpose: Quickstart roll flow and tier thresholds]
+
 **Edge cases**
 * Full rules are in [Chapter 1: Core Mechanics](chapter_01_core.md) and [Chapter 3: Skills & Checks](chapter_03_skills_and_checks.md).
 
@@ -69,6 +78,9 @@ When a circumstance gives a small advantage or disadvantage.
 
 **Example: Edge and Bane**
 Viper has Edge for high ground. She rerolls her **Base Die 3** and gets a **7**, improving her total.
+
+[Art: spot/ch09_edge_bane_reroll_01.png
+Purpose: Show the quickstart Edge/Bane reroll mechanic]
 
 ---
 
@@ -101,6 +113,9 @@ During combat.
 | **Attack** | 2 | Make a ranged or melee attack. |
 | **Take Cover** | 1 | Gain defensive Edge. |
 | **Use Item** | 1 | Reload, switch, or heal. |
+
+[Art: diagrams/ch09_day_loop_01.png
+Purpose: Visual timeline of Dawn/Midday/Dusk/Night periods]
 
 **Edge cases**
 * Full combat rules are in [Chapter 4: Survival & Combat](chapter_04_combat_and_survival.md).
@@ -235,6 +250,9 @@ Each in-game day.
 **Example: Day Loop**
 At Dawn, Marla builds, Sana hunts, and Ivo treats wounds. At Night, everyone sleeps.
 
+[Art: diagrams/ch09_first_choice_flow_01.png
+Purpose: Decision flow for Repair the Ruin vs Build a Lean-To]
+
 ---
 
 ### Needs, Mood, and Stress (Light)
@@ -280,6 +298,9 @@ Tess reaches **3 Stress** and rolls a **Story Die 10** during a fight. She rolls
 ### The Map
 ![The Crash Site](../images/TheCrashSite.png)
 A shallow valley beside **Greyhook Ridge** with a treeline to the west, a rock outcrop to the north, and a ruined shack to the east.
+
+[Art: spot/ch09_crash_site_vignette_01.png
+Purpose: Mini terrain cue for the crash site features]
 
 ---
 
@@ -396,6 +417,9 @@ When you want a social standoff that turns violent.
 
 **Example: Desperate Raiders**
 The group refuses demands and a short Social showdown erupts into combat.
+
+[Art: spot/ch09_night_threats_01.png
+Purpose: Visual cue for finale threat options]
 
 ---
 

@@ -1,5 +1,8 @@
 # Chapter 6: Colony Management
 
+[Art: chapter_art/ch06_colony_management_01.png
+Purpose: Chapter opener establishing colony-building and management tone]
+
 Building a thriving colony requires more than just survival; it requires industry, research, and expansion.
 
 ---
@@ -23,6 +26,9 @@ When evaluating the colony’s overall strength and comfort.
 **Example: Base Stats**
 A colony has **2 Mini Turrets (5 each)** and **10 Stone Walls (1 each)**. Security = 10 + 10 = **20**. Their Wealth Score is calculated using the full rules below.
 
+[Art: spot/ch06_base_stats_01.png
+Purpose: Visual overview of base stats: Security, Efficiency, Comfort, Wealth]
+
 ---
 
 ### Resources
@@ -44,6 +50,9 @@ Track five abstract resource categories:
 **Example: Resources**
 After a hunt and harvest, the colony gains **2 Food** and **1 Textile** for the day.
 
+[Art: spot/ch06_resources_01.png
+Purpose: Anchor the five resource categories with a simple visual]
+
 ---
 
 ## The Day Loop
@@ -57,6 +66,9 @@ At the start of each in-game day.
 1. The day is divided into **4 Periods**: **Morning, Afternoon, Evening, Night**.
 2. Each player assigns one task per Period.
 3. Night is usually used for Rest/Sleep.
+
+[Art: diagrams/ch06_day_loop_01.png
+Purpose: Visual timeline of the four daily periods and task assignment]
 
 **Edge cases**
 * Period structure aligns with [Chapter 1: Core Mechanics](chapter_01_core.md).
@@ -161,6 +173,9 @@ Build the facility and apply its effect.
 **Example: Facility**
 The colony spends **60 CP** and **50 Wood + 10 Cloth** to build a **Rec Room**, gaining **+1 Comfort**.
 
+[Art: spot/ch06_facilities_01.png
+Purpose: Visual snapshot of a facility and its comfort bonus]
+
 ---
 
 ### Power
@@ -225,6 +240,9 @@ The colony generates **Defense Points (DP)** equal to the sum of defensive struc
 * **2 DP**: Reduce damage to a Colonist by one Tier (Critical → Normal).
 * **3 DP**: Prevent damage to a structure (Wall takes 0 damage).
 
+[Art: diagrams/ch06_defense_pool_01.png
+Purpose: Show Defense Pool spend options at a glance]
+
 **Edge cases**
 * If DP reaches 0, enemies breach the perimeter.
 
@@ -256,6 +274,9 @@ When unlocking new technology.
 
 **Example: Research**
 Tess rolls **2d10 + Mind + Intellectual** and totals **14**. She gains **50 RP** toward **Gunsmithing**.
+
+[Art: spot/ch06_research_process_01.png
+Purpose: Visualize research work during a daily Period]
 
 ---
 
@@ -406,6 +427,9 @@ When scaling threats or determining recruit limits.
 
 **How it works**
 **Wealth Score = Tech Points + Building Points + Defense Points + Colonist Points**
+
+[Art: diagrams/ch06_wealth_score_01.png
+Purpose: Visual equation of the Wealth Score components]
 
 **Edge cases**
 * Raid scaling uses Wealth Score in [Chapter 8: The Storyteller](chapter_08_storyteller.md).
@@ -574,6 +598,9 @@ When a new recruit joins during play.
 
 **Example: Creating a Recruit**
 A **Specialist** gets **Construction 30 (+3)** and **Crafting 20 (+2)**, then a trait like **Industrious**, and starts at **Loyalty 2**.
+
+[Art: spot/ch06_create_recruit_01.png
+Purpose: Visualize assigning a recruit role and stats]
 
 ---
 

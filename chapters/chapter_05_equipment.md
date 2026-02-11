@@ -1,6 +1,12 @@
 # Chapter 5: Equipment & Economy
 
+[Art: chapter_art/ch05_equipment_economy_01.png
+Purpose: Chapter opener establishing tools-and-trade tone]
+
 Survival on the Rim requires the right tools. A sharp knife, a warm parka, and a pocket full of silver can make the difference between life and death.
+
+[Art: spot/ch05_tools_trade_01.png
+Purpose: Visual anchor for tools + trade]
 
 ---
 
@@ -33,6 +39,9 @@ Use the formula below.
 
 **Market Value = Material Cost + (Crafting Points × 0.5)**
 
+[Art: diagrams/ch05_market_value_formula_01.png
+Purpose: Visualize the market value formula with a simple example]
+
 **Edge cases**
 * If an item has no material cost, treat it as **0**.
 * Crafting Points (CP) are generated in [Chapter 6: Colony Management](chapter_06_colony.md).
@@ -59,6 +68,9 @@ When buying or selling items with a trader.
 
 **Social Bonus**
 * Improve prices by **2% per Social Skill Point**, up to **±40%**.
+
+[Art: diagrams/ch05_trading_prices_01.png
+Purpose: Show buy/sell base rates and Social bonus cap]
 
 **Edge cases**
 * Use the Social skill rules in [Chapter 3: Skills & Checks](chapter_03_skills_and_checks.md).
@@ -99,6 +111,9 @@ When an item’s Crafting Points requirement is completed.
 | **Tier 2 (12–16)** | **Good** | **+1 Accuracy/Damage** (Weapons) or **+1 Armor** (Apparel). |
 | **Tier 3 (17+)** | **Masterwork** | **+2 Stats**. Value ×1.5. |
 | **Critical (Natural 10)** | **Legendary** | **+3 Stats**. Value ×2. Gain Art/Name. |
+
+[Art: diagrams/ch05_item_quality_01.png
+Purpose: Map Tier results to item quality and value multipliers]
 
 **Edge cases**
 * The Crafting check uses the Skill rules in [Chapter 3: Skills & Checks](chapter_03_skills_and_checks.md).
@@ -177,6 +192,9 @@ When a Colonist throws a grenade.
 **Example: Grenade**
 Sana throws a **Frag Grenade** into a cluster of raiders. On impact it deals **6 Damage** to everyone in the **3x3** area.
 
+[Art: spot/ch05_grenade_aoe_01.png
+Purpose: Visualize the grenade area-of-effect without gore]
+
 | Grenade | Damage/Effect | AP | Value | Materials | CP | Tech |
 | :--- | :--- | ---: | ---: | :--- | ---: | :--- |
 | **Frag Grenade** | 6 Damage, 3x3 Area | 3 | 150 | 20 Steel, 80 Chemfuel | 80 | Industrial 3 |
@@ -203,6 +221,9 @@ Use the formula below.
 
 **Example: Armor**
 A raider takes **10 Damage** and has **Armor 3**. Final damage is **7**.
+
+[Art: spot/ch05_armor_reduction_01.png
+Purpose: Show armor reducing incoming damage]
 
 ---
 
@@ -308,3 +329,6 @@ Apply the listed effect.
 
 **Example: Bionics**
 Marla replaces a missing arm with a **Bionic Arm**. She removes the missing arm penalties and gains **+2 Edge** on Crafting checks.
+
+[Art: spot/ch05_bionics_01.png
+Purpose: Reinforce prosthetics upgrading colonists]

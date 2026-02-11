@@ -1,5 +1,8 @@
 # Chapter 8: The Storyteller (GM Section)
 
+[Art: chapter_art/ch08_storyteller_01.png
+Purpose: Chapter opener setting the GM-as-storyteller tone]
+
 Welcome, Storyteller. You are the architect of chaos, the hand of fate, and the voice of the Rim itself. This chapter provides tools to run engaging, challenging, and memorable RimWorld RPG sessions.
 
 ---
@@ -19,6 +22,9 @@ All sessions.
 **Example: Storyteller Role**
 A raid starts small, but a **Story Die 10** complication adds a second wave and forces a hard choice.
 
+[Art: spot/ch08_storyteller_role_01.png
+Purpose: Reinforce the “director of drama” role]
+
 ---
 
 ### Pacing and Tone
@@ -30,6 +36,9 @@ When planning session structure.
 * **Colony Phase** (Downtime): Assign tasks, roleplay, plan. **3–7 in-game days per session**.
 * **Crisis Phase** (Events): Raids, disasters, quests. **1–2 hours of real-time play**.
 * **Balance**: Aim for **60/40** (colony/crisis).
+
+[Art: diagrams/ch08_pacing_split_01.png
+Purpose: Visualize the 60/40 colony vs crisis pacing split]
 
 **Example: Pacing**
 You run two colony days, then drop a raid, then return to building and social scenes.
@@ -93,6 +102,9 @@ When using relaxed pacing.
 
 **Example: Phoebe**
 You run two weeks of colony building with only one Minor event.
+
+[Art: diagrams/ch08_personas_timeline_01.png
+Purpose: Compare event cadence for Cassandra, Randy, and Phoebe]
 
 ---
 
@@ -263,6 +275,9 @@ Roll **1d6** or choose.
 **Example: Extreme Event**
 A **Raid (Mechanoid)** brings a **Lancer (15)** and a **Scyther (20)** for a 35-point raid.
 
+[Art: spot/ch08_event_cards_01.png
+Purpose: Visual anchor for Minor/Major/Extreme event tiers]
+
 ---
 
 ### Story Die Integration
@@ -315,6 +330,9 @@ Choose a quest type and run the listed challenge and reward.
 
 **Example: Quest**
 The colony accepts a **Trade Request** and delivers **Medicine** for **+10 Goodwill** and extra Silver.
+
+[Art: spot/ch08_quest_types_01.png
+Purpose: Visual cue for the four quest types]
 
 ---
 
@@ -373,6 +391,9 @@ When building raids from a budget.
 * **Lancer**: 15 pts
 * **Scyther**: 20 pts
 * **Centipede**: 60 pts
+
+[Art: diagrams/ch08_threat_points_01.png
+Purpose: Show Wealth Score converting to Raid Points and enemy costs]
 
 **Edge cases**
 * Enemy stat blocks are in [Chapter 7: The Rim](chapter_07_world.md).

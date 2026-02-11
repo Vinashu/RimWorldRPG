@@ -1,5 +1,8 @@
 # Chapter 7: The Rim (World & Factions)
 
+[Art: chapter_art/ch07_world_factions_01.png
+Purpose: Chapter opener establishing the broader world tone]
+
 The Rim is a dangerous place, populated by diverse groups struggling for dominance.
 
 ---
@@ -20,6 +23,9 @@ When tracking your relationship with a faction.
 | **Ally** | +75 to +100 | Will send military aid. Better trade prices (**-10% Buy / +10% Sell**). |
 | **Neutral** | -9 to +74 | Will trade. Will not attack unprovoked. |
 | **Hostile** | -100 to -10 | Will attack on sight. Cannot trade. |
+
+[Art: diagrams/ch07_goodwill_meter_01.png
+Purpose: Visual goodwill meter for Ally/Neutral/Hostile bands]
 
 **Edge cases**
 * Trade prices use [Chapter 5: Equipment & Economy](chapter_05_equipment.md).
@@ -42,6 +48,9 @@ Use the faction list below to frame encounters and trading.
 3. **Savage Tribe** (Tech: **Neolithic 2**) — Aggressive warriors. Low tech, high numbers. Source of Pemmican/Jade.
 4. **The Shattered Empire** (Tech: **Spacer 3**) — Honor-bound remnants of a stellar empire. High-tech trade (Title required).
 5. **Pirate Gangs** (Tech: **Industrial 3**) — Always Hostile. Raiders who live to plunder.
+
+[Art: spot/ch07_major_factions_01.png
+Purpose: Add visual flavor for major faction types]
 
 **Edge cases**
 * Tech Levels and item requirements are in [Chapter 5: Equipment & Economy](chapter_05_equipment.md).
@@ -101,6 +110,9 @@ When the colony starts in hot, dry regions.
 **Example: Desert**
 Without Dusters, the colony gains **+1 Stress** during daytime work scenes.
 
+[Art: spot/ch07_desert_gear_01.png
+Purpose: Reinforce heat/gear requirement in desert biomes]
+
 ---
 
 ### Boreal Forest and Tundra
@@ -137,6 +149,9 @@ When the colony starts in dense jungle regions.
 **Example: Rainforest**
 The colony gains **+1 Farming** but suffers **-1 Base Defense** because of dense cover.
 
+[Art: diagrams/ch07_biome_modifiers_01.png
+Purpose: Compare biome modifiers at a glance]
+
 ---
 
 ## Bestiary
@@ -159,6 +174,9 @@ When the Storyteller uses a creature in play.
 **Example: Stat Block**
 A creature with **Vigor 3** has **HP 21** (15 + 3×2).
 
+[Art: diagrams/ch07_stat_block_legend_01.png
+Purpose: Annotated stat block layout for quick reference]
+
 ---
 
 ### Animals
@@ -169,6 +187,9 @@ A creature with **Vigor 3** has **HP 21** (15 + 3×2).
 | **Warg** | 3 / 2 / 1 / 0 | 21 | 1 | Bite (6 | Melee | 2) | Melee +2 | Fast. Carnivore. |
 | **Boomalope** | 2 / 0 / 0 / 0 | 19 | 0 | Bump (2 | Melee | 2) | - | Explodes (3d10 Fire). |
 | **Thrumbo** | 8 / 2 / 2 / 4 | 31 | 6 | Horn (10 | Melee | 2) | Melee +5 | Legendary. |
+
+[Art: spot/ch07_animal_example_01.png
+Purpose: Visual anchor for the animal stat tables]
 
 **Example: Animal**
 A **Warg** hits at **Melee** range for **6 Damage** on a Tier 2 result.
@@ -195,6 +216,9 @@ A **Megascarab** uses **Mandibles (3 | Melee | 2)**, costing **2 AP** to attack.
 | **Lancer** | 3 / 4 / 3 / 0 | 21 | 2 | C-Lance (12 | Far | 3) | Shoot +4 | Sniper. Glass cannon. |
 | **Scyther** | 4 / 4 / 0 / 0 | 23 | 3 | Blades (8 | Melee | 2) | Melee +4 | Fast. Rush tactic. |
 | **Centipede** | 6 / 1 / 1 / 0 | 27 | 6 | H-Blaster (6 | Medium | 3) | Shoot +2 | Boss. Area Fire. |
+
+[Art: spot/ch07_mechanoid_example_01.png
+Purpose: Visual anchor for mechanoid stat tables]
 
 **Example: Mechanoid**
 A **Lancer** fires its **C-Lance** from **Far** range for **12 Damage** on a Tier 2 hit.

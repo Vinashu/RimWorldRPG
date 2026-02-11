@@ -2,6 +2,9 @@
 
 Canonical terms used throughout the rulebook.
 
+[Art: spot/glossary_reference_01.png
+Purpose: Visual anchor for a text-heavy reference page]
+
 * **Action Points (AP)**: The 4-point action budget used each combat turn.
 * **Attribute**: One of Vigor, Dexterity, Mind, or Spirit.
 * **Augmented**: Major advantage; roll **3d10 (keep highest 2)**.
@@ -39,3 +42,6 @@ Canonical terms used throughout the rulebook.
 * **Triumph**: Tier 3 critical success.
 * **Twist of Fate**: Positive Story Die effect when the Story Die shows **1**.
 * **Wealth Score**: Colony total used for raid scaling and recruit limits.
+
+[Art: diagrams/glossary_skill_check_01.png
+Purpose: Compact visual legend for the core roll formula]
