@@ -1,6 +1,12 @@
 # Chapter 3: Skills & Checks
 
+[Art: chapter_art/ch03_skills_checks_01.png
+Purpose: Chapter opener establishing skills-and-checks training tone]
+
 When the outcome of an action is uncertain, you make a **Skill Check** (also called a **Colonist Roll** in Chapter 1). This chapter explains how checks work and what each skill covers.
+
+[Art: spot/ch03_intro_skill_check_01.png
+Purpose: Visual anchor for “uncertain outcomes → roll a check”]
 
 ---
 
@@ -15,6 +21,9 @@ When a Colonist attempts an action with uncertain results and a skill is relevan
 3. Add your **Skill Modifier**.
 4. Compare the total to the **Tier of Success** table.
 5. Apply any Story Die effects (see [Chapter 1: Core Mechanics](chapter_01_core.md)).
+
+[Art: diagrams/ch03_skill_check_flow_01.png
+Purpose: Flowchart of the Skill Check sequence and Story Die callouts]
 
 **Edge cases**
 * The Story Die can trigger a **Twist of Fate** or **Complication** even if its value is discarded by **Augmented** or **Impaired** rolls.
@@ -79,6 +88,9 @@ Your **Skill Points** (0–30) determine your **Skill Modifier**.
 | 20–29 | +2 |
 | 30 | +3 |
 
+[Art: diagrams/ch03_skill_modifiers_01.png
+Purpose: Quick visual mapping of Skill Points to Modifiers]
+
 **Edge cases**
 * The starting **Skill Cap** is **30** (see [Chapter 2: Character Creation](chapter_02_character_creation.md)).
 
@@ -103,6 +115,9 @@ When a circumstance gives a minor advantage or disadvantage.
 
 **Example: Edge and Bane**
 Viper shoots in darkness (**Bane**) but has a laser sight (**Edge**). The modifiers cancel, so she rolls normally.
+
+[Art: spot/ch03_edge_bane_example_01.png
+Purpose: Visualize Edge and Bane canceling out]
 
 ### Double Edge and Double Bane
 
@@ -153,6 +168,12 @@ Ivo performs surgery with a glitterworld kit. He rolls **3d10**: **Story Die 1**
 **Example: Impaired**
 Sana fires while suppressed (**Impaired**). She rolls **3d10**: **Story Die 10**, **Base Die 4**, extra die **7**. She keeps **4 + 7 = 11**, then adds **Dexterity +2** and **Shooting 20 (+2)** for a total of **15** (Tier 2). The **Story Die 10** triggers a Complication.
 
+[Art: diagrams/ch03_modifiers_map_01.png
+Purpose: Summarize Edge/Bane, Double Edge/Bane, Cancel, Augmented/Impaired]
+
+[Art: spot/ch03_augmented_example_01.png
+Purpose: Show a major advantage check in action (Augmented example)]
+
 ---
 
 ## Pushing Your Luck
@@ -171,6 +192,9 @@ When you voluntarily risk Stress to improve a roll.
 
 **Example: Push**
 Tess rolls **9** on an Intellectual check with **Mind +2** and **Intellectual 10 (+1)** for a total of **12** (Tier 2). She Pushes, gains **+1 Stress**, rolls **1d6 = 3**, and the total becomes **15** (still Tier 2). If the d6 had been a **1**, she would immediately make a Panic Check after the action.
+
+[Art: spot/ch03_push_example_01.png
+Purpose: Capture the risk-reward moment of a Push]
 
 ---
 
