@@ -1,8 +1,14 @@
 # Chapter 2: Character Creation
 
+[Art: chapter_art/ch02_character_creation_01.png
+Purpose: Chapter opener establishing lifepath/creation tone and core cast]
+
 In RimWorld, no one is a blank slate. Every colonist has a history—a childhood on a glitterworld, a career as a space marine, or a dark past as a pirate.
 
 We use a **Lifepath System** to generate your Colonist. You will roll for your background, survive terms of service, and emerge as a scarred but capable survivor.
+
+[Art: spot/ch02_lifepath_theme_01.png
+Purpose: Reinforce “no blank slate” lifepath theme]
 
 **Example: The Table**
 John is the Storyteller. Mary is a player. They create a Colonist together using the steps below.
@@ -21,6 +27,9 @@ At the start of a campaign or when a new player character joins.
 4. Roll Personality traits.
 5. Optionally swap one trait for a Neutral/Mixed trait.
 6. Choose an Arrival Scenario as a group.
+
+[Art: diagrams/ch02_lifepath_overview_01.png
+Purpose: Flowchart of the Lifepath steps]
 
 **Edge cases**
 * The Storyteller can allow a new Colonist to skip or shorten steps for pacing.
@@ -51,6 +60,9 @@ At the start of character creation.
 **Example: Choosing Attributes**
 Mary assigns **Mind +2**, **Spirit +1**, **Dexterity +0**, **Vigor -1**. Those modifiers will be added to her rolls later.
 
+[Art: spot/ch02_attributes_assignment_01.png
+Purpose: Visualize assigning the attribute array on a character sheet]
+
 ---
 
 ## Step 2: Childhood
@@ -78,6 +90,9 @@ After Attributes.
 | 8 | **Industrial Orphan** | +10 Crafting, +10 Construction | **Industrious**: +1 Edge to all Construction rolls. |
 | 9 | **Sheriff** | +10 Shooting, +10 Melee | **Trigger-Happy**: +1 Bane on Attack actions, but +1 Action Point per turn. |
 | 10 | **Pop Idol** | +20 Social | **Beautiful**: +1 Edge to all Social interactions. |
+
+[Art: spot/ch02_childhood_roll_01.png
+Purpose: Anchor the Childhood roll table with a quick visual cue]
 
 **Example: Childhood**
 Mary rolls **1d10** and gets a **6**, making her a **War Refugee**. She adds **+10 Shooting**, **+10 Medical**, and gains the **Pessimist** trait.
@@ -110,6 +125,9 @@ For each Term you take.
 5. **Roll an Event (1d10)** and apply the listed outcome.
 6. **Critical Success (Natural 10)**: Gain a **Random Positive Trait** (roll Table A) in addition to the Event.
 
+[Art: diagrams/ch02_term_sequence_01.png
+Purpose: Diagram of the Term Sequence with success/failure branches]
+
 **Edge cases**
 * **Skill Cap**: You cannot start with more than **30 Skill Points** in any one skill. If a gain would exceed 30, reallocate the excess points to another skill listed in the same Career.
 * **Event Repeats**: If you roll the same Event entry again in a later Term, take the **second** outcome, then the **third**, then the **fourth**.
@@ -117,6 +135,9 @@ For each Term you take.
 
 **Example: First Term**
 Mary chooses the **Drifter** career. She rolls **2d10 + Dexterity 0** and gets **6 + 8 = 14**, which beats **DC 12**. She survives, picks **Social** and **Plants** for **+5 Skill Points** each, then rolls **1d10** for an Event and gets a **10**. She applies the Event result and gains a **Random Positive Trait** from Table A.
+
+[Art: spot/ch02_first_term_example_01.png
+Purpose: Show the feel of a career term and survival roll]
 
 ### Scars and Addictions
 
@@ -340,6 +361,9 @@ When your Stress increases during play.
 * If your **current Stress** is **equal to or higher** than your threshold at the end of a scene where Stress increased, make a **Panic Check**.
 * Traits in Tables A and B can increase or decrease the threshold.
 
+[Art: diagrams/ch02_mental_break_threshold_01.png
+Purpose: Visual gauge for the default stress threshold and trigger]
+
 **Edge cases**
 * Panic Check rules are in [Chapter 4: Survival & Combat](chapter_04_combat_and_survival.md).
 * This threshold does not replace other Panic Check triggers (such as a Push).
@@ -429,6 +453,9 @@ Choose one Arrival Scenario and apply its starting Tech Level and gear.
 | **Rich Explorer (Solo Skilled)** | Spacer 1 | Charge Rifle, Glitterworld Medicine (x5), Gold (200), Auto-Turret Blueprint |
 | **Lost Tribe (Group Survival)** | Neolithic 4 (Max) | Recurve Bow (x2), Ikwa (x2), Pila (x1), Pemmican (100), Herbal Medicine (x10) |
 | **Naked Brutality (Hardcore)** | Neolithic 1 | None (start with 0 Food and bare hands) |
+
+[Art: spot/ch02_arrival_scenarios_01.png
+Purpose: Make the scenario choice feel tangible]
 
 **Edge cases**
 * Scenario play guidance appears in [Chapter 8: The Storyteller](chapter_08_storyteller.md).
