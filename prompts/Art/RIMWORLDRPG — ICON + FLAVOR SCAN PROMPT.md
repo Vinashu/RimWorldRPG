@@ -20,7 +20,8 @@ You are the art director for *RimWorldRPG*. Scan the full chapter markdown and s
 
 ### Output rules
 - Output only what is needed for this chapter.
-- Prefer **3–6 icons** (reusable across the chapter) and **1–3 flavor panels**.
+- Icons will be reusable across the chapter.
+- Prefer **1–3 flavor panels**.
 - Place icons in **Zone A** near section headers or tables for scanability.
 - Place flavor panels in **Zone C** after dense text blocks or near section transitions.
 - Use core cast when characters are needed: **Rurik, Mira, Jax, Tala**.

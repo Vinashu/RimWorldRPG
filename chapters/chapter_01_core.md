@@ -7,6 +7,9 @@ Purpose: Chapter opener establishing frontier survival tone and core cast]
 
 You are stranded. You are lightyears from the glitterworlds, on a lawless frontier planet known as a **Rimworld**. There is no government here, no safety net, and no faster-than-light travel to take you home.
 
+[Art: flavor/ch01_welcome_rim_01.png
+Purpose: Set frontier tone before core mechanics]
+
 ### What Is This Game
 This is a Tabletop Roleplaying Game (TTRPG), a conversation between friends where you build a story together.
 
@@ -27,6 +30,9 @@ In this game, you will tell the story of your colony's struggle and triumph.
 ---
 
 ## The Core Mechanic: The Story Die System
+
+[Art: icons/ch01_story_die_system_01.png
+Purpose: Mark the core resolution system for quick scanning]
 
 When a Colonist attempts an action with an uncertain outcome—shooting a raider, performing surgery, or negotiating a trade—you make a **Colonist Roll (Skill Check)**.
 
@@ -75,6 +81,9 @@ Sana tries to pick a lock using **Dexterity +2** and **Crafting 10 (+1)**. She r
 
 ### Modifiers
 
+[Art: icons/ch01_modifiers_01.png
+Purpose: Flag Edge/Bane rules for quick reference]
+
 **When it applies**
 When circumstances help or hinder a roll.
 
@@ -122,6 +131,9 @@ Purpose: Show the risk-reward moment of a Push (Tala building a barricade)]
 
 ## The Story Die Effects
 
+[Art: icons/ch01_story_die_effects_01.png
+Purpose: Mark narrative twist section]
+
 The Story Die adds narrative twists beyond simple numbers.
 
 ### Twist of Fate (Story Die 1)
@@ -138,6 +150,9 @@ When the Story Die shows **1** on a Colonist Roll.
 
 **Example: Twist of Fate**
 Tess tries to hack a console with **Mind +2** and **Intellectual 10 (+1)**. She rolls **Base Die 6** and **Story Die 1**. Total = 6 + 1 + 2 + 1 = **10** (Tier 1). She succeeds with a cost, but also gains **1 Inspiration Point** from the Twist.
+
+[Art: flavor/ch01_story_die_twist_01.png
+Purpose: Add narrative flavor for Twist/Complication moments]
 
 ### Complication (Story Die 10)
 
@@ -175,6 +190,9 @@ Marla rolls **Base Die 2** and **Story Die 6** on a Construction check. With **V
 ---
 
 ## Time and Scale
+
+[Art: icons/ch01_time_scale_01.png
+Purpose: Highlight timekeeping and range bands section]
 
 Time on the Rim is tracked in specific units to manage survival.
 
@@ -239,6 +257,9 @@ Viper starts at **Medium** range. She uses **Move** to shift to **Close** so her
 
 ### Tactical Actions
 
+[Art: icons/ch01_tactical_actions_01.png
+Purpose: Mark combat action options quickly]
+
 **When it applies**
 On your turn in combat.
 
@@ -273,6 +294,9 @@ When using a weapon outside its optimal range band.
 Sana fires a sniper rifle (optimal **Far**) from **Close** range. She suffers **Bane** on the attack, which may downgrade her Tier.
 
 ### Caravan Movement (World Map)
+
+[Art: icons/ch01_caravan_movement_01.png
+Purpose: Mark travel rules at a glance]
 
 **When it applies**
 When traveling between map tiles.
