@@ -5,36 +5,74 @@ Survival on the Rim requires the right tools. A sharp knife, a warm parka, and a
 ---
 
 ## Economy
-The universal currency of the Rim is **Silver**.
-*   **Starting Wealth**: Determined by your Scenario (Chapter 2).
-*   **Trade**: You can trade with visiting caravans or orbital trade ships (requires Comms Console).
 
-### Market Value & Trading
-**Market Value** is the base worth of an item, calculated roughly as:
-> **Market Value = (Material Cost) + (Crafting Points × 0.5)**
+### Currency and Starting Wealth
 
-When trading, prices are adjusted by the trader's **Social** skill:
-*   **Base Buy Price**: 140% of Market Value.
-*   **Base Sell Price**: 60% of Market Value.
-*   **Social Bonus**: For every level of Social, improve prices by **2%**.
-    *   *Example*: Social 10 gives +20% better prices (Buy at 120%, Sell at 80%).
-    *   *Max Bonus*: ±40% (at Social 20).
+**When it applies**
+When the campaign begins or when trading.
 
-> **Example: Trading**
->
-> **John**: "The orbital trader offers to buy your sculptures. The base value is 500 Silver."
->
-> **Mary**: "Viper does the talking. She has **Social 40 (+4)**."
->
-> **John**: "Okay, the base sell price is 60% (300 Silver). With Social 40 (Level 4), you get +8%."
->
-> **Mary**: "So 68%? That's 340 Silver."
->
-> **John**: "Deal."
+**How it works**
+* The universal currency of the Rim is **Silver**.
+* Starting wealth and gear are determined by your Arrival Scenario in [Chapter 2: Character Creation](chapter_02_character_creation.md).
+
+**Edge cases**
+* Some scenarios start with gear instead of Silver.
+
+**Example: Starting Wealth**
+A Crashlanded group starts with listed gear instead of a pile of Silver, then begins trading as soon as a caravan arrives.
+
+---
+
+### Market Value
+
+**When it applies**
+When determining the base value of an item.
+
+**How it works**
+Use the formula below.
+
+**Market Value = Material Cost + (Crafting Points × 0.5)**
+
+**Edge cases**
+* If an item has no material cost, treat it as **0**.
+* Crafting Points (CP) are generated in [Chapter 6: Colony Management](chapter_06_colony.md).
+
+**Example: Market Value**
+A weapon costs **60 Steel** and **100 CP**. Market Value = 60 + (100 × 0.5) = **110 Silver**.
+
+---
+
+### Trading Prices
+
+**When it applies**
+When buying or selling items with a trader.
+
+**How it works**
+1. Start with Market Value.
+2. Apply base prices.
+3. Apply the Social Bonus.
+
+| Price Type | Base Rate |
+| :--- | ---: |
+| **Buy** | 140% of Market Value |
+| **Sell** | 60% of Market Value |
+
+**Social Bonus**
+* Improve prices by **2% per Social Skill Point**, up to **±40%**.
+
+**Edge cases**
+* Use the Social skill rules in [Chapter 3: Skills & Checks](chapter_03_skills_and_checks.md).
+* The maximum bonus is reached at **Social 20**.
+
+**Example: Trading**
+Viper sells a sculpture with **Market Value 500**. Base sell price is **60% = 300 Silver**. She has **Social 10**, improving prices by **20%**, so she sells at **80% = 400 Silver**.
+
+---
 
 ### Common Item Values
+
 | Item | Market Value | Materials | Crafting Points (CP) | Tech |
-| :--- | :--- | :--- | :--- | :--- |
+| :--- | ---: | :--- | ---: | :--- |
 | **Meal (Simple)** | 15 | 10 Food | 10 | Neolithic 1 |
 | **Meal (Fine)** | 25 | 20 Food | 20 | Medieval 2 |
 | **Medicine (Herbal)** | 10 | - | - | Neolithic 2 |
@@ -42,37 +80,61 @@ When trading, prices are adjusted by the trader's **Social** skill:
 | **Component** | 30 | 12 Steel | 60 | Industrial 1 |
 | **Advanced Component** | 200 | 1 Component, 20 Steel, 10 Plasteel, 3 Gold | 200 | Spacer 1 |
 
-### Item Quality
-When an item is finished (CP requirement met), make a final **Crafting Check** to determine its quality.
+---
 
-*   **Tier 1 (11-)**: **Normal**. Standard stats.
-*   **Tier 2 (12-16)**: **Good**. **+1 Accuracy/Damage** (Weapons) or **+1 Armor** (Apparel).
-*   **Tier 3 (17+)**: **Masterwork**. **+2 Stats**. Value x1.5.
-*   **Critical (Natural 10)**: **Legendary**. **+3 Stats**. Value x2. Gain Art/Name.
+## Item Quality
 
-> **Example: Crafting**
->
-> **Mary**: "Viper finishes the Flak Vest. It took 80 CP. Now for the Quality roll."
->
-> **John**: "Roll **Dexterity + Crafting**."
->
-> **Mary**: *(Rolls 15)*. "Tier 2! It's a **Good** Flak Vest."
->
-> **John**: "Nice. It has **Armor 3** instead of 2."
+### Crafting Quality Roll
+
+**When it applies**
+When an item’s Crafting Points requirement is completed.
+
+**How it works**
+1. Roll **Dexterity + Crafting**.
+2. Apply the Tier result below.
+
+| Tier | Quality | Effect |
+| :--- | :--- | :--- |
+| **Tier 1 (11-)** | **Normal** | Standard stats. |
+| **Tier 2 (12–16)** | **Good** | **+1 Accuracy/Damage** (Weapons) or **+1 Armor** (Apparel). |
+| **Tier 3 (17+)** | **Masterwork** | **+2 Stats**. Value ×1.5. |
+| **Critical (Natural 10)** | **Legendary** | **+3 Stats**. Value ×2. Gain Art/Name. |
+
+**Edge cases**
+* The Crafting check uses the Skill rules in [Chapter 3: Skills & Checks](chapter_03_skills_and_checks.md).
+* **Natural 10** refers to the **Story Die** result.
+
+**Example: Item Quality**
+Oren finishes a flak vest and rolls **2d10 + Dexterity + Crafting**. He totals **18** (Tier 3), so the vest is **Masterwork** and gains **+2 Armor**.
 
 ---
 
 ## Weapons
-Weapons define your combat capabilities.
-*   **Damage**: The base damage dealt on a Tier 2 hit.
-*   **Band**: The optimal Range Band (Close, Medium, Far).
-*   **AP**: Action Point cost to attack.
+
+### Weapon Stats
+
+**When it applies**
+Whenever you use a weapon in combat.
+
+**How it works**
+* **Damage**: Base damage on a **Tier 2** hit.
+* **Band**: Optimal **Range Band** (see [Chapter 1: Core Mechanics](chapter_01_core.md)).
+* **AP**: Action Point cost to attack (see [Chapter 4: Survival & Combat](chapter_04_combat_and_survival.md)).
+* **Notes**: Special rules or traits.
+
+**Edge cases**
+* Range penalties apply outside a weapon’s optimal band (Chapter 1).
+* Attack resolution is in Chapter 4.
+
+**Example: Weapon Line**
+A **Revolver** has **Damage 4**, **Band Close**, and **AP 2**. On a Tier 2 hit it deals **4 damage**, and it costs **2 AP** to fire.
+
+---
 
 ### Melee Weapons
-Uses **Vigor** for attacks.
 
 | Weapon | Damage | AP | Market Value | Materials | CP | Tech | Notes |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| :--- | ---: | ---: | ---: | :--- | ---: | :--- | :--- |
 | **Fists** | 2 | 2 | - | - | - | - | Blunt. |
 | **Knife** | 3 | 2 | 30 | 15 Steel/Wood | 30 | Neolithic 1 | Sharp. Thrown (Range 5). |
 | **Club** | 4 | 2 | 20 | 20 Wood/Stone | 20 | Neolithic 1 | Blunt. +1 Dmg vs Armor. |
@@ -82,11 +144,12 @@ Uses **Vigor** for attacks.
 | **Monosword** | 8 | 2 | 1500 | - | - | Spacer 4 | Sharp. Ignores 2 Armor. Quest/Trade only. |
 | **Zeushammer** | 8 | 2 | 1800 | - | - | Spacer 4 | Blunt. EMP (Stuns mechs). Quest/Trade only. |
 
+---
+
 ### Ranged Weapons
-Uses **Dexterity** for attacks.
 
 | Weapon | Damage | Band | AP | Value | Materials | CP | Tech | Notes |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| :--- | ---: | :--- | ---: | ---: | :--- | ---: | :--- | :--- |
 | **Short Bow** | 3 | Close | 2 | 20 | 20 Wood | 20 | Neolithic 1 | Silent. |
 | **Great Bow** | 5 | Medium | 3 | 60 | 40 Wood | 40 | Neolithic 3 | High damage. |
 | **Revolver** | 4 | Close | 2 | 100 | 30 Steel, 2 Comp | 60 | Industrial 1 | Reliable. |
@@ -95,22 +158,58 @@ Uses **Dexterity** for attacks.
 | **Assault Rifle** | 5 | Medium | 2 | 350 | 70 Steel, 5 Comp | 180 | Industrial 4 | Burst (Split Dmg). |
 | **Sniper Rifle** | 8 | Far | 3 | 500 | 80 Steel, 8 Comp | 240 | Industrial 5 | Extreme range. |
 | **Minigun** | 4 | Medium | 3 | 1200 | 150 Steel, 15 Comp | 400 | Industrial 6 | Area 3x3. Hits all. |
-| **Charge Rifle** | 8 | Medium | 2 | 1000 | 50 Plasteel, 10 Comp | 300 | Spacer 2 | AP (Ignores 1 Armor). |
+| **Charge Rifle** | 8 | Medium | 2 | 1000 | 50 Plasteel, 10 Comp | 300 | Spacer 2 | Armor Piercing (Ignores 1 Armor). |
+
+---
 
 ### Grenades
-Thrown weapons. Always hit the target square, but can scatter on a miss.
-*   **Frag Grenade**: 6 Damage. 3x3 Area. 3 AP. **Val: 150**. Mat: 20 Steel, 80 Chemfuel. CP: 80. **Tech: Industrial 3**.
-*   **EMP Grenade**: Stuns Mechs/Turrets (1 Rd). 3x3 Area. 3 AP. **Val: 200**. Mat: 20 Steel, 4 Comp. CP: 100. **Tech: Industrial 4**.
-*   **Molotov**: Sets 3x3 Area on fire. 3 AP. **Val: 80**. Mat: 20 Cloth, 50 Chemfuel. CP: 40. **Tech: Industrial 1**.
+
+**When it applies**
+When a Colonist throws a grenade.
+
+**How it works**
+* Grenades are thrown weapons.
+* They always hit the target square, but can scatter on a miss.
+
+**Edge cases**
+* Use the Attack rules in [Chapter 4: Survival & Combat](chapter_04_combat_and_survival.md).
+
+**Example: Grenade**
+Sana throws a **Frag Grenade** into a cluster of raiders. On impact it deals **6 Damage** to everyone in the **3x3** area.
+
+| Grenade | Damage/Effect | AP | Value | Materials | CP | Tech |
+| :--- | :--- | ---: | ---: | :--- | ---: | :--- |
+| **Frag Grenade** | 6 Damage, 3x3 Area | 3 | 150 | 20 Steel, 80 Chemfuel | 80 | Industrial 3 |
+| **EMP Grenade** | Stun Mechs/Turrets (1 Rd), 3x3 Area | 3 | 200 | 20 Steel, 4 Comp | 100 | Industrial 4 |
+| **Molotov** | 3x3 Area on fire | 3 | 80 | 20 Cloth, 50 Chemfuel | 40 | Industrial 1 |
 
 ---
 
 ## Armor
-Armor reduces incoming damage.
-> **Damage Taken = Incoming Damage - Armor Rating**
+
+### Armor Basics
+
+**When it applies**
+When a character takes damage.
+
+**How it works**
+Use the formula below.
+
+**Damage Taken = Incoming Damage - Armor Rating**
+
+**Edge cases**
+* Armor values are listed below.
+* Damage rules are in [Chapter 4: Survival & Combat](chapter_04_combat_and_survival.md).
+
+**Example: Armor**
+A raider takes **10 Damage** and has **Armor 3**. Final damage is **7**.
+
+---
+
+### Armor Table
 
 | Armor | Rating | Speed | Value | Materials | CP | Tech | Notes |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | 
+| :--- | ---: | ---: | ---: | :--- | ---: | :--- | :--- |
 | **Tribalwear** | 0 | - | 20 | 30 Leather/Cloth | 20 | Neolithic 1 | Basic. |
 | **Cowboy Hat** | 0 | - | 50 | 20 Leather | 30 | Neolithic 2 | **+1 Social**. Heat Insul. |
 | **Tuque** | 0 | - | 30 | 20 Cloth/Wool | 20 | Neolithic 1 | Cold Insul. |
@@ -122,34 +221,90 @@ Armor reduces incoming damage.
 | **Marine Armor** | 4 | -1 | 1200 | 100 Plasteel, 5 Comp | 400 | Spacer 3 | Power Armor. |
 | **Cataphract** | 5 | -2 | 2500 | 150 Plasteel, 8 Comp | 600 | Spacer 5 | Heavy. Slow. |
 
-### Utility Items
-Specialized tools for the battlefield.
-*   **Psychic Shock Lance**: **Range: Medium**. Target makes a **Spirit Save (15)**. Fail = **Downed** instantly (Unconscious). Risks brain damage (1 on d10). One-use. **Value: 500**.
-*   **Orbital Targeter**: **Range: Far**. Calls a beam of destruction (10d10 Damage in 3x3 area). One-use. **Value: 1500**.
-*   **Jump Pack**: **Action: Jump**. Spend 1 AP to move to **Any Band**. **Value: 400**. Refuel with Chemfuel.
+---
+
+## Utility Items
+
+### Battlefield Utilities
+
+**When it applies**
+When a Colonist uses a special tool in combat.
+
+**How it works**
+Use the item’s listed effect.
+
+* **Psychic Shock Lance**: **Range Medium**. Target makes a **Spirit Save (DC 15)**. On failure, they are **Downed** instantly. Risk of brain damage (1 on d10). One-use. **Value 500**.
+* **Orbital Targeter**: **Range Far**. Calls a beam of destruction (**10d10 Damage** in a 3x3 area). One-use. **Value 1500**.
+* **Jump Pack**: **Action Jump**. Spend **1 AP** to move to **any Range Band**. **Value 400**. Refuel with Chemfuel.
+
+**Edge cases**
+* Save and combat rules are in [Chapter 4: Survival & Combat](chapter_04_combat_and_survival.md).
+
+**Example: Utility Item**
+Oren uses a **Jump Pack** to move from **Far** to **Close** range in one action, then attacks with his pistol.
 
 ---
 
-## Items & Drugs
+## Items and Drugs
 
 ### Medicine
-Used to tend wounds and perform surgery.
-*   **Herbal Medicine**: Tier 1. Heals **1d4 HP**.
-*   **Industrial Medicine**: Tier 2. Heals **1d8 HP**.
-*   **Glitterworld Medicine**: Tier 3. Heals **1d12 HP** and cures one Disease immediately.
+
+**When it applies**
+When treating wounds or performing surgery.
+
+**How it works**
+Use the listed healing amount.
+
+* **Herbal Medicine**: Tier 1. Heals **1d4 HP**.
+* **Industrial Medicine**: Tier 2. Heals **1d8 HP**.
+* **Glitterworld Medicine**: Tier 3. Heals **1d12 HP** and cures one Disease immediately.
+
+**Edge cases**
+* Medical checks and surgery risks are in [Chapter 4: Survival & Combat](chapter_04_combat_and_survival.md).
+
+**Example: Medicine**
+Ivo uses **Industrial Medicine** and heals **1d8 HP**, rolling a **6**.
+
+---
 
 ### Drugs
-Chemical assistance for life on the Rim.
-*   **Smokeleaf**: **+4 Mood**. **-2 Bane** on all checks. Reduces Pain.
-*   **Wake-up**: Regain **4 AP** immediately. Risk of Heart Attack.
-*   **Go-Juice**: **+1 Speed**. Ignore all Pain penalties. **+2 Edge** on Melee.
-*   **Yayo**: **+8 Mood**. **+1 Edge** on all checks. Highly Addictive.
-*   **Luciferium**: **+2 to All Stats**. Heals old Scars. **Fatal Withdrawal**: If not taken every 6 days, you die in agony.
 
-### Bionics & Implants
-Enhance the flesh with steel. (Requires **Spacer** Tech to craft).
-*   **Prosthetic Limbs**: **Value: 200**. Efficiency 100%. Removes "Missing Part" penalties.
-*   **Bionic Eye**: **Value: 1000**. **+2 Edge** on Perception/Shooting. Fixes blindness.
-*   **Bionic Arm**: **Value: 1000**. **+2 Edge** on Manipulation (Crafting/Medical/Melee).
-*   **Bionic Leg**: **Value: 1000**. **+1 Speed** (Grants **1 Free Move Action** per encounter).
-*   **Painstopper**: **Value: 800**. Ignore all Pain/Shock. Cannot be Downed by pain, fight until dead.
+**When it applies**
+When a Colonist consumes combat or mood-altering substances.
+
+**How it works**
+Apply the listed effect immediately.
+
+* **Smokeleaf**: **+4 Mood**. **-2 Bane** on all checks. Reduces Pain.
+* **Wake-up**: Regain **4 AP** immediately. Risk of Heart Attack.
+* **Go-Juice**: **+1 Speed**. Ignore all Pain penalties. **+2 Edge** on Melee.
+* **Yayo**: **+8 Mood**. **+1 Edge** on all checks. Highly Addictive.
+* **Luciferium**: **+2 to All Stats**. Heals old Scars. **Fatal Withdrawal**: If not taken every 6 days, you die in agony.
+
+**Edge cases**
+* Addiction rules are in [Chapter 2: Character Creation](chapter_02_character_creation.md).
+
+**Example: Drugs**
+Sana takes **Go-Juice** before a fight. She gains **+2 Edge** on Melee attacks and ignores Pain penalties for the scene.
+
+---
+
+### Bionics and Implants
+
+**When it applies**
+When replacing or upgrading body parts.
+
+**How it works**
+Apply the listed effect.
+
+* **Prosthetic Limbs**: **Value 200**. Efficiency 100%. Removes "Missing Part" penalties.
+* **Bionic Eye**: **Value 1000**. **+2 Edge** on Perception/Shooting. Fixes blindness.
+* **Bionic Arm**: **Value 1000**. **+2 Edge** on Manipulation (Crafting/Medical/Melee).
+* **Bionic Leg**: **Value 1000**. **+1 Speed** (Grants **1 Free Move Action** per encounter).
+* **Painstopper**: **Value 800**. Ignore all Pain/Shock. Cannot be Downed by pain; fight until dead.
+
+**Edge cases**
+* Missing part penalties are in [Chapter 4: Survival & Combat](chapter_04_combat_and_survival.md).
+
+**Example: Bionics**
+Marla replaces a missing arm with a **Bionic Arm**. She removes the missing arm penalties and gains **+2 Edge** on Crafting checks.

@@ -6,260 +6,445 @@ Building a thriving colony requires more than just survival; it requires industr
 
 ## Base Management
 
-The Base is the heart of the game. It has its own stats and resources.
-
 ### Base Stats
-The Colony is a character in itself.
-*   **Security**: Your ability to repel raids. (Sum of Defenses).
-*   **Efficiency**: Bonus to work speed. (Workshops + Power).
-*   **Comfort**: Bonus to Stress recovery. (Bedrooms + Recreation).
-*   **Wealth Score**: Total points from Tech + Buildings + Defenses + Colonists. **Higher Score = Harder Raids.**
+
+**When it applies**
+When evaluating the colony’s overall strength and comfort.
+
+**How it works**
+* **Security**: Your ability to repel raids. **Security = Sum of Defenses**.
+* **Efficiency**: Bonus to work speed from **Workshops + Power**.
+* **Comfort**: Bonus to Stress recovery from **Bedrooms + Recreation**.
+* **Wealth Score**: Total points from Tech + Buildings + Defenses + Colonists. **Higher Score = Harder Raids**.
+
+**Edge cases**
+* Wealth Score calculations are detailed later in this chapter.
+
+**Example: Base Stats**
+A colony has **2 Mini Turrets (5 each)** and **10 Stone Walls (1 each)**. Security = 10 + 10 = **20**. Their Wealth Score is calculated using the full rules below.
+
+---
 
 ### Resources
-We track 5 abstract resource categories:
-1.  **Food**: Meals, pemmican, raw meat/veg.
-2.  **Textile**: Leather, cloth, wool.
-3.  **Ore**: Steel, plasteel, gold.
-4.  **Components**: Machinery parts, electronics.
-5.  **Medicine**: Herbal meds, glitterworld meds.
 
-### Daily Actions
-The day is divided into **4 Periods**: **Morning, Afternoon, Evening, and Night**.
+**When it applies**
+When tracking colony stockpiles and production.
 
-**1. Planning Phase**: At the start of the day, each player decides what their character will do for each of the 4 periods. You can assign a specific task (Farming, Building, etc.) or choose to **Rest/Sleep**.
+**How it works**
+Track five abstract resource categories:
+* **Food**: Meals, pemmican, raw meat/veg.
+* **Textile**: Leather, cloth, wool.
+* **Ore**: Steel, plasteel, gold.
+* **Components**: Machinery parts, electronics.
+* **Medicine**: Herbal meds, glitterworld meds.
 
-**2. Resolution Phase**: Once all plans are set, players make the necessary Skill Checks for each active period.
+**Edge cases**
+* Item conversion and crafting costs appear in [Chapter 5: Equipment & Economy](chapter_05_equipment.md).
 
-| Action | Roll | Tier 1 (11-) | Tier 2 (12-16) | Tier 3 (17+) |
+**Example: Resources**
+After a hunt and harvest, the colony gains **2 Food** and **1 Textile** for the day.
+
+---
+
+## The Day Loop
+
+### Daily Planning
+
+**When it applies**
+At the start of each in-game day.
+
+**How it works**
+1. The day is divided into **4 Periods**: **Morning, Afternoon, Evening, Night**.
+2. Each player assigns one task per Period.
+3. Night is usually used for Rest/Sleep.
+
+**Edge cases**
+* Period structure aligns with [Chapter 1: Core Mechanics](chapter_01_core.md).
+
+**Example: Daily Planning**
+Viper plans **Hunting (Morning)**, **Building (Afternoon)**, **Research (Evening)**, and **Sleep (Night)**.
+
+---
+
+### Daily Action Resolution
+
+**When it applies**
+When resolving a planned task during a Period.
+
+**How it works**
+Make the listed Skill Check and apply the Tier result.
+
+| Action | Roll | Tier 1 (11-) | Tier 2 (12–16) | Tier 3 (17+) |
 | :--- | :--- | :--- | :--- | :--- |
 | **Farming** | **Mind + Plants** | **1 Food** | **2 Food, 1 Textile** | **4 Food, 2 Textile** |
-| **Hunting** | **Dexterity + Shooting** | **1 Food** | **2 Food, 1 Textile** (Leather) | **4 Food, 2 Textile** |
+| **Hunting** | **Dexterity + Shooting** | **1 Food** | **2 Food, 1 Textile** | **4 Food, 2 Textile** |
 | **Mining** | **Vigor + Mining** | **1 Ore** | **2 Ore** | **3 Ore, 1 Component** |
-| **Cooking** | **Dexterity + Cooking** | Convert **2 Food** -> **2 Meals** | Convert **2 Food** -> **3 Meals** | Convert **2 Food** -> **4 Meals** |
-| **Crafting** | **Dexterity + Crafting** | **1 CP** towards Item | **3 CP** towards Item | **5 CP** towards Item |
-| **Building** | **Vigor + Construction** | **2 CP** towards Building | **5 CP** towards Building | **10 CP** towards Building |
+| **Cooking** | **Dexterity + Cooking** | Convert **2 Food → 2 Meals** | **2 Food → 3 Meals** | **2 Food → 4 Meals** |
+| **Crafting** | **Dexterity + Crafting** | **1 CP** | **3 CP** | **5 CP** |
+| **Building** | **Vigor + Construction** | **2 CP** | **5 CP** | **10 CP** |
 | **Researching** | **Mind + Intellectual** | **20 RP** | **50 RP** | **100 RP** |
 | **Social** | **Spirit + Social** | Maintain Relations | **+1 Relation** | **+2 Relation** or **Trade Bonus** |
 | **Healing** | **Mind + Medical** | Tend **1 Wound** | Tend **2 Wounds** | Tend **All Wounds** |
-| **Artistic** | **Spirit + Artistic** | **1 CP** towards Art | **3 CP** towards Art | **5 CP** towards Art |
+| **Artistic** | **Spirit + Artistic** | **1 CP** | **3 CP** | **5 CP** |
 
-> **Example: Daily Planning**
->
-> **John**: "It's a new day. The colony is low on food and we need those sandbags finished. What is Viper's plan?"
->
-> **Mary**: "Okay, here is my schedule:
-> *   **Morning**: Hunting. We need meat.
-> *   **Afternoon**: Building. I want to finish the sandbags.
-> *   **Evening**: Researching. I'll put in some hours on Gunsmithing.
-> *   **Night**: Sleeping."
->
-> **John**: "Sounds like a busy day. Let's resolve the rolls."
->
-> **Mary**: "First, **Hunting** (Dex + Shooting)... *(Rolls 14)*. Tier 2! **2 Food, 1 Textile**."
->
-> **Mary**: "Next, **Building** (Vigor + Construction)... *(Rolls 18)*. Tier 3! **5 CP**. The sandbags are done!"
->
-> **Mary**: "Finally, **Research** (Mind + Intellectual)... *(Rolls 9)*. Tier 1. Just **20 RP**."
->
-> **John**: "A productive day. Viper collapses into bed, exhausted but satisfied."
+**Edge cases**
+* Skill checks follow [Chapter 3: Skills & Checks](chapter_03_skills_and_checks.md).
+* Research progression is detailed later in this chapter.
+
+**Example: Daily Action**
+Viper rolls **2d10 + Vigor + Construction** and totals **18**. That is **Tier 3**, so she produces **10 CP** toward a wall.
 
 ---
 
 ### Biome Modifiers
-Your starting location dictates your struggle.
-*   **Temperate Forest**: No modifiers.
-*   **Arid Shrubland / Desert**: **-2 Bane** on Farming. **+1 Defense** (Clear sightlines).
-*   **Boreal Forest / Tundra**: **-1 Bane** on Farming (Winter). **+1 Security** (Cold damages attackers).
-*   **Tropical Rainforest**: **+1 Edge** on Farming. **-1 Health** (High Disease rate). **-1 Defense** (Dense cover for enemies).
-*   **Mountain**: **+1 Edge** on Mining. **+2 Security** (Natural choke points). **-2 Bane** on Farming.
+
+**When it applies**
+When your colony’s starting biome affects daily work.
+
+**How it works**
+Apply the modifiers below.
+
+* **Temperate Forest**: No modifiers.
+* **Arid Shrubland / Desert**: **-2 Bane** on Farming. **+1 Defense**.
+* **Boreal Forest / Tundra**: **-1 Bane** on Farming (Winter). **+1 Security**.
+* **Tropical Rainforest**: **+1 Edge** on Farming. **-1 Health**. **-1 Defense**.
+* **Mountain**: **+1 Edge** on Mining. **+2 Security**. **-2 Bane** on Farming.
+
+**Edge cases**
+* Biome descriptions appear in [Chapter 7: The Rim](chapter_07_world.md).
+
+**Example: Biome Modifiers**
+A colony in **Mountain** terrain gains **+1 Edge** on Mining but suffers **-2 Bane** on Farming.
 
 ---
 
-## Construction & Infrastructure
+## Construction and Infrastructure
 
-Building structures requires **Materials** and **Construction Points (CP)**.
-*   **Generation**: Characters generate CP via Daily Rolls (Tier 1 = 2 CP, Tier 2 = 5 CP, Tier 3 = 10 CP).
+### Construction Points (CP)
 
-> **Example: Building**
->
-> **Mary**: "We need a Wall. It costs **5 CP**."
->
-> **John**: "Roll **Vigor + Construction**."
->
-> **Mary**: *(Rolls 18)*. "Tier 3! I generate **10 CP**. I build TWO wall sections!"
+**When it applies**
+When building structures or crafting items.
+
+**How it works**
+* CP is generated through **Building** or **Crafting** actions (see Daily Action table).
+* When accumulated CP meets or exceeds a cost, the structure or item is completed.
+
+**Edge cases**
+* Item costs are listed in [Chapter 5: Equipment & Economy](chapter_05_equipment.md).
+
+**Example: CP**
+A **Wall** costs **5 CP**. Marla rolls a **Tier 2** Building result for **5 CP** and completes one wall section.
+
+---
 
 ### Facilities (Rooms)
-Instead of placing individual furniture, you build functional **Facilities**.
-*   **Cost**: Includes all necessary furniture (tables, chairs, vents).
-*   **Bonus**: Applies to all relevant checks within the colony.
+
+**When it applies**
+When constructing functional rooms for colony bonuses.
+
+**How it works**
+Build the facility and apply its effect.
 
 | Facility | Cost (CP) | Materials | Tech | Effect |
-| :--- | :--- | :--- | :--- | :--- |
+| :--- | ---: | :--- | :--- | :--- |
 | **Barracks** | 20 | 50 Wood | - | Sleeping spots. **+0 Comfort**. |
 | **Bedroom (Private)** | 40 | 80 Wood | Neolithic 2 | Private room. **+1 Comfort**. |
-| **Kitchen** | 50 | 50 Steel, 20 Wood | Industrial 1 | **Reduces Food Poisoning**. Clean cooking. |
+| **Kitchen** | 50 | 50 Steel, 20 Wood | Industrial 1 | **Reduces Food Poisoning**. |
 | **Workshop** | 80 | 100 Steel | Medieval 1 | **+1 Efficiency** (Crafting/Building). |
 | **Hospital** | 100 | 50 Steel, 5 Medicine | Industrial 2 | **+2 on Medical Checks**. |
-| **Rec Room** | 60 | 50 Wood, 10 Cloth | Neolithic 2 | **+1 Comfort**. Unlocks specific Recreation. |
+| **Rec Room** | 60 | 50 Wood, 10 Cloth | Neolithic 2 | **+1 Comfort**. Unlocks Recreation. |
 | **Research Lab** | 100 | 75 Steel, 25 Wood | - | Required for Research. **+1 Efficiency** (Research). |
 
+**Edge cases**
+* Medical check rules are in [Chapter 3: Skills & Checks](chapter_03_skills_and_checks.md).
+
+**Example: Facility**
+The colony spends **60 CP** and **50 Wood + 10 Cloth** to build a **Rec Room**, gaining **+1 Comfort**.
+
+---
+
 ### Power
+
+**When it applies**
+When powering facilities and defenses.
+
+**How it works**
+Build generators and storage.
+
 | Building | Materials | CP | Tech Req | Effect |
-| :--- | :--- | :--- | :--- | :--- |
-| **Wood Generator** | 100 Steel, 2 Comp | 150 | Industrial 1 | Powers 2 Facilities. Consumes Wood. |
-| **Solar Panel** | 100 Steel, 3 Comp | 200 | Industrial 3 | Powers 1 Facility (Day only). |
+| :--- | :--- | ---: | :--- | :--- |
+| **Wood Generator** | 100 Steel, 2 Comp | 150 | Industrial 1 | Powers **2 Facilities**. Consumes Wood. |
+| **Solar Panel** | 100 Steel, 3 Comp | 200 | Industrial 3 | Powers **1 Facility** (Day only). |
 | **Battery** | 50 Steel, 2 Comp | 100 | Industrial 2 | Stores power for Night/Eclipses. |
 
-### Security & Defense
-Raids target your **Security Score**.
-*   **Base Defense**: 0.
-*   **structures**: Add to your **Defense Pool**.
+**Edge cases**
+* Power affects Efficiency where applicable (Base Stats).
+
+**Example: Power**
+A colony builds **1 Wood Generator** and powers a **Workshop** and **Research Lab** (2 facilities).
+
+---
+
+## Security and Defense
+
+### Defensive Structures
+
+**When it applies**
+When building defenses and calculating Security or Defense Points.
+
+**How it works**
+Use the table below for structure costs and Defense Points.
+* **Base Defense** starts at **0**.
+* Defensive structures add to your **Defense Pool**.
 
 | Structure | Cost (CP) | Materials | HP | Defense Pts | Notes |
-| :--- | :--- | :--- | :--- | :--- | :--- |
+| :--- | ---: | :--- | ---: | ---: | :--- |
 | **Wall (Wood)** | 5 | 5 Wood | 20 | 1 | Flammable. |
 | **Wall (Stone)** | 10 | 5 Blocks | 100 | 2 | Fireproof. High HP. |
 | **Sandbags** | 5 | 5 Cloth | - | 1 | Partial Cover. |
-| **turret (Mini)** | 50 | 100 Steel, 3 Comp | 40 | 5 | Auto-attacks (Dmg 4). |
+| **Turret (Mini)** | 50 | 100 Steel, 3 Comp | 40 | 5 | Auto-attacks (Dmg 4). |
 | **Mortar** | 80 | 150 Steel, 5 Comp | 50 | 0 | Attacks Siege Camps. |
 
-### The Defense Pool
-During a Raid, the Colony generates **Defense Points (DP)** equal to the sum of all defensive structures.
-Players spend DP as vivid reactions to enemy actions:
-*   **1 DP**: Negate an enemy Tier 2 Success (Turn hit into miss).
-*   **2 DP**: Reduce Damage to a Colonist by one Tier (e.g. Critical -> Normal).
-*   **3 DP**: Prevent damage to a structure (Wall takes 0 damage).
+**Edge cases**
+* Combat resolution is in [Chapter 4: Survival & Combat](chapter_04_combat_and_survival.md).
 
-*If Defense Points reach 0, the enemy breaches the perimeter.*
+**Example: Defense Build**
+The colony builds **2 Stone Walls** and **1 Mini Turret**, adding **2 + 2 + 5 = 9 Defense Points**.
 
 ---
 
-## Research & Technology
+### Defense Pool
 
-Knowledge is power. To craft advanced items or build complex structures, you must first unlock the technology level required.
+**When it applies**
+During raids or colony defense scenes.
 
-### The Research Process
-1.  **Assign a Researcher**: A character spends an **Action Slot (4 hours)** working at a **Research Bench**.
-2.  **Make a Research Check**: `Roll = 2d10 + Mind + Intellectual`
-3.  **Determine Outcome**:
-    *   **Tier 1 (≤11)**: **20 RP**. Progress is slow.
-    *   **Tier 2 (12-16)**: **50 RP**. Steady progress.
-    *   **Tier 3 (17+)**: **100 RP**. A breakthrough!
+**How it works**
+The colony generates **Defense Points (DP)** equal to the sum of defensive structures. Spend DP as reactions.
 
-> **Example: Researching**
->
-> **Mary**: "Viper spends the evening at the research bench. We need **Gunsmithing** (Industrial 2)."
->
-> **John**: "Okay, roll **Mind + Intellectual**. You're using a simple bench for Industrial tech, so no bonus."
->
-> **Mary**: *(Rolls 11)*. "Tier 1... only **20 RP**."
->
-> **John**: "It's slow going. You're scratching your head over the blueprints."
+* **1 DP**: Negate an enemy Tier 2 Success (turn the hit into a miss).
+* **2 DP**: Reduce damage to a Colonist by one Tier (Critical → Normal).
+* **3 DP**: Prevent damage to a structure (Wall takes 0 damage).
+
+**Edge cases**
+* If DP reaches 0, enemies breach the perimeter.
+
+**Example: Defense Pool**
+The colony has **10 DP**. The Storyteller spends **2 DP** to reduce a critical hit to a normal hit, leaving **8 DP**.
+
+---
+
+## Research and Technology
+
+### Research Process
+
+**When it applies**
+When unlocking new technology.
+
+**How it works**
+1. Assign a Researcher to a **Research Bench** for a Period.
+2. Roll **2d10 + Mind + Intellectual**.
+3. Apply Research Points (RP) based on the Tier.
+
+| Tier | RP |
+| :--- | ---: |
+| **Tier 1 (≤11)** | 20 RP |
+| **Tier 2 (12–16)** | 50 RP |
+| **Tier 3 (17+)** | 100 RP |
+
+**Edge cases**
+* A **Research Lab** is required for research.
+
+**Example: Research**
+Tess rolls **2d10 + Mind + Intellectual** and totals **14**. She gains **50 RP** toward **Gunsmithing**.
+
+---
 
 ### Tech Categories
-*   **Neolithic (Levels 1-4)**: Basic survival. Cost: Level × 100 RP.
-*   **Medieval (Levels 1-5)**: Metalworking, smithing. Cost: Level × 300 RP.
-*   **Industrial (Levels 1-6)**: Electricity, firearms. Cost: Level × 600 RP.
-*   **Spacer (Levels 1-7)**: Bionics, spaceflight. Cost: Level × 1000 RP.
+
+**When it applies**
+When purchasing research projects.
+
+**How it works**
+Each Tech Level costs **Level × RP**.
+
+| Tech Category | Levels | RP per Level |
+| :--- | :--- | ---: |
+| **Neolithic** | 1–4 | 100 RP |
+| **Medieval** | 1–5 | 300 RP |
+| **Industrial** | 1–6 | 600 RP |
+| **Spacer** | 1–7 | 1000 RP |
+
+**Edge cases**
+* Tech Level requirements appear in [Chapter 5: Equipment & Economy](chapter_05_equipment.md).
+
+**Example: Tech Cost**
+Industrial **Level 2** costs **2 × 600 = 1200 RP**.
 
 ---
 
-## Medical & Health
+## Medical and Health
 
-Long-term survival depends on managing both physical injuries and mental stability.
+### Body Parts and Banes
 
-### Body Parts & Banes
-RimWorld-style injuries matter. Track lost body parts and apply the following Banes (stacking).
-*   **Missing Hand**: **+1 Bane** to fine motor skills (Shooting, Crafting, Medical). Cannot dual-wield.
-*   **Missing Arm**: **+2 Bane** to fine motor skills and heavy lifting. Cannot use two-handed weapons.
-*   **Missing Foot**: **+1 Bane** to Movement rolls. **-1 Speed**.
-*   **Missing Leg**: **+2 Bane** to Movement rolls. **-2 Speed**. Cannot sprint.
-*   **Missing Kidney**: **+1 Bane** to resist poison/disease. Healing rate -25%.
-*   **Missing Lung**: **+1 Bane** on stamina rolls. Gain **+1 Stress** after exertion.
-*   **Scars (Painful)**: Each scar imposes **-1 Mood**. 3+ scars adds **+1 Bane** to Social.
+**When it applies**
+When a colonist loses a body part.
+
+**How it works**
+Apply the penalties below. These stack.
+
+* **Missing Hand**: **+1 Bane** to Shooting, Crafting, Medical. Cannot dual-wield.
+* **Missing Arm**: **+2 Bane** to fine motor skills and heavy lifting. Cannot use two-handed weapons.
+* **Missing Foot**: **+1 Bane** to Movement rolls. **-1 Speed**.
+* **Missing Leg**: **+2 Bane** to Movement rolls. **-2 Speed**. Cannot sprint.
+* **Missing Kidney**: **+1 Bane** vs poison/disease. Healing rate -25%.
+* **Missing Lung**: **+1 Bane** on stamina rolls. Gain **+1 Stress** after exertion.
+* **Scars (Painful)**: Each scar imposes **-1 Mood**. 3+ scars adds **+1 Bane** to Social.
+
+**Edge cases**
+* Injury sources are in [Chapter 4: Survival & Combat](chapter_04_combat_and_survival.md).
+
+**Example: Body Parts**
+A colonist missing a leg suffers **-2 Speed** and **+2 Bane** on Movement rolls until replaced.
+
+---
 
 ### Replacements
-*   **Peg Leg/Hook Hand**: Cancels "missing" state but keeps **+1 Bane**. Halves Speed penalty.
-*   **Prosthetic**: Removes Banes. Ignore Speed penalties.
-*   **Bionic**: Removes Banes. Gain **Edge** once per Scene on a roll using that limb.
 
-### Stress & Mental Breaks
-Colonists accumulate **Stress** from pushing rolls, witnessing death, starvation, or low Mood.
-*   **Panic Check**: Roll `1d6 + Current Stress`.
+**When it applies**
+When installing prosthetics or bionics.
 
-| Result | Break Type | Effect |
-| :--- | :--- | :--- |
-| **1-6** | **Anxious** | **-1 Penalty** to all rolls for 1 hour. |
-| **7-9** | **Minor Break** | **Sad Wander**: Character leaves to be alone for 1d4 hours. <br> **Binge**: Consumes food/drugs immediately. |
-| **10-12** | **Major Break** | **Tantrum**: Destroys furniture or items. <br> **Insulting Spree**: imposes -5 Mood on others. |
-| **13+** | **Extreme Break** | **Murderous Rage**: Attacks a specific colonist. <br> **Catatonic**: Unconscious for 1d3 days. |
+**How it works**
+* **Peg Leg/Hook Hand**: Cancels the missing state but keeps **+1 Bane**. Halves Speed penalty.
+* **Prosthetic**: Removes Banes and Speed penalties.
+* **Bionic**: Removes Banes and grants **Edge** once per Scene on a roll using that limb.
 
-*   **Relief**: Stress resets to 0 after a full night's sleep in a decent bed or by succeeding on a "Relaxing Socially" check.
+**Edge cases**
+* Bionic items are listed in [Chapter 5: Equipment & Economy](chapter_05_equipment.md).
 
-> **Example: Mental Break**
->
-> **John**: "Viper is starving (+1 Stress) and witnessed a death yesterday (+1 Stress). Her current Stress is 5. Roll a Panic Check."
->
-> **Mary**: "Rolling 1d6 + 5..." *(Rolls 4)*. "Total 9. That's a **Minor Break**."
->
-> **John**: "Viper snaps. She goes on a **Binge**, eating the raw meat you just hunted."
+**Example: Replacement**
+Viper installs a **Bionic Leg**. Her missing-leg penalties are removed, and she gains **Edge** once per scene on Movement rolls.
+
+---
+
+### Stress and Mental Breaks
+
+**When it applies**
+When a colonist accumulates Stress.
+
+**How it works**
+Roll a **Panic Check** when triggered. Use the Panic Check table and relief options in [Chapter 4: Survival & Combat](chapter_04_combat_and_survival.md).
+
+**Edge cases**
+* Full Stress rules and Panic Check triggers are in [Chapter 4: Survival & Combat](chapter_04_combat_and_survival.md).
+
+**Example: Mental Break**
+Viper has **5 Stress** and rolls **1d6 + 5 = 9**. She suffers a **Minor Break** and goes on a Binge.
 
 ---
 
 ## Expeditions (Caravans)
 
-Traveling the world map to trade or attack.
-
 ### Travel Mechanics
-*   **Base Speed**: 1 Hex per day.
-*   **Modifiers**: +1 if all have Mounts, -1 if carrying Heavy Load.
-*   **Foraging**: Make a **Plants** check daily.
-    *   **Success**: Find enough food.
-    *   **Failure**: Consume rations. If empty, gain Stress.
 
-> **Example: Foraging**
->
-> **John**: "You're traveling to the nearby settlement. Make your daily **Plants** check to forage."
->
-> **Mary**: *(Rolls 9)*. "Failure. I can't find anything edible."
->
-> **John**: "You have to eat your rations. If you run out, you'll start gaining Stress."
+**When it applies**
+When traveling the world map.
+
+**How it works**
+* **Base Speed**: 1 Hex per day.
+* **Modifiers**: +1 if all have Mounts, -1 if carrying Heavy Load.
+
+**Edge cases**
+* Hex scale is in [Chapter 1: Core Mechanics](chapter_01_core.md).
+
+**Example: Travel**
+A caravan with mounts and no heavy load moves **2 Hexes per day**.
+
+---
+
+### Foraging
+
+**When it applies**
+Each day of caravan travel.
+
+**How it works**
+* Make a **Plants** check daily.
+* **Success**: Find enough food.
+* **Failure**: Consume rations. If empty, gain Stress.
+
+**Edge cases**
+* Foraging DCs are defined in [Chapter 4: Survival & Combat](chapter_04_combat_and_survival.md).
+
+**Example: Foraging**
+The caravan fails a Plants check and consumes rations. If rations hit **0**, they start gaining Stress.
+
+---
 
 ### Ambush
-*   **Visibility**: Large caravans are easier to spot.
-*   **Stealth**: Roll **Animals/Intellectual** to avoid detection.
+
+**When it applies**
+When the Storyteller calls for a caravan encounter.
+
+**How it works**
+* Large caravans are easier to spot.
+* Roll **Animals** or **Intellectual** to avoid detection.
+* Success spots the ambush; failure means surprise.
+
+**Edge cases**
+* Ambush rules are detailed in [Chapter 4: Survival & Combat](chapter_04_combat_and_survival.md).
+
+**Example: Ambush**
+Oren rolls **Animals** and gets a **Tier 2 Success**, spotting raiders before they strike.
 
 ---
 
-## Colony Wealth & Recruits
+## Colony Wealth and Recruits
 
-As your colony grows, you can support additional colonists called **Recruits**. Your **Wealth Score** determines how many you can maintain.
+### Wealth Score
+
+**When it applies**
+When scaling threats or determining recruit limits.
+
+**How it works**
+**Wealth Score = Tech Points + Building Points + Defense Points + Colonist Points**
+
+**Edge cases**
+* Raid scaling uses Wealth Score in [Chapter 8: The Storyteller](chapter_08_storyteller.md).
+
+**Example: Wealth Score**
+A colony has **Tech 14**, **Buildings 12**, **Defense 15**, **Colonists 30**. Wealth Score = **71**.
 
 ---
 
-### Calculating Wealth Score
+### Technology Points
 
-Your Wealth Score is the sum of points from four categories:
+**When it applies**
+When calculating Wealth Score.
 
-> **Wealth Score = Tech Points + Building Points + Defense Points + Colonist Points**
-
-#### Technology Points
-Sum the highest unlocked level in each tech category:
+**How it works**
+Sum the highest unlocked level in each category using the table.
 
 | Tech Level | Points Per Level |
-| :--- | :--- |
-| **Neolithic** (1-4) | 1 pt each |
-| **Medieval** (1-5) | 2 pts each |
-| **Industrial** (1-6) | 4 pts each |
-| **Spacer** (1-7) | 8 pts each |
+| :--- | ---: |
+| **Neolithic (1–4)** | 1 |
+| **Medieval (1–5)** | 2 |
+| **Industrial (1–6)** | 4 |
+| **Spacer (1–7)** | 8 |
 
-*Example*: Medieval 3, Industrial 2 = (3×2) + (2×4) = 6 + 8 = **14 Tech Points**
+**Example: Technology Points**
+If you have **Medieval 3** and **Industrial 2**, points = (3 × 2) + (2 × 4) = **14**.
 
-#### Building Points
-Sum points from all constructed facilities:
+---
+
+### Building Points
+
+**When it applies**
+When calculating Wealth Score.
+
+**How it works**
+Add points for each constructed facility.
 
 | Facility | Points |
-| :--- | :--- |
+| :--- | ---: |
 | **Barracks** | 2 |
 | **Private Bedroom** | 3 |
 | **Kitchen** | 4 |
@@ -271,251 +456,239 @@ Sum points from all constructed facilities:
 | **Solar Panel** | 12 |
 | **Battery** | 8 |
 
-*Power Bonus*: +2 points per powered facility.
+**Power Bonus**: +2 points per powered facility.
 
-#### Defense Points
-Sum points from all defensive structures:
+**Example: Building Points**
+A colony with **1 Kitchen (4)**, **1 Workshop (6)**, and **1 Solar Panel (12)** has **22 Building Points**, plus power bonuses for powered facilities.
+
+---
+
+### Defense Points
+
+**When it applies**
+When calculating Wealth Score.
+
+**How it works**
+Sum points from defensive structures.
 
 | Structure | Points |
-| :--- | :--- |
-| **Wall Section (Wood)** | 0.5 (2 walls = 1 pt) |
+| :--- | ---: |
+| **Wall Section (Wood)** | 0.5 |
 | **Wall Section (Stone)** | 1 |
 | **Sandbags** | 0.5 |
 | **Mini Turret** | 5 |
 | **Mortar** | 6 |
 
-#### Colonist Points
-
-| Type | Points |
-| :--- | :--- |
-| **Player Character** | 10 |
-| **Recruit** | 5 |
+**Example: Defense Points**
+Ten stone walls (10 points) and two turrets (10 points) total **20 Defense Points**.
 
 ---
 
-### Colony Tiers & Recruit Limit
+### Colonist Points
 
-Your Wealth Score determines your colony tier and maximum Recruits:
+**When it applies**
+When calculating Wealth Score.
+
+**How it works**
+Use the table below.
+
+| Type | Points |
+| :--- | ---: |
+| **Player Character** | 10 |
+| **Recruit** | 5 |
+
+**Example: Colonist Points**
+Three PCs and two Recruits = (3 × 10) + (2 × 5) = **40 points**.
+
+---
+
+### Colony Tiers and Recruit Limit
+
+**When it applies**
+After calculating Wealth Score.
+
+**How it works**
+Use the table below to find your tier and Recruit limit.
 
 | Wealth Score | Colony Tier | Max Recruits |
-| :--- | :--- | :--- |
-| **0-9** | Struggling | 0 |
-| **10-24** | Stable | 1 |
-| **25-49** | Established | 2 |
-| **50-99** | Prosperous | 3 |
+| :--- | :--- | ---: |
+| **0–9** | Struggling | 0 |
+| **10–24** | Stable | 1 |
+| **25–49** | Established | 2 |
+| **50–99** | Prosperous | 3 |
 | **100+** | Powerhouse | 4 |
 
-*   **Exceeding Limit**: If your Wealth Score drops below your current tier, the Storyteller decides which Recruits leave or turn hostile.
-*   **Player Characters**: Do not count against the Recruit limit.
+**Edge cases**
+* If Wealth drops below your tier, the Storyteller decides which Recruits leave or turn hostile.
+* Player Characters do not count against the Recruit limit.
 
-> **Example: Wealth Score Calculation**
->
-> **John**: "Let's calculate your colony's Wealth Score. You have 3 PCs (30 pts), Industrial 2 tech (8 pts), a Kitchen (4 pts), 10 stone walls (10 pts), and 1 turret (5 pts). Total: **57 points**."
->
-> **Mary**: "That's **Prosperous** tier! We can have 3 Recruits now."
->
-> **John**: "Correct. And your Raid Points are also 57. Expect stronger attackers."
+**Example: Colony Tier**
+A colony with **Wealth Score 57** is **Prosperous** and may keep **3 Recruits**.
 
 ---
 
 ### The Colony as Home Base
 
-In some games, you’d call this a “stronghold.” In RimWorld, it’s just **the colony**.
+**When it applies**
+During campaign downtime and long-term projects.
 
-Your **colony base** is:
+**How it works**
+* The colony base is the main map where buildings and stockpiles are located.
+* Most Recruits stay at the colony base while PCs travel.
 
-* The main map where your buildings, stockpiles, workshops, and bedrooms are.
-* Where most Recruits live and work.
-* The anchor point for long-term projects and defenses.
-
-Many Recruit benefits only apply when they are **at or near the colony base**.
-When the PCs leave on a quest or caravan, most Recruits stay behind to keep the place running.
+**Example: Home Base**
+The PCs leave on a caravan. Recruits stay behind to farm, craft, and defend the base.
 
 ---
 
 ### Recruit Roles
 
-Assign each Recruit a role based on their primary function:
+**When it applies**
+When assigning a new Recruit’s role.
 
-*   **Specialist (Crafter/Worker)**: Builds, crafts, farms, cooks, mines.
-*   **Retainer (Guard/Hunter)**: Combat, defense, hunting.
-*   **Sage (Researcher/Advisor)**: Research, medicine, knowledge.
+**How it works**
+* **Specialist**: Crafter/Worker.
+* **Retainer**: Guard/Hunter.
+* **Sage**: Researcher/Advisor.
+* Roles determine starting stats and skills but do not limit actions.
 
-Roles determine starting Stats and Skills but don't limit actions.
+**Example: Recruit Role**
+A new colonist with Medical skills is assigned **Sage** to boost research and healing.
 
 ---
 
 ### Creating a Recruit
 
-When an event (see Chapter 8: Storyteller) introduces a possible new colonist, you don’t need full Lifepath. Use this quick procedure.
+**When it applies**
+When a new recruit joins during play.
 
-#### 1. Pick a Role
+**How it works**
+1. **Pick a Role** (Specialist, Retainer, Sage).
+2. **Assign Attributes** using **+2, +1, 0, -1**.
+3. **Assign Skills**: one primary at **30 (+3)**, one secondary at **20 (+2)**, optional minors at **10 (+1)**.
+4. **Traits and Hooks**: Give 1–2 traits and a story hook.
+5. **Loyalty**: Set Loyalty from **0–5**.
 
-Choose the role that best fills a gap:
+**Edge cases**
+* Traits are listed in [Chapter 2: Character Creation](chapter_02_character_creation.md).
 
-* Combat (Retainer).
-* Production / Building / Food (Specialist).
-* Research / Medicine / Advice (Sage).
-* Social / Trade (either Specialist or Sage, depending on focus).
-
-#### 2. Assign Attributes
-
-Use a simple array for Recruits: **+2, +1, 0, -1**.
-
-* Put **+2** in the Attribute that supports their main Skill.
-* Put **+1** in a secondary Attribute.
-* Assign **0** and **-1** to the rest.
-
-#### 3. Assign Skills
-
-*   Give them one **primary Skill** at **30 (+3)** (their main job).
-*   Give them one **secondary Skill** at **20 (+2)**.
-*   Optionally give one or two minor Skills at **10 (+1)** if needed.
-
-#### 4. Traits and Hooks
-
-Give each Recruit **1–2 Traits** (see Traits in Character Creation). Then decide on a **hook**:
-
-* Owes a debt to a faction.
-* Has an addiction or risky vice.
-* Is fleeing raiders, mechs, or justice.
-* Has family or enemies somewhere else.
-* Carries a secret that might matter later.
-
-#### 5. Loyalty
-
-Each Recruit has a **Loyalty** score from 0–5:
-
-* **0**: Enemy (prisoner, saboteur, about to leave or turn).
-* **1**: Resentful (only staying because they must).
-* **2**: Wary (baseline refugee).
-* **3**: Willing (standard recruit).
-* **4**: Devoted (would fight for the colony).
-* **5**: Zealous (fanatic, family, or soulmate).
-
-Most new Recruits start at **Loyalty 2–3**, depending on how they joined.
+**Example: Creating a Recruit**
+A **Specialist** gets **Construction 30 (+3)** and **Crafting 20 (+2)**, then a trait like **Industrious**, and starts at **Loyalty 2**.
 
 ---
 
 ### Role Details
 
-These packages plug directly into existing Colony rules (Daily Actions, CP, RP, Defense, etc.).
-
 #### Specialist (Crafter / Worker)
 
-**Role**: Builds, crafts, farms, cooks, mines—keeps the place running.
+**How it works**
+* Primary Skill **30 (+3)** in Construction, Crafting, Plants, Cooking, or Mining.
+* Secondary Skill **20 (+2)** in a supporting skill.
+* While at the colony base, a Specialist can handle routine tasks in their specialty at **Tier 2** without a roll if conditions are normal.
+* Once per day, a Specialist can grant **Edge** on a related check made by a player character.
 
-*   Primary Skill **30 (+3)** in one of: **Construction, Crafting, Plants, Cooking, or Mining**.
-*   Secondary Skill **20 (+2)** in something that supports their job (Intellectual, Social, Animals, etc.).
-*   While working at the **colony base**, a Specialist:
-    *   Can handle routine tasks in their specialty at **Tier 2** without a roll, as long as conditions are normal.
-    *   Once per day, can grant **Edge** on a related check made by a player character (e.g. building complex structures, crafting rare gear, managing a large harvest).
+**Example: Specialist**
+A Specialist with **Construction 30** completes a routine wall repair at **Tier 2** without a roll, and later grants **Edge** to a PC building a turret.
 
 #### Retainer (Guard / Hunter)
 
-**Role**: Defends the colony, hunts threats, and fights so others can work.
+**How it works**
+* Primary Skill **30 (+3)** in **Shooting** or **Melee**.
+* Secondary Skill **20 (+2)** in the other combat skill, **Animals**, or **Medical**.
+* Once per round, if in position, a Retainer can **Assist** a PC attack, granting **Edge** or canceling **Bane**.
+* When defending the colony base, the Storyteller can treat one minor skirmish per day as handled off-screen.
 
-*   Primary Skill **30 (+3)** in **Shooting** or **Melee**.
-*   Secondary Skill **20 (+2)** in the other combat Skill, **Animals**, or a modest **Medical** rating.
-*   In combat:
-    *   Once per round, if a Retainer is in position to help, they can **Assist** a PC's Attack, granting **Edge** (or cancelling Bane).
-    *   When defending the colony base, the Storyteller can treat one minor skirmish per day as "handled off-screen" by Retainers, unless the event is meant to be a major scene.
+**Example: Retainer**
+During a raid, the Retainer grants **Edge** to Viper’s shot once this round, helping her score a Tier 3 hit.
 
 #### Sage (Researcher / Advisor)
 
-**Role**: Advances tech, patches people up, and knows things others don't.
+**How it works**
+* Primary Skill **30 (+3)** in **Intellectual**.
+* Secondary Skill **20 (+2)** in **Medical**, **Social**, or another fitting skill.
+* Add **+1 RP per day** to a Research project while at the colony base.
+* Once per session, grant **Double Edge** on a check that uses their expertise.
 
-*   Primary Skill **30 (+3)** in **Intellectual**.
-*   Secondary Skill **20 (+2)** in either **Medical**, **Social**, or another fitting Skill.
-*   While working at the colony base:
-    *   Adds **+1 RP per day** to any single Research project they are assigned to.
-    *   Once per session, can grant **Double Edge** on a check that clearly uses their expertise (planning a defense, diagnosing an illness, understanding strange tech, etc.).
+**Example: Sage**
+A Sage adds **+1 RP** to Gunsmithing each day and grants **Double Edge** to a planning check before a raid.
 
 ---
 
 ### Recruitment Checks
 
-When a potential Recruit appears (refugee, traveler, rescued prisoner, wandering specialist), play out a short scene: negotiations at the gate, tending to their wounds, sharing food, arguing about terms.
+**When it applies**
+When a potential Recruit appears.
 
-Then make a **Recruitment Check**:
-
-* The colonist with the highest **Social** Skill rolls:
-
-  * `2d10 + Spirit + Social`.
+**How it works**
+1. The colonist with the highest **Social** rolls `2d10 + Spirit + Social`.
+2. Use the suggested DCs.
+3. Apply Tier results.
 
 Suggested difficulty:
-
 * **DC 13** for a neutral stranger.
-* **DC 15+** for someone from a hostile faction or with strong reasons not to join.
+* **DC 15+** for someone hostile or unwilling.
 
-Use the Tier results:
+Tier results:
+* **Tier 1 (11-)**: They refuse, or join at **Loyalty 1** with a Complication.
+* **Tier 2 (12–16)**: They join at **Loyalty 2–3** with no major complications.
+* **Tier 3 (17+)**: They join at **Loyalty 4** and bring a bonus.
 
-* **Tier 1 (11-)**
-  They refuse, or join at **Loyalty 1** with a clear **Complication** (hidden vice, angry faction, jealous colonist, etc.).
-* **Tier 2 (12–16)**
-  They join at **Loyalty 2–3** with no major complications.
-* **Tier 3 (17+)**
-  They join at **Loyalty 4** and bring a **bonus**: extra supplies, a useful contact, a rumor, or temporary aid.
+Story Die effects:
+* **Story Die 1 (Twist)**: Unexpected connection or positive reveal.
+* **Story Die 10 (Complication)**: Someone is unhappy about the deal.
 
-Apply the **Story Die** as usual:
+**Edge cases**
+* Recruitment scenes are often tied to events in [Chapter 8: The Storyteller](chapter_08_storyteller.md).
 
-* Story Die **1 (Twist)**:
-  There is some unexpected connection—maybe they know a PC from before, or reveal something that changes how the group sees them.
-* Story Die **10 (Complication)**:
-  Someone is unhappy about this deal—another colonist, a nearby faction, or an old enemy.
-
-> **Example: Recruitment**
->
-> **John (Storyteller)**: "At dusk, a limping woman approaches the gate. She’s a medic who fled a raider camp. She offers to work for you if you take her in."
->
-> **Mary (Player)**: "I talk to her kindly, offer food, and show her the infirmary we’re building. I’ll try to convince her to stay."
->
-> **John**: "Great. Make a Recruitment Check with **Spirit + Social**."
->
-> **Mary**: *(Rolls a 16 total)*. "Tier 2!"
->
-> **John**: "She joins at **Loyalty 3**. She has **Medical 30 (+3)** and **Intellectual 20 (+2)**—a perfect Sage for your research wing. Your Wealth Score increases by 5 points from the new recruit."
+**Example: Recruitment Check**
+Mary rolls **2d10 + Spirit + Social** and totals **16**. The recruit joins at **Loyalty 3** with no major complications.
 
 ---
 
 ### Loyalty in Play
 
-Loyalty goes up or down based on how the colony treats its people.
+**When it applies**
+When Recruits are treated well or poorly.
 
+**How it works**
 Increase Loyalty by **+1** when:
-
 * You save a Recruit from serious danger.
 * You give them good gear, a private room, or meaningful recognition.
-* You back them up in disputes or respect their beliefs and boundaries.
+* You support them in disputes or respect their beliefs.
 
-Decrease Loyalty by **–1** when:
-
+Decrease Loyalty by **-1** when:
 * You repeatedly send them on dangerous tasks without support.
-* You neglect their Needs (food, rest, recreation) for long periods.
-* You treat them as expendable or side harshly against them.
+* You neglect their Needs for long periods.
+* You treat them as expendable.
 
-When a Recruit’s Loyalty hits **0**, they suffer a **Loyalty Break**:
+If Loyalty hits **0**, they suffer a **Loyalty Break**:
+* Leave in the night.
+* Sabotage and flee.
+* Lash out at a colonist.
+* Join an enemy faction.
 
-* They may leave in the night.
-* They may sabotage something and flee.
-* They may lash out at a specific colonist.
-* In extreme cases, they may join an enemy faction.
+At **Loyalty 5**:
+* Promote them to a full player character, or
+* Treat them as a major story figure.
 
-When a Recruit reaches **Loyalty 5**, the group can choose to:
-
-* Promote them to a **full player character** if someone wants to play them, or
-* Treat them as a central story figure in future events.
+**Example: Loyalty**
+A Recruit rescued from a raid gains **+1 Loyalty**. Later, after being denied food for days, they lose **-1 Loyalty**.
 
 ---
 
 ### Wealth, Events, and New Recruits
 
-When your colony crosses into a new tier and you have an open Recruit slot, the Storyteller can add **"New Arrival"** events:
-*   Refugees fleeing raids.
-*   Wandering specialists seeking safe homes.
-*   Mercenaries or nobles searching for work.
+**When it applies**
+When the colony crosses into a new tier with open Recruit slots.
 
-High Wealth Score also attracts **dangerous** arrivals:
-*   Criminals, spies, or raiders pretending to be harmless.
+**How it works**
+The Storyteller can introduce **New Arrival** events:
+* Refugees fleeing raids.
+* Wandering specialists seeking safe homes.
+* Mercenaries or nobles searching for work.
 
-Wealth Score tells the world your colony is worth visiting—and worth attacking.
+High Wealth Score also attracts dangerous arrivals:
+* Criminals, spies, or raiders posing as harmless.
+
+**Example: New Arrival**
+After reaching **Prosperous** tier, a refugee Medic arrives and asks to join.

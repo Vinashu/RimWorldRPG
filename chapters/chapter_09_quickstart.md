@@ -1,179 +1,287 @@
-# RIMWORLD RPG — QUICKSTART ONE-SHOT
+# Chapter 9: Quickstart One-Shot
 
-> **Note**: This quickstart uses simplified mechanics for easy one-shot play. See Chapters 1-8 for complete rules.
+> **Note**: This quickstart uses simplified mechanics for one-session play. See Chapters 1–8 for full rules.
 
-## “The First Night on Greyhook Ridge”
+---
 
-**Session length:** 2.5–4 hours
-**Players:** 3–5 + Storyteller
-**Tone:** survival drama + sudden violence + messy heroics
-**Core systems used:**
+## Quickstart Overview
 
+**Premise**
+Your shuttle breaks apart over a frozen-forest Rimworld. You crash near **Greyhook Ridge** with almost nothing. The first day decides everything: get shelter, food, and a basic defense before nightfall.
+
+**One-Sentence Goal**
+Survive the first night and secure a defensible foothold.
+
+**Session Details**
+* **Session length**: 2.5–4 hours
+* **Players**: 3–5 plus Storyteller
+* **Tone**: Survival drama, sudden violence, messy heroics
+
+**Core Systems Used (Quickstart)**
 * Story Die (Twist / Complication)
 * Tiers (Struggle / Success / Triumph)
-* Edge/Bane + Augmented/Impaired
-* Needs + Mood + Stress → Mental Break risk
-* Combat (AP + cover)
-* Equipment + Market Value (micro use)
+* Edge/Bane (Quickstart variant)
+* Needs, Mood, Stress (light)
+* Combat (AP and cover)
+* Equipment and Market Value (light)
 * Colony Day Loop (4 periods)
-* Research + Build/Harvest/Hunt (light)
+* Research and Build/Harvest/Hunt (light)
 
 ---
 
-## Page 1 — What You Need to Play
+## Quickstart Rules (Simplified)
 
-### The Premise
+### Dice and Tiers
 
-Your shuttle breaks apart over a frozen-forest Rimworld. You crash near **Greyhook Ridge** with almost nothing. The first day decides everything: **get shelter, food, and a basic defense before nightfall**.
+**When it applies**
+Whenever a Colonist attempts an action with an uncertain outcome.
 
-You are not heroes.
-You are colonists.
+**How it works**
+1. Roll **2d10** (one Base Die, one **red Story Die**).
+2. Add the relevant **Attribute** and **Skill Modifier**.
+3. Compare the total to the Tier table.
 
-### The One-Sentence Goal
+| Result | Tier | Outcome |
+| :--- | :--- | :--- |
+| **11 or lower** | **Struggle** | You succeed with a major cost. |
+| **12–16** | **Success** | You succeed cleanly. |
+| **17+** | **Triumph** | You succeed with extra benefits. |
 
-**Survive the first night and secure a defensible foothold** — or at least ensure someone is alive to bury the bodies.
+**Edge cases**
+* Full rules are in [Chapter 1: Core Mechanics](chapter_01_core.md) and [Chapter 3: Skills & Checks](chapter_03_skills_and_checks.md).
 
-### The Table Setup
-
-* Each player takes a pregen colonist (below).
-* The Storyteller runs the day loop and interrupts it with events.
-* Keep scenes short and cinematic.
-
-### Dice & Resolution
-
-Players always roll **2d10** (one Base + one **red Story Die**) + Attribute + Skill.
-
-**Tiers (default):**
-
-* **11-** Struggle
-* **12–16** Success
-* **17+** Triumph
-
-**Edge/Bane:**
-
-* **Edge:** reroll either die once
-* **Bane:** Storyteller rerolls one die that looks too good
-
-**Story Die triggers:**
-
-* **1 = Twist of Fate** (Inspiration/Edge/boon)
-* **10 = Complication** (Bane/Stress/Mood hit/new danger)
-
-> *Use this quickstart as the “tiers-first” version (no DC needed tonight).*
+**Example: Dice and Tiers**
+Sana rolls **2d10 + Dexterity + Shooting** and totals **15**. That is a **Success**.
 
 ---
 
-## Page 1 — Pregenerated Colonists (3–5)
+### Edge and Bane (Quickstart Variant)
 
-Use short stat blocks so this stays fast.
+**When it applies**
+When a circumstance gives a small advantage or disadvantage.
 
-### 1) **Marla Kade — Tough Builder**
+**How it works**
+* **Edge**: Reroll **either die once** and keep the new result.
+* **Bane**: The Storyteller rerolls **one die that looks too good**, and you must keep the new result.
 
+**Edge cases**
+* This quickstart version is different from the full rules (see Chapter 1).
+
+**Example: Edge and Bane**
+Viper has Edge for high ground. She rerolls her **Base Die 3** and gets a **7**, improving her total.
+
+---
+
+### Story Die Triggers
+
+**When it applies**
+After any roll that includes the red Story Die.
+
+**How it works**
+* **Story Die 1**: **Twist of Fate** (Inspiration, Edge, or a boon).
+* **Story Die 10**: **Complication** (Bane, Stress, or a new danger).
+
+**Example: Story Die**
+Oren rolls a **10** on the Story Die. He succeeds, but the Storyteller introduces a Complication.
+
+---
+
+### Action Points and Range Bands
+
+**When it applies**
+During combat.
+
+**How it works**
+* Each Colonist has **4 AP** per turn.
+* Range Bands are **Melee, Close, Medium, Far**.
+
+| Action | AP | Effect |
+| :--- | ---: | :--- |
+| **Move** | 1 | Shift one band. |
+| **Attack** | 2 | Make a ranged or melee attack. |
+| **Take Cover** | 1 | Gain defensive Edge. |
+| **Use Item** | 1 | Reload, switch, or heal. |
+
+**Edge cases**
+* Full combat rules are in [Chapter 4: Survival & Combat](chapter_04_combat_and_survival.md).
+
+**Example: Action Points**
+Marla spends **1 AP** to Move to Close range, **1 AP** to Take Cover, and **2 AP** to Attack.
+
+---
+
+### Combat Damage
+
+**When it applies**
+After a successful attack roll.
+
+**How it works**
+* **Struggle**: Half damage
+* **Success**: Full damage
+* **Triumph**: Double damage and roll Major Injury
+
+**Edge cases**
+* Weapon stats are in [Chapter 5: Equipment & Economy](chapter_05_equipment.md).
+
+**Example: Combat Damage**
+A rifle deals **6 damage**. On a **Triumph**, it deals **12 damage** before armor.
+
+---
+
+### HP
+
+**When it applies**
+When tracking damage.
+
+**How it works**
+* **HP = 15 + (Vigor × 2)**.
+* At **0 HP**, the colonist is **Downed** and bleeding out.
+
+**Example: HP**
+A colonist with **Vigor +1** has **17 HP**.
+
+---
+
+## Pregenerated Colonists (3–5)
+
+Use short stat blocks to keep play fast.
+
+### Marla Kade - Tough Builder
 ![Marla Kade](../images/MarlaKade.png)
+**Attributes**: Vigor +2, Mind +1, Dexterity 0, Spirit -1
+**HP**: 19
+**Skills**: Construction 30 (+3), Shooting 20 (+2), Medicine 10 (+1)
+**Trait**: Tough (reduce incoming damage)
+**Incapable**: Intellectual
+**Gear**: Knife, simple toolkit, 1 medkit
 
-**Attributes:** Vigor +2, Mind +1, Dexterity 0, Spirit -1
-**HP:** 19
-**Skills:** Construction 30 (+3), Shooting 20 (+2), Medicine 10 (+1)
-**Trait:** **Tough** (reduce incoming damage)
-**Incapable:** Intellectual
-**Gear:** Knife, simple toolkit, 1x medkit
-
-### 2) **Ivo Thorne — Calm Medic**
-
+### Ivo Thorne - Calm Medic
 ![Ivo Thorne](../images/IvoThorne.png)
+**Attributes**: Mind +2, Spirit +1, Vigor 0, Dexterity -1
+**HP**: 15
+**Skills**: Medicine 30 (+3), Cooking 20 (+2), Social 10 (+1)
+**Trait**: Iron-Willed (higher Mental Break threshold)
+**Incapable**: Violence (or Reluctant Shooter)
+**Gear**: 2 medkits, basic rations
 
-**Attributes:** Mind +2, Spirit +1, Vigor 0, Dexterity -1
-**HP:** 15
-**Skills:** Medicine 30 (+3), Cooking 20 (+2), Social 10 (+1)
-**Trait:** **Iron-Willed** (+Mental Break threshold)
-**Incapable:** Violence (or “Reluctant Shooter”)
-**Gear:** 2x medkits, basic rations
-
-### 3) **Sana Voss — Trigger-Happy Hunter**
-
+### Sana Voss - Trigger-Happy Hunter
 ![Sana Voss](../images/SanaVoss.png)
+**Attributes**: Dexterity +2, Vigor +1, Mind 0, Spirit -1
+**HP**: 17
+**Skills**: Shooting 30 (+3), Animals 20 (+2), Melee 10 (+1)
+**Trait**: Bloodlust (benefits under combat stress)
+**Incapable**: Artistic
+**Gear**: Bolt-action rifle, 10 ammo, hunting knife
 
-**Attributes:** Dexterity +2, Vigor +1, Mind 0, Spirit -1
-**HP:** 17
-**Skills:** Shooting 30 (+3), Animals 20 (+2), Melee 10 (+1)
-**Trait:** **Bloodlust** (benefits under combat stress)
-**Incapable:** Artistic
-**Gear:** Bolt-action rifle, 10 ammo, hunting knife
-
-### 4) **Oren Pell — Smooth Talker** *(optional 4th)*
-
+### Oren Pell - Smooth Talker (Optional 4th)
 ![Oren Pell](../images/OrenPell.png)
+**Attributes**: Spirit +2, Mind +1, Dexterity 0, Vigor -1
+**HP**: 13
+**Skills**: Social 30 (+3), Crafting 20 (+2), Cooking 10 (+1)
+**Trait**: Kind (helps morale)
+**Incapable**: Hauling
+**Gear**: Trade goods, sidearm
 
-**Attributes:** Spirit +2, Mind +1, Dexterity 0, Vigor -1
-**HP:** 13
-**Skills:** Social 30 (+3), Crafting 20 (+2), Cooking 10 (+1)
-**Trait:** **Kind** (helps morale)
-**Incapable:** Hauling
-**Gear:** Trade goods, sidearm
-
-### 5) **Tess Rook — Scrappy Researcher** *(optional 5th)*
-
+### Tess Rook - Scrappy Researcher (Optional 5th)
 ![Tess Rook](../images/TessRook.png)
-
-**Attributes:** Mind +2, Dexterity +1, Spirit 0, Vigor -1
-**HP:** 13
-**Skills:** Intellectual 30 (+3), Crafting 20 (+2), Shooting 10 (+1)
-**Trait:** **Nervous** (more susceptible to stress)
-**Incapable:** Cooking
-**Gear:** datapad, improvised tools
-
-> **Quick skill rule for pregens:** 30 points = +3 modifier (excellent), 20 points = +2 modifier (good), 10 points = +1 modifier (basic). Add the **modifier** to your rolls, not the points.
-> 
-> **Incapable**: The colonist cannot perform this type of task (automatic failure). They refuse or are unable.
+**Attributes**: Mind +2, Dexterity +1, Spirit 0, Vigor -1
+**HP**: 13
+**Skills**: Intellectual 30 (+3), Crafting 20 (+2), Shooting 10 (+1)
+**Trait**: Nervous (more susceptible to stress)
+**Incapable**: Cooking
+**Gear**: Datapad, improvised tools
 
 ---
 
-## Page 2 — The Day Loop (4 Periods)
+### Quick Skill Rule (Pregens)
 
-**Each day has 4 periods:** Dawn, Midday, Dusk, Night.
-Each colonist chooses **one major action per period**.
-The Storyteller frames short scenes and advances needs/mood.
+**When it applies**
+When using pregen skill totals.
 
-### Period Actions (use 1–2 rolls each)
+**How it works**
+* **30 points = +3**
+* **20 points = +2**
+* **10 points = +1**
 
-* **Build Shelter** (Construction)
-* **Gather Resources** (Mining/Plants)
-* **Hunt** (Shooting/Animals)
-* **Cook** (Cooking)
-* **Treat Wounds** (Medicine)
-* **Research Basics** (Intellectual)
-* **Scout** (Dexterity + Plants/Animals)
-* **Social Support** (Social) — reduce Stress or restore Mood
-
-### Needs & Mood (light version for quickstart)
-
-At the end of each period, apply:
-
-* If a Need is neglected, mark **-1 Mood**.
-* If two or more Needs are neglected, mark **+1 Stress**.
-
-**Trigger a Mental Break** if a colonist reaches **3 Stress** and rolls a **Complication (Story Die 10)**.
-
-> **Quickstart variant**: The full rulebook uses a Panic Check system (1d6 + Stress). This simplified trigger makes one-shots easier to run.
-
-**Quick Mental Break table (d6):**
-1–2 **Wander / Shut Down**
-3–4 **Food Binge**
-5 **Berserk**
-6 **Sadistic / Destructive Outburst**
+**Example: Quick Skill Rule**
+Sana has **Shooting 30**, so she adds **+3** to Shooting rolls.
 
 ---
 
-## Page 2 — The Crash Site
+## Day Loop (4 Periods)
+
+### Periods and Actions
+
+**When it applies**
+Each in-game day.
+
+**How it works**
+* **Dawn, Midday, Dusk, Night**.
+* Each colonist chooses **one major action per period**.
+
+**Common Actions**
+* Build Shelter (Construction)
+* Gather Resources (Mining or Plants)
+* Hunt (Shooting or Animals)
+* Cook (Cooking)
+* Treat Wounds (Medicine)
+* Research Basics (Intellectual)
+* Scout (Dexterity + Plants/Animals)
+* Social Support (Social)
+
+**Edge cases**
+* Full colony actions are in [Chapter 6: Colony Management](chapter_06_colony.md).
+
+**Example: Day Loop**
+At Dawn, Marla builds, Sana hunts, and Ivo treats wounds. At Night, everyone sleeps.
+
+---
+
+### Needs, Mood, and Stress (Light)
+
+**When it applies**
+At the end of each period.
+
+**How it works**
+* If a Need is neglected, apply **-1 Mood**.
+* If **two or more** Needs are neglected, apply **+1 Stress**.
+
+**Example: Needs and Mood**
+If the group skips Food and Rest in a period, each colonist gains **-1 Mood** and **+1 Stress**.
+
+---
+
+### Mental Break Trigger (Quickstart)
+
+**When it applies**
+When Stress accumulates quickly.
+
+**How it works**
+Trigger a Mental Break if a colonist reaches **3 Stress** and rolls a **Complication (Story Die 10)**.
+
+**Quick Mental Break Table (1d6)**
+| d6 | Result |
+| :--- | :--- |
+| **1–2** | Wander / Shut Down |
+| **3–4** | Food Binge |
+| **5** | Berserk |
+| **6** | Sadistic / Destructive Outburst |
+
+**Edge cases**
+* Full Mental Break rules are in [Chapter 4: Survival & Combat](chapter_04_combat_and_survival.md).
+
+**Example: Mental Break**
+Tess reaches **3 Stress** and rolls a **Story Die 10** during a fight. She rolls **1d6 = 5** and goes **Berserk**.
+
+---
+
+## The Crash Site
 
 ### The Map
 ![The Crash Site](../images/TheCrashSite.png)
-A shallow valley beside **Greyhook Ridge**:
+A shallow valley beside **Greyhook Ridge** with a treeline to the west, a rock outcrop to the north, and a ruined shack to the east.
 
-* **Treeline** to the west (cover + hunt)
-* **Rock outcrop** to the north (good for a barricade)
-* **Ruined shack** to the east (half-collapsed)
-* **Stream** south (clean water if boiled)
+---
 
 ### Starting Supplies
 
@@ -181,207 +289,176 @@ A shallow valley beside **Greyhook Ridge**:
 * 1 bedroll per colonist
 * Scrap metal (enough for 1 barricade or 1 simple room)
 * 1 basic tool kit
-* 1 ranged weapon total for the team + knives
-  *(Let Sana start with the rifle if she’s in play.)*
+* 1 ranged weapon total for the team plus knives
+
+---
 
 ### The First Choice (Dawn)
 
-The group must decide:
-**Repair the ruin** or **build a new lean-to** near the rocks.
+**When it applies**
+The first scene of the session.
 
-Use a **group check** (Construction or Survival).
+**How it works**
+The group chooses **Repair the Ruin** or **Build a New Lean-To** near the rocks, then makes a **group check** using **Construction** or **Survival**.
 
-* **Struggle:** shelter is weak → **night defense is harder**
-* **Success:** decent shelter
-* **Triumph:** shelter + basic barricade
+Group check (quickstart):
+* Everyone rolls.
+* Take the **best Tier** rolled and apply that outcome.
 
----
+Outcomes:
+* **Struggle**: Shelter is weak. Night defense is harder.
+* **Success**: Decent shelter.
+* **Triumph**: Shelter plus a basic barricade.
 
-## Quickstart Mechanics Reference
+**Edge cases**
+* If your table does not use **Survival**, substitute the most relevant skill (usually **Plants** or **Animals**).
 
-### Action Points (AP)
-Each colonist has **4 AP per turn**:
-* **Move** (1 AP): Shift one range band
-* **Attack** (2 AP): Make a ranged or melee attack
-* **Take Cover** (1 AP): Gain defensive Edge
-* **Use Item** (1 AP): Reload, switch weapon, heal
-
-### Range Bands
-Combat uses 4 abstract distance bands:
-* **Melee**: Hand-to-hand, locked in combat
-* **Close**: Shotguns, pistols effective
-* **Medium**: Rifles optimal range
-* **Far**: Sniper range, hard to hit
-
-### Combat Damage
-* **Tier 1 (Struggle)**: Half damage
-* **Tier 2 (Success)**: Full damage
-* **Tier 3 (Triumph)**: Double damage + roll Major Injury (1d10)
-
-Armor reduces damage. Example: Rifle (6 dmg) Tier 3 hit = 12 dmg - 3 armor = 9 HP lost.
-
-### HP Calculation
-Max HP = 15 + (Vigor × 2). At 0 HP, you're downed and bleeding out.
+**Example: Group Check**
+Marla rolls a **Success** and Sana rolls a **Struggle**. The best Tier is **Success**, so the shelter is decent.
 
 ---
 
-## Page 3 — Scripted Events (use 2 of 3)
+## Scripted Events (Use 2 of 3)
 
-You only need two major events to hit all systems.
+### Event A - The Injured Wanderer (Midday)
 
-### Event A — The Injured Wanderer (Midday)
+**When it applies**
+Midday, after the first major action.
 
-A lone survivor stumbles in, bleeding and delirious.
-They have a **pack of medicine + a pistol**.
+**How it works**
+A bleeding survivor arrives with **medicine and a pistol**. The group must decide to help, rob, or refuse.
 
-**Choices:**
+**Twist (Story Die 1)**: They reveal a cache location.
+**Complication (Story Die 10)**: They are being tracked.
 
-* Help them (Medicine + Social)
-* Rob them (Melee/Social)
-* Turn them away (Mood impact)
-
-**Twist (Story Die 1):**
-They reveal a **cache location** nearby.
-**Complication (Story Die 10):**
-They’re being tracked.
-
-This scene comes with an easy opportunity to introduce **Social Support**, **Mood**, and **Ethics under pressure**.
+**Example: Event A**
+The group helps the wanderer, gaining medicine and a future recruit lead.
 
 ---
 
-### Event B — The Trader with Bad Timing (Dusk)
+### Event B - The Trader with Bad Timing (Dusk)
 
-A small caravan arrives.
-They’ll trade **ammo, a heater, or food**.
+**When it applies**
+Dusk, before final preparations.
 
-Run a quick **Market Value** moment:
+**How it works**
+A small caravan offers ammo, a heater, or food. Use a quick **Market Value** trade.
 
-* Social skill can improve deals.
-* Players can trade scrap, rations, or favors.
+**Twist (Story Die 1)**: Trader offers a cheap turret blueprint.
+**Complication (Story Die 10)**: Trader leads danger to the camp.
 
-**Twist:**
-Trader offers a cheap turret blueprint.
-**Complication:**
-Trader accidentally leads danger to your camp.
-
-This is your light introduction to **economy** and **colony tech stakes**.
+**Example: Event B**
+Oren trades spare scrap for a heater and keeps the group warm at night.
 
 ---
 
-### Event C — The Weather Knife (Any time)
+### Event C - The Weather Knife (Any Time)
 
+**When it applies**
+Whenever you want to push tension.
+
+**How it works**
 A sudden cold snap and windstorm.
+* If shelter is weak, everyone gains **+1 Stress**.
+* Cooking and Rest actions are harder.
+* Hypothermia risk in the night fight.
 
-Mechanically:
-
-* If shelter is weak → everyone gains **+1 Stress**
-* Cooking / Rest actions are harder
-* Hypothermia risk in the night fight
-
-This supports **Needs/Mood/Stress** pressure.
+**Example: Event C**
+The storm hits at Dusk. The group rushes to finish a barricade before night.
 
 ---
 
-## Page 3 — The Night Threat (Finale)
+## The Night Threat (Finale)
 
-Pick one based on your table’s vibe:
+### Option 1 - Manhunter Pack
 
-### Option 1 — **Manhunter Pack**
+**When it applies**
+When you want a chaotic beast fight.
 
-A pack of 6–10 maddened wolves or feral dogs charges at night.
-They target **the noisiest or weakest** colonist first.
+**How it works**
+A pack of **6–10 maddened wolves or feral dogs** charges at night and targets the weakest colonist.
 
-**Play tips:**
-
-* Emphasize **cover**, **kiting**, and **triage**
-* Let a **Triumph** enable clever tactics (trap use, collapsing ruin, etc.)
-
-### Option 2 — **Desperate Raiders**
-
-2–4 poorly equipped raiders attack looking for supplies.
-They attempt intimidation first.
-
-Use:
-
-* A short **Social showdown** before bullets
-* Then **combat**
-
-**Twist:**
-One raider is barely a teenager.
-**Complication:**
-They set fire to your only shelter.
+**Example: Manhunter Pack**
+Sana kites the pack while Marla covers from behind the barricade.
 
 ---
 
-## Page 4 — Victory, Fallout, and Fast Debrief
+### Option 2 - Desperate Raiders
+
+**When it applies**
+When you want a social standoff that turns violent.
+
+**How it works**
+**2–4 raiders** attempt intimidation, then attack if refused.
+
+**Twist**: One raider is barely a teenager.
+**Complication**: They set fire to the shelter.
+
+**Example: Desperate Raiders**
+The group refuses demands and a short Social showdown erupts into combat.
+
+---
+
+## Victory, Fallout, and Debrief
 
 ### Win Conditions
 
-The colony “wins” if, by morning:
+**When it applies**
+At dawn after the night threat.
 
-* At least **two colonists alive**, and
-* The group has **shelter + either food or basic defenses**.
+**How it works**
+The colony wins if:
+* At least **two colonists** are alive.
+* The group has **shelter** and either **food** or **basic defenses**.
 
-### If They Barely Survive
-
-That is the *correct* RimWorld vibe.
-End with:
-
-* A quiet sunrise
-* A body being buried
-* A promise of the next season
-
-### Rewards (light campaign hook)
-
-* Everyone gains **+10 Skill Points** in one used skill
-* The colony gains **1 Research Point**
-* The group chooses a **Storyteller mode** for next session
-  (Cassandra / Phoebe / Randy)
+**Example: Win Conditions**
+Two colonists survive and the shelter holds. The group wins even if supplies are low.
 
 ---
 
-# Storyteller Cheat Sheet (tiny box)
+### Rewards (Light Campaign Hook)
 
-### Pacing Outline
+**When it applies**
+After a successful one-shot.
 
-1. **Dawn:** crash, first shelter decision
-2. **Midday:** injured wanderer + medical dilemma
-3. **Dusk:** trader + last-minute preparations
-4. **Night:** raid/manhunters + stress spikes
-5. **Morning:** aftermath + hook
+**How it works**
+* Everyone gains **+10 Skill Points** in one used skill.
+* The colony gains **1 Research Point**.
+* The group chooses a Storyteller mode for the next session.
 
-### Use the Story Die Loudly
+**Edge cases**
+* Full advancement rules are in [Chapter 2: Character Creation](chapter_02_character_creation.md).
 
-Whenever it shows:
-
-* **1:** reward bravery, ingenuity, kindness
-* **10:** force a hard choice or reveal a second-layer threat
-
----
-
-# Why This One-Shot Works
-
-In one evening, your players will:
-
-* Understand the **Story Die identity**
-* See how **Struggle still pushes the story forward**
-* Feel the **RimWorld pressure loop**
-* Touch **colony play** without drowning in spreadsheets
-* Leave wanting “Session 2: The First Winter”
+**Example: Rewards**
+Sana adds **+10 Skill Points** to Shooting, and the group chooses **Cassandra Classic** for Session 2.
 
 ---
 
-## Tiny Optional Add-ons (if you want to reach 4 full pages cleanly)
+## Storyteller Cheat Sheet
 
-* Add a **single-page printable “Colony Sheet Lite”**:
+**Pacing Outline**
+1. Dawn: crash, shelter decision
+2. Midday: injured wanderer
+3. Dusk: trader, last preparations
+4. Night: raid or manhunters
+5. Morning: aftermath and hook
 
-  * Food stock
-  * Shelter quality
-  * Defenses
-  * Research
-  * Goodwill
-* Add a **1-paragraph teaser quest**:
+**Use the Story Die Loudly**
+* **1**: Reward bravery, ingenuity, or kindness.
+* **10**: Force a hard choice or reveal a second-layer threat.
 
-  * “A muffalo herd migrates near your valley tomorrow…”
-  * “A nearby ancient danger emits a faint signal…”
+---
 
+## Why This One-Shot Works
+
+* Shows the Story Die identity.
+* Proves Struggle still moves the story forward.
+* Delivers the RimWorld pressure loop.
+* Introduces colony play without heavy bookkeeping.
+
+---
+
+## Optional Add-Ons (If You Have Time)
+
+* Add a single-page printable **Colony Sheet Lite** with Food, Shelter, Defenses, Research, Goodwill.
+* Add a teaser quest: “A muffalo herd migrates near your valley tomorrow.”

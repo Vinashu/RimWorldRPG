@@ -4,132 +4,265 @@
 
 You are stranded. You are lightyears from the glitterworlds, on a lawless frontier planet known as a **Rimworld**. There is no government here, no safety net, and no faster-than-light travel to take you home.
 
-### What is this Game?
+### What Is This Game
 This is a Tabletop Roleplaying Game (TTRPG), a conversation between friends where you build a story together.
 
-*   **The Storyteller (ST)**: The host of the game. They describe the world, play the enemies (Raiders, Mechanoids), and control the flow of the story. They are not your enemy; they are the director of the drama.
-*   **The Players**: You. You each control a **Colonist** (your character). You make decisions, roll dice, and try to keep your colony alive.
+* **The Storyteller (ST)**: The host of the game. They describe the world, play the enemies (Raiders, Mechanoids), and control the flow of the story. They are not your enemy; they are the director of the drama.
+* **The Players**: You. You each control a **Colonist** (your character). You make decisions, roll dice, and try to keep your colony alive.
 
 ### The Rim Experience
 In this game, you will tell the story of your colony's struggle and triumph.
-*   **Build**: You will construct a base from scratch—bedrooms, freezers, killboxes, and hospitals.
-*   **Survive**: You will manage starvation, disease, and mental breaks.
-*   **Defend**: You will fight off raids from savage Tribals, high-tech Pirates, swarming Insects, and cold Mechanoids.
-*   **Explore**: You will form caravans to trade with neighbors, complete quests, and raid enemy outposts.
-*   **Escape**: Your ultimate goal is to survive long enough to build a ship and leave this cursed planet... or die trying.
+* **Build**: You will construct a base from scratch—bedrooms, freezers, killboxes, and hospitals.
+* **Survive**: You will manage starvation, disease, and mental breaks.
+* **Defend**: You will fight off raids from savage Tribals, high-tech Pirates, swarming Insects, and cold Mechanoids.
+* **Explore**: You will form caravans to trade with neighbors, complete quests, and raid enemy outposts.
+* **Escape**: Your ultimate goal is to survive long enough to build a ship and leave this cursed planet... or die trying.
 
 ---
 
 ## The Core Mechanic: The Story Die System
 
-When a Colonist attempts an action with an uncertain outcome—shooting a raider, performing surgery, or negotiating a trade—you make a **Colonist Roll**.
+When a Colonist attempts an action with an uncertain outcome—shooting a raider, performing surgery, or negotiating a trade—you make a **Colonist Roll (Skill Check)**.
 
-### The Dice
-You roll **two 10-sided dice (2d10)**.
-1.  **The Base Die** (Any color, e.g., White): Represents your raw effort.
-2.  **The Story Die** (Red): Represents the chaotic nature of the Rim.
+### Colonist Roll
 
-**The Formula:**
-> **Result = Base Die + Story Die + Attribute + Skill Modifier**
-> 
-*Skill Modifier = Floor(Skill Points / 10)*
+**When it applies**
+Use a Colonist Roll for any action with an uncertain outcome.
+
+**How it works**
+1. Roll **2d10**: one **Base Die** and one **Story Die (red d10)**.
+2. Add the relevant **Attribute**.
+3. Add the **Skill Modifier**.
+4. Compare the total to the **Tier of Success** table.
+
+**Edge cases**
+* **Skill Modifier** = `Floor(Skill Points / 10)`. See [Chapter 3: Skills & Checks](chapter_03_skills_and_checks.md).
+* The Story Die effect applies even if its value is discarded by **Augmented** or **Impaired** rolls.
+
+**Example: Colonist Roll**
+Viper fires at a raider with **Dexterity +1** and **Shooting 20 (+2)**. She rolls **Base Die 6** and **Story Die 4**. Total = 6 + 4 + 1 + 2 = **13**, which is a **Tier 2 (Success)**. The Story Die is 4, so no special effect triggers.
 
 ### Tiers of Success
-The total Result determines what happens. We don't use a binary Pass/Fail. **You almost always succeed, but at what cost?**
 
+**When it applies**
+After any Colonist Roll.
+
+**How it works**
 | Result | Tier | Outcome |
 | :--- | :--- | :--- |
 | **11 or lower** | **Tier 1 (Struggle)** | **Success with a Major Cost**. You hit the raider but deal half damage. You bandage the wound but use 2x Medicine. You make the deal but pay 20% more. |
-| **12 - 16** | **Tier 2 (Success)** | **Standard Success**. You achieve your goal exactly as intended. |
+| **12-16** | **Tier 2 (Success)** | **Standard Success**. You achieve your goal exactly as intended. |
 | **17 or higher** | **Tier 3 (Triumph)** | **Critical Success**. You achieve your goal with style. You deal double damage, heal instantly, or get a discount. |
 
+**Edge cases**
+* **Double Edge** or **Double Bane** can shift the Tier up or down after you total the roll.
+* Combat outcomes are resolved in [Chapter 4: Survival & Combat](chapter_04_combat_and_survival.md). Colony outcomes are resolved in [Chapter 6: Colony Management](chapter_06_colony.md).
+
+**Example: Tier 1 (Struggle)**
+Sana tries to pick a lock using **Dexterity +2** and **Crafting 10 (+1)**. She rolls **Base Die 3** and **Story Die 2**. Total = 3 + 2 + 2 + 1 = **8**, a **Tier 1 (Struggle)**. She gets the door open, but the picks break and she takes a minor cut.
+
 ### Modifiers
-Circumstances can help or hinder you.
-*   **Edge (+2)**: You have a minor advantage, like high ground or a good tool.
-*   **Bane (-2)**: You have a minor disadvantage, like darkness or pain.
-*   **Double Edge**: If you have 2+ sources of Edge, shift your Result **UP one Tier** (e.g., Tier 2 becomes Tier 3).
-*   **Double Bane**: If you have 2+ sources of Bane, shift your Result **DOWN one Tier**.
-*   **Cancel**: If a Player has one **Edge** and one **Bane**, they will cancel each other out. If you have more sources of Edge than Bane, you can cancel all sources of Bane and keep with one source of Edge. The same in the other way around.
-*   **Augmented (3d10)**: You have a major advantage (bionics, drugs, perfect position). Roll **3d10** and keep the **2 Highest**. Replaces standard roll (Edge/Bane do not apply).
-*   **Impaired (3d10)**: You have a major disadvantage (blindness, toxicity, suppression). Roll **3d10** and keep the **2 Lowest**. Replaces standard roll (Edge/Bane do not apply).
 
-*Note: Edge/Bane are additive. Augmented/Impaired replace the standard roll.*
+**When it applies**
+When circumstances help or hinder a roll.
 
-*Note: The result of the Story Die is **always** applied, even if its value is discarded in an Augmented or Impaired roll.*
+**How it works**
+* **Edge (+2)**: Minor advantage.
+* **Bane (-2)**: Minor disadvantage.
+* **Double Edge**: If you have 2+ sources of Edge, shift the result **up one Tier**.
+* **Double Bane**: If you have 2+ sources of Bane, shift the result **down one Tier**.
+* **Cancel**: If you have at least one Edge and at least one Bane, cancel one of each. If one side remains, apply **one** Edge or **one** Bane.
+* **Augmented (3d10)**: Major advantage. Roll **3d10 (keep highest 2)**. Replaces Edge and Bane.
+* **Impaired (3d10)**: Major disadvantage. Roll **3d10 (keep lowest 2)**. Replaces Edge and Bane.
+
+**Edge cases**
+* Edge and Bane are additive before you check for Double Edge or Double Bane.
+* Augmented or Impaired replaces the standard 2d10 roll and does not stack with Edge or Bane.
+* The Story Die effect always applies, even if its value is discarded.
+* Cover, lighting, and terrain sources of Edge/Bane are defined in [Chapter 4: Survival & Combat](chapter_04_combat_and_survival.md).
+
+**Example: Edge and Bane**
+Marla shoots in darkness (**Bane**) but from high ground (**Edge**). The modifiers cancel. She rolls **Base Die 5** and **Story Die 7**, adds **Dexterity 0** and **Shooting 20 (+2)**. Total = 5 + 7 + 0 + 2 = **14**, a **Tier 2 (Success)**.
+
+**Example: Augmented**
+Ivo performs surgery with a glitterworld kit (**Augmented**). He rolls **3d10**: **Base Die 9**, **Story Die 1**, and **extra die 7**. He keeps **9 + 7 = 16**, then adds **Mind +2** and **Medical 30 (+3)** for a total of **21**. That is a **Tier 3 (Triumph)**. The Story Die was **1**, so a **Twist of Fate** triggers.
 
 ### Pushing Your Luck
-Life on the Rim is desperate. You can push yourself beyond your limits.
-*   **The Push**: You can voluntarily add **+1d6** to your roll.
-*   **The Risk**: If the **d6** rolls a **1**, you trigger a **Panic Check** immediately after the action (regardless of success or failure). 
+
+**When it applies**
+When you choose to risk extra stress for a better outcome.
+
+**How it works**
+1. Declare a **Push** on the roll.
+2. Roll **1d6** and add it to the total.
+3. If the **d6** shows **1**, you trigger a **Panic Check** after the action.
+
+**Edge cases**
+* Panic Checks are resolved in [Chapter 4: Survival & Combat](chapter_04_combat_and_survival.md).
+
+**Example: Push**
+Oren is building a barricade with **Vigor +1** and **Construction 10 (+1)**. He rolls **Base Die 4** and **Story Die 3** for a total of 4 + 3 + 1 + 1 = **9** (Tier 1). He **Pushes**, rolls **1d6 = 5**, and the new total is **14** (Tier 2). If that d6 had been a **1**, he would trigger a Panic Check.
 
 ---
 
 ## The Story Die Effects
 
-The Red Die (Story Die) adds narrative twists beyond simple numbers.
+The Story Die adds narrative twists beyond simple numbers.
 
-### Rolling a 1: Twist of Fate
-If the Story Die shows a **1**, something unexpected but positive happens.
-*   **Effect**: You gain **1 Inspiration Point** OR you gain an **Edge** on your next roll.
-*   *Narrative*: You struggled to build the wall (Tier 1), but you found a better way to lay the bricks for next time.
-*   *Narrative*: Your shot hit the enemy armour (Tier 1), but you were able to spot a weakness in their armor.
+### Twist of Fate (Story Die 1)
 
-### Rolling a 10: Complication
-If the Story Die shows a **10**, something dangerous happens.
-*   **Effect**: You suffer a **Bane** on your next roll, or it will affect your stress level or mood.
-*   *Narrative*: You shot the mechanoid perfectly (Tier 3), but your barrel overheated. Your next shot will be harder.
-*   *Narrative*: You work harder to finish a section of the wall (Tier 3), but you are too tired and feel stressed.
+**When it applies**
+When the Story Die shows **1** on a Colonist Roll.
+
+**How it works**
+* Gain **1 Inspiration Point** or **Edge** on your next roll.
+* Resolve the Tier result normally.
+
+**Edge cases**
+* The Twist triggers even if the Story Die result is discarded by Augmented or Impaired.
+
+**Example: Twist of Fate**
+Tess tries to hack a console with **Mind +2** and **Intellectual 10 (+1)**. She rolls **Base Die 6** and **Story Die 1**. Total = 6 + 1 + 2 + 1 = **10** (Tier 1). She succeeds with a cost, but also gains **1 Inspiration Point** from the Twist.
+
+### Complication (Story Die 10)
+
+**When it applies**
+When the Story Die shows **10** on a Colonist Roll.
+
+**How it works**
+* Gain **Bane** on your next roll or apply a narrative complication.
+* Resolve the Tier result normally.
+
+**Edge cases**
+* Complications that add Stress or Mood changes are resolved in [Chapter 4: Survival & Combat](chapter_04_combat_and_survival.md).
+
+**Example: Complication**
+Sana snipes a mechanoid with **Dexterity +2** and **Shooting 30 (+3)**. She rolls **Base Die 8** and **Story Die 10**. Total = 8 + 10 + 2 + 3 = **23** (Tier 3). The shot is a Triumph, but the Complication gives her **Bane** on her next attack as the rifle overheats.
 
 ### Inspiration Points
-You can spend an Inspiration Point to:
-*   **Reroll one die** in a future roll.
-*   **Add +1d6** to a future roll.
-*   **Avoid a Mental Break** (reduce Stress by 1d4).
-*  **Give an edge**: to a colonist.
-*  **Give a bane**: to a enemy.
+
+**When it applies**
+When you gain Inspiration from a Twist of Fate or other rewards.
+
+**How it works**
+* **Reroll one die** in a future roll.
+* **Add +1d6** to a future roll.
+* **Avoid a Mental Break** by reducing **Stress by 1d4**.
+* **Give Edge** to a colonist.
+* **Give Bane** to an enemy.
+
+**Edge cases**
+* Stress and Mental Break rules are in [Chapter 4: Survival & Combat](chapter_04_combat_and_survival.md).
+
+**Example: Spending Inspiration**
+Marla rolls **Base Die 2** and **Story Die 6** on a Construction check. With **Vigor +2** and **Construction 20 (+2)**, the total is 2 + 6 + 2 + 2 = **12** (Tier 2). She spends **1 Inspiration Point** to **reroll the Base Die**, gets a **9**, and the new total is 9 + 6 + 2 + 2 = **19** (Tier 3).
 
 ---
 
-## Time & Scale
+## Time and Scale
 
 Time on the Rim is tracked in specific units to manage survival.
 
 ### The Day
-A standard day has 24 hours, divided into **Action Slots** for Base Building:
-1.  **Morning** (5 hours)
-2.  **Afternoon** (5 hours)
-3.  **Evening** (5 hours)
-4.  **Night** (8 hours - Sleep/Rest)
-*The remaining hour is for meals and transitions.*
+
+**When it applies**
+When planning colony activities and daily schedules.
+
+**How it works**
+* **Morning**: 5 hours.
+* **Afternoon**: 5 hours.
+* **Evening**: 5 hours.
+* **Night**: 8 hours (Sleep/Rest).
+* The remaining hour covers meals and transitions.
+
+**Edge cases**
+* The day loop procedures are expanded in [Chapter 6: Colony Management](chapter_06_colony.md).
+
+**Example: Daily Schedule**
+On Day 3, Ivo plans **Morning: Hunting**, **Afternoon: Building**, **Evening: Research**, and **Night: Sleep**. Those action slots are resolved using the colony rules in Chapter 6.
 
 ### The Quadrum
-A year is divided into 4 seasons called **Quadrums**, each lasting **15 Days**.
-1.  **Aprimay** (Early Spring)
-2.  **Jugust** (Late Summer)
-3.  **Septober** (Early Autumn)
-4.  **Decembary** (Late Winter)
 
-### Combat Movement (Range Bands)
-Combat uses abstract **Range Bands** to track positioning, focusing on narrative flow rather than grid counting.
+**When it applies**
+When tracking seasons and long-term survival.
 
-#### The 4 Bands
-1.  **Melee**: Hand-to-hand combat. You are engaged with the enemy.
-2.  **Close**: Short range. Shotguns, pistols, and grenades shine here.
-3.  **Medium**: Standard combat range. Assault rifles and LMGs are optimal.
-4.  **Far**: Long range. Sniper rifles and artillery.
+**How it works**
+* **Aprimay**: Early Spring.
+* **Jugust**: Late Summer.
+* **Septober**: Early Autumn.
+* **Decembary**: Late Winter.
+* Each Quadrum lasts **15 days**.
 
-#### Tactical Actions
-*   **Move**: Shift **one band** closer or further (e.g., Medium → Close).
-*   **Rush**: Sprint to shift **two bands**, but it costs two action ponts.
-*   **Engage**: Moving into **Melee** locks you in combat. You cannot move away without **Disengaging** (1 action points) or risking a free attack.
-*   **Take Cover**: You can assume a position behind cover within your band.
-    *   **Light Cover** (Sandbags): Grants **Edge** to defense.
-    *   **Heavy Cover** (Walls): Grants **Double Edge** to defense.
+**Edge cases**
+* Seasonal effects appear in [Chapter 7: The Rim](chapter_07_world.md).
 
-#### Weapon Range
-Weapons have an **Optimal Band**. Using them outside this band (e.g., Sniping from Close range) applies a **Bane**.
+**Example: Quadrum Tracking**
+If the colony lands on **Aprimay 1**, then **Jugust 1** begins on Day 16.
+
+### Range Bands
+
+**When it applies**
+During combat scenes.
+
+**How it works**
+* **Melee**: Hand-to-hand combat. You are engaged with the enemy.
+* **Close**: Short range. Shotguns, pistols, and grenades are strong here.
+* **Medium**: Standard combat range. Assault rifles and LMGs are optimal.
+* **Far**: Long range. Sniper rifles and artillery dominate.
+
+**Edge cases**
+* Entering **Melee** locks you in combat. Disengaging is defined in [Chapter 4: Survival & Combat](chapter_04_combat_and_survival.md).
+
+**Example: Range Bands**
+Viper starts at **Medium** range. She uses **Move** to shift to **Close** so her shotgun is in its optimal band.
+
+### Tactical Actions
+
+**When it applies**
+On your turn in combat.
+
+**How it works**
+* **Move (1 AP)**: Shift **one band** closer or farther.
+* **Rush (2 AP)**: Shift **two bands**.
+* **Engage**: Move into **Melee** to lock with a target.
+* **Disengage (1 AP)**: Leave **Melee** (see Chapter 4 for risks).
+* **Attack (2 AP)**: Make a ranged or melee attack (see Chapter 4).
+* **Take Cover (1 AP)**: Gain cover within your band.
+* **Light Cover**: Grants **Edge** to defense.
+* **Heavy Cover**: Grants **Double Edge** to defense.
+
+**Edge cases**
+* Action Point economy and free attacks are defined in [Chapter 4: Survival & Combat](chapter_04_combat_and_survival.md).
+
+**Example: Tactical Actions**
+Marla has **4 AP**. She **Moves (1 AP)** from Medium to Close, **Takes Cover (1 AP)** behind sandbags, then **Attacks (2 AP)** with her rifle.
+
+### Weapon Range
+
+**When it applies**
+When using a weapon outside its optimal range band.
+
+**How it works**
+* Apply **Bane** if you attack outside a weapon's optimal band.
+
+**Edge cases**
+* Multiple Banes can trigger **Double Bane** and shift the Tier down.
+
+**Example: Weapon Range**
+Sana fires a sniper rifle (optimal **Far**) from **Close** range. She suffers **Bane** on the attack, which may downgrade her Tier.
 
 ### Caravan Movement (World Map)
-*   **Scale**: 1 Hex = Approx. 1 Day of travel.
-*   **Terrain**: Roads increase speed; Mountains and Swamps reduce it.
 
+**When it applies**
+When traveling between map tiles.
+
+**How it works**
+* **1 Hex** is roughly **1 day** of travel.
+* **Roads** increase speed.
+* **Mountains** and **Swamps** reduce speed.
+
+**Edge cases**
+* Detailed expedition rules are in [Chapter 4: Survival & Combat](chapter_04_combat_and_survival.md).
+
+**Example: Caravan Travel**
+A caravan needs to cross **3 Hexes** of road. At roughly **1 Hex per day**, they arrive in about **3 days**, faster if mounts or roads add speed.

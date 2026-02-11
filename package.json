@@ -1,0 +1,10 @@
+{
+  "name": "rimworldrpg",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "glossary:build": "node glossary/build_glossary.js",
+    "glossary:validate": "node glossary/build_glossary.js --validate",
+    "build": "npm run glossary:validate && npm run glossary:build && node scripts/build_rulebook.js"
+  }
+}

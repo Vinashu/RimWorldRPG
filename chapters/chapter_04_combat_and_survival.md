@@ -6,212 +6,385 @@ Life on the Rim is a constant struggle against hunger, madness, and violent deat
 
 ## Part 1: Survival & Needs
 
-Your colonists are not just stats on a page; they are people with needs. Ignoring these needs leads to **Stress**, and eventually, **Mental Breaks**.
+### Core Needs
 
-### The 5 Core Needs
-1.  **Food**: Colonists must eat every day.
-    *   *Requirement*: 2 Meals per day.
-    *   *Penalty*: Gain **+1 Stress** per missed meal. After 3 days, start taking **1d10 Damage** per day (Starvation).
-2.  **Rest**: Colonists must sleep.
-    *   *Requirement*: 8 hours of sleep (Nightowl trait reduces this to 4 hours of sleep).
-    *   *Penalty*: Gain **+1 Stress** per night of poor/missed sleep. Become **Fatigued** (-2 to all pools).
-3.  **Recreation**: "All work and no play makes a dull boy."
-    *   *Requirement*: 4 hours of dedicated leisure time (Socializing, Horseshoes, TV). Two or more Colonists working on the same daily activity in the same period of time are considered socializing.
-    *   *Penalty*: Gain **+1 Stress** if Recreation is ignored for 2+ days.
-4.  **Beauty**: Living in a dump is depressing.
-    *   *Requirement*: Clean rooms, art, paved floors.
-    **Penalty**: Gain **+1 Stress** if spending more than 4 hours in an "Ugly" environment.
-5.  **Comfort**: Sleeping on the floor hurts.
-    **Requirement**: Chairs, beds, temperature control (see Chapter 6).
-    *   *Penalty*: Gain **+1 Stress** after sleeping on the ground or in extreme heat/cold.
+**When it applies**
+All day, every day.
 
-### Stress & Mental Breaks
-Stress is the silent killer. As unmet needs pile up, the mind begins to fracture.
+**How it works**
+Use the requirements below. If a requirement is not met, apply the listed penalty.
 
-#### Gaining Stress
-*   **Unmet Needs**: See above.
-*   **Pushing a Roll**: +1 Stress (voluntary effort).
-*   **Witnessing Death**: +1 Stress (Stranger/Enemy), +3 Stress (Colonist/Bonded Animal).
-*   **Pain**: +1 Stress per day if suffering from Untended Wounds or Painful Scars.
+| Need | Requirement | Penalty |
+| :--- | :--- | :--- |
+| **Food** | 2 Meals per day | **+1 Stress** per missed meal. After 3 days, take **1d10 Damage** per day (Starvation). |
+| **Rest** | 8 hours of sleep | **+1 Stress** per night of poor/missed sleep. Become **Fatigued (-2 to all rolls)**. |
+| **Recreation** | 4 hours of leisure time | **+1 Stress** if ignored for 2+ days. |
+| **Beauty** | Clean rooms, art, paved floors | **+1 Stress** if spending 4+ hours in an "Ugly" space. |
+| **Comfort** | Chairs, beds, temperature control | **+1 Stress** after sleeping on the ground or in extreme heat/cold. |
 
-#### The Stress Die
-*   **The Benefit**: The d6 result adds to your total (helping you hit Tier 2/3). Stress focuses the mind... briefly.
-*   **The Risk**: If you roll a **1** on *any* Stress Die, you trigger a **Panic Check**.
+**Edge cases**
+* Two or more Colonists working on the same activity in the same period count as **Socializing** for Recreation.
+* Traits can modify Rest or Comfort (see [Chapter 2: Character Creation](chapter_02_character_creation.md)).
+* Colony schedules and periods are defined in [Chapter 6: Colony Management](chapter_06_colony.md).
 
-#### Panic Check (Mental Break)
-When a Panic Check is triggered, roll `1d6 + Current Stress`. Consult the table below.
+**Example: Core Needs**
+Viper misses **one meal** (+1 Stress) and sleeps in the cold (+1 Stress). She gains **2 Stress** by morning.
+
+---
+
+### Gaining Stress
+
+**When it applies**
+Whenever a Colonist experiences strain, danger, or deprivation.
+
+**How it works**
+Gain Stress from the triggers below.
+
+| Trigger | Stress |
+| :--- | ---: |
+| Unmet Need | See Core Needs table |
+| Pushing a Roll | +1 Stress |
+| Witnessing Death (Stranger/Enemy) | +1 Stress |
+| Witnessing Death (Colonist/Bonded Animal) | +3 Stress |
+| Untended Wounds or Painful Scars (per day) | +1 Stress |
+
+**Edge cases**
+* "Bonded" is a Storyteller-assigned relationship tag (see [Chapter 2: Character Creation](chapter_02_character_creation.md)).
+
+**Example: Gaining Stress**
+Marla pushes a roll (+1 Stress) and then watches a bonded muffalo die (+3 Stress). She gains **4 Stress** in that scene.
+
+---
+
+### Stress Die
+
+**When it applies**
+When a rule tells you to roll a **Stress Die**.
+
+**How it works**
+* Roll **1d6** and add it to your total.
+* If **any Stress Die** shows **1**, trigger a **Panic Check**.
+
+**Edge cases**
+* The **Push** adds a Stress Die (see [Chapter 3: Skills & Checks](chapter_03_skills_and_checks.md)).
+
+**Example: Stress Die**
+Oren rolls a Stress Die and gets a **1**. He adds the **1** to his total, then immediately makes a **Panic Check** after the action.
+
+---
+
+### Panic Check (Mental Break)
+
+**When it applies**
+When a rule triggers a Panic Check (Stress Die result of 1, a Push, certain traits, or a Mental Break Threshold trigger).
+
+**How it works**
+1. Roll **1d6 + Current Stress**.
+2. Apply the result from the table below.
 
 | Result | Break Type | Effect |
 | :--- | :--- | :--- |
-| **1-6** | **Anxious** | **Trembling**: -2 to all Dexterity/Shooting rolls for 1 hour. |
-| **7-9** | **Minor Break** | **Binge**: Character consumes 3x Meals or Drugs immediately. |
-| **10-12** | **Major Break** | **Tantrum**: Character attacks a random colony structure/item (it loses 10 CP). |
-| **13+** | **Extreme Break** | **Insulting Spree**: Character verbally abuses allies. Gain **+1 Stress** for every ally. |
+| **1–6** | **Anxious** | **Trembling**: -2 to all Dexterity/Shooting rolls for 1 hour. |
+| **7–9** | **Minor Break** | **Binge**: Consume 3x Meals or Drugs immediately. |
+| **10–12** | **Major Break** | **Tantrum**: Attack a random colony structure/item (it loses 10 CP). |
+| **13+** | **Extreme Break** | **Insulting Spree**: Verbally abuse allies. Each ally gains **+1 Stress**. |
 
-**Relieving Stress**:
-Stress resets to 0 or reduces via:
-*   **Luxury Meal**: Consuming a Lavish Meal removes **2 Stress**.
-*   **Relaxing Socially**: Successful Social check (Tier 2) removes **1 Stress**.
-*   **Catharsis**: Completing a Mental Break rests Stress to 0.
-*   **Sleep**: A full night's sleep in an Excellent+ bed removes **All Stress**.
+**Edge cases**
+* Mental Break Threshold rules are in [Chapter 2: Character Creation](chapter_02_character_creation.md).
+
+**Example: Panic Check**
+Tess has **5 Stress** and rolls a **4** on the d6. Total = **9**, so she suffers a **Minor Break** and goes on a Binge.
+
+---
+
+### Relieving Stress
+
+**When it applies**
+After crises, during downtime, or through special actions.
+
+**How it works**
+Reduce Stress using the options below.
+
+| Method | Effect |
+| :--- | :--- |
+| **Luxury Meal** | Remove **2 Stress**. |
+| **Relaxing Socially** | On a **Tier 2** Social check, remove **1 Stress**. |
+| **Catharsis** | Completing a Mental Break resets Stress to **0**. |
+| **Sleep (Excellent+ Bed)** | A full night’s sleep removes **all Stress**. |
+
+**Edge cases**
+* Meal types and bed quality are in [Chapter 5: Equipment & Economy](chapter_05_equipment.md) and [Chapter 6: Colony Management](chapter_06_colony.md).
+
+**Example: Relieving Stress**
+Viper has **5 Stress**. She eats a **Luxury Meal** (down to **3**), then sleeps in an **Excellent** bed and returns to **0**.
 
 ---
 
 ## Part 2: Combat
 
-When diplomacy fails, the Rim demands violence. Combat is dangerous, bloody, and often fatal.
+### Initiative
 
-### The Combat Sequence
-Combat uses a **Dynamic Turn System**.
-1.  **Initiative**: Players roll **1d10** (Group Check).
-    *   **6-10**: Players act first.
-    *   **1-5**: Enemies act first.
-2.  **Turns**: Alternate between sides (Player -> Enemy -> Player -> Enemy).
-3.  **Round**: Ends when all combatants have acted.
+**When it applies**
+At the start of combat.
 
-> **Example: Initiative**
->
-> **John**: "The raiders burst through the door! Roll for Initiative."
->
-> **Mary**: "Okay, rolling a d10." *(Rolls a 7)*. "I got a 7!"
->
-> **John**: "That's between 6 and 10. The Players go first. Viper acts before the raiders."
+**How it works**
+1. The players make a **group roll** of **1d10**.
+2. On **6–10**, players act first.
+3. On **1–5**, enemies act first.
 
-### The Action Economy (4 AP)
-On your turn, spend **4 Action Points (AP)**. You can split these actions however you like.
+**Example: Initiative**
+The group rolls a **7** on the Initiative check. Players act first.
 
-| Action | Cost | Description |
-| :--- | :--- | :--- |
-| **Move** | 1 AP | Shift **One Range Band** (e.g. Medium -> Close). |
-| **Rush** | 2 AP | Shift **Two Range Bands** (e.g. Far -> Close). |
-| **Attack** | 2 AP | Make a Shooting or Melee attack. |
-| **Aim** | 1 AP | Gain **Augmented** (+1d10, drop lowest) on next attack. |
-| **Take Cover** | 1 AP | Gain Cover (Bane to attacker). |
-| **Aid** | 1 AP | Give **Edge** (+2 next roll) to an ally. |
-| **Use Item** | 1 AP | Drink potion, reload, switch weapon. |
+---
 
-### Common Combos
-*   **The Skirmisher**: Move (1) + Attack (2) + Take Cover (1).
-*   **The Turret**: Attack (2) + Attack (2).
-*   **The Sprinter**: Rush (2) + Move (1) + Take Cover (1).
-*   **The Sniper**: Aim (1) + Attack (2) + Take Cover (1).
+### Turns and Rounds
 
-> **Example: Spending AP**
->
-> **Mary**: "Viper has 4 AP. She's currently exposed, so I want to get to safety."
->
-> **Mary**: "I'll spend **1 AP** to Move behind the sandbags. Then I'll spend **1 AP** to Aim at the leader."
->
-> **Mary**: "I have 2 AP left, so I'll spend **2 AP** to Attack with my rifle."
+**When it applies**
+After Initiative.
+
+**How it works**
+1. The two sides alternate turns (Players → Enemies → Players).
+2. A **Round** ends when all combatants have acted once.
+
+**Edge cases**
+* If one side has no combatants left, the encounter ends.
+
+**Example: Turns and Rounds**
+Players act, then enemies act. When both sides have taken a turn, the round ends and a new round begins.
+
+---
+
+### Action Points (AP)
+
+**When it applies**
+On a Colonist’s turn.
+
+**How it works**
+Each Colonist has **4 AP** per turn to spend on actions.
+
+| Action | AP | Effect |
+| :--- | ---: | :--- |
+| **Move** | 1 | Shift **one Range Band** closer or farther. |
+| **Rush** | 2 | Shift **two Range Bands**. |
+| **Attack** | 2 | Make a Shooting or Melee attack. |
+| **Aim** | 1 | Gain **Augmented** on your next attack. |
+| **Take Cover** | 1 | Attacks against you take **Bane**. |
+| **Aid** | 1 | Grant **Edge** to an ally’s next roll. |
+| **Use Item** | 1 | Reload, switch weapon, or use a consumable. |
+
+**Edge cases**
+* Range Bands are defined in [Chapter 1: Core Mechanics](chapter_01_core.md).
+
+**Example: Spending AP**
+Marla spends **1 AP** to Move to Close range, **1 AP** to Take Cover, and **2 AP** to Attack.
+
+---
 
 ### Attack Resolution
-Attacks always hit; the quality determines the damage.
-**Roll**: `2d10 + Attribute + Skill`
 
-*   **Shooting**: Uses Dexterity.
-*   **Melee**: Uses Vigor.
+**When it applies**
+When you take the Attack action.
+
+**How it works**
+1. Roll **2d10 + Attribute + Skill Modifier**.
+2. Attacks always hit; the Tier determines damage.
 
 | Result | Tier | Outcome |
 | :--- | :--- | :--- |
 | **11 or lower** | **Tier 1: Weak Hit** | Deal **Half Damage**. |
-| **12 - 16** | **Tier 2: Solid Hit** | Deal **Full Damage**. |
-| **17 or higher** | **Tier 3: Critical Hit** | Deal **Double Damage** & Roll **Major Injury**. |
+| **12–16** | **Tier 2: Solid Hit** | Deal **Full Damage**. |
+| **17 or higher** | **Tier 3: Critical Hit** | Deal **Double Damage** and roll **Major Injury**. |
 
-> **Example: Attack Roll**
->
-> **John**: "You're Aiming, so you have **Augmented** on this shot. Roll 3d10 and keep the highest two."
->
-> **Mary**: "My Dexterity is 0 and Shooting is +1 (10 points). So I add +1 to the roll."
->
-> **Mary**: *(Rolls 4, 8, 9)* "I keep 8 and 9. That's 17 + 1 = 18."
->
-> **John**: "18 is a **Tier 3: Critical Hit**! You hit him right in the head."
+**Edge cases**
+* Weapon stats are in [Chapter 5: Equipment & Economy](chapter_05_equipment.md).
 
-### Damage & Armor
-> **Damage = (Weapon Dmg x Tier Multiplier) - Armor Rating**
+**Example: Attack Roll**
+Viper shoots with **Dexterity +1** and **Shooting 20 (+2)**. She rolls **Base Die 8** and **Story Die 6**. Total = 8 + 6 + 1 + 2 = **17**, a **Tier 3 Critical Hit**.
 
-*   **HP**: Max HP = `15 + (Vigor x 2)`.
-*   **Downed**: At 0 HP, character is unconscious and bleeds out in `Vigor` hours unless tended.
+---
 
-> **Example: Dealing Damage**
->
-> **John**: "Your Rifle does 6 Damage. Since it's a Tier 3 hit, you deal **Double Damage** (12)."
->
-> **John**: "The Raider is wearing a Flak Vest (Armor 3). So, 12 - 3 = **9 Damage** to his HP."
+### Damage and Armor
 
-### Critical Effects & Conditions
-Critical hits (Tier 3) carry extra weight beyond double damage.
-1.  **Cover Destruction**: If the target is in Cover, reduce it by one step (Heavy -> Light -> None).
-2.  **Conditions**: Certain weapons or abilities may apply Conditions:
-    *   **Stunned**: Lose next Action Turn (0 AP).
-    *   **Slowed**: Movement costs **+1 AP**.
-    *   **Paralyzed**: Cannot Move or Act. Defense is 0 (Auto-Crit).
+**When it applies**
+After an attack hit is resolved.
 
-### Major Injuries & Body Parts
-If a **Tier 3 Critical Hit** occurs (or specific traps/events), roll **1d10** for the Injury.
+**How it works**
+1. Calculate **Damage = (Weapon Damage × Tier Multiplier) - Armor Rating**.
+2. Apply the remaining damage to HP.
+3. **HP** = `15 + (Vigor × 2)`.
+4. At **0 HP**, a character is **Downed** and begins bleeding out for **Vigor hours (minimum 1 hour)** unless tended.
+
+**Edge cases**
+* Armor values are listed in [Chapter 5: Equipment & Economy](chapter_05_equipment.md).
+
+**Example: Damage and Armor**
+A rifle does **6 Damage**. Viper hits at **Tier 3**, so damage is **12**. The raider has **Armor 3**, so final damage is **9**.
+
+---
+
+### Critical Effects and Conditions
+
+**When it applies**
+When an attack results in a **Tier 3 Critical Hit**.
+
+**How it works**
+1. If the target has Cover, reduce it one step (**Heavy → Light → None**).
+2. Apply any weapon or effect conditions.
+
+| Condition | Effect |
+| :--- | :--- |
+| **Stunned** | Lose your next Action Turn (0 AP). |
+| **Slowed** | Movement costs **+1 AP**. |
+| **Paralyzed** | Cannot Move or Act. Defense is 0 (Auto-Crit). |
+
+**Edge cases**
+* Some weapons apply additional conditions (see Chapter 5).
+
+**Example: Critical Condition**
+Sana lands a **Tier 3** hit on a raider behind **Heavy Cover**. The cover drops to **Light Cover**, and the raider is **Stunned**.
+
+---
+
+### Major Injuries
+
+**When it applies**
+After a **Tier 3 Critical Hit** or specific traps and events.
+
+**How it works**
+Roll **1d10** and apply the result.
 
 | d10 | Injury | Effect |
 | :--- | :--- | :--- |
-| **1-3** | **Bleeding** | Take **1 Damage/turn** until tended. |
+| **1–3** | **Bleeding** | Take **1 Damage/turn** until tended. |
 | **4** | **Stunned** | Lose your next Action Turn (0 AP). |
 | **5** | **Slowed** | Movement costs **+1 AP** for 1 hour. |
 | **6** | **Concussion** | **Impaired** on mental actions. Skills disabled. |
 | **7** | **Organ Damage (Lung)** | **-2 Bane** on Movement/Vigor checks (Breathing). |
-| **8** | **Organ Damage (Heart)** | Bleed out time reduced by half. |
+| **8** | **Organ Damage (Heart)** | Bleed-out time reduced by half. |
 | **9** | **Eye/Ear Loss** | Permanent **-2 Bane** on Perception/Shooting. |
-| **10** | **Severed Part** | Loses a limb. Roll d4: (1) Hand, (2) Arm, (3) Leg, (4) Head (Instakill). |
+| **10** | **Severed Part** | Lose a limb. Roll **1d4**: (1) Hand, (2) Arm, (3) Leg, (4) Head (Instant death). |
 
-> **Example: Critical Effect**
->
-> **John**: "Since it was a Critical Hit, roll 1d10 for a Major Injury."
->
-> **Mary**: *(Rolls a 10)* "A 10! What does that do?"
->
-> **John**: "**Severed / Lethal**. You blew his head off. He's down immediately."
+**Edge cases**
+* Prosthetics and bionics are in [Chapter 5: Equipment & Economy](chapter_05_equipment.md).
 
-#### Body Part Banes (Permanent)
-Losing parts imposes permanent penalties until replaced (Prosthetics/Bionics).
+**Example: Major Injury**
+Marla rolls a **7** on the Major Injury table. She suffers **Organ Damage (Lung)** and takes **-2 Bane** on Movement/Vigor checks.
 
-*   **Missing Hand**: **+1 Bane** to fine motor skills (Shooting, Crafting, Medical). Cannot dual-wield.
-*   **Missing Arm**: **+2 Bane** to above. Cannot use two-handed items (Rifles, Greatswords).
-*   **Missing Foot**: Movement actions cost **+1 AP**.
-*   **Missing Leg**: Cannot take Movement actions (Must crawl or be carried).
-*   **Missing Eye**: **+1 Bane** to Shooting and Perception.
-*   **Missing Ear**: **+1 Bane** to Social (Hard of hearing) and Awareness.
-*   **Organ Damage**: See Injury Table.
+---
 
-### Death & Downed
-*   **0 HP**: You are **Downed**. You are unconscious and helpless.
-*   **Death**: If you take damage while Downed, or if you are not tended within **1 hour**, you die.
+### Body Part Banes (Permanent)
+
+**When it applies**
+When a character loses a body part.
+
+**How it works**
+Apply the relevant penalty until replaced.
+
+| Lost Part | Effect |
+| :--- | :--- |
+| **Missing Hand** | **+1 Bane** to fine motor skills (Shooting, Crafting, Medical). Cannot dual-wield. |
+| **Missing Arm** | **+2 Bane** to fine motor skills. Cannot use two-handed items. |
+| **Missing Foot** | Movement actions cost **+1 AP**. |
+| **Missing Leg** | Cannot take Movement actions (must crawl or be carried). |
+| **Missing Eye** | **+1 Bane** to Shooting and Perception. |
+| **Missing Ear** | **+1 Bane** to Social and Awareness. |
+| **Organ Damage** | See Major Injury table. |
+
+**Edge cases**
+* Replacement limbs cancel penalties as described in [Chapter 5: Equipment & Economy](chapter_05_equipment.md).
+
+**Example: Body Part Banes**
+After losing her left arm, Viper suffers **+2 Bane** on Medical checks and cannot use her two-handed rifle.
+
+---
+
+### Death and Downed
+
+**When it applies**
+When a character reaches **0 HP**.
+
+**How it works**
+* At **0 HP**, the character is **Downed** and unconscious.
+* If they take damage while Downed, they **die**.
+* If they are not tended before their bleed-out time expires, they **die**.
+
+**Edge cases**
+* Tending rules are in [Chapter 5: Equipment & Economy](chapter_05_equipment.md) and [Chapter 6: Colony Management](chapter_06_colony.md).
+
+**Example: Death and Downed**
+A colonist drops to **0 HP** and is Downed. A raider attacks them again, dealing damage. The colonist **dies** immediately.
 
 ---
 
 ## Part 3: Expeditions (Caravans)
 
-Leaving the safety of your map tile is necessary for trade and raiding.
-
 ### Travel Speed
-Movement is measured in **Hexes per Day**.
-*   **Base Speed**: 1 Hex/Day.
-*   **Modifiers**:
-    *   **+1**: All colonists have mounts (Horses, Muffalos).
-    *   **+1**: Traveling on Roads.
-    *   **-1**: Difficult Terrain (Mountains, Swamp) or Winter.
 
-### Foraging & Rations
-Each day of travel requires food.
-1.  **Rations**: Consume 2 Meals per person.
-2.  **Foraging**: If no rations, make a **Plants** check (Difficulty 12).
-    *   *Success*: Find fully sufficient wild food.
-    *   *Tier 1 (Struggle)*: Everyone gains **+1 Stress** and Starvation begins.
+**When it applies**
+When traveling across the world map.
+
+**How it works**
+* **Base Speed**: 1 Hex per day.
+* **Modifiers**: +1 for mounts, +1 on roads, -1 in difficult terrain or winter.
+
+**Edge cases**
+* Hex scale is defined in [Chapter 1: Core Mechanics](chapter_01_core.md).
+
+**Example: Travel Speed**
+A caravan with mounts on roads moves **3 Hexes** in **1 day** (base 1 + mounts 1 + roads 1).
+
+---
+
+### Foraging and Rations
+
+**When it applies**
+Each day of travel.
+
+**How it works**
+1. Each colonist consumes **2 Meals**.
+2. If you have no rations, make a **Plants** check vs **DC 12**.
+3. On Success, find enough wild food.
+4. On **Tier 1 (Struggle)**, everyone gains **+1 Stress** and **Starvation** begins.
+
+**Edge cases**
+* This subsystem uses a DC as written, even though most checks use Tiers.
+
+**Example: Foraging**
+The caravan is out of rations. Tess rolls **2d10 + Mind + Plants** and totals **10** (Tier 1). Everyone gains **+1 Stress** and Starvation starts.
+
+---
 
 ### Ambushes
-The Rim is not empty. For every 3 hexes traveled, the GM (Storyteller) rolls for an event.
-*   **Stealth Check**: Players can roll **Intellectual** (Scanning) or **Animals** (Scouting) to detect threats early.
-    *   *Success*: You spot the ambush. You determine the engagement distance or evade.
-    *   *Tier 1 (Struggle)*: You are ambushed. Enemies start with Initiative and Cover.
+
+**When it applies**
+For every **3 Hexes** traveled.
+
+**How it works**
+1. The Storyteller rolls for an event.
+2. Players may roll **Intellectual** (Scanning) or **Animals** (Scouting).
+3. On Success, they spot the ambush and choose distance or evade.
+4. On **Tier 1 (Struggle)**, they are ambushed. Enemies start with Initiative and Cover.
+
+**Edge cases**
+* Enemy stats are in [Chapter 7: The Rim](chapter_07_world.md).
+
+**Example: Ambush**
+After 3 Hexes, Sana rolls **Animals** and totals **13** (Tier 2). The group spots raiders early and chooses **Medium** range.
+
+---
 
 ### Carrying Capacity
-*   Colonists carry personal gear.
-*   **Pack Animals** (Muffalo, Alpaca) are required for heavy trade goods (Statues, vast amounts of Steel).
-*   *Overburdened*: If carrying too much, Base Speed becomes **0.5 Hexes/Day**.
+
+**When it applies**
+When transporting heavy goods.
+
+**How it works**
+* Colonists can carry personal gear.
+* **Pack Animals** (Muffalo, Alpaca) are required for heavy trade goods.
+* **Overburdened** caravans move at **0.5 Hexes/day**.
+
+**Edge cases**
+* Pack animal stats are in [Chapter 7: The Rim](chapter_07_world.md).
+
+**Example: Carrying Capacity**
+The caravan loads too much steel and becomes **Overburdened**. Their speed drops to **0.5 Hexes/day**.

@@ -1,132 +1,194 @@
 # Chapter 8: The Storyteller (GM Section)
 
-Welcome, Storyteller. You are the architect of chaos, the hand of fate, and the voice of the Rim itself. This chapter provides you with the tools to run engaging, challenging, and memorable RimWorld TTRPG sessions.
+Welcome, Storyteller. You are the architect of chaos, the hand of fate, and the voice of the Rim itself. This chapter provides tools to run engaging, challenging, and memorable RimWorld RPG sessions.
 
 ---
 
 ## Part 1: Running the Game
 
 ### Your Role as Storyteller
-You are not the players' enemy—you are their **narrator** and **challenge designer**. Your job is to:
-*   **Create Drama**: Introduce threats, opportunities, and moral dilemmas.
-*   **Be Fair**: Don't fudge dice to kill characters, but don't pull punches either.
-*   **Embrace Chaos**: RimWorld is about emergent stories. Let the dice and player choices drive the narrative.
+
+**When it applies**
+All sessions.
+
+**How it works**
+* **Create Drama**: Introduce threats, opportunities, and moral dilemmas.
+* **Be Fair**: Don’t fudge dice to kill characters, but don’t pull punches either.
+* **Embrace Chaos**: Let player choices and the Story Die drive the narrative.
+
+**Example: Storyteller Role**
+A raid starts small, but a **Story Die 10** complication adds a second wave and forces a hard choice.
+
+---
 
 ### Pacing and Tone
-RimWorld alternates between **quiet colony-building** and **explosive crises**.
 
-**The Colony Phase** (Downtime):
-*   Players assign colonists to tasks (farming, crafting, research).
-*   Use this time for character development, social interactions, and planning.
-*   Duration: 3-7 in-game days per session.
+**When it applies**
+When planning session structure.
 
-**The Crisis Phase** (Events):
-*   Introduce threats: raids, disasters, or opportunities.
-*   Keep combat fast and brutal.
-*   Duration: 1-2 hours of real-time play.
+**How it works**
+* **Colony Phase** (Downtime): Assign tasks, roleplay, plan. **3–7 in-game days per session**.
+* **Crisis Phase** (Events): Raids, disasters, quests. **1–2 hours of real-time play**.
+* **Balance**: Aim for **60/40** (colony/crisis).
 
-**Balance**: Aim for a 60/40 split (60% colony-building, 40% crisis). Adjust based on player preference.
+**Example: Pacing**
+You run two colony days, then drop a raid, then return to building and social scenes.
 
 ---
 
 ## Part 2: Storyteller Personas
 
-Choose a Storyteller persona to guide your event pacing. You can switch personas between sessions or campaigns.
-
 ### Cassandra Classic
-*   **Style**: Steady escalation. Predictable but relentless.
-*   **Pacing**: Events occur every 4-6 days. Major threats scale with colony wealth.
-*   **Best For**: New players who want a fair, balanced challenge.
 
-**Event Frequency**:
-*   **Days 1-10**: Minor events only.
-*   **Days 11-30**: Mix of Minor and Major events.
-*   **Days 31+**: All event types, weighted by wealth.
+**When it applies**
+When using steady escalation.
+
+**How it works**
+* Events every **4–6 days**.
+* Major threats scale with **Wealth Score**.
+
+**Event Frequency**
+* **Days 1–10**: Minor events only.
+* **Days 11–30**: Mix of Minor and Major events.
+* **Days 31+**: All event types, weighted by wealth.
+
+**Example: Cassandra**
+On Day 14 with a stable colony, roll a **Minor** or **Major** event.
+
+---
 
 ### Randy Random
-*   **Style**: Pure chaos. Anything can happen at any time.
-*   **Pacing**: Roll for an event every 2-3 days. Ignore wealth scaling sometimes.
-*   **Best For**: Experienced players who want unpredictability.
 
-**Event Frequency**:
-*   Roll **1d20** every 2-3 days:
-    *   **1-5**: Minor event.
-    *   **6-18**: Nothing happens.
-    *   **19**: Major event.
-    *   **20**: Extreme event (even on Day 1!).
+**When it applies**
+When using chaotic pacing.
+
+**How it works**
+* Roll for an event every **2–3 days**.
+* Sometimes ignore wealth scaling.
+
+**Event Frequency**
+Roll **1d20**:
+* **1–5**: Minor event.
+* **6–18**: Nothing happens.
+* **19**: Major event.
+* **20**: Extreme event (even on Day 1).
+
+**Example: Randy**
+On Day 3 you roll a **20**. An **Extreme Event** hits even though the colony is new.
+
+---
 
 ### Phoebe Chillax
-*   **Style**: Relaxed. Long breaks between threats.
-*   **Pacing**: Events occur every 8-12 days. Gentle difficulty curve.
-*   **Best For**: Players who want to focus on base-building and roleplay.
 
-**Event Frequency**:
-*   **Days 1-20**: Minor events only, infrequent.
-*   **Days 21+**: Occasional Major events. Extreme events are rare.
+**When it applies**
+When using relaxed pacing.
+
+**How it works**
+* Events every **8–12 days**.
+* Gentle difficulty curve.
+
+**Event Frequency**
+* **Days 1–20**: Minor events only, infrequent.
+* **Days 21+**: Occasional Major events. Extreme events are rare.
+
+**Example: Phoebe**
+You run two weeks of colony building with only one Minor event.
 
 ---
 
 ## Part 3: Scenarios
 
-Scenarios define the starting conditions for your campaign. Each has unique challenges and flavor.
+### Crashlanded (Standard)
 
-### 1. Crashlanded (Standard)
-*   **Colonists**: 3 random survivors.
-*   **Starting Gear**: Basic weapons (Revolver, Bolt-Action Rifle), some food, minimal materials.
-*   **Challenge**: Balanced. Players must quickly establish food, shelter, and defense.
-*   **First Goal**: Build beds, plant crops, construct walls.
+**When it applies**
+When running a classic starting scenario.
 
-**Setup**:
-*   Each player creates 1 colonist using the Lifepath (Chapter 2).
-*   GM assigns a random 3rd colonist (NPC or shared control).
-*   Starting Wealth Score: **~35** (3 PCs + basic tech + barracks).
+**How it works**
+* **Colonists**: 3 random survivors.
+* **Starting Gear**: Basic weapons, some food, minimal materials.
+* **Challenge**: Balanced.
+* **First Goal**: Build beds, plant crops, construct walls.
+* **Starting Wealth Score**: **~35**.
 
-### 2. Naked Brutality (Hard)
-*   **Colonists**: 1 lone survivor.
-*   **Starting Gear**: Nothing. Literally naked.
-*   **Challenge**: Extreme. Every decision matters.
-*   **First Goal**: Survive the first night. Find food and shelter.
+**Example: Crashlanded**
+The players build a barracks and plant rice by Day 2.
 
-**Setup**:
-*   Single player creates 1 colonist.
-*   Starting Wealth Score: **10** (1 PC only).
-*   GM should be merciful with early events (Minor only for first 10 days).
+---
 
-### 3. Rich Explorer (Solo)
-*   **Colonists**: 1 well-equipped explorer.
-*   **Starting Gear**: Advanced weapons (Charge Rifle), Marine Armor, survival supplies.
-*   **Challenge**: Moderate. Solo play, but well-resourced.
-*   **First Goal**: Establish a base, recruit allies.
+### Naked Brutality (Hard)
 
-**Setup**:
-*   Single player creates 1 colonist with high skills.
-*   Starting Wealth Score: **~25** (1 PC + advanced tech/gear).
-*   GM should introduce recruitment opportunities early.
+**When it applies**
+When running a high-risk solo start.
 
-### 4. Tribal Start (Low-Tech)
-*   **Colonists**: 5 tribal members.
-*   **Starting Gear**: Neolithic weapons (Bows, Ikwas), tribal clothing.
-*   **Challenge**: Moderate. Large group, but limited tech.
-*   **First Goal**: Research basics (Smithing, Electricity).
+**How it works**
+* **Colonists**: 1 survivor.
+* **Starting Gear**: None.
+* **Challenge**: Extreme.
+* **First Goal**: Survive the first night.
+* **Starting Wealth Score**: **10**.
 
-**Setup**:
-*   Players create 3-5 colonists with Tribal backgrounds.
-*   Starting Wealth Score: **~55** (5 PCs + Neolithic tech).
-*   Research starts at **Neolithic** level.
+**Example: Naked Brutality**
+The player builds a lean-to and scavenges berries to survive the night.
+
+---
+
+### Rich Explorer (Solo)
+
+**When it applies**
+When running a well-equipped solo start.
+
+**How it works**
+* **Colonists**: 1 explorer.
+* **Starting Gear**: Advanced weapons, armor, supplies.
+* **Challenge**: Moderate.
+* **First Goal**: Establish a base and recruit allies.
+* **Starting Wealth Score**: **~25**.
+
+**Example: Rich Explorer**
+The explorer uses a **Charge Rifle** to hunt and trades for workers.
+
+---
+
+### Tribal Start (Low-Tech)
+
+**When it applies**
+When running a group low-tech start.
+
+**How it works**
+* **Colonists**: 5 tribal members.
+* **Starting Gear**: Neolithic weapons and clothing.
+* **Challenge**: Moderate.
+* **First Goal**: Research basics.
+* **Starting Wealth Score**: **~55**.
+* **Research starts at Neolithic**.
+
+**Example: Tribal Start**
+The tribe focuses on hunting and bows while researching Smithing.
 
 ---
 
 ## Part 4: Event Generation
 
-Events are the heartbeat of RimWorld. Use these tables to generate challenges and opportunities.
-
 ### Event Frequency
-Roll for an event based on your chosen Storyteller persona (see Part 2).
 
-### Event Tables
+**When it applies**
+When the Storyteller persona calls for an event.
 
-#### Minor Events (Low Impact)
-Roll **1d10** or choose:
+**How it works**
+Roll on the table that matches your event type.
+
+**Example: Event Frequency**
+Using Cassandra, Day 15 calls for a **Major Event** roll.
+
+---
+
+### Minor Events
+
+**When it applies**
+When a Minor event is triggered.
+
+**How it works**
+Roll **1d10** or choose.
 
 | d10 | Event | Description |
 | :--- | :--- | :--- |
@@ -138,18 +200,31 @@ Roll **1d10** or choose:
 | **6** | **Mad Animal** | 1 animal goes berserk. Attacks nearest colonist. |
 | **7** | **Visitor Group** | Friendly faction visits. Opportunity to trade or socialize. |
 | **8** | **Trade Caravan** | Traders arrive. Buy/sell goods. |
-| **9** | **Quest Offer** | Faction requests aid (see Part 5: Quests). |
+| **9** | **Quest Offer** | Faction requests aid (see Quests). |
 | **10** | **Inspiration** | 1 colonist gains **Edge** on all rolls for 1 day. |
 
-#### Major Events (High Impact)
-Roll **1d10** or choose:
+**Edge cases**
+* Recruitment rules are in [Chapter 6: Colony Management](chapter_06_colony.md).
+
+**Example: Minor Event**
+A **Trade Caravan** arrives, giving the colony a chance to sell excess cloth.
+
+---
+
+### Major Events
+
+**When it applies**
+When a Major event is triggered.
+
+**How it works**
+Roll **1d10** or choose.
 
 | d10 | Event | Description |
 | :--- | :--- | :--- |
 | **1** | **Raid (Tribal)** | Tribal warriors. Cost: **5 pts** each. |
 | **2** | **Raid (Pirate)** | Pirates with guns. Cost: **10 pts** each. |
 | **3** | **Manhunter Pack** | Animals attack. **Warg (10 pts)** or **Boar (5 pts)**. |
-| **4** | **Toxic Fallout** | Poison rain for 3-7 days. Outside: **1 Bio Dmg/hour**. |
+| **4** | **Toxic Fallout** | Poison rain for 3–7 days. Outside: **1 Bio Dmg/hour**. |
 | **5** | **Cold Snap** | Temperature drops. **-20°C**. Hypothermia risk. |
 | **6** | **Heat Wave** | Temperature spikes. **+20°C**. Heatstroke risk. |
 | **7** | **Infestation** | Insect hive spawns in "Overhead Mountain" tiles. |
@@ -157,109 +232,219 @@ Roll **1d10** or choose:
 | **9** | **Peace Talks** | Hostile faction offers talks. **Social Challenge**. |
 | **10** | **Prisoner Escape** | Prisoners roll **Vigor** to break bars. |
 
-#### Extreme Events (Catastrophic)
-Roll **1d6** or choose:
+**Edge cases**
+* Enemy stats are in [Chapter 7: The Rim](chapter_07_world.md).
+
+**Example: Major Event**
+A **Raid (Pirate)** costs **10 pts** per gunner, so a 30-point raid could bring three gunners.
+
+---
+
+### Extreme Events
+
+**When it applies**
+When an Extreme event is triggered.
+
+**How it works**
+Roll **1d6** or choose.
 
 | d6 | Event | Description |
 | :--- | :--- | :--- |
 | **1** | **Raid (Mechanoid)** | Kill-bots. **Lancer (15 pts)**, **Scyther (20 pts)**. |
-| **2** | **Raid (Siege)** | Pirates build mortars. **Bombardment** until attacked. |
+| **2** | **Raid (Siege)** | Pirates build mortars. Bombardment until attacked. |
 | **3** | **Volcanic Winter** | Ash blocks sun (-50% Light). **Farming Impossible**. |
 | **4** | **Mass Animal Insanity** | All animals on map turn Manhunter. |
 | **5** | **Defoliator Ship** | Kills plants in expanding radius. Spawns Mechanoids if attacked. |
-| **6** | **Insect Hive Emergence** | Massive infestation. **Megasipders (25 pts)** spawn. |
+| **6** | **Insect Hive Emergence** | Massive infestation. **Megaspiders (25 pts)** spawn. |
+
+**Edge cases**
+* Use combat rules from [Chapter 4: Survival & Combat](chapter_04_combat_and_survival.md).
+
+**Example: Extreme Event**
+A **Raid (Mechanoid)** brings a **Lancer (15)** and a **Scyther (20)** for a 35-point raid.
+
+---
 
 ### Story Die Integration
-When an event occurs, roll the **Story Die** (1d10) alongside player actions:
-*   **1 (Twist of Fate)**: Event has a silver lining (bonus loot, early warning).
-*   **10 (Complication)**: Event is worse than expected (more enemies, longer duration).
+
+**When it applies**
+After determining an event.
+
+**How it works**
+Roll the **Story Die (1d10)**:
+* **1 (Twist of Fate)**: Event has a silver lining (bonus loot, early warning).
+* **10 (Complication)**: Event is worse than expected (more enemies, longer duration).
+
+**Example: Story Die**
+A raid triggers and the Story Die shows **1**. The raiders arrive late, giving the colony time to prepare.
 
 ---
 
 ## Part 5: Quests
 
-Quests add variety and reward player initiative.
-
 ### Quest Types
 
+**When it applies**
+When the Storyteller offers a quest.
+
+**How it works**
+Choose a quest type and run the listed challenge and reward.
+
 **1. Rescue Mission**
-*   **Setup**: Faction member is captured/injured nearby.
-*   **Challenge**: Travel to location, fight captors, escort survivor back.
-*   **Reward**: +15 Goodwill, potential recruit.
+* **Setup**: A faction member is captured or injured.
+* **Challenge**: Travel, fight captors, escort survivor back.
+* **Reward**: +15 Goodwill, possible recruit.
 
 **2. Trade Request**
-*   **Setup**: Faction needs specific items (Medicine, Components, Food).
-*   **Challenge**: Deliver goods via caravan.
-*   **Reward**: +10 Goodwill, Silver payment (150% of item value).
+* **Setup**: A faction needs specific items.
+* **Challenge**: Deliver goods via caravan.
+* **Reward**: +10 Goodwill, Silver payment (150% of item value).
 
 **3. Raid Assistance**
-*   **Setup**: Ally faction is under attack. Requests military aid.
-*   **Challenge**: Travel to their base, defend against raiders.
-*   **Reward**: +25 Goodwill, bonus trade goods.
+* **Setup**: Ally faction is under attack.
+* **Challenge**: Travel and defend their base.
+* **Reward**: +25 Goodwill, bonus trade goods.
 
 **4. Artifact Recovery**
-*   **Setup**: Ancient structure contains valuable tech.
-*   **Challenge**: Navigate traps, fight guardians (Mechanoids).
-*   **Reward**: Advanced weapons, Components, or Psylink Neuroformer.
+* **Setup**: An ancient structure contains valuable tech.
+* **Challenge**: Navigate traps and guardians.
+* **Reward**: Advanced weapons, Components, or Psylink Neuroformer.
+
+**Edge cases**
+* Caravan rules are in [Chapter 4: Survival & Combat](chapter_04_combat_and_survival.md).
+
+**Example: Quest**
+The colony accepts a **Trade Request** and delivers **Medicine** for **+10 Goodwill** and extra Silver.
+
+---
 
 ### Quest Frequency
-Offer 1 quest every 10-15 days. Players can decline, but repeated refusals may lower Goodwill.
+
+**When it applies**
+When determining how often to offer quests.
+
+**How it works**
+Offer **1 quest every 10–15 days**. Repeated refusals may lower Goodwill.
+
+**Example: Quest Frequency**
+After declining two requests, the faction reduces Goodwill by **-10**.
 
 ---
 
 ## Part 6: Wealth Score Management
 
-Colony Wealth Score determines threat level. As players build and research, enemies grow stronger.
-
 ### Calculating Wealth Score
-**Wealth Score** = Tech Points + Building Points + Defense Points + Colonist Points
 
-See **Chapter 6: Colony Management** for detailed point values.
+**When it applies**
+When scaling threats.
 
-> **Note**: Defensive structures count towards Wealth Score, increasing raid difficulty. Security is a double-edged sword.
+**How it works**
+**Wealth Score = Tech Points + Building Points + Defense Points + Colonist Points**
+
+**Edge cases**
+* Point values are defined in [Chapter 6: Colony Management](chapter_06_colony.md).
+
+**Example: Wealth Score**
+The colony’s points total **50**, so raid points are **50**.
+
+---
 
 ### Threat Points System
-Instead of fixed numbers, use **Raid Points** to buy enemies.
-1.  **Calculate Score**: Wealth Score = Raid Points (1:1 ratio).
-2.  **Spend Points**: Buy units from the enemy faction list.
+
+**When it applies**
+When building raids from a budget.
+
+**How it works**
+1. **Wealth Score = Raid Points**.
+2. Spend Raid Points to buy enemies.
 
 | Wealth Score | Raid Points | Example Raid (Tribal) | Example Raid (Mech) |
 | :--- | :--- | :--- | :--- |
-| **15 (Start)** | **15 pts** | 3 Warriors (5pts ea) | 1 Lancer (15pts) |
+| **15 (Start)** | **15 pts** | 3 Warriors (5 pts ea) | 1 Lancer (15 pts) |
 | **30 (Early)** | **30 pts** | 6 Warriors | 1 Scyther, 1 Lancer |
 | **50 (Mid)** | **50 pts** | 10 Warriors | 2 Scythers, 1 Lancer |
-| **100 (Late)** | **100 pts** | 20 Warriors (Zerg) | 1 Centipede (60), 2 Scythers |
+| **100 (Late)** | **100 pts** | 20 Warriors | 1 Centipede, 2 Scythers |
 
-**Enemy Costs (Approx)**:
-*   **Tribal Warrior**: 5 pts
-*   **Pirate Gunner**: 10 pts
-*   **Elite Mercenary**: 25 pts
-*   **Warg / Wolf**: 10 pts
-*   **Lancer**: 15 pts
-*   **Scyther**: 20 pts
-*   **Centipede**: 60 pts
+**Enemy Costs (Approx)**
+* **Tribal Warrior**: 5 pts
+* **Pirate Gunner**: 10 pts
+* **Elite Mercenary**: 25 pts
+* **Warg / Wolf**: 10 pts
+* **Lancer**: 15 pts
+* **Scyther**: 20 pts
+* **Centipede**: 60 pts
+
+**Edge cases**
+* Enemy stat blocks are in [Chapter 7: The Rim](chapter_07_world.md).
+
+**Example: Threat Points**
+A 50-point raid could be **10 Tribal Warriors** or **2 Scythers + 1 Lancer**.
+
+---
 
 ### Balancing Tips
-*   **Don't Punish Success**: Wealth scaling should challenge, not punish. If players are struggling, reduce event frequency.
-*   **Reward Preparation**: If players invest in defenses (turrets, walls), let those defenses work.
-*   **Vary Threats**: Don't just send bigger raids. Use environmental disasters, infestations, and social challenges.
+
+**When it applies**
+When tuning difficulty.
+
+**How it works**
+* Don’t punish success; use scaling to challenge, not crush.
+* Reward preparation (defenses should matter).
+* Vary threat types beyond raids.
+
+**Example: Balance**
+If players are struggling, reduce event frequency or offer a relief quest.
 
 ---
 
 ## Part 7: Final Advice
 
 ### Embrace Failure
-RimWorld stories are best when things go wrong. A colonist's death, a failed defense, a mental break—these create drama. Don't save players from consequences, but give them tools to recover.
 
-### Let Players Drive
-If players want to focus on trading instead of combat, let them. If they want to raid pirates, support it. The best sessions emerge from player agency.
+**When it applies**
+When players fail or lose characters.
 
-### Use the Story Die
-The Story Die (1d10) is your secret weapon. It turns predictable events into memorable moments. A "1" on a raid roll might mean they're drunk and disorganized (Twist of Fate). A "10" might mean the raiders brought a Doomsday Rocket Launcher (Complication).
+**How it works**
+Let consequences stand, but provide recovery opportunities.
 
-### Have Fun
-You're not writing a novel—you're facilitating chaos. Laugh at disasters, celebrate victories, and remember: **every scar tells a story**.
+**Example: Failure**
+A colonist dies in a raid. The next week, a refugee Medic arrives as a possible recruit.
 
 ---
 
-*"The Rim is a harsh teacher. But those who survive? They become legends."*
+### Let Players Drive
+
+**When it applies**
+When players choose unexpected goals.
+
+**How it works**
+Support player-driven objectives and adjust events to match.
+
+**Example: Player Drive**
+If players focus on trade, introduce caravans and trade quests instead of constant raids.
+
+---
+
+### Use the Story Die
+
+**When it applies**
+During key events.
+
+**How it works**
+Let a **Story Die 1** create opportunity and a **Story Die 10** create pressure.
+
+**Example: Story Die Use**
+A Story Die **10** during a raid means the raiders brought a doomsday launcher.
+
+---
+
+### Have Fun
+
+**When it applies**
+Always.
+
+**How it works**
+Keep the pace sharp, the stakes clear, and the choices meaningful.
+
+**Example: Have Fun**
+End the session on a cliffhanger and ask players what they want to tackle next.

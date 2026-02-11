@@ -1,162 +1,345 @@
 # Chapter 3: Skills & Checks
 
-When the outcome of an action is uncertain, you roll the dice.
+When the outcome of an action is uncertain, you make a **Skill Check** (also called a **Colonist Roll** in Chapter 1). This chapter explains how checks work and what each skill covers.
 
 ---
 
-## The Core Mechanic
-To resolve any challenge, roll **2d10** and add your relevant **Attribute** and **Skill Modifier**.
+## Skill Check
 
-> **Result = 2d10 + Attribute + Skill Modifier**
+**When it applies**
+When a Colonist attempts an action with uncertain results and a skill is relevant.
 
-*Reminders from Chapter 1:*
-*   You always roll **two d10s**: one **Base Die** and one **Red Story Die**.
-*   The **Total** determines your Tier.
-*   The **Face** on the Story Die may trigger special effects (Twists or Complications).
+**How it works**
+1. Roll **2d10** (one **Base Die** and one **Story Die**).
+2. Add the relevant **Attribute**.
+3. Add your **Skill Modifier**.
+4. Compare the total to the **Tier of Success** table.
+5. Apply any Story Die effects (see [Chapter 1: Core Mechanics](chapter_01_core.md)).
 
-We do not use a "Pass/Fail" Difficulty Class. Instead, your Result determines the **Tier of Success**:
+**Edge cases**
+* The Story Die can trigger a **Twist of Fate** or **Complication** even if its value is discarded by **Augmented** or **Impaired** rolls.
+* Skill Modifiers are based on Skill Points (see below).
 
+**Example: Skill Check**
+Viper attempts a Social check with **Spirit +1** and **Social 25 (+2)**. She rolls **Base Die 6** and **Story Die 7**. Total = 6 + 7 + 1 + 2 = **16**, a **Tier 2 (Success)**.
+
+---
+
+## Tiers of Success
+
+**When it applies**
+After any Skill Check.
+
+**How it works**
 | Result | Tier | Outcome |
 | :--- | :--- | :--- |
-| **11 or lower** | **Tier 1 (Struggle)** | **Success with a Major Cost**. You achieve your goal, but things get messy. You are spotted, you take damage, or it costs extra resources. |
-| **12 - 16** | **Tier 2 (Success)** | **Standard Success**. You achieve your goal cleanly and effectively. |
-| **17 or higher** | **Tier 3 (Triumph)** | **Critical Success**. You win. Double damage, half time, or extra benefits. |
+| **11 or lower** | **Tier 1 (Struggle)** | **Success with a Major Cost**. You achieve the goal, but it costs time, resources, or safety. |
+| **12-16** | **Tier 2 (Success)** | **Standard Success**. You achieve the goal cleanly. |
+| **17 or higher** | **Tier 3 (Triumph)** | **Critical Success**. You achieve the goal with extra benefits. |
 
-> **Example: Negotiating**
->
-> **John**: "Viper is trying to negotiate a lower price for the medicine."
->
-> **Mary**: "Okay, Viper has **Spirit +1** and **Social 25 (+2)**. So I add +3 to my roll."
->
-> **Mary**: *(Rolls 2d10)* "I got a 6 and a 7. Total is 13 + 3 = 16."
->
-> **John**: "That's a **Tier 2 Success**. The trader agrees to your price without complaint."
+**Edge cases**
+* Combat outcomes use the combat rules in [Chapter 4: Survival & Combat](chapter_04_combat_and_survival.md).
+* Colony task outputs (Food, CP, RP) are listed in [Chapter 6: Colony Management](chapter_06_colony.md).
 
-### Where is the Difficulty?
-There are no "DCs" to beat. Difficulty is handled through **Modifiers** and **Narrative Consequences**.
-*   **Easy Task**: The Storyteller might rule it succeeds automatically, or grant an **Edge (+2)**.
-*   **Hard Task**: The Storyteller will apply a **Bane (-2)**, or warn that a Tier 1 result will have severe consequences.
+**Example: Tier Result**
+Marla rolls a total of **10** on a Construction check. She succeeds with a **Tier 1 (Struggle)** result and finishes the job, but uses extra materials.
 
-### Skill Modifiers
-Your **Skill Points** (0-30) determine your modifier for the roll.
-*   **0-9 Points**: +0
-*   **10-19 Points**: +1
-*   **20-29 Points**: +2
-*   **30 Points**: +3 (Master)
+---
+
+## Difficulty Without DCs
+
+**When it applies**
+When the Storyteller needs to adjust how hard a check is.
+
+**How it works**
+1. For easy tasks, grant **Edge (+2)** or allow automatic success.
+2. For hard tasks, apply **Bane (-2)** or make the cost of **Tier 1** severe.
+3. For extreme tasks, use **Double Edge** or **Double Bane** shifts.
+
+**Edge cases**
+* Some subsystems list specific DCs (for example, Term Survival in [Chapter 2: Character Creation](chapter_02_character_creation.md)). Use those rules as written.
+
+**Example: Difficulty Without DCs**
+A simple lock is old and rusted. The Storyteller rules it opens automatically without a roll. A high-tech vault in combat gets **Bane** and a harsh Tier 1 cost.
+
+---
+
+## Skill Modifiers
+
+**When it applies**
+Whenever you add a skill to a check.
+
+**How it works**
+Your **Skill Points** (0–30) determine your **Skill Modifier**.
+
+| Skill Points | Modifier |
+| :--- | ---: |
+| 0–9 | +0 |
+| 10–19 | +1 |
+| 20–29 | +2 |
+| 30 | +3 |
+
+**Edge cases**
+* The starting **Skill Cap** is **30** (see [Chapter 2: Character Creation](chapter_02_character_creation.md)).
+
+**Example: Skill Modifier**
+Sana has **Animals 22**. Her Skill Modifier is **+2**.
 
 ---
 
 ## Modifiers
-Circumstances can help or hinder you.
 
-### Minor Modifiers (+2 / -2)
-*   **Edge (+2)**: Minor advantage (High ground, good tools).
-*   **Bane (-2)**: Minor disadvantage (Darkness, poor tools).
+### Edge and Bane
 
-> **Example: Edge & Bane**
->
-> **John**: "You're shooting at the raider, but it's dark (**Bane**). However, you have a high-quality scope (**Edge**)."
->
-> **Mary**: "So the Edge and Bane cancel out?"
->
-> **John**: "Exactly. Just roll straight. 2d10 + Dexterity + Shooting."
+**When it applies**
+When a circumstance gives a minor advantage or disadvantage.
 
-### Double Modifiers
-*   **Double Edge**: If you have 2+ sources of Edge, shift your Result **UP one Tier** (e.g., Tier 2 becomes Tier 3).
-*   **Double Bane**: If you have 2+ sources of Bane, shift your Result **DOWN one Tier**.
+**How it works**
+* **Edge** adds **+2** to the roll.
+* **Bane** subtracts **-2** from the roll.
 
-> **Example: Double Edge**
->
-> **John**: "You have the high ground (**Edge**) AND the raider is out in the open (**Edge**). That's **Double Edge**."
->
-> **Mary**: "So if I succeed, the result is upgraded?"
->
-> **John**: "Yes. A **Tier 2 (Success)** becomes a **Tier 3 (Triumph)**. A **Tier 1 (Struggle)** becomes a **Tier 2 (Success)**."
+**Edge cases**
+* Cover, lighting, and positioning are common sources (see [Chapter 4: Survival & Combat](chapter_04_combat_and_survival.md)).
 
-### Cancel Modifiers
-*   **Cancel**: If a Player has one **Edge** and one **Bane**, they will cancel each other out. If you have more sources of Edge than Bane, you can cancel all sources of Bane and keep with one source of Edge. The reverse also applies.
+**Example: Edge and Bane**
+Viper shoots in darkness (**Bane**) but has a laser sight (**Edge**). The modifiers cancel, so she rolls normally.
 
-### Major Modifiers (3d10)
-*   **Augmented**: Major advantage (Bionics, drugs, perfect position). Roll **3d10** and keep the **2 Highest**.
-*   **Impaired**: Major disadvantage (Blindness, toxicity, suppression). Roll **3d10** and keep the **2 Lowest**.
+### Double Edge and Double Bane
 
-> **Example: Augmented**
->
-> **John**: "Viper has a bionic eye targeting system. That counts as **Augmented** for this shot."
->
-> **Mary**: "Okay, I roll **3d10** and keep the highest two."
->
-> **Mary**: *(Rolls 3, 8, 9)* "I keep the 8 and 9. Total 17 + Modifiers."
+**When it applies**
+When you have at least two sources of Edge or Bane.
 
-*Note: You can not have both Edge and Augmented on the same roll.*
+**How it works**
+* **Double Edge**: Shift your result **up one Tier**.
+* **Double Bane**: Shift your result **down one Tier**.
 
-*Note: The result of the Story Die is **always** applied, even if its value is discarded in an Augmented or Impaired roll.*
+**Edge cases**
+* The shift happens after you total the roll.
+
+**Example: Double Edge**
+Marla rolls **14** on a Shooting check (Tier 2). She has **two** Edges (high ground and target in the open), so the result shifts to **Tier 3**.
+
+### Cancel
+
+**When it applies**
+When you have both Edge and Bane.
+
+**How it works**
+* Cancel one Edge against one Bane.
+* If one side remains, apply **one** Edge or **one** Bane.
+
+**Edge cases**
+* You never apply more than one remaining Edge or Bane after cancellation.
+
+**Example: Cancel**
+Oren has **two** Banes (rain and smoke) and **one** Edge (stabilized rifle). One Bane cancels the Edge, leaving **one Bane** applied to the roll.
+
+### Augmented and Impaired
+
+**When it applies**
+When a circumstance grants a major advantage or disadvantage.
+
+**How it works**
+* **Augmented**: Roll **3d10 (keep highest 2)**.
+* **Impaired**: Roll **3d10 (keep lowest 2)**.
+
+**Edge cases**
+* Augmented/Impaired replace Edge and Bane.
+* The Story Die effect still applies even if its value is discarded.
+
+**Example: Augmented**
+Ivo performs surgery with a glitterworld kit. He rolls **3d10**: **Story Die 1**, **Base Die 8**, extra die **9**. He keeps **9 + 8 = 17**, then adds **Mind +2** and **Medical 30 (+3)** for a total of **22** (Tier 3). The **Story Die 1** triggers a Twist of Fate.
+
+**Example: Impaired**
+Sana fires while suppressed (**Impaired**). She rolls **3d10**: **Story Die 10**, **Base Die 4**, extra die **7**. She keeps **4 + 7 = 11**, then adds **Dexterity +2** and **Shooting 20 (+2)** for a total of **15** (Tier 2). The **Story Die 10** triggers a Complication.
 
 ---
 
 ## Pushing Your Luck
-Life on the Rim is desperate. You can push yourself beyond your limits.
-*   **The Push**: You can voluntarily gain **+1 Stress** to add **+1d6** to your roll.
-*   **The Risk**: If the **d6** rolls a **1**, you trigger a **Panic Check** immediately after the action (regardless of success or failure).
 
-> **Example: The Push**
->
-> **Mary**: "I rolled an 11 (Tier 1)... I really need a clean success to fix the generator! Can I push it?"
->
-> **John**: "You can. Add **1d6** to the total to try and hit 12+, but if you roll a **1** on that die, you panic."
->
-> **Mary**: "I have to try. Come on..." *(Rolls d6)* "I got a 4! Total is 15. Tier 2 Success!"
->
-> **John**: "You wipe the sweat from your brow. The generator hums to life."
+**When it applies**
+When you voluntarily risk Stress to improve a roll.
+
+**How it works**
+1. Declare a **Push**.
+2. Add **+1 Stress**.
+3. Roll **1d6** and add it to your total.
+4. If the **d6** shows **1**, trigger a **Panic Check** (see [Chapter 4: Survival & Combat](chapter_04_combat_and_survival.md)).
+
+**Edge cases**
+* The Push happens after the initial roll but before Tiers are applied.
+
+**Example: Push**
+Tess rolls **9** on an Intellectual check with **Mind +2** and **Intellectual 10 (+1)** for a total of **12** (Tier 2). She Pushes, gains **+1 Stress**, rolls **1d6 = 3**, and the total becomes **15** (still Tier 2). If the d6 had been a **1**, she would immediately make a Panic Check after the action.
 
 ---
 
 ## Skill List
 
 ### Shooting (Dexterity)
-*   **Uses**: Firing ranged weapons, operating turrets, using mortars.
-*   **Special**: **Cover** provides Edge/Bane on Shooting checks (see Combat Rules).
+
+**When it applies**
+Ranged attacks, turrets, and mortars.
+
+**How it works**
+Make a Skill Check using **Dexterity + Shooting**. Tier results determine hit quality and damage in [Chapter 4: Survival & Combat](chapter_04_combat_and_survival.md).
+
+**Edge cases**
+* Cover and range bands apply (Chapter 4).
+
+**Example: Shooting**
+Viper rolls **Base Die 7** and **Story Die 4** with **Dexterity +1** and **Shooting 20 (+2)**. Total = 7 + 4 + 1 + 2 = **14** (Tier 2). She deals standard weapon damage.
 
 ### Melee (Vigor)
-*   **Uses**: Hand-to-hand combat, blunt weapons, bladed weapons.
 
+**When it applies**
+Hand-to-hand combat with blades or blunt weapons.
+
+**How it works**
+Make a Skill Check using **Vigor + Melee**. Tier results determine hit quality and damage in Chapter 4.
+
+**Edge cases**
+* Entering Melee range is defined in [Chapter 4: Survival & Combat](chapter_04_combat_and_survival.md).
+
+**Example: Melee**
+Marla rolls **Base Die 5** and **Story Die 6** with **Vigor +2** and **Melee 10 (+1)**. Total = 5 + 6 + 2 + 1 = **14** (Tier 2).
 
 ### Construction (Vigor)
-*   **Uses**: Building structures, repairing walls, deconstructing ruins.
-*   **Quality**: High rolls result in more **Construction Points (CP)**.
+
+**When it applies**
+Building, repairing, or dismantling structures.
+
+**How it works**
+Make a Skill Check using **Vigor + Construction**. Convert the Tier to **Construction Points (CP)** in [Chapter 6: Colony Management](chapter_06_colony.md).
+
+**Edge cases**
+* Some Facilities require specific Tech Levels (Chapter 6).
+
+**Example: Construction**
+Marla rolls **Base Die 8** and **Story Die 3** with **Vigor +2** and **Construction 20 (+2)**. Total = 8 + 3 + 2 + 2 = **15** (Tier 2), yielding **5 CP**.
 
 ### Mining (Vigor)
-*   **Uses**: Digging through rock, extracting ore, smoothing floors.
-*   **Yield**: Higher results yield more **Ore** and may reveal rare **Components** or **Gold**.
+
+**When it applies**
+Digging, extracting ore, and smoothing stone.
+
+**How it works**
+Make a Skill Check using **Vigor + Mining**. Convert the Tier to resource yields in Chapter 6.
+
+**Edge cases**
+* Certain biomes grant Mining modifiers (see [Chapter 7: The Rim](chapter_07_world.md)).
+
+**Example: Mining**
+Oren rolls **Base Die 6** and **Story Die 2** with **Vigor +1** and **Mining 10 (+1)**. Total = 6 + 2 + 1 + 1 = **10** (Tier 1), yielding **1 Ore**.
 
 ### Cooking (Dexterity)
-*   **Uses**: Preparing meals, butchering corpses, brewing drugs.
-*   **Safety**: Failed checks can result in **Food Poisoning** (Bane on all rolls for 24h).
+
+**When it applies**
+Preparing meals, butchering, and processing food.
+
+**How it works**
+Make a Skill Check using **Dexterity + Cooking**. Use the Cooking conversion outputs in Chapter 6.
+
+**Edge cases**
+* Food poisoning risks are handled in [Chapter 4: Survival & Combat](chapter_04_combat_and_survival.md).
+
+**Example: Cooking**
+Ivo rolls **Base Die 7** and **Story Die 5** with **Dexterity -1** and **Cooking 20 (+2)**. Total = 7 + 5 - 1 + 2 = **13** (Tier 2), converting **2 Food** into **3 Meals**.
 
 ### Plants (Mind)
-*   **Uses**: Sowing crops, harvesting, cutting trees, foraging.
-*   **Yield**: Higher rolls increase the amount of food/wood harvested.
+
+**When it applies**
+Sowing, harvesting, foraging, and cutting trees.
+
+**How it works**
+Make a Skill Check using **Mind + Plants**. Use the yield table in Chapter 6.
+
+**Edge cases**
+* Biome modifiers can apply (Chapter 7).
+
+**Example: Plants**
+Sana rolls **Base Die 9** and **Story Die 4** with **Mind +0** and **Plants 20 (+2)**. Total = 9 + 4 + 0 + 2 = **15** (Tier 2).
 
 ### Animals (Spirit)
-*   **Uses**: Taming wild beasts, training pets, handling livestock.
-*   **Risk**: Failed Taming checks on predators trigger an immediate attack (Manhunter).
+
+**When it applies**
+Taming, training, and handling animals.
+
+**How it works**
+Make a Skill Check using **Spirit + Animals**. The Storyteller applies the Tier to the animal’s response.
+
+**Edge cases**
+* Failed checks against predators can trigger a Manhunter reaction (Chapter 4).
+
+**Example: Animals**
+Tess rolls **Base Die 5** and **Story Die 2** with **Spirit +0** and **Animals 10 (+1)**. Total = 5 + 2 + 0 + 1 = **8** (Tier 1). The muffalo resists and wanders off.
 
 ### Crafting (Dexterity)
-*   **Uses**: Smithing weapons, tailoring clothes, machining components.
-*   **Quality**: The result of your check determines the **Item Quality** (Poor, Normal, Good, Excellent, Masterwork, Legendary).
+
+**When it applies**
+Smithing, tailoring, machining, and assembly work.
+
+**How it works**
+Make a Skill Check using **Dexterity + Crafting**. The result determines **Item Quality** in [Chapter 5: Equipment & Economy](chapter_05_equipment.md).
+
+**Edge cases**
+* Crafting Points (CP) are earned through colony work in Chapter 6.
+
+**Example: Crafting**
+Oren rolls **Base Die 8** and **Story Die 8** with **Dexterity +1** and **Crafting 30 (+3)**. Total = 8 + 8 + 1 + 3 = **20** (Tier 3), producing **Masterwork** quality.
 
 ### Artistic (Spirit)
-*   **Uses**: Creating sculptures, playing music, social recreation.
-*   **Effect**: High-quality art provides a permanent **Mood Bonus** to anyone in the room.
+
+**When it applies**
+Creating sculptures, music, or morale-boosting art.
+
+**How it works**
+Make a Skill Check using **Spirit + Artistic**. The Tier sets the art’s quality and Mood impact.
+
+**Edge cases**
+* Mood effects are handled in [Chapter 4: Survival & Combat](chapter_04_combat_and_survival.md).
+
+**Example: Artistic**
+Marla rolls **Base Die 6** and **Story Die 6** with **Spirit -1** and **Artistic 20 (+2)**. Total = 6 + 6 - 1 + 2 = **13** (Tier 2). The art grants a modest Mood bonus.
 
 ### Medical (Mind)
-*   **Uses**: Tending wounds, performing surgery, treating disease.
-*   **Critical**: Surgery failures can cause catastrophic damage (loss of limb or death).
+
+**When it applies**
+Tending wounds, surgery, and disease treatment.
+
+**How it works**
+Make a Skill Check using **Mind + Medical**. Apply healing effects and risks per Chapter 4.
+
+**Edge cases**
+* Medicine items are in [Chapter 5: Equipment & Economy](chapter_05_equipment.md).
+
+**Example: Medical**
+Ivo rolls **Base Die 6** and **Story Die 6** with **Mind +2** and **Medical 30 (+3)**. Total = 6 + 6 + 2 + 3 = **17** (Tier 3). The patient stabilizes quickly.
 
 ### Social (Spirit)
-*   **Uses**: Trading (better prices), recruiting prisoners, peace talks, calming mental breaks.
-*   **Leader**: The Colonist with the highest Social skill is usually the Warden/Leader.
+
+**When it applies**
+Trading, recruiting, peace talks, and calming others.
+
+**How it works**
+Make a Skill Check using **Spirit + Social**. Apply effects using the relevant subsystem (trade in Chapter 5, recruitment in Chapter 6, factions in Chapter 7).
+
+**Edge cases**
+* Some Social outcomes depend on Goodwill (Chapter 7).
+
+**Example: Social**
+Viper rolls **Base Die 7** and **Story Die 5** with **Spirit +1** and **Social 20 (+2)**. Total = 7 + 5 + 1 + 2 = **15** (Tier 2). The trader agrees to a fair price.
 
 ### Intellectual (Mind)
-*   **Uses**: Researching new tech, hacking ancient terminals, scanning for minerals.
-*   **Progress**: Research is a **Long Task** that requires cumulative successes to unlock.
+
+**When it applies**
+Research, scanning, and solving technical problems.
+
+**How it works**
+Make a Skill Check using **Mind + Intellectual**. Apply research progress in Chapter 6.
+
+**Edge cases**
+* Long tasks like Research require cumulative progress (Chapter 6).
+
+**Example: Intellectual**
+Tess rolls **Base Die 9** and **Story Die 3** with **Mind +2** and **Intellectual 20 (+2)**. Total = 9 + 3 + 2 + 2 = **16** (Tier 2), granting **50 RP**.

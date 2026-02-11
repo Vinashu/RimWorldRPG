@@ -1,0 +1,41 @@
+terms:
+  - term: Action Points (AP)
+    definition: The 4-point action budget used each combat turn.
+  - term: Attribute
+    definition: One of Vigor, Dexterity, Mind, or Spirit.
+  - term: Augmented
+    definition: Major advantage; roll 3d10 and keep the highest 2.
+  - term: Bane
+    definition: A minor disadvantage, usually -2.
+  - term: Base Die
+    definition: The non-story d10 in a Skill Check.
+  - term: Colonist
+    definition: A player character.
+  - term: Edge
+    definition: A minor advantage, usually +2.
+  - term: Impaired
+    definition: Major disadvantage; roll 3d10 and keep the lowest 2.
+  - term: Inspiration Point
+    definition: A point spent to reroll, add a die, or reduce Stress.
+  - term: Mental Break
+    definition: A consequence of high Stress resolved by a Panic Check.
+  - term: Panic Check
+    definition: 1d6 + Current Stress, used to resolve Mental Breaks.
+  - term: Quadrum
+    definition: One of four 15-day seasons.
+  - term: Range Band
+    definition: Melee, Close, Medium, or Far.
+  - term: Skill Check
+    definition: Base Die + Story Die + Attribute + Skill Modifier.
+  - term: Skill Modifier
+    definition: Floor(Skill Points / 10).
+  - term: Story Die
+    definition: The red d10 that creates Twists or Complications.
+  - term: Storyteller (ST)
+    definition: The GM role that runs the world and adversaries.
+  - term: Stress
+    definition: Accumulated pressure from needs and events.
+  - term: Tier of Success
+    definition: The result band: Struggle, Success, or Triumph.
+  - term: Twist of Fate
+    definition: Positive Story Die effect when the Story Die shows 1.
