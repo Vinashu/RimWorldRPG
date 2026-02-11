@@ -1,5 +1,8 @@
 # Chapter 1: Introduction & Core Mechanics
 
+[Art: chapter_art/ch01_intro_core_01.png
+Purpose: Chapter opener establishing frontier survival tone and core cast]
+
 ## Welcome to the Rim
 
 You are stranded. You are lightyears from the glitterworlds, on a lawless frontier planet known as a **Rimworld**. There is no government here, no safety net, and no faster-than-light travel to take you home.
@@ -9,6 +12,9 @@ This is a Tabletop Roleplaying Game (TTRPG), a conversation between friends wher
 
 * **The Storyteller (ST)**: The host of the game. They describe the world, play the enemies (Raiders, Mechanoids), and control the flow of the story. They are not your enemy; they are the director of the drama.
 * **The Players**: You. You each control a **Colonist** (your character). You make decisions, roll dice, and try to keep your colony alive.
+
+[Art: spot/ch01_what_is_this_game_01.png
+Purpose: Visualize the Storyteller + players conversation at the table]
 
 ### The Rim Experience
 In this game, you will tell the story of your colony's struggle and triumph.
@@ -35,12 +41,18 @@ Use a Colonist Roll for any action with an uncertain outcome.
 3. Add the **Skill Modifier**.
 4. Compare the total to the **Tier of Success** table.
 
+[Art: diagrams/ch01_colonist_roll_flow_01.png
+Purpose: Flowchart of the Colonist Roll steps and Story Die triggers]
+
 **Edge cases**
 * **Skill Modifier** = `Floor(Skill Points / 10)`. See [Chapter 3: Skills & Checks](chapter_03_skills_and_checks.md).
 * The Story Die effect applies even if its value is discarded by **Augmented** or **Impaired** rolls.
 
 **Example: Colonist Roll**
 Viper fires at a raider with **Dexterity +1** and **Shooting 20 (+2)**. She rolls **Base Die 6** and **Story Die 4**. Total = 6 + 4 + 1 + 2 = **13**, which is a **Tier 2 (Success)**. The Story Die is 4, so no special effect triggers.
+
+[Art: spot/ch01_colonist_roll_example_01.png
+Purpose: Visual anchor for the Colonist Roll example (Jax aiming from cover)]
 
 ### Tiers of Success
 
@@ -102,6 +114,9 @@ When you choose to risk extra stress for a better outcome.
 
 **Example: Push**
 Oren is building a barricade with **Vigor +1** and **Construction 10 (+1)**. He rolls **Base Die 4** and **Story Die 3** for a total of 4 + 3 + 1 + 1 = **9** (Tier 1). He **Pushes**, rolls **1d6 = 5**, and the new total is **14** (Tier 2). If that d6 had been a **1**, he would trigger a Panic Check.
+
+[Art: spot/ch01_push_example_01.png
+Purpose: Show the risk-reward moment of a Push (Tala building a barricade)]
 
 ---
 
@@ -175,6 +190,9 @@ When planning colony activities and daily schedules.
 * **Night**: 8 hours (Sleep/Rest).
 * The remaining hour covers meals and transitions.
 
+[Art: diagrams/ch01_day_quadrum_01.png
+Purpose: Visual timeline for Day segments + Quadrum cycle]
+
 **Edge cases**
 * The day loop procedures are expanded in [Chapter 6: Colony Management](chapter_06_colony.md).
 
@@ -209,6 +227,9 @@ During combat scenes.
 * **Close**: Short range. Shotguns, pistols, and grenades are strong here.
 * **Medium**: Standard combat range. Assault rifles and LMGs are optimal.
 * **Far**: Long range. Sniper rifles and artillery dominate.
+
+[Art: diagrams/ch01_range_bands_01.png
+Purpose: Diagram of Melee/Close/Medium/Far with weapon icons]
 
 **Edge cases**
 * Entering **Melee** locks you in combat. Disengaging is defined in [Chapter 4: Survival & Combat](chapter_04_combat_and_survival.md).
@@ -266,3 +287,6 @@ When traveling between map tiles.
 
 **Example: Caravan Travel**
 A caravan needs to cross **3 Hexes** of road. At roughly **1 Hex per day**, they arrive in about **3 days**, faster if mounts or roads add speed.
+
+[Art: spot/ch01_caravan_movement_01.png
+Purpose: Simple caravan travel across a hex map]

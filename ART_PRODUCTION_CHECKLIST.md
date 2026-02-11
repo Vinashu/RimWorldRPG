@@ -1,7 +1,3 @@
-> `ART_PRODUCTION_CHECKLIST.md`
-
----
-
 # ✅ RIMWORLDRPG — ART PRODUCTION CHECKLIST
 
 ---
@@ -164,15 +160,3 @@ You:
 ✔ Then move to chapter art
 
 Parallel pipeline = fast progress.
-
----
-
-# 🔔 Reminder (as requested!)
-
-👉 Next step after this:
-
-**B) Cover art direction that sells the game instantly**
-AND
-**C) Layout + art pipeline workflow for Codex**
-
-We’ll do B next when you’re ready 😉
