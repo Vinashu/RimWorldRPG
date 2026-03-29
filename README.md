@@ -1,4 +1,4 @@
-[![GitHub](./images/RimWorldRPG.png)](https://vinashu.github.io/RimWorldRPG/)
+[![GitHub](./images/logo/RimWorldRPG.png)](https://vinashu.github.io/RimWorldRPG/)
 # RimWorld RPG
 ### *A Tabletop Roleplaying Game of Survival, Drama, and Colony Management*
 
