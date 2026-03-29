@@ -177,96 +177,96 @@ During a Term, Viper gains a **Medical Passion**. At session end, she assigns XP
 **Survival**: Vigor (DC 12)
 **Skills**: Shooting, Melee, Medical, Construction.
 **Events (1d10)**:
-1. **Disaster** — (1) Unit wiped out; gain **PTSD** (Trait). (2) Salvage a shotgun from the wreckage. (3) Lose your left eye. (4) Receive a bionic eye and **+5** to each Space Marine skill.
-2-3. **Live Fire Drills** — (1) **+5** Shooting. (2) Gain a **Shooting Passion**. (3) **+10** Shooting. (4) **+10** Shooting and a Shooting Passion.
-4-5. **Boarding Action** — (1) **+5** Melee. (2) Gain a **Melee Passion**. (3) **+10** Melee. (4) **+10** Melee and a Melee Passion.
-6-7. **Field Medic** — (1) **+5** Medical. (2) Gain a **Medical Passion**. (3) **+10** Medical. (4) **+10** Medical and a Medical Passion.
-8-9. **Combat Engineer** — (1) **+5** Construction. (2) Gain a **Construction Passion**. (3) **+10** Construction. (4) **+10** Construction and a Construction Passion.
-10. **Legend of the Rim** — (1) Gain **Iron Will** (Trait). (2) Lose your left hand. (3) Gain a prosthetic hand. (4) Gain a bionic hand and **+5** to each Space Marine skill.
+- 1: **Disaster** — (1) Unit wiped out; gain **PTSD** (Trait). (2) Salvage a shotgun from the wreckage. (3) Lose your left eye. (4) Receive a bionic eye and **+5** to each Space Marine skill.
+- 2-3: **Live Fire Drills** — (1) **+5** Shooting. (2) Gain a **Shooting Passion**. (3) **+10** Shooting. (4) **+10** Shooting and a Shooting Passion.
+- 4-5: **Boarding Action** — (1) **+5** Melee. (2) Gain a **Melee Passion**. (3) **+10** Melee. (4) **+10** Melee and a Melee Passion.
+- 6-7: **Field Medic** — (1) **+5** Medical. (2) Gain a **Medical Passion**. (3) **+10** Medical. (4) **+10** Medical and a Medical Passion.
+- 8-9: **Combat Engineer** — (1) **+5** Construction. (2) Gain a **Construction Passion**. (3) **+10** Construction. (4) **+10** Construction and a Construction Passion.
+- 10: **Legend of the Rim** — (1) Gain **Iron Will** (Trait). (2) Lose your left hand. (3) Gain a prosthetic hand. (4) Gain a bionic hand and **+5** to each Space Marine skill.
 
 #### Planetary Miner
 **Titles**: Digger (1) -> Blaster (2) -> Foreman (3) -> Deep Driller (4).
 **Survival**: Vigor (DC 12)
 **Skills**: Mining, Construction, Melee, Plants.
 **Events (1d10)**:
-1. **Mine Collapse** — (1) Trapped for days; gain **Claustrophobia** (Trait). (2) Find a **Steel Pickaxe** (Weapon). (3) Crushed leg (Lose Leg). (4) Gain a **Bionic Leg** and **+5** to each Miner skill.
-2-3. **Deep Vein** — (1) **+5** Mining. (2) Gain a **Mining Passion**. (3) **+10** Mining. (4) **+10** Mining and a Mining Passion.
-4-5. **Tunnel Reinforcement** — (1) **+5** Construction. (2) Gain a **Construction Passion**. (3) **+10** Construction. (4) **+10** Construction and a Construction Passion.
-6-7. **Hydroponics Pilot** — (1) **+5** Plants. (2) Gain a **Plants Passion**. (3) **+10** Plants. (4) **+10** Plants and a Plants Passion.
-8-9. **Wildlife Lookout** — (1) **+5** Shooting. (2) Gain a **Shooting Passion**. (3) **+10** Shooting. (4) **+10** Shooting and a Shooting Passion.
-10. **Motherlode** — (1) Gain **Tough** (Trait). (2) Lose your right leg. (3) Gain a **Prosthetic Leg**. (4) Gain a **Bionic Leg** and **+5** to each Miner skill.
+- 1: **Mine Collapse** — (1) Trapped for days; gain **Claustrophobia** (Trait). (2) Find a **Steel Pickaxe** (Weapon). (3) Crushed leg (Lose Leg). (4) Gain a **Bionic Leg** and **+5** to each Miner skill.
+- 2-3: **Deep Vein** — (1) **+5** Mining. (2) Gain a **Mining Passion**. (3) **+10** Mining. (4) **+10** Mining and a Mining Passion.
+- 4-5: **Tunnel Reinforcement** — (1) **+5** Construction. (2) Gain a **Construction Passion**. (3) **+10** Construction. (4) **+10** Construction and a Construction Passion.
+- 6-7: **Hydroponics Pilot** — (1) **+5** Plants. (2) Gain a **Plants Passion**. (3) **+10** Plants. (4) **+10** Plants and a Plants Passion.
+- 8-9: **Wildlife Lookout** — (1) **+5** Shooting. (2) Gain a **Shooting Passion**. (3) **+10** Shooting. (4) **+10** Shooting and a Shooting Passion.
+- 10: **Motherlode** — (1) Gain **Tough** (Trait). (2) Lose your right leg. (3) Gain a **Prosthetic Leg**. (4) Gain a **Bionic Leg** and **+5** to each Miner skill.
 
 #### Assassin
 **Titles**: Killer (1) -> Hitman (2) -> Slayer (3) -> Reaper (4).
 **Survival**: Dexterity (DC 12)
 **Skills**: Shooting, Melee, Crafting, Social.
 **Events (1d10)**:
-1. **Hunted** — (1) Hunters are everywhere; gain **Nervous** (Trait). (2) Keep a **Plasteel Knife** from a target. (3) Lose your left arm escaping a trap. (4) Gain a **Bionic Arm** and **+5** to each Assassin skill.
-2-3. **Contract** — (1) **+5** Shooting. (2) Gain a **Shooting Passion**. (3) **+10** Shooting. (4) **+10** Shooting and a Shooting Passion.
-4-5. **Close Work** — (1) **+5** Melee. (2) Gain a **Melee Passion**. (3) **+10** Melee. (4) **+10** Melee and a Melee Passion.
-6-7. **Black Market Tools** — (1) **+5** Crafting. (2) Gain a **Crafting Passion**. (3) **+10** Crafting. (4) **+10** Crafting and a Crafting Passion.
-8-9. **Social Integration** — (1) **+5** Social. (2) Gain a **Social Passion**. (3) **+10** Social. (4) **+10** Social and a Social Passion.
-10. **Legend** — (1) Gain **Bloodlust** (Trait). (2) Lose your right arm in a duel. (3) Gain a **Prosthetic Arm**. (4) Gain a **Bionic Arm** and **+5** to each Assassin skill.
+- 1: **Hunted** — (1) Hunters are everywhere; gain **Nervous** (Trait). (2) Keep a **Plasteel Knife** from a target. (3) Lose your left arm escaping a trap. (4) Gain a **Bionic Arm** and **+5** to each Assassin skill.
+- 2-3: **Contract** — (1) **+5** Shooting. (2) Gain a **Shooting Passion**. (3) **+10** Shooting. (4) **+10** Shooting and a Shooting Passion.
+- 4-5: **Close Work** — (1) **+5** Melee. (2) Gain a **Melee Passion**. (3) **+10** Melee. (4) **+10** Melee and a Melee Passion.
+- 6-7: **Black Market Tools** — (1) **+5** Crafting. (2) Gain a **Crafting Passion**. (3) **+10** Crafting. (4) **+10** Crafting and a Crafting Passion.
+- 8-9: **Social Integration** — (1) **+5** Social. (2) Gain a **Social Passion**. (3) **+10** Social. (4) **+10** Social and a Social Passion.
+- 10: **Legend** — (1) Gain **Bloodlust** (Trait). (2) Lose your right arm in a duel. (3) Gain a **Prosthetic Arm**. (4) Gain a **Bionic Arm** and **+5** to each Assassin skill.
 
 #### Drifter
 **Titles**: Vagabond (1) -> Wanderer (2) -> Traveler (3) -> Cosmopolitan (4).
 **Survival**: Dexterity (DC 12)
 **Skills**: Social, Melee, Plants, Construction.
 **Events (1d10)**:
-1. **Mugged** — (1) Beaten badly; gain **Wimp** (Trait). (2) Keep a **Shiv** used for defense. (3) Lose your left eye in a brawl. (4) Gain a **Bionic Eye** and **+5** to each Drifter skill.
-2-3. **Scavenged Tools** — (1) **+5** Construction. (2) Gain a **Construction Passion**. (3) **+10** Construction. (4) **+10** Construction and a Construction Passion.
-4-5. **Farmhand for Hire** — (1) **+5** Plants. (2) Gain a **Plants Passion**. (3) **+10** Plants. (4) **+10** Plants and a Plants Passion.
-6-7. **Streetwise** — (1) **+5** Social. (2) Gain a **Social Passion**. (3) **+10** Social. (4) **+10** Social and a Social Passion.
-8-9. **Bar Brawls** — (1) **+5** Melee. (2) Gain a **Melee Passion**. (3) **+10** Melee. (4) **+10** Melee and a Melee Passion.
-10. **Fortune** — (1) Gain **Beautiful** (Trait) after a makeover. (2) Lose your right eye to infection. (3) Gain a **Prosthetic Eye**. (4) Gain a **Bionic Eye** and **+5** to each Drifter skill.
+- 1: **Mugged** — (1) Beaten badly; gain **Wimp** (Trait). (2) Keep a **Shiv** used for defense. (3) Lose your left eye in a brawl. (4) Gain a **Bionic Eye** and **+5** to each Drifter skill.
+- 2-3: **Scavenged Tools** — (1) **+5** Construction. (2) Gain a **Construction Passion**. (3) **+10** Construction. (4) **+10** Construction and a Construction Passion.
+- 4-5: **Farmhand for Hire** — (1) **+5** Plants. (2) Gain a **Plants Passion**. (3) **+10** Plants. (4) **+10** Plants and a Plants Passion.
+- 6-7: **Streetwise** — (1) **+5** Social. (2) Gain a **Social Passion**. (3) **+10** Social. (4) **+10** Social and a Social Passion.
+- 8-9: **Bar Brawls** — (1) **+5** Melee. (2) Gain a **Melee Passion**. (3) **+10** Melee. (4) **+10** Melee and a Melee Passion.
+- 10: **Fortune** — (1) Gain **Beautiful** (Trait) after a makeover. (2) Lose your right eye to infection. (3) Gain a **Prosthetic Eye**. (4) Gain a **Bionic Eye** and **+5** to each Drifter skill.
 
 #### Glitterworld Surgeon
 **Titles**: Intern (1) -> Resident (2) -> Specialist (3) -> Head Surgeon (4).
 **Survival**: Mind (DC 12)
 **Skills**: Medical, Intellectual, Social, Crafting.
 **Events (1d10)**:
-1. **Malpractice** — (1) Patient died; gain **Exiled** (Trait). (2) Steal a **Medkit** before fleeing. (3) Lose your left hand in a punishment ritual. (4) Gain a **Bionic Hand** and **+5** to each Surgeon skill.
-2-3. **Emergency Rotation** — (1) **+5** Medical. (2) Gain a **Medical Passion**. (3) **+10** Medical. (4) **+10** Medical and a Medical Passion.
-4-5. **Research Sabbatical** — (1) **+5** Intellectual. (2) Gain an **Intellectual Passion**. (3) **+10** Intellectual. (4) **+10** Intellectual and an Intellectual Passion.
-6-7. **Bedside Diplomacy** — (1) **+5** Social. (2) Gain a **Social Passion**. (3) **+10** Social. (4) **+10** Social and a Social Passion.
-8-9. **Prototype Implants** — (1) **+5** Crafting. (2) Gain a **Crafting Passion**. (3) **+10** Crafting. (4) **+10** Crafting and a Crafting Passion.
-10. **Breakthrough** — (1) Gain **Prostophile** (Trait). (2) Lose your right hand to experiment. (3) Gain a **Prosthetic Hand**. (4) Gain a **Bionic Hand** and **+5** to each Surgeon skill.
+- 1: **Malpractice** — (1) Patient died; gain **Exiled** (Trait). (2) Steal a **Medkit** before fleeing. (3) Lose your left hand in a punishment ritual. (4) Gain a **Bionic Hand** and **+5** to each Surgeon skill.
+- 2-3: **Emergency Rotation** — (1) **+5** Medical. (2) Gain a **Medical Passion**. (3) **+10** Medical. (4) **+10** Medical and a Medical Passion.
+- 4-5: **Research Sabbatical** — (1) **+5** Intellectual. (2) Gain an **Intellectual Passion**. (3) **+10** Intellectual. (4) **+10** Intellectual and an Intellectual Passion.
+- 6-7: **Bedside Diplomacy** — (1) **+5** Social. (2) Gain a **Social Passion**. (3) **+10** Social. (4) **+10** Social and a Social Passion.
+- 8-9: **Prototype Implants** — (1) **+5** Crafting. (2) Gain a **Crafting Passion**. (3) **+10** Crafting. (4) **+10** Crafting and a Crafting Passion.
+- 10: **Breakthrough** — (1) Gain **Prostophile** (Trait). (2) Lose your right hand to experiment. (3) Gain a **Prosthetic Hand**. (4) Gain a **Bionic Hand** and **+5** to each Surgeon skill.
 
 #### Starship Engineer
 **Titles**: Greasemonkey (1) -> Tech (2) -> Chief Engineer (3) -> Shipwright (4).
 **Survival**: Mind (DC 12)
 **Skills**: Construction, Intellectual, Crafting, Shooting.
 **Events (1d10)**:
-1. **Reactor Leak** — (1) Radiation burns; gain **Sickly** (Trait). (2) Salvage a box of **Components**. (3) Lose your left hand to plasma burn. (4) Gain a **Bionic Hand** and **+5** to each Engineer skill.
-2-3. **Jury-Rigging** — (1) **+5** Construction. (2) Gain a **Construction Passion**. (3) **+10** Construction. (4) **+10** Construction and a Construction Passion.
-4-5. **Sensor Arrays** — (1) **+5** Intellectual. (2) Gain an **Intellectual Passion**. (3) **+10** Intellectual. (4) **+10** Intellectual and an Intellectual Passion.
-6-7. **Fabrication** — (1) **+5** Crafting. (2) Gain a **Crafting Passion**. (3) **+10** Crafting. (4) **+10** Crafting and a Crafting Passion.
-8-9. **Turret Calibration** — (1) **+5** Shooting. (2) Gain a **Shooting Passion**. (3) **+10** Shooting. (4) **+10** Shooting and a Shooting Passion.
-10. **Archeotech Discovery** — (1) Gain **Transhumanist** (Trait). (2) Lose your right hand to a security bot. (3) Gain a **Prosthetic Hand**. (4) Gain a **Bionic Hand** and **+5** to each Engineer skill.
+- 1: **Reactor Leak** — (1) Radiation burns; gain **Sickly** (Trait). (2) Salvage a box of **Components**. (3) Lose your left hand to plasma burn. (4) Gain a **Bionic Hand** and **+5** to each Engineer skill.
+- 2-3: **Jury-Rigging** — (1) **+5** Construction. (2) Gain a **Construction Passion**. (3) **+10** Construction. (4) **+10** Construction and a Construction Passion.
+- 4-5: **Sensor Arrays** — (1) **+5** Intellectual. (2) Gain an **Intellectual Passion**. (3) **+10** Intellectual. (4) **+10** Intellectual and an Intellectual Passion.
+- 6-7: **Fabrication** — (1) **+5** Crafting. (2) Gain a **Crafting Passion**. (3) **+10** Crafting. (4) **+10** Crafting and a Crafting Passion.
+- 8-9: **Turret Calibration** — (1) **+5** Shooting. (2) Gain a **Shooting Passion**. (3) **+10** Shooting. (4) **+10** Shooting and a Shooting Passion.
+- 10: **Archeotech Discovery** — (1) Gain **Transhumanist** (Trait). (2) Lose your right hand to a security bot. (3) Gain a **Prosthetic Hand**. (4) Gain a **Bionic Hand** and **+5** to each Engineer skill.
 
 #### Diplomat
 **Titles**: Envoy (1) -> Consul (2) -> Ambassador (3) -> High Chancellor (4).
 **Survival**: Spirit (DC 12)
 **Skills**: Social, Intellectual, Melee, Artistic.
 **Events (1d10)**:
-1. **International Scandal** — (1) Disgraced; gain **Staggeringly Ugly** (Trait - Reputation). (2) Keep a **Fine Suit** from your old life. (3) Lose your jaw/tongue (cannot speak). (4) Gain a **Bionic Jaw** and **+5** to each Diplomat skill.
-2-3. **Treaty Negotiation** — (1) **+5** Social. (2) Gain a **Social Passion**. (3) **+10** Social. (4) **+10** Social and a Social Passion.
-4-5. **Legal Studies** — (1) **+5** Intellectual. (2) Gain an **Intellectual Passion**. (3) **+10** Intellectual. (4) **+10** Intellectual and an Intellectual Passion.
-6-7. **Honor Duels** — (1) **+5** Melee. (2) Gain a **Melee Passion**. (3) **+10** Melee. (4) **+10** Melee and a Melee Passion.
-8-9. **Cultural Exchange** — (1) **+5** Artistic. (2) Gain an **Artistic Passion**. (3) **+10** Artistic. (4) **+10** Artistic and an Artistic Passion.
-10. **Peacebringer** — (1) Gain **Kind** (Trait). (2) Lose your jaw to an assassin. (3) Gain a **Denture** (Prosthetic). (4) Gain a **Bionic Jaw** and **+5** to each Diplomat skill.
+- 1: **International Scandal** — (1) Disgraced; gain **Staggeringly Ugly** (Trait - Reputation). (2) Keep a **Fine Suit** from your old life. (3) Lose your jaw/tongue (cannot speak). (4) Gain a **Bionic Jaw** and **+5** to each Diplomat skill.
+- 2-3: **Treaty Negotiation** — (1) **+5** Social. (2) Gain a **Social Passion**. (3) **+10** Social. (4) **+10** Social and a Social Passion.
+- 4-5: **Legal Studies** — (1) **+5** Intellectual. (2) Gain an **Intellectual Passion**. (3) **+10** Intellectual. (4) **+10** Intellectual and an Intellectual Passion.
+- 6-7: **Honor Duels** — (1) **+5** Melee. (2) Gain a **Melee Passion**. (3) **+10** Melee. (4) **+10** Melee and a Melee Passion.
+- 8-9: **Cultural Exchange** — (1) **+5** Artistic. (2) Gain an **Artistic Passion**. (3) **+10** Artistic. (4) **+10** Artistic and an Artistic Passion.
+- 10: **Peacebringer** — (1) Gain **Kind** (Trait). (2) Lose your jaw to an assassin. (3) Gain a **Denture** (Prosthetic). (4) Gain a **Bionic Jaw** and **+5** to each Diplomat skill.
 
 #### Tribal Elder
 **Titles**: Gatherer (1) -> Healer (2) -> Shaman (3) -> High Chieftain (4).
 **Survival**: Spirit (DC 12)
 **Skills**: Medical, Animals, Plants, Social.
 **Events (1d10)**:
-1. **Raid** — (1) Tribe wiped out; gain **Depressive** (Trait). (2) Save a pouch of **Herbal Medicine**. (3) Lose your left leg fleeing. (4) Gain a **Bionic Leg** (Archeotech gift) and **+5** to each Elder skill.
-2-3. **Herbalism** — (1) **+5** Medical. (2) Gain a **Medical Passion**. (3) **+10** Medical. (4) **+10** Medical and a Medical Passion.
-4-5. **Beast Taming** — (1) **+5** Animals. (2) Gain an **Animals Passion**. (3) **+10** Animals. (4) **+10** Animals and an Animals Passion.
-6-7. **Sacred Groves** — (1) **+5** Plants. (2) Gain a **Plants Passion**. (3) **+10** Plants. (4) **+10** Plants and a Plants Passion.
-8-9. **Council Meetings** — (1) **+5** Social. (2) Gain a **Social Passion**. (3) **+10** Social. (4) **+10** Social and a Social Passion.
-10. **Spirit Vision** — (1) Gain **Psychic Sensitivity** (Trait). (2) Lose your right leg to a spirit beast. (3) Gain a **Peg Leg**. (4) Gain a **Bionic Leg** (Archeotech gift) and **+5** to each Elder skill.
+- 1: **Raid** — (1) Tribe wiped out; gain **Depressive** (Trait). (2) Save a pouch of **Herbal Medicine**. (3) Lose your left leg fleeing. (4) Gain a **Bionic Leg** (Archeotech gift) and **+5** to each Elder skill.
+- 2-3: **Herbalism** — (1) **+5** Medical. (2) Gain a **Medical Passion**. (3) **+10** Medical. (4) **+10** Medical and a Medical Passion.
+- 4-5: **Beast Taming** — (1) **+5** Animals. (2) Gain an **Animals Passion**. (3) **+10** Animals. (4) **+10** Animals and an Animals Passion.
+- 6-7: **Sacred Groves** — (1) **+5** Plants. (2) Gain a **Plants Passion**. (3) **+10** Plants. (4) **+10** Plants and a Plants Passion.
+- 8-9: **Council Meetings** — (1) **+5** Social. (2) Gain a **Social Passion**. (3) **+10** Social. (4) **+10** Social and a Social Passion.
+- 10: **Spirit Vision** — (1) Gain **Psychic Sensitivity** (Trait). (2) Lose your right leg to a spirit beast. (3) Gain a **Peg Leg**. (4) Gain a **Bionic Leg** (Archeotech gift) and **+5** to each Elder skill.
 
 ---
 
