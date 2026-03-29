@@ -3,10 +3,14 @@
 [Art: chapter_art/ch05_equipment_economy_01.png
 Purpose: Chapter opener establishing tools-and-trade tone]
 
+![../art/chapter_art/ch05_equipment_economy_01.png](../art/chapter_art/ch05_equipment_economy_01.png)
+
 Survival on the Rim requires the right tools. A sharp knife, a warm parka, and a pocket full of silver can make the difference between life and death.
 
 [Art: spot/ch05_tools_trade_01.png
 Purpose: Visual anchor for tools + trade]
+
+![../art/spot/ch05_tools_trade_01.png](../art/spot/ch05_tools_trade_01.png)
 
 ---
 
@@ -42,6 +46,8 @@ Use the formula below.
 [Art: diagrams/ch05_market_value_formula_01.png
 Purpose: Visualize the market value formula with a simple example]
 
+![../art/diagrams/ch05_market_value_formula_01.png](../art/diagrams/ch05_market_value_formula_01.png)
+
 **Edge cases**
 * If an item has no material cost, treat it as **0**.
 * Crafting Points (CP) are generated in [Chapter 6: Colony Management](chapter_06_colony.md).
@@ -71,6 +77,8 @@ When buying or selling items with a trader.
 
 [Art: diagrams/ch05_trading_prices_01.png
 Purpose: Show buy/sell base rates and Social bonus cap]
+
+![../art/diagrams/ch05_trading_prices_01.png](../art/diagrams/ch05_trading_prices_01.png)
 
 **Edge cases**
 * Use the Social skill rules in [Chapter 3: Skills & Checks](chapter_03_skills_and_checks.md).
@@ -114,6 +122,8 @@ When an item’s Crafting Points requirement is completed.
 
 [Art: diagrams/ch05_item_quality_01.png
 Purpose: Map Tier results to item quality and value multipliers]
+
+![../art/diagrams/ch05_item_quality_01.png](../art/diagrams/ch05_item_quality_01.png)
 
 **Edge cases**
 * The Crafting check uses the Skill rules in [Chapter 3: Skills & Checks](chapter_03_skills_and_checks.md).
@@ -195,6 +205,8 @@ Sana throws a **Frag Grenade** into a cluster of raiders. On impact it deals **6
 [Art: spot/ch05_grenade_aoe_01.png
 Purpose: Visualize the grenade area-of-effect without gore]
 
+![../art/spot/ch05_grenade_aoe_01.png](../art/spot/ch05_grenade_aoe_01.png)
+
 | Grenade | Damage/Effect | AP | Value | Materials | CP | Tech |
 | :--- | :--- | ---: | ---: | :--- | ---: | :--- |
 | **Frag Grenade** | 6 Damage, 3x3 Area | 3 | 150 | 20 Steel, 80 Chemfuel | 80 | Industrial 3 |
@@ -224,6 +236,8 @@ A raider takes **10 Damage** and has **Armor 3**. Final damage is **7**.
 
 [Art: spot/ch05_armor_reduction_01.png
 Purpose: Show armor reducing incoming damage]
+
+![../art/spot/ch05_armor_reduction_01.png](../art/spot/ch05_armor_reduction_01.png)
 
 ---
 
@@ -332,3 +346,5 @@ Marla replaces a missing arm with a **Bionic Arm**. She removes the missing arm 
 
 [Art: spot/ch05_bionics_01.png
 Purpose: Reinforce prosthetics upgrading colonists]
+
+![../art/spot/ch05_bionics_01.png](../art/spot/ch05_bionics_01.png)

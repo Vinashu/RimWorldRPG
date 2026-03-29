@@ -3,12 +3,16 @@
 [Art: chapter_art/ch02_character_creation_01.png
 Purpose: Chapter opener establishing lifepath/creation tone and core cast]
 
+![../art/chapter_art/ch02_character_creation_01.png](../art/chapter_art/ch02_character_creation_01.png)
+
 In RimWorld, no one is a blank slate. Every colonist has a history—a childhood on a glitterworld, a career as a space marine, or a dark past as a pirate.
 
 We use a **Lifepath System** to generate your Colonist. You will roll for your background, survive terms of service, and emerge as a scarred but capable survivor.
 
 [Art: spot/ch02_lifepath_theme_01.png
 Purpose: Reinforce “no blank slate” lifepath theme]
+
+![../art/spot/ch02_lifepath_theme_01.png](../art/spot/ch02_lifepath_theme_01.png)
 
 **Example: The Table**
 John is the Storyteller. Mary is a player. They create a Colonist together using the steps below.
@@ -30,6 +34,8 @@ At the start of a campaign or when a new player character joins.
 
 [Art: diagrams/ch02_lifepath_overview_01.png
 Purpose: Flowchart of the Lifepath steps]
+
+![../art/diagrams/ch02_lifepath_overview_01.png](../art/diagrams/ch02_lifepath_overview_01.png)
 
 **Edge cases**
 * The Storyteller can allow a new Colonist to skip or shorten steps for pacing.
@@ -63,6 +69,8 @@ Mary assigns **Mind +2**, **Spirit +1**, **Dexterity +0**, **Vigor -1**. Those m
 [Art: spot/ch02_attributes_assignment_01.png
 Purpose: Visualize assigning the attribute array on a character sheet]
 
+![../art/spot/ch02_attributes_assignment_01.png](../art/spot/ch02_attributes_assignment_01.png)
+
 ---
 
 ## Step 2: Childhood
@@ -93,6 +101,8 @@ After Attributes.
 
 [Art: spot/ch02_childhood_roll_01.png
 Purpose: Anchor the Childhood roll table with a quick visual cue]
+
+![../art/spot/ch02_childhood_roll_01.png](../art/spot/ch02_childhood_roll_01.png)
 
 **Example: Childhood**
 Mary rolls **1d10** and gets a **6**, making her a **War Refugee**. She adds **+10 Shooting**, **+10 Medical**, and gains the **Pessimist** trait.
@@ -128,6 +138,8 @@ For each Term you take.
 [Art: diagrams/ch02_term_sequence_01.png
 Purpose: Diagram of the Term Sequence with success/failure branches]
 
+![../art/diagrams/ch02_term_sequence_01.png](../art/diagrams/ch02_term_sequence_01.png)
+
 **Edge cases**
 * **Skill Cap**: You cannot start with more than **30 Skill Points** in any one skill. If a gain would exceed 30, reallocate the excess points to another skill listed in the same Career.
 * **Event Repeats**: If you roll the same Event entry again in a later Term, take the **second** outcome, then the **third**, then the **fourth**.
@@ -138,6 +150,8 @@ Mary chooses the **Drifter** career. She rolls **2d10 + Dexterity 0** and gets *
 
 [Art: spot/ch02_first_term_example_01.png
 Purpose: Show the feel of a career term and survival roll]
+
+![../art/spot/ch02_first_term_example_01.png](../art/spot/ch02_first_term_example_01.png)
 
 ### Scars and Addictions
 
@@ -387,6 +401,8 @@ When your Stress increases during play.
 
 [Art: diagrams/ch02_mental_break_threshold_01.png
 Purpose: Visual gauge for the default stress threshold and trigger]
+
+![../art/diagrams/ch02_mental_break_threshold_01.png](../art/diagrams/ch02_mental_break_threshold_01.png)
 
 **Edge cases**
 * Panic Check rules are in [Chapter 4: Survival & Combat](chapter_04_combat_and_survival.md).

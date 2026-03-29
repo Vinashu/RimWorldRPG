@@ -3,10 +3,14 @@
 [Art: chapter_art/ch03_skills_checks_01.png
 Purpose: Chapter opener establishing skills-and-checks training tone]
 
+![../art/chapter_art/ch03_skills_checks_01.png](../art/chapter_art/ch03_skills_checks_01.png)
+
 When the outcome of an action is uncertain, you make a **Skill Check** (also called a **Colonist Roll** in Chapter 1). This chapter explains how checks work and what each skill covers.
 
 [Art: spot/ch03_intro_skill_check_01.png
 Purpose: Visual anchor for “uncertain outcomes → roll a check”]
+
+![../art/spot/ch03_intro_skill_check_01.png](../art/spot/ch03_intro_skill_check_01.png)
 
 ---
 
@@ -24,6 +28,8 @@ When a Colonist attempts an action with uncertain results and a skill is relevan
 
 [Art: diagrams/ch03_skill_check_flow_01.png
 Purpose: Flowchart of the Skill Check sequence and Story Die callouts]
+
+![../art/diagrams/ch03_skill_check_flow_01.png](../art/diagrams/ch03_skill_check_flow_01.png)
 
 **Edge cases**
 * The Story Die can trigger a **Twist of Fate** or **Complication** even if its value is discarded by **Augmented** or **Impaired** rolls.
@@ -91,6 +97,8 @@ Your **Skill Points** (0–30) determine your **Skill Modifier**.
 [Art: diagrams/ch03_skill_modifiers_01.png
 Purpose: Quick visual mapping of Skill Points to Modifiers]
 
+![../art/diagrams/ch03_skill_modifiers_01.png](../art/diagrams/ch03_skill_modifiers_01.png)
+
 **Edge cases**
 * The starting **Skill Cap** is **30** (see [Chapter 2: Character Creation](chapter_02_character_creation.md)).
 
@@ -118,6 +126,8 @@ Viper shoots in darkness (**Bane**) but has a laser sight (**Edge**). The modifi
 
 [Art: spot/ch03_edge_bane_example_01.png
 Purpose: Visualize Edge and Bane canceling out]
+
+![../art/spot/ch03_edge_bane_example_01.png](../art/spot/ch03_edge_bane_example_01.png)
 
 ### Double Edge and Double Bane
 
@@ -171,8 +181,12 @@ Sana fires while suppressed (**Impaired**). She rolls **3d10**: **Story Die 10**
 [Art: diagrams/ch03_modifiers_map_01.png
 Purpose: Summarize Edge/Bane, Double Edge/Bane, Cancel, Augmented/Impaired]
 
+![../art/diagrams/ch03_modifiers_map_01.png](../art/diagrams/ch03_modifiers_map_01.png)
+
 [Art: spot/ch03_augmented_example_01.png
 Purpose: Show a major advantage check in action (Augmented example)]
+
+![../art/spot/ch03_augmented_example_01.png](../art/spot/ch03_augmented_example_01.png)
 
 ---
 
@@ -195,6 +209,8 @@ Tess rolls **9** on an Intellectual check with **Mind +2** and **Intellectual 10
 
 [Art: spot/ch03_push_example_01.png
 Purpose: Capture the risk-reward moment of a Push]
+
+![../art/spot/ch03_push_example_01.png](../art/spot/ch03_push_example_01.png)
 
 ---
 

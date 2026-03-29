@@ -3,6 +3,8 @@
 [Art: chapter_art/ch04_survival_combat_01.png
 Purpose: Chapter opener establishing survival + combat tone and stakes]
 
+![../art/chapter_art/ch04_survival_combat_01.png](../art/chapter_art/ch04_survival_combat_01.png)
+
 Life on the Rim is a constant struggle against hunger, madness, and violent death. This chapter covers the rules for keeping your colonists alive—both physically and mentally.
 
 ---
@@ -27,6 +29,8 @@ Use the requirements below. If a requirement is not met, apply the listed penalt
 
 [Art: spot/ch04_core_needs_01.png
 Purpose: Visual anchor for daily survival needs]
+
+![../art/spot/ch04_core_needs_01.png](../art/spot/ch04_core_needs_01.png)
 
 **Edge cases**
 * Two or more Colonists working on the same activity in the same period count as **Socializing** for Recreation.
@@ -80,6 +84,8 @@ Oren rolls a Stress Die and gets a **1**. He adds the **1** to his total, then i
 [Art: spot/ch04_stress_die_01.png
 Purpose: Show the Stress Die triggering a Panic Check]
 
+![../art/spot/ch04_stress_die_01.png](../art/spot/ch04_stress_die_01.png)
+
 ---
 
 ### Panic Check (Mental Break)
@@ -100,6 +106,8 @@ When a rule triggers a Panic Check (Stress Die result of 1, a Push, certain trai
 
 [Art: diagrams/ch04_panic_check_flow_01.png
 Purpose: Flowchart of Panic Check triggers and result bands]
+
+![../art/diagrams/ch04_panic_check_flow_01.png](../art/diagrams/ch04_panic_check_flow_01.png)
 
 **Edge cases**
 * Mental Break Threshold rules are in [Chapter 2: Character Creation](chapter_02_character_creation.md).
@@ -187,6 +195,8 @@ Each Colonist has **4 AP** per turn to spend on actions.
 [Art: diagrams/ch04_combat_loop_ap_01.png
 Purpose: Combat loop with AP inset]
 
+![../art/diagrams/ch04_combat_loop_ap_01.png](../art/diagrams/ch04_combat_loop_ap_01.png)
+
 **Edge cases**
 * Range Bands are defined in [Chapter 1: Core Mechanics](chapter_01_core.md).
 
@@ -195,6 +205,8 @@ Marla spends **1 AP** to Move to Close range, **1 AP** to Take Cover, and **2 AP
 
 [Art: spot/ch04_spending_ap_01.png
 Purpose: Visualize Move + Take Cover + Attack in one turn]
+
+![../art/spot/ch04_spending_ap_01.png](../art/spot/ch04_spending_ap_01.png)
 
 ---
 
@@ -257,6 +269,8 @@ When an attack results in a **Tier 3 Critical Hit**.
 
 [Art: diagrams/ch04_critical_effects_01.png
 Purpose: Show cover reduction and condition outcomes on a critical hit]
+
+![../art/diagrams/ch04_critical_effects_01.png](../art/diagrams/ch04_critical_effects_01.png)
 
 **Edge cases**
 * Some weapons apply additional conditions (see Chapter 5).
@@ -394,6 +408,8 @@ After 3 Hexes, Sana rolls **Animals** and totals **13** (Tier 2). The group spot
 
 [Art: spot/ch04_ambushes_01.png
 Purpose: Illustrate scouting/ambush risk during caravan travel]
+
+![../art/spot/ch04_ambushes_01.png](../art/spot/ch04_ambushes_01.png)
 
 ---
 

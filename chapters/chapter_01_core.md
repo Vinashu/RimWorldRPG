@@ -3,12 +3,16 @@
 [Art: chapter_art/ch01_intro_core_01.png
 Purpose: Chapter opener establishing frontier survival tone and core cast]
 
+![../art/chapter_art/ch01_intro_core_01.png](../art/chapter_art/ch01_intro_core_01.png)
+
 ## Welcome to the Rim
 
 You are stranded. You are lightyears from the glitterworlds, on a lawless frontier planet known as a **Rimworld**. There is no government here, no safety net, and no faster-than-light travel to take you home.
 
 [Art: flavor/ch01_welcome_rim_01.png
 Purpose: Set frontier tone before core mechanics]
+
+![../art/flavour/ch01_welcome_rim_01.png](../art/flavour/ch01_welcome_rim_01.png)
 
 ### What Is This Game
 This is a Tabletop Roleplaying Game (TTRPG), a conversation between friends where you build a story together.
@@ -18,6 +22,8 @@ This is a Tabletop Roleplaying Game (TTRPG), a conversation between friends wher
 
 [Art: spot/ch01_what_is_this_game_01.png
 Purpose: Visualize the Storyteller + players conversation at the table]
+
+![../art/spot/ch01_what_is_this_game_01.png](../art/spot/ch01_what_is_this_game_01.png)
 
 ### The Rim Experience
 In this game, you will tell the story of your colony's struggle and triumph.
@@ -33,6 +39,8 @@ In this game, you will tell the story of your colony's struggle and triumph.
 
 [Art: icons/ch01_story_die_system_01.png
 Purpose: Mark the core resolution system for quick scanning]
+
+![../art/icons/ch01_story_die_system_01.png](../art/icons/ch01_story_die_system_01.png)
 
 When a Colonist attempts an action with an uncertain outcome—shooting a raider, performing surgery, or negotiating a trade—you make a **Colonist Roll (Skill Check)**.
 
@@ -50,6 +58,8 @@ Use a Colonist Roll for any action with an uncertain outcome.
 [Art: diagrams/ch01_colonist_roll_flow_01.png
 Purpose: Flowchart of the Colonist Roll steps and Story Die triggers]
 
+![../art/diagrams/ch01_colonist_roll_flow_01.png](../art/diagrams/ch01_colonist_roll_flow_01.png)
+
 **Edge cases**
 * **Skill Modifier** = `Floor(Skill Points / 10)`. See [Chapter 3: Skills & Checks](chapter_03_skills_and_checks.md).
 * The Story Die effect applies even if its value is discarded by **Augmented** or **Impaired** rolls.
@@ -59,6 +69,8 @@ Viper fires at a raider with **Dexterity +1** and **Shooting 20 (+2)**. She roll
 
 [Art: spot/ch01_colonist_roll_example_01.png
 Purpose: Visual anchor for the Colonist Roll example (Jax aiming from cover)]
+
+![../art/spot/ch01_colonist_roll_example_01.png](../art/spot/ch01_colonist_roll_example_01.png)
 
 ### Tiers of Success
 
@@ -83,6 +95,8 @@ Sana tries to pick a lock using **Dexterity +2** and **Crafting 10 (+1)**. She r
 
 [Art: icons/ch01_modifiers_01.png
 Purpose: Flag Edge/Bane rules for quick reference]
+
+![../art/icons/ch01_modifiers_01.png](../art/icons/ch01_modifiers_01.png)
 
 **When it applies**
 When circumstances help or hinder a roll.
@@ -127,12 +141,16 @@ Oren is building a barricade with **Vigor +1** and **Construction 10 (+1)**. He 
 [Art: spot/ch01_push_example_01.png
 Purpose: Show the risk-reward moment of a Push (Tala building a barricade)]
 
+![../art/spot/ch01_push_example_01.png](../art/spot/ch01_push_example_01.png)
+
 ---
 
 ## The Story Die Effects
 
 [Art: icons/ch01_story_die_effects_01.png
 Purpose: Mark narrative twist section]
+
+![../art/icons/ch01_story_die_effects_01.png](../art/icons/ch01_story_die_effects_01.png)
 
 The Story Die adds narrative twists beyond simple numbers.
 
@@ -151,8 +169,10 @@ When the Story Die shows **1** on a Colonist Roll.
 **Example: Twist of Fate**
 Tess tries to hack a console with **Mind +2** and **Intellectual 10 (+1)**. She rolls **Base Die 6** and **Story Die 1**. Total = 6 + 1 + 2 + 1 = **10** (Tier 1). She succeeds with a cost, but also gains **1 Inspiration Point** from the Twist.
 
-[Art: flavor/ch01_story_die_twist_01.png
+[Art: flavour/ch01_story_die_twist_01.png
 Purpose: Add narrative flavor for Twist/Complication moments]
+
+![../art/flavour/ch01_story_die_twist_01.png](../art/flavour/ch01_story_die_twist_01.png)
 
 ### Complication (Story Die 10)
 
@@ -194,6 +214,8 @@ Marla rolls **Base Die 2** and **Story Die 6** on a Construction check. With **V
 [Art: icons/ch01_time_scale_01.png
 Purpose: Highlight timekeeping and range bands section]
 
+![../art/icons/ch01_time_scale_01.png](../art/icons/ch01_time_scale_01.png)
+
 Time on the Rim is tracked in specific units to manage survival.
 
 ### The Day
@@ -210,6 +232,8 @@ When planning colony activities and daily schedules.
 
 [Art: diagrams/ch01_day_quadrum_01.png
 Purpose: Visual timeline for Day segments + Quadrum cycle]
+
+![../art/diagrams/ch01_day_quadrum_01.png](../art/diagrams/ch01_day_quadrum_01.png)
 
 **Edge cases**
 * The day loop procedures are expanded in [Chapter 6: Colony Management](chapter_06_colony.md).
@@ -249,6 +273,8 @@ During combat scenes.
 [Art: diagrams/ch01_range_bands_01.png
 Purpose: Diagram of Melee/Close/Medium/Far with weapon icons]
 
+![../art/diagrams/ch01_range_bands_01.png](../art/diagrams/ch01_range_bands_01.png)
+
 **Edge cases**
 * Entering **Melee** locks you in combat. Disengaging is defined in [Chapter 4: Survival & Combat](chapter_04_combat_and_survival.md).
 
@@ -259,6 +285,8 @@ Viper starts at **Medium** range. She uses **Move** to shift to **Close** so her
 
 [Art: icons/ch01_tactical_actions_01.png
 Purpose: Mark combat action options quickly]
+
+![../art/icons/ch01_tactical_actions_01.png](../art/icons/ch01_tactical_actions_01.png)
 
 **When it applies**
 On your turn in combat.
@@ -298,6 +326,8 @@ Sana fires a sniper rifle (optimal **Far**) from **Close** range. She suffers **
 [Art: icons/ch01_caravan_movement_01.png
 Purpose: Mark travel rules at a glance]
 
+![../art/icons/ch01_caravan_movement_01.png](../art/icons/ch01_caravan_movement_01.png)
+
 **When it applies**
 When traveling between map tiles.
 
@@ -314,3 +344,6 @@ A caravan needs to cross **3 Hexes** of road. At roughly **1 Hex per day**, they
 
 [Art: spot/ch01_caravan_movement_01.png
 Purpose: Simple caravan travel across a hex map]
+
+![../art/spot/ch01_caravan_movement_01.png](../art/spot/ch01_caravan_movement_01.png)
+
